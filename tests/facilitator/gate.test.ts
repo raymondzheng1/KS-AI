@@ -4,30 +4,30 @@ import { describe, expect, it } from "vitest";
 
 /**
  * Drift-defence (Harness §4.3): facilitator-only content (schedules, answer
- * keys, run guides) must NEVER render for students. HurdleView renders
- * `.facilitator` data only inside `facilitatorMode && …` blocks. This test
- * pins (a) the exact set of facilitator render sites — so adding a NEW one
- * trips the count and forces re-examination — and (b) that the existing two
- * blocks carry their explicit guard.
+ * keys, run guides) must NEVER render for students. Two layers, both pinned:
+ *   1. buildSlides only emits facilitator slides in facilitator mode — proven
+ *      behaviourally in tests/game/lesson.test.ts.
+ *   2. The lesson's facilitator render sites carry an inline `facilitatorMode &&`
+ *      guard (defense-in-depth) — pinned here against the source.
  */
 const SRC = readFileSync(
-  resolve(__dirname, "../../src/components/game/HurdleView.tsx"),
+  resolve(__dirname, "../../src/components/game/HurdleLesson.tsx"),
   "utf8",
 );
 
-describe("facilitator content is gated", () => {
-  it("HurdleView accepts a facilitatorMode prop", () => {
+describe("facilitator content is gated (HurdleLesson)", () => {
+  it("accepts a facilitatorMode prop", () => {
     expect(SRC).toMatch(/facilitatorMode\s*:\s*boolean/);
   });
 
-  it("has exactly the known facilitator render sites (tripwire on new ones)", () => {
-    // activity.facilitator.length, activity.facilitator.map, hurdle.facilitator.map
-    const refs = [...SRC.matchAll(/(activity|hurdle)\.facilitator\.(map|length)/g)];
-    expect(refs.length).toBe(3);
+  it("inline-guards both facilitator render sites", () => {
+    expect(SRC).toContain("facilitatorMode && activity.facilitator.length");
+    expect(SRC).toMatch(/cur\.kind === "facilitator" && facilitatorMode/);
   });
 
-  it("guards both facilitator blocks with facilitatorMode", () => {
-    expect(SRC).toContain("facilitatorMode && activity.facilitator.length");
-    expect(SRC).toMatch(/facilitatorMode &&\s*\n\s*hurdle\.facilitator\.map/);
+  it("has exactly the known .facilitator access sites (tripwire on new ones)", () => {
+    // hurdle.facilitator[cur.i], activity.facilitator.length, activity.facilitator.map
+    const refs = [...SRC.matchAll(/(hurdle|activity)\.facilitator/g)];
+    expect(refs.length).toBe(3);
   });
 });

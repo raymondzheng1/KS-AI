@@ -41,11 +41,23 @@
       ],
       "bullets": [],
       "table": {
-        "columns": ["Perspective", "Argument"],
+        "columns": [
+          "Perspective",
+          "Argument"
+        ],
         "rows": [
-          ["\"AI is not creative — it remixes.\"", "AI has never had an original thought. It recombines patterns from human-created works. True creativity requires consciousness, lived experience, and emotional intent."],
-          ["\"AI creativity is real — the output is new.\"", "If the result is genuinely novel and valuable, does the process matter? Humans also build on existing knowledge and culture. The output is what counts."],
-          ["\"Human + AI is the real breakthrough.\"", "The most creative work happens when humans use AI to explore possibilities they couldn't reach alone, then apply judgment, emotion, and intention to shape the result."]
+          [
+            "\"AI is not creative — it remixes.\"",
+            "AI has never had an original thought. It recombines patterns from human-created works. True creativity requires consciousness, lived experience, and emotional intent."
+          ],
+          [
+            "\"AI creativity is real — the output is new.\"",
+            "If the result is genuinely novel and valuable, does the process matter? Humans also build on existing knowledge and culture. The output is what counts."
+          ],
+          [
+            "\"Human + AI is the real breakthrough.\"",
+            "The most creative work happens when humans use AI to explore possibilities they couldn't reach alone, then apply judgment, emotion, and intention to shape the result."
+          ]
         ]
       }
     },
@@ -69,19 +81,6 @@
       "youtubeId": "SVcsDDABEkM",
       "minutes": 9,
       "note": "Clear, visual explanation of diffusion models. Perfect intro before the creative activities."
-    },
-    {
-      "title": "Suno AI — Create Music with AI (official demo)",
-      "source": "Suno",
-      "youtubeId": "PL1HXkjxTFY",
-      "note": "Shows how to generate full songs from text prompts. Students should watch this before Activity 1."
-    },
-    {
-      "title": "Will AI Replace Artists?",
-      "source": "Corridor Crew",
-      "youtubeId": "vAlHEIJGCQI",
-      "minutes": 18,
-      "note": "Professional animators debate AI art. Balanced, nuanced — great for discussion."
     }
   ],
   "activities": [
@@ -137,14 +136,38 @@
     "Build your Creative + AI project plan: What creative project would you like to work on for your final showcase? How will AI assist, and what will you contribute that AI cannot?"
   ],
   "vocab": [
-    { "term": "Generative AI", "definition": "AI that creates new content (images, text, audio, video)." },
-    { "term": "Diffusion Model", "definition": "AI architecture that generates images by reversing a noise process." },
-    { "term": "Large Language Model (LLM)", "definition": "AI trained on vast text corpora to generate and understand language." },
-    { "term": "Token", "definition": "The basic unit an LLM processes — roughly a word fragment." },
-    { "term": "Prompt (creative)", "definition": "A detailed description of the creative output you want the AI to generate." },
-    { "term": "Copyright", "definition": "Legal right protecting original creative works from unauthorised copying." },
-    { "term": "Generative Adversarial Network (GAN)", "definition": "AI architecture using competing generator and discriminator networks." },
-    { "term": "Latent Space", "definition": "The mathematical space inside an AI where concepts are stored as relationships between numbers." }
+    {
+      "term": "Generative AI",
+      "definition": "AI that creates new content (images, text, audio, video)."
+    },
+    {
+      "term": "Diffusion Model",
+      "definition": "AI architecture that generates images by reversing a noise process."
+    },
+    {
+      "term": "Large Language Model (LLM)",
+      "definition": "AI trained on vast text corpora to generate and understand language."
+    },
+    {
+      "term": "Token",
+      "definition": "The basic unit an LLM processes — roughly a word fragment."
+    },
+    {
+      "term": "Prompt (creative)",
+      "definition": "A detailed description of the creative output you want the AI to generate."
+    },
+    {
+      "term": "Copyright",
+      "definition": "Legal right protecting original creative works from unauthorised copying."
+    },
+    {
+      "term": "Generative Adversarial Network (GAN)",
+      "definition": "AI architecture using competing generator and discriminator networks."
+    },
+    {
+      "term": "Latent Space",
+      "definition": "The mathematical space inside an AI where concepts are stored as relationships between numbers."
+    }
   ],
   "quiz": [
     {
@@ -174,7 +197,10 @@
     {
       "type": "tf",
       "q": "In Australia today, an artwork generated entirely by AI with no human author is automatically protected by copyright.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Australian copyright currently requires a human author, so AI-only works may not be protected. If you make substantial creative decisions, though, you may hold copyright over the final work."
     },
@@ -193,7 +219,10 @@
     {
       "type": "tf",
       "q": "Music generators like Suno create songs by learning patterns of pitch, rhythm, timbre, and structure from huge numbers of existing songs.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. Like image generation, music AI learns the patterns of pitch, rhythm, timbre, and structure from millions of songs, then generates new audio that follows those patterns."
     }
@@ -203,15 +232,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:15", "Week 1 celebration — share top 3 insights from last week", "Sticky notes wall"],
-          ["0:15–0:40", "Key Concepts: Generative AI and creative tools", "Projector demos"],
-          ["0:40–1:20", "Activity 1: AI Songwriting + Visual Art Workshop", "Laptops, Suno AI, Adobe Firefly"],
-          ["1:20–1:35", "Break", ""],
-          ["1:35–2:00", "Activity 2: Human vs AI Creative Showdown", ""],
-          ["2:00–2:20", "Gallery walk — display student AI + human creative works", "Printed or displayed on screens"],
-          ["2:20–2:30", "Reflection", "Reflection journal"]
+          [
+            "0:00–0:15",
+            "Week 1 celebration — share top 3 insights from last week",
+            "Sticky notes wall"
+          ],
+          [
+            "0:15–0:40",
+            "Key Concepts: Generative AI and creative tools",
+            "Projector demos"
+          ],
+          [
+            "0:40–1:20",
+            "Activity 1: AI Songwriting + Visual Art Workshop",
+            "Laptops, Suno AI, Adobe Firefly"
+          ],
+          [
+            "1:20–1:35",
+            "Break",
+            ""
+          ],
+          [
+            "1:35–2:00",
+            "Activity 2: Human vs AI Creative Showdown",
+            ""
+          ],
+          [
+            "2:00–2:20",
+            "Gallery walk — display student AI + human creative works",
+            "Printed or displayed on screens"
+          ],
+          [
+            "2:20–2:30",
+            "Reflection",
+            "Reflection journal"
+          ]
         ]
       }
     }

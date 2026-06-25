@@ -16,8 +16,8 @@ import { setLastCode } from "@/lib/rooms/client-identity";
 import { allCleared, hurdleStatus } from "@/lib/game/unlock";
 import { GateQuiz } from "./GateQuiz";
 import { Hud } from "./Hud";
+import { HurdleLesson } from "./HurdleLesson";
 import { HurdleMap } from "./HurdleMap";
-import { HurdleView } from "./HurdleView";
 import { InstallApp } from "./InstallApp";
 import { Reward } from "./Reward";
 
@@ -98,7 +98,7 @@ export function GameShell({
       )}
 
       {view === "hurdle" && hurdle && (
-        <HurdleView
+        <HurdleLesson
           hurdle={hurdle}
           status={hurdleStatus(hurdle.id, state.done)}
           facilitatorMode={facilitatorMode}

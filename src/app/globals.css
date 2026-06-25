@@ -68,6 +68,34 @@ h4,
   min-height: 44px; /* touch-target floor (Harness §14.8) */
 }
 
+/* Slide transitions for the hurdle lesson (movie-like, one section at a time). */
+@keyframes ks-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ks-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ks-slide-right {
+  animation: ks-in-right 0.3s ease both;
+}
+.ks-slide-left {
+  animation: ks-in-left 0.3s ease both;
+}
+
 /* Calm everything for reduced-motion users (Harness §14.7). */
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -32,18 +32,35 @@
       "bullets": [],
       "table": {
         "caption": "Regular Program vs AI",
-        "columns": ["Regular Computer Program", "AI System"],
+        "columns": [
+          "Regular Computer Program",
+          "AI System"
+        ],
         "rows": [
-          ["You write every rule", "It learns rules from data"],
-          ["Rigid — breaks if input changes", "Flexible — adapts to new inputs"],
-          ["Example: calculator", "Example: voice assistant"],
-          ["Follows instructions", "Recognises patterns"]
+          [
+            "You write every rule",
+            "It learns rules from data"
+          ],
+          [
+            "Rigid — breaks if input changes",
+            "Flexible — adapts to new inputs"
+          ],
+          [
+            "Example: calculator",
+            "Example: voice assistant"
+          ],
+          [
+            "Follows instructions",
+            "Recognises patterns"
+          ]
         ]
       }
     },
     {
       "heading": "The AI Family Tree",
-      "body": ["AI is a broad term. Here are the key levels within it:"],
+      "body": [
+        "AI is a broad term. Here are the key levels within it:"
+      ],
       "bullets": [
         "Artificial Intelligence (AI): The big umbrella — any machine that mimics human thinking.",
         "Machine Learning (ML): A type of AI where the system learns from data without being explicitly programmed for each task.",
@@ -53,21 +70,40 @@
     },
     {
       "heading": "Narrow AI vs. General AI",
-      "body": ["This is one of the most important distinctions to understand:"],
+      "body": [
+        "This is one of the most important distinctions to understand:"
+      ],
       "bullets": [],
       "table": {
-        "columns": ["Narrow AI (what exists today)", "General AI (science fiction, not real yet)"],
+        "columns": [
+          "Narrow AI (what exists today)",
+          "General AI (science fiction, not real yet)"
+        ],
         "rows": [
-          ["Excellent at ONE specific task", "Can do any intellectual task a human can"],
-          ["Cannot transfer skills between tasks", "Would learn, reason, and adapt like a person"],
-          ["Examples: Siri, Netflix recommendations, spam filters", "Examples: HAL 9000, Terminator (movies only!)"],
-          ["Safe, controllable, widely deployed", "Does not exist yet — still research only"]
+          [
+            "Excellent at ONE specific task",
+            "Can do any intellectual task a human can"
+          ],
+          [
+            "Cannot transfer skills between tasks",
+            "Would learn, reason, and adapt like a person"
+          ],
+          [
+            "Examples: Siri, Netflix recommendations, spam filters",
+            "Examples: HAL 9000, Terminator (movies only!)"
+          ],
+          [
+            "Safe, controllable, widely deployed",
+            "Does not exist yet — still research only"
+          ]
         ]
       }
     },
     {
       "heading": "How Does AI Actually Learn?",
-      "body": ["The most common type of AI today learns through a process called Supervised Learning:"],
+      "body": [
+        "The most common type of AI today learns through a process called Supervised Learning:"
+      ],
       "bullets": [
         "You give the AI thousands of examples with correct answers (e.g., 50,000 photos labelled \"cat\" or \"not cat\").",
         "The AI finds patterns in those examples.",
@@ -92,13 +128,6 @@
       "youtubeId": "aircAruvnKk",
       "minutes": 5,
       "note": "Brilliant animated explainer of neural networks — perfect for beginners."
-    },
-    {
-      "title": "AI, Machine Learning, Deep Learning",
-      "source": "Google",
-      "youtubeId": "l3Ly51bqFIA",
-      "minutes": 3,
-      "note": "Clear visual breakdown of the AI family tree."
     },
     {
       "title": "Your AI-Powered Day",
@@ -133,7 +162,9 @@
     {
       "name": "AI Myth Busters",
       "kind": "game",
-      "intro": ["Vote TRUE or FALSE for each myth, then reveal the answer. Keep the energy high!"],
+      "intro": [
+        "Vote TRUE or FALSE for each myth, then reveal the answer. Keep the energy high!"
+      ],
       "steps": [
         "MYTH 1: \"AI is conscious and has feelings.\" → BUSTED — FALSE. AI processes information mathematically; it does not experience emotions or awareness. When ChatGPT says \"I feel excited,\" it is generating human-sounding text — not actually feeling anything (the Chinese Room problem, by philosopher John Searle).",
         "MYTH 2: \"AI knows everything.\" → BUSTED — FALSE. AI only knows what it was trained on, and can be confidently wrong (a \"hallucination\"). Always verify AI answers from trusted sources.",
@@ -155,14 +186,38 @@
     "Complete this sentence: \"AI is powerful because ______, but it has limits because ______.\""
   ],
   "vocab": [
-    { "term": "Artificial Intelligence (AI)", "definition": "Computer systems that perform tasks requiring human-like intelligence." },
-    { "term": "Machine Learning (ML)", "definition": "AI that learns patterns from data rather than following hand-coded rules." },
-    { "term": "Deep Learning", "definition": "ML using layered neural networks; excels at images and language." },
-    { "term": "Neural Network", "definition": "A computing system inspired by the human brain's structure." },
-    { "term": "Training Data", "definition": "The examples an AI learns from." },
-    { "term": "Narrow AI", "definition": "AI that excels at one specific task." },
-    { "term": "Hallucination", "definition": "When AI confidently states something incorrect." },
-    { "term": "Bias", "definition": "Unfair patterns in AI behaviour caused by skewed training data." }
+    {
+      "term": "Artificial Intelligence (AI)",
+      "definition": "Computer systems that perform tasks requiring human-like intelligence."
+    },
+    {
+      "term": "Machine Learning (ML)",
+      "definition": "AI that learns patterns from data rather than following hand-coded rules."
+    },
+    {
+      "term": "Deep Learning",
+      "definition": "ML using layered neural networks; excels at images and language."
+    },
+    {
+      "term": "Neural Network",
+      "definition": "A computing system inspired by the human brain's structure."
+    },
+    {
+      "term": "Training Data",
+      "definition": "The examples an AI learns from."
+    },
+    {
+      "term": "Narrow AI",
+      "definition": "AI that excels at one specific task."
+    },
+    {
+      "term": "Hallucination",
+      "definition": "When AI confidently states something incorrect."
+    },
+    {
+      "term": "Bias",
+      "definition": "Unfair patterns in AI behaviour caused by skewed training data."
+    }
   ],
   "quiz": [
     {
@@ -192,7 +247,10 @@
     {
       "type": "tf",
       "q": "General AI — a machine that can do any intellectual task a human can — already exists today.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Only Narrow AI (great at one task) exists today. General AI is still science fiction and research only."
     },
@@ -211,7 +269,10 @@
     {
       "type": "tf",
       "q": "When a chatbot says \"I feel excited about this,\" it is actually experiencing an emotion.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. The AI is generating text that sounds human. It processes information mathematically and has no feelings or awareness."
     }
@@ -221,15 +282,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:15", "Welcome, introductions, program overview", "Name tags, printed program overview"],
-          ["0:15–0:30", "Opening discussion: \"What do you think AI is?\"", "Whiteboard or sticky notes"],
-          ["0:30–1:00", "Key Concepts presentation + myth-busting quiz", "Slides (optional), quiz sheets"],
-          ["1:00–1:15", "Break", ""],
-          ["1:15–1:45", "Activity 1: Map Your AI Day", "Worksheet"],
-          ["1:45–2:15", "Activity 2: AI Myth Busters game", "Myth Buster cards"],
-          ["2:15–2:30", "Reflection + wrap-up", "Reflection journal"]
+          [
+            "0:00–0:15",
+            "Welcome, introductions, program overview",
+            "Name tags, printed program overview"
+          ],
+          [
+            "0:15–0:30",
+            "Opening discussion: \"What do you think AI is?\"",
+            "Whiteboard or sticky notes"
+          ],
+          [
+            "0:30–1:00",
+            "Key Concepts presentation + myth-busting quiz",
+            "Slides (optional), quiz sheets"
+          ],
+          [
+            "1:00–1:15",
+            "Break",
+            ""
+          ],
+          [
+            "1:15–1:45",
+            "Activity 1: Map Your AI Day",
+            "Worksheet"
+          ],
+          [
+            "1:45–2:15",
+            "Activity 2: AI Myth Busters game",
+            "Myth Buster cards"
+          ],
+          [
+            "2:15–2:30",
+            "Reflection + wrap-up",
+            "Reflection journal"
+          ]
         ]
       }
     }
