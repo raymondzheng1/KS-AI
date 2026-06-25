@@ -62,8 +62,8 @@ export default function OverviewPage() {
                   <p className="text-xs font-bold uppercase tracking-wide" style={{ color: accentColor(h.accent) }}>
                     Hurdle {h.day}
                   </p>
-                  <p className="font-extrabold text-ks-dark">{h.title}</p>
-                  <p className="truncate text-sm text-ks-ink-soft">{h.subtitle}</p>
+                  <p className="font-display font-bold text-ks-dark">{h.title}</p>
+                  <p className="text-sm text-ks-ink-soft">{h.subtitle}</p>
                 </div>
               </div>
             ))}

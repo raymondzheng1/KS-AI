@@ -140,11 +140,11 @@ export default function Home() {
         <p className="mx-auto mb-6 max-w-xl text-center text-sm text-ks-ink">
           Two weeks, ten hurdles. Clear each one to unlock the next — all the way to Demo Day.
         </p>
-        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-5">
           {HURDLES.map((h) => (
             <div
               key={h.id}
-              className="ks-card flex items-center gap-2 p-3"
+              className="ks-card flex items-center gap-2.5 p-3"
               style={{ borderLeft: `5px solid ${accentColor(h.accent)}` }}
             >
               <span
@@ -157,7 +157,7 @@ export default function Home() {
                 <p className="text-[11px] font-bold uppercase tracking-wide" style={{ color: accentColor(h.accent) }}>
                   Day {h.day}
                 </p>
-                <p className="truncate font-display text-xs font-semibold text-ks-dark">{h.title}</p>
+                <p className="font-display text-sm font-semibold text-ks-dark">{h.title}</p>
               </div>
             </div>
           ))}
