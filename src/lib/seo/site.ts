@@ -12,10 +12,7 @@ export const SITE = {
     "climb the leaderboard, and build your own AI project.",
   themeColor: "#FFD135",
   backgroundColor: "#F4F9FF",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://kidsmart-ai-training.vercel.app").replace(
-    /\/+$/,
-    "",
-  ),
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai.kidsmart.au").replace(/\/+$/, ""),
 } as const;
 
 /** Absolute URL for a path (leading slash optional). */
