@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BrandLockup } from "@/components/BrandLockup";
 import { ContinueButton } from "@/components/room/ContinueButton";
 import { InviteCard } from "@/components/room/InviteCard";
 import { LeaderboardView } from "@/components/room/LeaderboardView";
@@ -23,11 +22,8 @@ export default async function RoomPage({
 
   return (
     <main className="mx-auto max-w-2xl px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))]">
-      <header className="flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/kidsmart_logo.png" alt="KidSmart" width={36} height={36} className="h-9 w-9 object-contain" />
-          <span className="font-display font-extrabold text-ks-dark">KidSmart AI</span>
-        </Link>
+      <header className="flex items-center justify-between gap-3 py-4">
+        <BrandLockup />
         <ContinueButton roomId={roomId} />
       </header>
 

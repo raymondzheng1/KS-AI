@@ -46,11 +46,7 @@ export function FacilitatorForm({ active }: { active: boolean }) {
         <p className="mt-1 text-sm text-ks-ink">
           Schedules, answer keys, and run guides are now visible inside each hurdle.
         </p>
-        <button
-          onClick={lock}
-          className="mt-3 min-h-11 rounded-pill bg-ks-coral px-5 py-2 font-extrabold text-white shadow-card"
-          style={{ borderRadius: "var(--radius-pill)" }}
-        >
+        <button onClick={lock} className="ks-btn ks-btn-coral mt-3">
           Turn off facilitator mode
         </button>
       </div>
@@ -72,12 +68,7 @@ export function FacilitatorForm({ active }: { active: boolean }) {
         />
       </label>
       {err && <p className="text-sm font-semibold text-ks-coral">{err}</p>}
-      <button
-        type="submit"
-        disabled={busy}
-        className="min-h-11 rounded-pill bg-ks-green px-6 py-2 font-extrabold text-white shadow-card disabled:opacity-60"
-        style={{ borderRadius: "var(--radius-pill)" }}
-      >
+      <button type="submit" disabled={busy} className="ks-btn ks-btn-coral">
         {busy ? "Checking…" : "Unlock facilitator mode"}
       </button>
     </form>

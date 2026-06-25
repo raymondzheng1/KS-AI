@@ -90,12 +90,7 @@ export function ContactForm() {
         Please don&apos;t paste a player&apos;s game code here — keep it private.
       </p>
       {status === "error" && <p className="text-sm font-semibold text-ks-coral">{error}</p>}
-      <button
-        type="submit"
-        disabled={status === "sending"}
-        className="min-h-11 rounded-pill bg-ks-blue px-6 py-2 font-extrabold text-white shadow-card transition hover:brightness-105 disabled:opacity-60"
-        style={{ borderRadius: "var(--radius-pill)" }}
-      >
+      <button type="submit" disabled={status === "sending"} className="ks-btn ks-btn-coral">
         {status === "sending" ? "Sending…" : "Send message"}
       </button>
     </form>

@@ -78,11 +78,7 @@ export function StartChooser() {
           className="mt-2 min-h-11 rounded-xl border-2 border-ks-dark/25 bg-white px-3 py-2 font-mono uppercase text-ks-ink"
         />
         {err && <p className="mt-1 text-xs font-semibold text-ks-coral">{err}</p>}
-        <button
-          type="submit"
-          className="mt-2 min-h-11 rounded-pill bg-ks-orange px-5 py-2 font-extrabold text-white shadow-card"
-          style={{ borderRadius: "var(--radius-pill)" }}
-        >
+        <button type="submit" className="ks-btn ks-btn-coral mt-2">
           Continue →
         </button>
       </form>

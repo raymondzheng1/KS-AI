@@ -73,11 +73,7 @@ export default function OverviewPage() {
 
       <div className="ks-card p-5 text-center">
         <p className="font-bold text-ks-dark">Ready to start your adventure?</p>
-        <Link
-          href="/start"
-          className="mt-3 inline-block min-h-11 rounded-pill bg-ks-coral px-7 py-2.5 text-lg font-extrabold text-white shadow-card"
-          style={{ borderRadius: "var(--radius-pill)" }}
-        >
+        <Link href="/start" className="ks-btn ks-btn-coral mt-3 text-lg">
           Let&apos;s go →
         </Link>
       </div>

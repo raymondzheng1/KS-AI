@@ -1,20 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Fredoka, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { SunnyDefs } from "@/components/Sunny";
 import { SITE } from "@/lib/seo/site";
 import "./globals.css";
 
-// Display face: only the weights the UI renders (Harness §19.1).
-const nunito = Nunito({
+// Sketchbook type system: Fredoka (display, rounded+chunky) + Nunito (body).
+const fredoka = Fredoka({
   subsets: ["latin"],
-  weight: ["700", "800", "900"],
-  variable: "--font-nunito",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fredoka",
   display: "swap",
 });
-const inter = Inter({
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "600", "700", "800", "900"],
+  variable: "--font-nunito",
   display: "swap",
 });
 
@@ -47,8 +49,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${nunito.variable} ${inter.variable}`}>
+    <html lang="en" className={`${fredoka.variable} ${nunito.variable}`}>
       <body>
+        <SunnyDefs />
         {children}
         <GoogleAnalytics />
         <Analytics />

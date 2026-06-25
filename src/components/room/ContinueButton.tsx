@@ -13,19 +13,11 @@ export function ContinueButton({ roomId }: { roomId: string }) {
   const code = getRoomCode(roomId);
 
   return code ? (
-    <Link
-      href={`/p/${code}`}
-      className="inline-block min-h-11 rounded-pill bg-ks-coral px-7 py-2.5 text-lg font-extrabold text-white shadow-card"
-      style={{ borderRadius: "var(--radius-pill)" }}
-    >
+    <Link href={`/p/${code}`} className="ks-btn ks-btn-coral text-lg">
       ▶ Continue your adventure
     </Link>
   ) : (
-    <Link
-      href={`/join/${roomId}`}
-      className="inline-block min-h-11 rounded-pill bg-ks-green px-7 py-2.5 text-lg font-extrabold text-white shadow-card"
-      style={{ borderRadius: "var(--radius-pill)" }}
-    >
+    <Link href={`/join/${roomId}`} className="ks-btn ks-btn-coral text-lg">
       Join this room →
     </Link>
   );

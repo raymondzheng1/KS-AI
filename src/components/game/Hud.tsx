@@ -8,10 +8,10 @@ import { HURDLE_COUNT } from "@/lib/content";
 function Stat({ label, value, icon }: { label: string; value: string | number; icon: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-lg font-extrabold text-ks-dark">
+      <span className="font-display text-lg font-semibold text-ks-dark">
         {icon} {value}
       </span>
-      <span className="text-xs font-semibold uppercase tracking-wide text-ks-ink-soft">{label}</span>
+      <span className="text-xs font-semibold uppercase tracking-wide text-ks-slate">{label}</span>
     </div>
   );
 }
@@ -27,10 +27,10 @@ export function Hud({
 }) {
   const score = scorePlayer(toSynced(state));
   return (
-    <header className="sticky top-0 z-30 border-b border-ks-dark/10 bg-ks-bg/95 px-4 py-2 pt-[max(0.5rem,env(safe-area-inset-top))] backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-ks-kraft/40 bg-ks-cream/92 px-4 py-2 pt-[max(0.5rem,env(safe-area-inset-top))] backdrop-blur">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-2">
         <div className="min-w-0">
-          <p className="truncate text-sm font-extrabold text-ks-dark">
+          <p className="truncate font-display text-sm font-semibold text-ks-dark">
             {state.nick ? `👋 ${state.nick}` : "AI Explorer"}
             {facilitatorMode && (
               <a href="/facilitator" className="ml-2 rounded-full bg-ks-green/15 px-2 py-0.5 text-[10px] font-bold text-ks-green">

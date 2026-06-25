@@ -75,11 +75,7 @@ export function InviteCard({ roomId }: { roomId: string }) {
         <div className="min-w-0 flex-1">
           <p className="break-all rounded-lg bg-ks-cream px-3 py-2 font-mono text-sm text-ks-dark">{url}</p>
           <div className="mt-2 flex flex-wrap gap-2">
-            <button
-              onClick={copy}
-              className="min-h-11 rounded-pill bg-ks-blue px-5 py-2 font-extrabold text-white shadow-card"
-              style={{ borderRadius: "var(--radius-pill)" }}
-            >
+            <button onClick={copy} className="ks-btn ks-btn-coral">
               {copied ? "Copied! ✓" : "Copy link"}
             </button>
             {canShare && (

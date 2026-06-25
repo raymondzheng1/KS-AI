@@ -68,11 +68,7 @@ export function InstallApp() {
           </p>
         </div>
         {prompt && (
-          <button
-            onClick={install}
-            className="min-h-9 shrink-0 rounded-pill bg-ks-blue px-4 py-1.5 font-extrabold text-white"
-            style={{ borderRadius: "var(--radius-pill)" }}
-          >
+          <button onClick={install} className="ks-btn ks-btn-coral shrink-0">
             Install
           </button>
         )}

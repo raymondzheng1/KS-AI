@@ -16,10 +16,12 @@ import path from "node:path";
 import sharp from "sharp";
 
 const ROOT = path.resolve(__dirname, "..");
-const SRC = path.join(ROOT, "public", "kidsmart_logo.png");
+// Transparent star mascot (from the design handoff) on the brand blue — the
+// yellow star pops and reads at small sizes.
+const SRC = path.join(ROOT, "public", "kidsmart_star.png");
 
-// KidSmart yellow background — opaque so iOS/Android never render black.
-const BG = { r: 255, g: 209, b: 53, alpha: 1 };
+// KidSmart blue background — opaque so iOS/Android never render black.
+const BG = { r: 75, g: 159, b: 212, alpha: 1 };
 
 async function make(out: string, size: number, padFraction: number): Promise<void> {
   const inner = Math.round(size * (1 - padFraction));

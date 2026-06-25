@@ -1,5 +1,6 @@
 "use client";
 
+import { Sunny } from "@/components/Sunny";
 import type { Hurdle } from "@/lib/content/schema";
 import type { QuizStat } from "@/lib/progress/schema";
 import { XP } from "@/lib/scoring/xp";
@@ -42,14 +43,16 @@ export function Reward({
       </div>
 
       <div className="ks-card relative z-10 w-full max-w-sm p-6 text-center">
-        <div className="text-6xl motion-safe:animate-bounce">{hurdle.icon}</div>
-        <h2 className="mt-2 text-2xl font-extrabold text-ks-green">
+        <div className="-mt-2 flex justify-center">
+          <Sunny pose={isLast ? "poseGrad" : "poseCheer"} size={130} />
+        </div>
+        <h2 className="font-display text-2xl font-bold text-ks-green">
           Hurdle {hurdle.day} cleared!
         </h2>
         <p className="mt-1 text-ks-ink">{hurdle.title}</p>
 
-        <div className="my-4 rounded-2xl bg-ks-cream p-4">
-          <p className="text-3xl font-extrabold text-ks-orange">+{xpGained} XP</p>
+        <div className="ks-sticky my-4 p-4" style={{ transform: "rotate(-1deg)" }}>
+          <p className="font-display text-3xl font-bold text-ks-orange">+{xpGained} XP</p>
           <p className="mt-1 text-sm text-ks-ink">
             {stat.firstTry ? "⭐ First-try bonus included!" : `${stat.correct}/${stat.total} correct`}
           </p>
@@ -61,15 +64,11 @@ export function Reward({
 
         <div className="flex flex-col gap-2">
           {!isLast && (
-            <button
-              onClick={onNext}
-              className="min-h-11 rounded-pill bg-ks-green px-6 py-2 text-lg font-extrabold text-white shadow-card"
-              style={{ borderRadius: "var(--radius-pill)" }}
-            >
+            <button onClick={onNext} className="ks-btn ks-btn-green">
               Next hurdle →
             </button>
           )}
-          <button onClick={onMap} className="ks-chip justify-center">
+          <button onClick={onMap} className="ks-btn ks-btn-ghost">
             Back to map
           </button>
         </div>

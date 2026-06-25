@@ -73,12 +73,7 @@ export function CreateRoomForm() {
         </div>
       </div>
       {err && <p className="text-sm font-semibold text-ks-coral">{err}</p>}
-      <button
-        type="submit"
-        disabled={busy}
-        className="min-h-11 rounded-pill bg-ks-green px-6 py-2 font-extrabold text-white shadow-card disabled:opacity-60"
-        style={{ borderRadius: "var(--radius-pill)" }}
-      >
+      <button type="submit" disabled={busy} className="ks-btn ks-btn-green">
         {busy ? "Creating…" : "Create room & get invite →"}
       </button>
     </form>

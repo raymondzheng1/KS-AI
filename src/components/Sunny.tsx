@@ -1,0 +1,152 @@
+/**
+ * "Sunny" — the KidSmart mascot (from design_handoff_kidsmart/assets/sunny-mascot.svg).
+ * One set of <symbol> poses is inlined ONCE near the app root via <SunnyDefs/>;
+ * <Sunny pose="…"/> references a pose anywhere with <use href="#…">.
+ */
+
+export type SunnyPose =
+  | "poseWave" // welcome / hero
+  | "posePoint" // guiding ("you are here")
+  | "poseThink" // tips / "key idea"
+  | "poseCheer" // win / celebration
+  | "poseTry" // gentle "try again"
+  | "poseGrad"; // big win / graduation
+
+// The <defs> from sunny-mascot.svg, verbatim (HTML attributes are fine inside
+// dangerouslySetInnerHTML — the browser parses it as SVG).
+const SUNNY_DEFS = `
+<symbol id="sunnyStar" viewBox="0 0 240 240">
+<path d="M102.9 50.5Q120 28 137 50.5Q154.1 73.1 180.8 82.3Q207.5 91.6 191.3 114.7Q175.2 137.9 174.6 166.1Q174.1 194.4 147 186.2Q120 178 92.9 186.2Q65.9 194.4 65.3 166.1Q64.8 137.9 48.6 114.7Q32.5 91.6 59.2 82.3Q85.9 73.1 102.9 50.5Z" fill="#FFD23B"></path>
+<path d="M72 78Q82 66 98 64" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".85"></path>
+<path d="M62 100Q64 110 71 118" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"></path>
+<path d="M170 150Q178 164 169 177" stroke="#EFB21E" stroke-width="6" fill="none" stroke-linecap="round" opacity=".6"></path>
+</symbol>
+<symbol id="poseWave" viewBox="0 0 240 270">
+<g transform="rotate(-4 120 155)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<ellipse cx="106" cy="148" rx="11" ry="13" fill="#fff"></ellipse><ellipse cx="140" cy="148" rx="11" ry="13" fill="#fff"></ellipse>
+<circle cx="108" cy="150" r="6" fill="#283642"></circle><circle cx="142" cy="150" r="6" fill="#283642"></circle>
+<circle cx="110" cy="147" r="2.2" fill="#fff"></circle><circle cx="144" cy="147" r="2.2" fill="#fff"></circle>
+<ellipse cx="88" cy="169" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse><ellipse cx="158" cy="169" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse>
+<path d="M112 175Q123 187 134 175" stroke="#7A4A38" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+</g>
+<path d="M198 60Q212 56 216 68" stroke="#8E9BE0" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"></path>
+<path d="M202 76Q218 74 220 86" stroke="#8E9BE0" stroke-width="4" fill="none" stroke-linecap="round" opacity=".55"></path>
+<circle cx="184" cy="74" r="15" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></circle>
+</symbol>
+<symbol id="posePoint" viewBox="0 0 240 270">
+<g transform="rotate(3 120 155)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<ellipse cx="106" cy="148" rx="11" ry="13" fill="#fff"></ellipse><ellipse cx="140" cy="148" rx="11" ry="13" fill="#fff"></ellipse>
+<circle cx="110" cy="150" r="6" fill="#283642"></circle><circle cx="144" cy="150" r="6" fill="#283642"></circle>
+<circle cx="112" cy="147" r="2.2" fill="#fff"></circle><circle cx="146" cy="147" r="2.2" fill="#fff"></circle>
+<ellipse cx="88" cy="169" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse><ellipse cx="158" cy="169" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse>
+<path d="M113 176Q123 185 133 176" stroke="#7A4A38" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+</g>
+<g stroke-dasharray="2 7" stroke="#8E9BE0" stroke-width="4" stroke-linecap="round"><path d="M196 150H226" fill="none"></path></g>
+<circle cx="196" cy="150" r="14" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></circle>
+<rect x="206" y="145" width="22" height="9" rx="4.5" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></rect>
+</symbol>
+<symbol id="poseThink" viewBox="0 0 240 270">
+<g transform="rotate(-2 120 155)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<ellipse cx="106" cy="148" rx="11" ry="13" fill="#fff"></ellipse><ellipse cx="140" cy="148" rx="11" ry="13" fill="#fff"></ellipse>
+<circle cx="108" cy="144" r="6" fill="#283642"></circle><circle cx="142" cy="144" r="6" fill="#283642"></circle>
+<circle cx="110" cy="141" r="2.2" fill="#fff"></circle><circle cx="144" cy="141" r="2.2" fill="#fff"></circle>
+<ellipse cx="88" cy="169" rx="9" ry="6" fill="#F2A0A0" opacity=".8"></ellipse><ellipse cx="158" cy="169" rx="9" ry="6" fill="#F2A0A0" opacity=".8"></ellipse>
+<circle cx="123" cy="176" r="4" fill="none" stroke="#7A4A38" stroke-width="4"></circle>
+</g>
+<circle cx="150" cy="188" r="14" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></circle>
+<circle cx="172" cy="92" r="5" fill="#8E9BE0" opacity=".55"></circle><circle cx="186" cy="74" r="7" fill="#8E9BE0" opacity=".7"></circle><circle cx="204" cy="54" r="9" fill="#8E9BE0" opacity=".85"></circle>
+</symbol>
+<symbol id="poseCheer" viewBox="0 0 240 270">
+<g transform="translate(0 6)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<path d="M97 150Q106 142 115 150" stroke="#283642" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+<path d="M131 150Q140 142 149 150" stroke="#283642" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+<ellipse cx="86" cy="170" rx="11" ry="7" fill="#F2A0A0" opacity=".85"></ellipse><ellipse cx="160" cy="170" rx="11" ry="7" fill="#F2A0A0" opacity=".85"></ellipse>
+<path d="M108 170Q123 192 138 170Q123 180 108 170Z" fill="#7A4A38"></path>
+<path d="M118 180Q123 186 128 180Z" fill="#E8788A"></path>
+</g>
+<path d="M120 30 L160 49 L120 68 L80 49 Z" fill="#8E9BE0"></path>
+<path d="M99 56Q120 67 141 56 L137 70Q120 79 103 70 Z" fill="#7B89D4"></path>
+<circle cx="120" cy="49" r="4" fill="#6E7CCB"></circle>
+<path d="M120 49 L150 51 L150 70" stroke="#F5A623" stroke-width="3" fill="none" stroke-linecap="round"></path><circle cx="150" cy="73" r="4.5" fill="#F5A623"></circle>
+<circle cx="66" cy="96" r="15" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></circle><circle cx="174" cy="96" r="15" fill="#FFD23B" stroke="#EFB21E" stroke-width="2.5"></circle>
+<path d="M48 86Q44 76 50 70" stroke="#6DBE47" stroke-width="4" fill="none" stroke-linecap="round"></path><path d="M192 86Q196 76 190 70" stroke="#4B9FD4" stroke-width="4" fill="none" stroke-linecap="round"></path>
+<g fill="#F5A623"><path d="M40 130 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"></path></g>
+<g fill="#E85C3A"><path d="M200 140 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"></path></g>
+<g fill="#6DBE47"><path d="M210 110 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6z"></path></g>
+</symbol>
+<symbol id="poseTry" viewBox="0 0 240 270">
+<g transform="rotate(-1 120 155)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<path d="M95 132Q106 126 116 131" stroke="#E0A24A" stroke-width="3.5" fill="none" stroke-linecap="round"></path>
+<path d="M130 131Q140 126 151 132" stroke="#E0A24A" stroke-width="3.5" fill="none" stroke-linecap="round"></path>
+<ellipse cx="106" cy="150" rx="11.5" ry="13.5" fill="#fff"></ellipse><ellipse cx="140" cy="150" rx="11.5" ry="13.5" fill="#fff"></ellipse>
+<circle cx="107" cy="152" r="6.5" fill="#283642"></circle><circle cx="141" cy="152" r="6.5" fill="#283642"></circle>
+<circle cx="109" cy="149" r="2.4" fill="#fff"></circle><circle cx="143" cy="149" r="2.4" fill="#fff"></circle>
+<ellipse cx="88" cy="171" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse><ellipse cx="158" cy="171" rx="10" ry="6.5" fill="#F2A0A0" opacity=".85"></ellipse>
+<path d="M111 178Q123 185 135 178" stroke="#7A4A38" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+</g>
+<path d="M170 116q-5 9 0 13q6 -3 0 -13z" fill="#7FC0E8"></path>
+<path d="M188 70a18 18 0 1 1 -6 -13" stroke="#6DBE47" stroke-width="4.5" fill="none" stroke-linecap="round"></path><path d="M182 50l4 9 -10 1z" fill="#6DBE47"></path>
+</symbol>
+<symbol id="poseGrad" viewBox="0 0 240 270">
+<ellipse cx="120" cy="158" rx="104" ry="40" fill="none" stroke="#7FB6E2" stroke-width="7" stroke-linecap="round" transform="rotate(-14 120 158)" opacity=".9"></ellipse>
+<g transform="translate(0 4)">
+<use href="#sunnyStar" x="0" y="28" width="240" height="240"></use>
+<path d="M97 150Q106 142 115 150" stroke="#283642" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+<path d="M131 150Q140 142 149 150" stroke="#283642" stroke-width="4.5" fill="none" stroke-linecap="round"></path>
+<ellipse cx="86" cy="170" rx="11" ry="7" fill="#F2A0A0" opacity=".85"></ellipse><ellipse cx="160" cy="170" rx="11" ry="7" fill="#F2A0A0" opacity=".85"></ellipse>
+<path d="M109 169Q123 189 137 169Q123 178 109 169Z" fill="#7A4A38"></path>
+</g>
+<path d="M120 24 L166 46 L120 68 L74 46 Z" fill="#8E9BE0"></path>
+<path d="M97 54Q120 66 143 54 L139 70Q120 80 101 70 Z" fill="#7B89D4"></path>
+<circle cx="120" cy="46" r="4.5" fill="#6E7CCB"></circle>
+<path d="M120 46 L156 48 L156 72" stroke="#F5A623" stroke-width="3" fill="none" stroke-linecap="round"></path><circle cx="156" cy="76" r="5" fill="#F5A623"></circle>
+<g transform="rotate(18 186 150)"><rect x="168" y="142" width="40" height="22" rx="6" fill="#fff" stroke="#E6D9B0" stroke-width="2"></rect><rect x="166" y="140" width="6" height="26" rx="3" fill="#F4ECCB"></rect><rect x="204" y="140" width="6" height="26" rx="3" fill="#F4ECCB"></rect><path d="M186 164v8" stroke="#E85C3A" stroke-width="4" stroke-linecap="round"></path><circle cx="186" cy="174" r="3.5" fill="#E85C3A"></circle></g>
+<g fill="#F5A623"><path d="M40 70 l2.4 6 6 2.4 -6 2.4 -2.4 6 -2.4 -6 -6 -2.4 6 -2.4z"></path></g>
+<g fill="#E85C3A"><path d="M206 92 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"></path></g>
+</symbol>
+`;
+
+/** Inline the mascot symbol defs once, near the app root. */
+export function SunnyDefs() {
+  return (
+    <svg
+      width="0"
+      height="0"
+      aria-hidden="true"
+      style={{ position: "absolute" }}
+      dangerouslySetInnerHTML={{ __html: SUNNY_DEFS }}
+    />
+  );
+}
+
+/** Render a Sunny pose. `flip` mirrors horizontally (e.g. point left). */
+export function Sunny({
+  pose,
+  size = 120,
+  flip = false,
+  className,
+  bob = false,
+}: {
+  pose: SunnyPose;
+  size?: number;
+  flip?: boolean;
+  className?: string;
+  bob?: boolean;
+}) {
+  return (
+    <svg
+      viewBox="0 0 240 270"
+      role="img"
+      aria-label="Sunny the KidSmart star"
+      className={`${bob ? "ks-bob " : ""}${className ?? ""}`}
+      style={{ width: size, height: (size * 270) / 240, transform: flip ? "scaleX(-1)" : undefined }}
+    >
+      <use href={`#${pose}`} />
+    </svg>
+  );
+}

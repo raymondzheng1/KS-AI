@@ -1,42 +1,59 @@
 @import "tailwindcss";
 
 /*
- * KidSmart design tokens (Tailwind v4 @theme — each token generates utilities,
- * e.g. --color-ks-blue → bg-ks-blue / text-ks-blue / border-ks-blue).
- * Palette derived from the KidSmart logo (yellow star + graduation cap).
+ * KidSmart — Direction C "Sketchbook" design system (from design_handoff_kidsmart).
+ * Crafty, hand-made look: cream paper texture, dashed cut-out cards, washi tape,
+ * crayon underlines, treasure-map trail, and chunky "candy" buttons. Tokens are
+ * the source of truth (design README → Design Tokens).
  */
 @theme {
-  --color-ks-yellow: #ffd135; /* star / hero backgrounds */
-  --color-ks-blue: #4b9fd4; /* headings, nav, accents */
-  --color-ks-dark: #2e6fa3; /* borders, emphasis */
-  --color-ks-green: #6dbe47; /* facilitator / success */
-  --color-ks-orange: #f5a623; /* highlights */
-  --color-ks-coral: #e85c3a; /* alerts / key points */
-  --color-ks-bg: #f4f9ff; /* page background */
-  --color-ks-cream: #fff8e8; /* card / box backgrounds */
-  --color-ks-ink: #444444; /* body text */
-  --color-ks-ink-soft: #6b7280;
+  /* Brand colours (+ candy shadow shades) */
+  --color-ks-yellow: #ffd135;
+  --color-ks-yellow-d: #f2b705;
+  --color-ks-blue: #4b9fd4;
+  --color-ks-dark: #2e6fa3;
+  --color-ks-green: #6dbe47;
+  --color-ks-green-d: #4e9a2f;
+  --color-ks-orange: #f5a623;
+  --color-ks-coral: #e85c3a;
+  --color-ks-coral-d: #c0492c;
+  --color-ks-lav: #8e9be0;
+  --color-ks-lav-d: #6e7ccb;
+  --color-ks-bg: #f4f9ff;
+  --color-ks-cream: #fff8e8;
+  --color-ks-ink: #444444;
+  --color-ks-ink-soft: #7e92a6; /* slate (secondary/muted text) */
+  --color-ks-slate: #7e92a6;
+  --color-ks-kraft: #cbb582; /* dashed border */
+  --color-ks-kraft-ink: #b98c4a; /* kraft text (locked nodes) */
 
-  --font-display: var(--font-nunito), ui-rounded, system-ui, sans-serif;
-  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-fredoka), ui-rounded, system-ui, sans-serif;
+  --font-body: var(--font-nunito), system-ui, sans-serif;
 
-  --radius-card: 1.25rem;
+  --radius-card: 22px;
+  --radius-btn: 24px;
+  --radius-input: 18px;
   --radius-pill: 999px;
 
-  --shadow-card: 0 6px 0 0 rgba(46, 111, 163, 0.12), 0 12px 28px -10px rgba(46, 111, 163, 0.35);
+  --shadow-card: 0 10px 26px rgba(46, 111, 163, 0.1);
+  --shadow-card-lg: 0 14px 36px rgba(46, 111, 163, 0.12);
+  --shadow-row: 0 4px 14px rgba(46, 111, 163, 0.07);
 }
 
+/* Paper-texture background (cream + dotted) everywhere — the Sketchbook surface. */
 html {
-  background: var(--color-ks-bg);
-  /* Honour iOS safe areas when installed (Harness §19.3). */
+  background-color: var(--color-ks-cream);
   scroll-behavior: smooth;
 }
-
 body {
-  background: var(--color-ks-bg);
+  margin: 0;
+  min-height: 100dvh;
   color: var(--color-ks-ink);
   font-family: var(--font-body);
-  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-ks-cream);
+  background-image: radial-gradient(rgba(46, 111, 163, 0.09) 1.4px, transparent 1.4px);
+  background-size: 18px 18px;
 }
 
 h1,
@@ -47,54 +64,206 @@ h4,
   font-family: var(--font-display);
 }
 
-/* Reusable primitives (Harness §3.2 / §14.4) ----------------------------- */
+/* ── Primitives (Harness §3.2 / §14.4) ─────────────────────────────────── */
+
+/* Dashed "cut-out" card — the signature surface. */
 .ks-card {
-  background: var(--color-ks-cream);
-  border: 2px solid color-mix(in srgb, var(--color-ks-dark) 18%, transparent);
+  background: #fff;
+  border: 2.5px dashed var(--color-ks-kraft);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
 
+/* Plain soft card (no dash) — for dense surfaces like tables. */
+.ks-soft {
+  background: var(--color-ks-cream);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-row);
+}
+
+/* Sticky note — for "Key idea" callouts. */
+.ks-sticky {
+  background: #fff3c2;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(200, 170, 80, 0.25);
+  transform: rotate(-1.5deg);
+}
+
+/* Washi tape strip (place absolutely on a card corner). */
+.ks-tape {
+  position: absolute;
+  width: 86px;
+  height: 24px;
+  background: rgba(245, 166, 35, 0.5);
+  transform: rotate(-6deg);
+  border-radius: 2px;
+}
+.ks-tape-green {
+  background: rgba(109, 190, 71, 0.42);
+}
+
+/* Candy buttons — chunky 3D look (solid offset, squish on press). */
+.ks-btn {
+  border: none;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 22px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  min-height: 48px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.ks-btn:active {
+  transform: translateY(4px);
+}
+.ks-btn-coral {
+  background: var(--color-ks-coral);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--color-ks-coral-d), 0 10px 16px rgba(232, 92, 58, 0.28);
+}
+.ks-btn-coral:active {
+  box-shadow: 0 1px 0 var(--color-ks-coral-d), 0 4px 10px rgba(232, 92, 58, 0.24);
+}
+.ks-btn-yellow {
+  background: var(--color-ks-yellow);
+  color: var(--color-ks-dark);
+  box-shadow: 0 5px 0 var(--color-ks-yellow-d);
+}
+.ks-btn-yellow:active {
+  box-shadow: 0 1px 0 var(--color-ks-yellow-d);
+}
+.ks-btn-green {
+  background: var(--color-ks-green);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--color-ks-green-d);
+}
+.ks-btn-green:active {
+  box-shadow: 0 1px 0 var(--color-ks-green-d);
+}
+.ks-btn-lav {
+  background: var(--color-ks-lav);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--color-ks-lav-d);
+}
+.ks-btn-ghost {
+  background: #fff;
+  color: var(--color-ks-dark);
+  box-shadow: inset 0 0 0 2.5px var(--color-ks-kraft);
+}
+.ks-btn[disabled] {
+  opacity: 0.55;
+  transform: none;
+  cursor: default;
+}
+
+/* Pill chip / badge. */
 .ks-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 6px;
   border-radius: var(--radius-pill);
-  border: 2px solid var(--color-ks-dark);
+  padding: 7px 14px;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 13px;
   background: #fff;
   color: var(--color-ks-dark);
-  font-weight: 700;
-  padding: 0.4rem 0.9rem;
-  min-height: 44px; /* touch-target floor (Harness §14.8) */
+  box-shadow: inset 0 0 0 2px var(--color-ks-kraft);
+  min-height: 44px;
 }
 
-/* Slide transitions for the hurdle lesson (movie-like, one section at a time). */
+/* Dashed kraft icon button (back / close circles). */
+.ks-iconbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2.5px dashed var(--color-ks-kraft);
+  background: #fff;
+  color: var(--color-ks-dark);
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Input. */
+.ks-input {
+  width: 100%;
+  border: 2.5px solid #d4e6f4;
+  border-radius: var(--radius-input);
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-ks-ink);
+  background: #fff;
+}
+
+/* XP / progress bar. */
+.ks-xp {
+  height: 14px;
+  border-radius: var(--radius-pill);
+  background: #e6eef6;
+  overflow: hidden;
+}
+.ks-xp-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--color-ks-yellow), var(--color-ks-orange));
+}
+
+/* Adventure-trail nodes (candy circles). */
+.ks-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+}
+.ks-node-done {
+  background: var(--color-ks-green);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--color-ks-green-d);
+}
+.ks-node-current {
+  background: var(--color-ks-coral);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--color-ks-coral-d);
+}
+.ks-node-locked {
+  background: var(--color-ks-cream);
+  color: var(--color-ks-kraft-ink);
+  border: 2.5px dashed var(--color-ks-kraft);
+}
+
+/* ── Slide transitions for the hurdle lesson ───────────────────────────── */
 @keyframes ks-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(28px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: none; }
 }
 @keyframes ks-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-28px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  from { opacity: 0; transform: translateX(-28px); }
+  to { opacity: 1; transform: none; }
 }
-.ks-slide-right {
-  animation: ks-in-right 0.3s ease both;
+.ks-slide-right { animation: ks-in-right 0.3s ease both; }
+.ks-slide-left { animation: ks-in-left 0.3s ease both; }
+
+@keyframes ks-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
 }
-.ks-slide-left {
-  animation: ks-in-left 0.3s ease both;
-}
+.ks-bob { animation: ks-bob 3s ease-in-out infinite; }
 
 /* Calm everything for reduced-motion users (Harness §14.7). */
 @media (prefers-reduced-motion: reduce) {

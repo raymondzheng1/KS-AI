@@ -1,67 +1,39 @@
 "use client";
 
-import { HURDLES } from "@/lib/content";
-import type { Hurdle } from "@/lib/content/schema";
-import { accentColor, accentTint } from "@/lib/game/accent";
-import { hurdleStatus, type HurdleStatus } from "@/lib/game/unlock";
+import { HURDLES, HURDLE_COUNT } from "@/lib/content";
+import { Sunny } from "@/components/Sunny";
+import { clearedCount, firstAvailable, hurdleStatus } from "@/lib/game/unlock";
 
-function StatusBadge({ status }: { status: HurdleStatus }) {
-  if (status === "done")
-    return <span className="text-lg" aria-label="cleared">✅</span>;
-  if (status === "locked")
-    return <span className="text-lg opacity-50" aria-label="locked">🔒</span>;
-  return (
-    <span
-      className="motion-safe:animate-pulse text-lg"
-      aria-label="available"
-      style={{ filter: "drop-shadow(0 0 6px var(--color-ks-yellow))" }}
-    >
-      ▶️
-    </span>
-  );
+/* Trail geometry (fixed 320px-wide column; centres on larger screens). */
+const W = 320;
+const TOP = 36;
+const STEP = 60;
+const LEFT_X = 58;
+const RIGHT_X = W - 58; // 262
+const nodeX = (i: number) => (i % 2 === 0 ? LEFT_X : RIGHT_X);
+const nodeY = (i: number) => TOP + i * STEP;
+const H = nodeY(HURDLE_COUNT - 1) + 72;
+
+/** Smooth S-curve path winding through the alternating node centres. */
+function trailPath(): string {
+  let d = `M ${nodeX(0)} ${nodeY(0)}`;
+  for (let i = 1; i < HURDLE_COUNT; i++) {
+    const ym = (nodeY(i - 1) + nodeY(i)) / 2;
+    d += ` C ${nodeX(i - 1)} ${ym}, ${nodeX(i)} ${ym}, ${nodeX(i)} ${nodeY(i)}`;
+  }
+  return d;
 }
 
-function MapNode({
-  hurdle,
-  status,
-  side,
-  onOpen,
-}: {
-  hurdle: Hurdle;
-  status: HurdleStatus;
-  side: "left" | "right";
-  onOpen: (id: string) => void;
-}) {
-  const clickable = status !== "locked";
+function CompassRose() {
   return (
-    <div className={`flex items-center gap-3 ${side === "right" ? "flex-row-reverse text-right" : ""}`}>
-      <button
-        onClick={() => clickable && onOpen(hurdle.id)}
-        disabled={!clickable}
-        aria-label={`Hurdle ${hurdle.day}: ${hurdle.title} (${status})`}
-        className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-4 text-2xl shadow-card transition disabled:cursor-not-allowed disabled:opacity-60 enabled:hover:scale-105"
-        style={{
-          borderColor: status === "locked" ? "rgba(46,111,163,0.25)" : accentColor(hurdle.accent),
-          background: status === "locked" ? "white" : accentTint(hurdle.accent, 25),
-        }}
-      >
-        <span style={{ filter: status === "locked" ? "grayscale(1)" : "none" }}>{hurdle.icon}</span>
-        <span className="absolute -bottom-2 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-extrabold text-ks-dark shadow">
-          {hurdle.day}
-        </span>
-      </button>
-      <button
-        onClick={() => clickable && onOpen(hurdle.id)}
-        disabled={!clickable}
-        className="min-w-0 flex-1 disabled:cursor-not-allowed"
-      >
-        <div className="flex items-center gap-2" style={{ justifyContent: side === "right" ? "flex-end" : "flex-start" }}>
-          <StatusBadge status={status} />
-          <p className="truncate font-extrabold text-ks-dark">{hurdle.title}</p>
-        </div>
-        <p className="truncate text-xs text-ks-ink-soft">{hurdle.subtitle}</p>
-      </button>
-    </div>
+    <svg viewBox="0 0 60 60" width="56" height="56" aria-hidden className="opacity-90">
+      <circle cx="30" cy="30" r="24" fill="#FFF8E8" stroke="#B98C4A" strokeWidth="2" strokeDasharray="2 4" />
+      <path d="M30 8 L34 30 L30 34 L26 30 Z" fill="#E85C3A" />
+      <path d="M30 52 L26 30 L30 26 L34 30 Z" fill="#2E6FA3" opacity=".5" />
+      <path d="M8 30 L30 26 L34 30 L30 34 Z" fill="#4B9FD4" />
+      <path d="M52 30 L30 34 L26 30 L30 26 Z" fill="#4B9FD4" opacity=".5" />
+      <text x="30" y="6" textAnchor="middle" fontSize="7" fill="#B98C4A" fontFamily="Fredoka">N</text>
+    </svg>
   );
 }
 
@@ -72,24 +44,129 @@ export function HurdleMap({
   done: readonly string[];
   onOpen: (id: string) => void;
 }) {
+  const cleared = clearedCount(done);
+  const currentId = firstAvailable(done);
+
   return (
-    <div className="mx-auto max-w-2xl px-5 py-6">
-      <h1 className="mb-1 text-center text-2xl font-extrabold text-ks-dark">Your AI Adventure</h1>
-      <p className="mb-6 text-center text-sm text-ks-ink-soft">
-        Clear each hurdle to unlock the next. Reach Demo Day! 🏆
-      </p>
-      <div className="relative flex flex-col gap-5">
-        {/* connecting spine */}
-        <div className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-1 -translate-x-1/2 rounded-full bg-ks-dark/10" />
-        {HURDLES.map((h, i) => (
-          <MapNode
-            key={h.id}
-            hurdle={h}
-            status={hurdleStatus(h.id, done)}
-            side={i % 2 === 0 ? "left" : "right"}
-            onOpen={onOpen}
+    <div className="mx-auto max-w-md px-5 py-5">
+      {/* Progress row */}
+      <div className="mb-1 flex items-center justify-between">
+        <h1 className="font-display text-xl font-semibold text-ks-dark" style={{ transform: "rotate(-1deg)" }}>
+          Treasure trail
+        </h1>
+        <span className="ks-chip" style={{ boxShadow: "inset 0 0 0 2px var(--color-ks-green)", color: "var(--color-ks-green-d)" }}>
+          ⭐ {cleared * 100}+ XP
+        </span>
+      </div>
+      <div className="mb-1 flex items-center gap-3">
+        <div className="ks-xp flex-1">
+          <div className="ks-xp-fill" style={{ width: `${(cleared / HURDLE_COUNT) * 100}%` }} />
+        </div>
+        <span className="font-display text-sm font-semibold text-ks-dark">{cleared}/{HURDLE_COUNT}</span>
+      </div>
+      <p className="mb-3 text-xs text-ks-slate">Clear each hurdle to unlock the next. Reach Demo Day! 🏆</p>
+
+      {/* Trail */}
+      <div className="relative mx-auto" style={{ width: W, maxWidth: "100%", height: H }}>
+        {/* compass rose top-right */}
+        <div className="absolute right-0 top-0">
+          <CompassRose />
+        </div>
+
+        {/* dashed path */}
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          width="100%"
+          height={H}
+          className="absolute inset-0"
+          aria-hidden
+        >
+          <path
+            d={trailPath()}
+            fill="none"
+            stroke="#C7A86A"
+            strokeWidth={3}
+            strokeDasharray="3 11"
+            strokeLinecap="round"
           />
-        ))}
+        </svg>
+
+        {/* START chip near node 1 */}
+        <span
+          className="ks-chip absolute"
+          style={{
+            left: nodeX(0) - 18,
+            top: nodeY(0) - 40,
+            transform: "rotate(-3deg)",
+            boxShadow: "inset 0 0 0 2px var(--color-ks-green)",
+            color: "var(--color-ks-green-d)",
+            minHeight: "auto",
+            padding: "4px 10px",
+          }}
+        >
+          START
+        </span>
+
+        {/* nodes */}
+        {HURDLES.map((h, i) => {
+          const status = hurdleStatus(h.id, done);
+          const isCurrent = h.id === currentId && status !== "done";
+          const isTreasure = i === HURDLE_COUNT - 1;
+          const x = nodeX(i);
+          const y = nodeY(i);
+          const cls =
+            status === "done"
+              ? "ks-node-done"
+              : isCurrent
+                ? "ks-node-current"
+                : "ks-node-locked";
+          return (
+            <div key={h.id} className="absolute" style={{ left: x, top: y, transform: "translate(-50%,-50%)" }}>
+              <button
+                onClick={() => status !== "locked" && onOpen(h.id)}
+                disabled={status === "locked"}
+                aria-label={`Hurdle ${h.day}: ${h.title} (${status})`}
+                className={`ks-node ${cls} disabled:cursor-not-allowed`}
+                style={isCurrent ? { width: 66, height: 66, transform: "rotate(3deg)" } : undefined}
+              >
+                {status === "done" ? "✓" : isTreasure ? "🗺️" : h.day}
+              </button>
+              {isTreasure && (
+                <span className="absolute -right-3 -top-1 text-lg font-extrabold text-ks-coral">✕</span>
+              )}
+            </div>
+          );
+        })}
+
+        {/* Sunny "you are here" beside the current node */}
+        {HURDLES.map((h, i) => {
+          if (h.id !== currentId || hurdleStatus(h.id, done) === "done") return null;
+          const x = nodeX(i);
+          const y = nodeY(i);
+          const onRight = i % 2 === 1;
+          return (
+            <div
+              key={`sunny-${h.id}`}
+              className="absolute flex flex-col items-center"
+              style={{ left: onRight ? x - 96 : x + 34, top: y - 44 }}
+            >
+              <Sunny pose="posePoint" size={78} flip={onRight} />
+              <span
+                className="ks-chip -mt-1"
+                style={{
+                  transform: "rotate(-2deg)",
+                  boxShadow: "inset 0 0 0 2px var(--color-ks-coral)",
+                  color: "var(--color-ks-coral)",
+                  minHeight: "auto",
+                  padding: "4px 10px",
+                  fontSize: 12,
+                }}
+              >
+                You are here
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

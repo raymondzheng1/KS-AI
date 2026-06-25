@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import type { Hurdle } from "@/lib/content/schema";
+import { CrayonUnderline } from "@/components/CrayonUnderline";
+import { Sunny } from "@/components/Sunny";
 import { accentColor, accentTint } from "@/lib/game/accent";
 import { buildSlides } from "@/lib/game/lesson";
 import type { HurdleStatus } from "@/lib/game/unlock";
@@ -58,23 +60,18 @@ export function HurdleLesson({
   return (
     <div className="flex min-h-dvh flex-col">
       {/* Progress + close */}
-      <div className="sticky top-0 z-10 bg-ks-bg/95 px-5 pt-3 backdrop-blur">
+      <div className="sticky top-0 z-10 bg-ks-cream/95 px-5 pt-3 backdrop-blur">
         <div className="mx-auto flex max-w-2xl items-center gap-3">
-          <button onClick={onBack} className="ks-chip text-sm" aria-label="Back to map">
-            ✕ Map
+          <button onClick={onBack} className="ks-iconbtn shrink-0" aria-label="Back to map">
+            ‹
           </button>
-          <div className="flex-1">
-            <div className="h-2 w-full overflow-hidden rounded-full bg-ks-dark/10">
-              <div
-                className="h-full rounded-full transition-all duration-300"
-                style={{
-                  width: `${((i + 1) / slides.length) * 100}%`,
-                  background: accentColor(hurdle.accent),
-                }}
-              />
-            </div>
+          <div className="ks-xp flex-1" style={{ height: 12 }}>
+            <div
+              className="ks-xp-fill transition-all duration-300"
+              style={{ width: `${((i + 1) / slides.length) * 100}%` }}
+            />
           </div>
-          <span className="shrink-0 text-xs font-bold text-ks-ink-soft">
+          <span className="shrink-0 font-display text-sm font-semibold text-ks-dark">
             {i + 1}/{slides.length}
           </span>
         </div>
@@ -88,7 +85,10 @@ export function HurdleLesson({
               <section className="text-center">
                 <div className="text-6xl">{hurdle.icon}</div>
                 <Eyebrow accent={hurdle.accent}>Hurdle {hurdle.day} of 10</Eyebrow>
-                <h1 className="text-3xl font-extrabold text-ks-dark">{hurdle.title}</h1>
+                <h1 className="font-display text-3xl font-bold text-ks-dark">{hurdle.title}</h1>
+                <div className="mx-auto -mt-0.5 w-44">
+                  <CrayonUnderline color={accentColor(hurdle.accent)} />
+                </div>
                 <p className="mt-1 text-lg text-ks-ink">{hurdle.subtitle}</p>
                 <div className="mt-4 space-y-2 text-left">
                   {hurdle.overview.map((p, k) => (
@@ -187,8 +187,10 @@ export function HurdleLesson({
 
             {cur.kind === "wrapup" && (
               <section className="text-center">
-                <div className="text-5xl">{status === "done" ? "🔁" : "🎓"}</div>
-                <h2 className="mt-2 text-2xl font-extrabold text-ks-dark">
+                <div className="flex justify-center">
+                  <Sunny pose="poseCheer" size={120} />
+                </div>
+                <h2 className="mt-1 font-display text-2xl font-bold text-ks-dark">
                   {status === "done" ? "Lesson revisited!" : "You finished the lesson!"}
                 </h2>
                 <p className="mt-1 text-ks-ink">
@@ -196,11 +198,7 @@ export function HurdleLesson({
                     ? "Replay the gate quiz to beat your score, or head back to the map."
                     : "Pass the gate quiz to clear this hurdle and unlock the next one."}
                 </p>
-                <button
-                  onClick={onStartQuiz}
-                  className="mt-6 min-h-12 rounded-pill px-8 py-3 text-lg font-extrabold text-white shadow-card"
-                  style={{ borderRadius: "var(--radius-pill)", background: accentColor(hurdle.accent) }}
-                >
+                <button onClick={onStartQuiz} className="ks-btn ks-btn-coral mt-6">
                   {status === "done" ? "Replay gate quiz" : "Take the gate quiz →"}
                 </button>
               </section>
@@ -210,30 +208,18 @@ export function HurdleLesson({
       </div>
 
       {/* Bottom nav */}
-      <div className="sticky bottom-0 z-10 border-t border-ks-dark/10 bg-ks-bg/95 px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur">
+      <div className="sticky bottom-0 z-10 border-t border-ks-kraft/40 bg-ks-cream/95 px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur">
         <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
-          <button
-            onClick={() => go(-1)}
-            disabled={i === 0}
-            className="ks-chip disabled:opacity-40"
-          >
+          <button onClick={() => go(-1)} disabled={i === 0} className="ks-btn ks-btn-ghost">
             ← Back
           </button>
           {isLast ? (
-            <button
-              onClick={onStartQuiz}
-              className="min-h-11 rounded-pill px-7 py-2 font-extrabold text-white shadow-card"
-              style={{ borderRadius: "var(--radius-pill)", background: accentColor(hurdle.accent) }}
-            >
-              {status === "done" ? "Replay quiz" : "Gate quiz →"}
+            <button onClick={onStartQuiz} className="ks-btn ks-btn-coral flex-1">
+              {status === "done" ? "Replay quiz" : "Take the gate quiz →"}
             </button>
           ) : (
-            <button
-              onClick={() => go(1)}
-              className="min-h-11 rounded-pill px-8 py-2 font-extrabold text-white shadow-card"
-              style={{ borderRadius: "var(--radius-pill)", background: accentColor(hurdle.accent) }}
-            >
-              Next →
+            <button onClick={() => go(1)} className="ks-btn ks-btn-coral flex-1">
+              Got it — next →
             </button>
           )}
         </div>
@@ -286,15 +272,22 @@ function ConceptSlide({
         </div>
       )}
       {concept.callout && (
-        <div className="my-3 rounded-2xl border-l-4 bg-ks-cream p-4" style={{ borderColor: accentColor(accent) }}>
-          <p className="mb-1 font-bold text-ks-dark">
-            {concept.callout.kind === "warning" ? "⚠️ Watch out" : concept.callout.kind === "rule" ? "✅ Golden rule" : "💡 Key insight"}
-          </p>
-          <ul className="ml-1 space-y-1">
-            {concept.callout.text.map((t, k) => (
-              <li key={k} className="text-ks-ink">{t}</li>
-            ))}
-          </ul>
+        <div className="ks-sticky my-4 flex gap-3 p-4">
+          <Sunny pose="poseThink" size={50} className="-mt-1 shrink-0 self-start" />
+          <div>
+            <p className="font-display text-sm font-semibold text-ks-dark">
+              {concept.callout.kind === "warning"
+                ? "Watch out ✦"
+                : concept.callout.kind === "rule"
+                  ? "Golden rule ✦"
+                  : "Key idea ✦"}
+            </p>
+            <ul className="mt-1 space-y-1">
+              {concept.callout.text.map((t, k) => (
+                <li key={k} className="text-sm text-ks-ink">{t}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Sunny } from "@/components/Sunny";
 import type { Hurdle } from "@/lib/content/schema";
 import type { QuizStat } from "@/lib/progress/schema";
 
@@ -81,8 +82,10 @@ export function GateQuiz({
       <div className="ks-card mx-auto max-w-lg p-6 text-center">
         {passed ? (
           <>
-            <div className="text-5xl">🎉</div>
-            <h2 className="mt-2 text-2xl font-extrabold text-ks-green">
+            <div className="flex justify-center">
+              <Sunny pose="poseCheer" size={120} />
+            </div>
+            <h2 className="mt-1 font-display text-2xl font-bold text-ks-green">
               Hurdle cleared!
             </h2>
             <p className="mt-1 text-ks-ink">
@@ -91,31 +94,25 @@ export function GateQuiz({
                 ? " — perfect on the first try! ⭐"
                 : "."}
             </p>
-            <button
-              onClick={finishPass}
-              className="mt-5 min-h-11 rounded-pill bg-ks-green px-7 py-2 text-lg font-extrabold text-white shadow-card"
-              style={{ borderRadius: "var(--radius-pill)" }}
-            >
+            <button onClick={finishPass} className="ks-btn ks-btn-green mt-5">
               {alreadyDone ? "Save my score" : "Unlock the next hurdle →"}
             </button>
           </>
         ) : (
           <>
-            <div className="text-5xl">💪</div>
-            <h2 className="mt-2 text-2xl font-extrabold text-ks-coral">Not quite yet</h2>
+            <div className="flex justify-center">
+              <Sunny pose="poseTry" size={110} />
+            </div>
+            <h2 className="mt-1 font-display text-2xl font-bold text-ks-coral">So close!</h2>
             <p className="mt-1 text-ks-ink">
-              You got <strong>{correctCount}/{total}</strong>. You need{" "}
-              <strong>{passMark}</strong> to clear this hurdle. Review the lesson and try again!
+              You got <strong>{correctCount}/{total}</strong> — you need{" "}
+              <strong>{passMark}</strong> to clear this hurdle. Want to try that again?
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-3">
-              <button
-                onClick={retry}
-                className="min-h-11 rounded-pill bg-ks-coral px-6 py-2 font-extrabold text-white shadow-card"
-                style={{ borderRadius: "var(--radius-pill)" }}
-              >
+              <button onClick={retry} className="ks-btn ks-btn-coral">
                 Try again
               </button>
-              <button onClick={onClose} className="ks-chip">
+              <button onClick={onClose} className="ks-btn ks-btn-ghost">
                 Back to lesson
               </button>
             </div>
@@ -187,11 +184,7 @@ export function GateQuiz({
             {isCorrect ? "Correct! 🎯" : "Not this time."}
           </p>
           <p className="mt-1 text-sm text-ks-ink">{q.explain}</p>
-          <button
-            onClick={next}
-            className="mt-4 min-h-11 w-full rounded-pill bg-ks-blue px-6 py-2 font-extrabold text-white shadow-card"
-            style={{ borderRadius: "var(--radius-pill)" }}
-          >
+          <button onClick={next} className="ks-btn ks-btn-coral mt-4 w-full">
             {idx + 1 < total ? "Next question →" : "See my result"}
           </button>
         </div>
