@@ -1,0 +1,189 @@
+[
+  {
+    "id": "claude",
+    "n": 1,
+    "name": "Claude",
+    "vendor": "Anthropic",
+    "icon": "🤖",
+    "whatItIs": [
+      "Claude is an AI assistant made by Anthropic. It understands and generates human language — you talk to it in plain English (or Chinese), and it responds intelligently. Claude powers this very training program.",
+      "Access: claude.ai (web browser, no install needed). Free tier: available and suitable for all program activities. Used in Days 3, 6, 7, 8, and 9 (prompt engineering, creative work, project building)."
+    ],
+    "usage": [
+      "Go to claude.ai and create a free account using your email.",
+      "Start a new conversation. Type your message in the input box at the bottom.",
+      "Press Enter or click the send button. Claude will respond immediately.",
+      "Continue the conversation — Claude remembers what was said earlier in the same chat.",
+      "To start fresh (e.g. for a new activity), click \"New Conversation\" in the sidebar."
+    ],
+    "bestPractices": [
+      "Always start with context: tell Claude who you are and what you're working on.",
+      "Be specific: vague questions get vague answers.",
+      "Iterate: if the first response isn't right, ask Claude to refine it.",
+      "Verify: never accept factual claims without checking from another source.",
+      "Copy useful responses into your own document — Claude conversations are temporary."
+    ],
+    "links": [
+      { "label": "claude.ai", "url": "https://claude.ai" }
+    ]
+  },
+  {
+    "id": "claude-code",
+    "n": 2,
+    "name": "Claude Code",
+    "vendor": "Anthropic",
+    "icon": "💻",
+    "whatItIs": [
+      "Claude Code is Anthropic's AI coding assistant. Unlike the web chat, Claude Code works alongside your code editor — it can read your files, write code, fix bugs, and explain concepts in the context of your actual project.",
+      "Access: via terminal (the claude command) or VS Code extension. Free tier: available with an Anthropic account. Used in Days 8 and 9 (project build days — optional for advanced students)."
+    ],
+    "usage": [
+      "Option A — Web-based (easiest for beginners): no install needed. Use claude.ai and paste your code into the chat. Ask, for example: \"Here is my HTML file [paste code]. Can you add a button that shows the result?\"",
+      "Option B — VS Code Extension (recommended for Track B projects): download VS Code from code.visualstudio.com (free).",
+      "Open VS Code, click the Extensions icon (left sidebar), and search \"Claude\".",
+      "Install the official Anthropic Claude extension and sign in with your Anthropic account.",
+      "Highlight any code and press Cmd+Shift+P, then type \"Ask Claude\".",
+      "What it can do for your project: write new code from a plain-English description; explain code you don't understand line by line; find and fix bugs; suggest improvements; generate HTML/CSS layouts; and help with your Teachable Machine export code (Track B)."
+    ],
+    "bestPractices": [
+      "Claude Code is a collaborator, not a shortcut. The goal is NOT to have it write your entire project — use it as a skilled collaborator while you make the creative and design decisions.",
+      "Always read and understand any code Claude Code produces before using it. If you don't understand it, ask Claude Code to explain it. Understanding > speed."
+    ],
+    "links": [
+      { "label": "Claude Code", "url": "https://www.anthropic.com/claude-code" },
+      { "label": "Claude Code docs", "url": "https://docs.anthropic.com/en/docs/claude-code" }
+    ]
+  },
+  {
+    "id": "github-copilot",
+    "n": 3,
+    "name": "GitHub Copilot & Codex",
+    "vendor": "GitHub",
+    "icon": "🐙",
+    "whatItIs": [
+      "GitHub Copilot is an AI pair programmer trained on billions of lines of public code from GitHub. It suggests code completions as you type — like autocomplete but for entire functions and files.",
+      "Access: github.com/features/copilot — FREE for students via GitHub Education. Requires a GitHub account (free) plus VS Code. Used as an optional extension for the Days 8–9 build projects.",
+      "How it compares to Claude Code: Claude Code is conversational (you explain what you want in plain English), good for planning, explaining, and iterating, understands your full project context when given files, and is ideal for beginners learning to code. Copilot gives inline suggestions (completing code as you type), is good for speeding up writing when you already know what you want, understands the current file plus nearby code, and is better once you understand coding basics."
+    ],
+    "usage": [
+      "Create a free GitHub account at github.com.",
+      "Apply for the GitHub Student Developer Pack at education.github.com/pack.",
+      "Verify with your school email or student ID — approval usually takes 1–3 days.",
+      "Once approved, install the GitHub Copilot extension in VS Code.",
+      "Sign in with your GitHub account — Copilot activates automatically."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "GitHub Copilot", "url": "https://github.com/features/copilot" },
+      { "label": "GitHub Student Developer Pack", "url": "https://education.github.com/pack" }
+    ]
+  },
+  {
+    "id": "teachable-machine",
+    "n": 4,
+    "name": "Google Teachable Machine",
+    "vendor": "Google",
+    "icon": "🦾",
+    "whatItIs": [
+      "Teachable Machine lets you train real AI models directly in your browser using your webcam — no code, no install. It is the primary hands-on AI tool for Days 2 and 8–9.",
+      "Access: teachablemachine.withgoogle.com. Free: completely free, no account required. Used in Day 2 (core activity) and Days 8–9 (Track B project).",
+      "Three types of models you can train: an Image Model recognises objects, gestures, or expressions from your webcam (used in Day 2 and the Track B project); an Audio Model recognises sounds or spoken words from your microphone (great for creative projects); and a Pose Model recognises body poses and positions using your webcam (fun for physical games and sports analysis)."
+    ],
+    "usage": [
+      "Go to teachablemachine.withgoogle.com — no account needed.",
+      "Choose the model type that fits your project: Image, Audio, or Pose.",
+      "Collect example data with your webcam or microphone for each class you want the AI to recognise.",
+      "Train the model in the browser, then test it live and export it for use in your project."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "Teachable Machine", "url": "https://teachablemachine.withgoogle.com" }
+    ]
+  },
+  {
+    "id": "firefly",
+    "n": 5,
+    "name": "Adobe Firefly",
+    "vendor": "Adobe",
+    "icon": "🎨",
+    "whatItIs": [
+      "Adobe Firefly is an AI image generator that creates images from text descriptions. Unlike some generators, it is trained only on licensed and public-domain content — making it safer for educational and commercial use.",
+      "Access: firefly.adobe.com (free tier, no age restriction). Free: 25 generative credits per month on the free tier, replenished monthly. Used in Day 4 (Spot the AI activity) and Day 6 (AI creativity workshop)."
+    ],
+    "usage": [
+      "Go to firefly.adobe.com.",
+      "Click \"Generate Image\" — you can use it without signing in for basic use.",
+      "Type a detailed description of the image you want (the more specific, the better).",
+      "Select a style, aspect ratio, and content type (photo, graphic, art, etc.).",
+      "Click Generate — 4 options appear. Click any to explore further.",
+      "To refine: click an image, then use the editing tools on the right panel."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "Adobe Firefly", "url": "https://firefly.adobe.com" }
+    ]
+  },
+  {
+    "id": "suno",
+    "n": 6,
+    "name": "Suno AI",
+    "vendor": "Suno",
+    "icon": "🎵",
+    "whatItIs": [
+      "Suno generates complete songs — vocals, instruments, melody — from a text description. You describe the song you want (genre, mood, theme, style) and Suno creates it in about 30 seconds.",
+      "Access: suno.com (free tier). Free: 50 song credits per day on the free tier — more than enough for all activities. Used in Day 6 (AI creativity workshop)."
+    ],
+    "usage": [
+      "Go to suno.com and create a free account.",
+      "Describe the song you want — genre, mood, theme, and style.",
+      "Generate the song; Suno produces a complete track (vocals, instruments, melody) in about 30 seconds.",
+      "Listen, then adjust your description and regenerate to refine the result."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "Suno", "url": "https://suno.com" }
+    ]
+  },
+  {
+    "id": "scratch-ml4kids",
+    "n": 7,
+    "name": "Scratch + ML4Kids",
+    "vendor": "MIT / Machine Learning for Kids",
+    "icon": "🐱",
+    "whatItIs": [
+      "Scratch is the world's most popular visual programming platform for beginners. ML4Kids extends it with machine learning capabilities — train a model on Teachable Machine, then use it inside a Scratch project.",
+      "Access: Scratch at scratch.mit.edu (free, no age restriction); ML4Kids at machinelearningforkids.co.uk (free). Used in an optional advanced activity — combining AI with creative coding."
+    ],
+    "usage": [
+      "Open Scratch at scratch.mit.edu to build a visual program with drag-and-drop blocks.",
+      "Use machinelearningforkids.co.uk (ML4Kids) to add machine learning to your project.",
+      "Train a model (e.g. on Teachable Machine), then use it inside your Scratch project to combine AI with creative coding."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "Scratch", "url": "https://scratch.mit.edu" },
+      { "label": "Machine Learning for Kids", "url": "https://machinelearningforkids.co.uk" }
+    ]
+  },
+  {
+    "id": "quick-draw",
+    "n": 8,
+    "name": "Quick, Draw!",
+    "vendor": "Google",
+    "icon": "✏️",
+    "whatItIs": [
+      "Quick, Draw! is a game where you draw objects and a neural network guesses what you're drawing in real time. It is a fun, intuitive demonstration of computer vision and how AI learns from crowd-sourced data.",
+      "Access: quickdraw.withgoogle.com (free, no account needed). Used in Day 4 (computer vision activity)."
+    ],
+    "usage": [
+      "Go to quickdraw.withgoogle.com — no account needed.",
+      "Start a round: you're given an object to draw and a short time limit.",
+      "Draw it while the neural network guesses out loud in real time.",
+      "Play several rounds and notice how the AI recognises sketches it learned from crowd-sourced data."
+    ],
+    "bestPractices": [],
+    "links": [
+      { "label": "Quick, Draw!", "url": "https://quickdraw.withgoogle.com" }
+    ]
+  }
+]

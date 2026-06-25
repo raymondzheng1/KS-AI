@@ -1,0 +1,158 @@
+{
+  "id": "d9",
+  "day": 9,
+  "title": "Build Day 2",
+  "subtitle": "Polish, test, and prepare your story for the world",
+  "icon": "🚀",
+  "accent": "blue",
+  "overview": [
+    "Day 9 is about taking your rough prototype from yesterday and making it something you are proud to show. Focus on three things: fixing your biggest known problem, improving the user experience, and preparing a compelling 3-minute presentation for tomorrow's Demo Day.",
+    "Real user testing is the secret weapon today. Watching someone new try your project tells you far more than guessing what they'll think — and a clear, well-rehearsed pitch is what turns a good project into a memorable one."
+  ],
+  "objectives": [
+    "Fix the top issue identified in yesterday's build log",
+    "Improve the user experience — is it easy for someone new to use?",
+    "Conduct a second round of user testing and gather feedback",
+    "Prepare your 3-minute Demo Day presentation",
+    "Create a project one-pager summary"
+  ],
+  "concepts": [
+    {
+      "heading": "How to Run a Proper User Test",
+      "body": [
+        "User testing is not asking \"do you like it?\" — that gets you polite answers, not useful ones. To learn the truth, you give a real tester a real task and watch what actually happens, without rescuing them.",
+        "Follow this protocol with each tester: set up first, observe without helping, then ask the same five questions at the end."
+      ],
+      "bullets": [
+        "BEFORE — Set up: tell the tester \"We are testing the tool, not you. There are no wrong answers. Please think out loud as you use it.\"",
+        "BEFORE — Give them a specific task: \"Imagine you need to [specific use case]. Try using this tool to accomplish that.\"",
+        "DURING — Observe, don't help: do NOT rescue them when they get stuck. Their confusion is your most valuable data.",
+        "DURING — Note exactly where they pause, hesitate, or make mistakes, and write down their exact words when they react.",
+        "AFTER — Ask: \"What would you use this for if you had it right now?\"",
+        "AFTER — Ask: \"What confused you most?\" and \"What was the most useful part?\"",
+        "AFTER — Ask: \"What one thing would you change?\" and \"Would you recommend this to a friend? Why or why not?\""
+      ],
+      "callout": {
+        "kind": "insight",
+        "text": [
+          "\"Do you like it?\" gets you politeness. A real task gets you the truth.",
+          "When a tester gets stuck, don't help — that confusion is the most useful thing you'll learn all day."
+        ]
+      }
+    }
+  ],
+  "videos": [],
+  "activities": [
+    {
+      "name": "Demo Day Presentation Template",
+      "kind": "worksheet",
+      "intro": [
+        "Build your 3-minute presentation around these four sections. Practise out loud and time yourself — 3 minutes goes fast."
+      ],
+      "steps": [
+        "Section 1 — The Problem (45 sec): open with a real scenario, \"Imagine you are [user] and you face [problem]...\" Make the audience feel the problem before you show the solution.",
+        "Section 2 — Our Solution (60 sec): show, don't just tell — do a live demo or screenshot walkthrough. Explain what the AI does versus what the human does, and highlight the most impressive or surprising thing it can do.",
+        "Section 3 — What We Learned (45 sec): what was the hardest thing to build? What did the AI do that surprised you? What would you improve with more time?",
+        "Section 4 — The Bigger Picture (30 sec): if this tool existed fully developed, what impact could it have? Close with your team's key insight from the project."
+      ],
+      "facilitator": [
+        "Hold a strict timer during the dry-run — going over 3 minutes is the most common problem and the easiest to fix with practice.",
+        "Push every team to include a live demo moment rather than only talking about the project."
+      ]
+    },
+    {
+      "name": "Project One-Pager",
+      "kind": "worksheet",
+      "intro": [
+        "Complete this one-pager — it will be displayed at Demo Day so visitors can understand your project at a glance."
+      ],
+      "steps": [
+        "Project Name:",
+        "Team Members:",
+        "The Problem We Solved:",
+        "Our AI Solution (1 sentence):",
+        "Tools We Used:",
+        "What AI Does:",
+        "What Humans Do:",
+        "Biggest Challenge We Overcame:",
+        "What We Would Build Next (if we had more time):",
+        "Our Ethical Consideration:",
+        "QR code or link to try our project: [add here]"
+      ],
+      "facilitator": [
+        "Provide a printable template or slide so all one-pagers look consistent at the exhibition.",
+        "Encourage teams to add a QR code linking to a live version of their project where possible."
+      ]
+    }
+  ],
+  "reflection": [
+    "What was the single biggest issue from your build log, and did you fix it today?",
+    "Watching a new user, where did they get confused — and what does that tell you to change?",
+    "Which of the four presentation sections feels strongest, and which needs more practice?",
+    "What is the one key insight you want the audience to remember tomorrow?"
+  ],
+  "vocab": [
+    { "term": "User Testing", "definition": "Watching real people use your project to find out what works and what confuses them." },
+    { "term": "User Experience (UX)", "definition": "How easy and pleasant something is for a new person to use." },
+    { "term": "Think Aloud", "definition": "Asking a tester to say their thoughts out loud as they use a tool, so you hear their reasoning." },
+    { "term": "One-Pager", "definition": "A single-page summary of a project's problem, solution, and key facts." },
+    { "term": "Pitch", "definition": "A short, persuasive presentation of your project and why it matters." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "Why is \"Do you like it?\" a bad user-testing question?",
+      "options": [
+        "It gets you polite answers instead of useful information about what actually confuses people",
+        "It takes too long to answer",
+        "Testers are not allowed to answer yes-or-no questions",
+        "It only works for chatbots, not other projects"
+      ],
+      "answer": 0,
+      "explain": "People want to be nice, so \"do you like it?\" gets polite answers. Giving a real task and watching what happens reveals the truth."
+    },
+    {
+      "type": "tf",
+      "q": "During a user test, you should jump in and help the tester as soon as they get stuck.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. You observe without helping — where the tester gets stuck or confused is your most valuable data for improving the project."
+    },
+    {
+      "type": "mcq",
+      "q": "What is the correct order of sections in the 3-minute Demo Day presentation?",
+      "options": [
+        "The Problem → Our Solution → What We Learned → The Bigger Picture",
+        "Our Solution → The Problem → The Bigger Picture → What We Learned",
+        "What We Learned → The Problem → Our Solution → The Bigger Picture",
+        "The Bigger Picture → Our Solution → The Problem → What We Learned"
+      ],
+      "answer": 0,
+      "explain": "You start with the Problem so the audience cares, then show your Solution, share what you Learned, and finish with the Bigger Picture."
+    },
+    {
+      "type": "tf",
+      "q": "In your solution section, it's a good idea to show a live demo rather than only describing the project.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. Showing beats telling — a live demo or screenshot walkthrough is far more convincing than just talking about what your project does."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Build Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:15", "Stand-up: share Day 8 build log — biggest issue to fix today", "Build logs from yesterday"],
+          ["0:15–1:00", "Fix Sprint — address your top issue from yesterday", ""],
+          ["1:00–1:30", "User Testing Round 2 — test with 2 people outside your team", "Feedback forms"],
+          ["1:30–1:45", "Break", ""],
+          ["1:45–2:15", "Polish + Demo Prep — rehearse your 3-minute pitch", "Presentation template"],
+          ["2:15–2:30", "Teams present dry-run to facilitator for feedback", "Timer"]
+        ]
+      }
+    }
+  ]
+}

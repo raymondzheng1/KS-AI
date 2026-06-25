@@ -1,0 +1,170 @@
+[
+  {
+    "term": "Algorithm",
+    "definition": "A set of step-by-step instructions for solving a problem. The foundation of all software, including AI."
+  },
+  {
+    "term": "Artificial Intelligence (AI)",
+    "definition": "Computer systems that perform tasks normally requiring human intelligence — recognising patterns, understanding language, making decisions."
+  },
+  {
+    "term": "Bias (AI)",
+    "definition": "Systematic unfairness in AI outputs, typically caused by skewed training data that over- or under-represents certain groups."
+  },
+  {
+    "term": "Black Box",
+    "definition": "An AI system whose internal decision-making process cannot be inspected or explained."
+  },
+  {
+    "term": "Chatbot",
+    "definition": "A program that simulates conversation with humans, increasingly powered by large language models."
+  },
+  {
+    "term": "CNN (Convolutional Neural Network)",
+    "definition": "The standard neural network architecture for processing images — uses layers of filters to detect features at increasing levels of complexity."
+  },
+  {
+    "term": "Computer Vision",
+    "definition": "AI that interprets and understands digital images and video."
+  },
+  {
+    "term": "Context Window",
+    "definition": "The maximum amount of text an AI language model can \"see\" at once when generating a response."
+  },
+  {
+    "term": "Deep Learning",
+    "definition": "A subset of machine learning using multi-layered neural networks — excels at images, language, and audio."
+  },
+  {
+    "term": "Deepfake",
+    "definition": "AI-generated synthetic media that realistically replaces a real person's likeness, voice, or words."
+  },
+  {
+    "term": "Diffusion Model",
+    "definition": "AI architecture for generating images — starts with noise and gradually refines it into a coherent image guided by a text prompt."
+  },
+  {
+    "term": "Epoch",
+    "definition": "One complete pass through all training data during model training. More epochs = more learning (up to a point)."
+  },
+  {
+    "term": "Explainability (XAI)",
+    "definition": "The ability to interpret and explain how an AI system reached a specific conclusion — critical for high-stakes decisions."
+  },
+  {
+    "term": "Fairness (AI)",
+    "definition": "The principle that an AI system should treat all groups equitably and not cause disproportionate harm to any group."
+  },
+  {
+    "term": "Feature",
+    "definition": "A measurable characteristic that an AI uses to make decisions — e.g. \"edge angle\" in image recognition."
+  },
+  {
+    "term": "GAN (Generative Adversarial Network)",
+    "definition": "AI architecture with two competing networks — a generator that creates fake content and a discriminator that tries to detect fakes."
+  },
+  {
+    "term": "Generative AI",
+    "definition": "AI that creates new content (text, images, audio, video) rather than just classifying or predicting."
+  },
+  {
+    "term": "Guardrails",
+    "definition": "Constraints built into AI systems to prevent harmful, biased, or off-topic outputs."
+  },
+  {
+    "term": "Hallucination",
+    "definition": "When an AI language model outputs confident but factually incorrect information — a core limitation of current LLMs."
+  },
+  {
+    "term": "Label",
+    "definition": "The correct answer attached to a training example — e.g. \"cat\" or \"not cat\" — used in supervised learning."
+  },
+  {
+    "term": "Large Language Model (LLM)",
+    "definition": "AI trained on vast amounts of text to understand and generate human language — the technology behind ChatGPT, Claude, and Gemini."
+  },
+  {
+    "term": "Latent Space",
+    "definition": "The multi-dimensional mathematical space inside an AI model where concepts are encoded as numerical relationships."
+  },
+  {
+    "term": "Machine Learning (ML)",
+    "definition": "A subset of AI where systems learn from data rather than being explicitly programmed with rules."
+  },
+  {
+    "term": "Model",
+    "definition": "The mathematical structure an AI builds from training data — encodes learned patterns and is used to make predictions."
+  },
+  {
+    "term": "Narrow AI",
+    "definition": "AI that excels at one specific task but cannot transfer skills to other domains. All current AI is narrow AI."
+  },
+  {
+    "term": "Natural Language Processing (NLP)",
+    "definition": "AI that understands, interprets, and generates human language in text or speech form."
+  },
+  {
+    "term": "Neural Network",
+    "definition": "A computing architecture loosely inspired by the brain — layers of interconnected nodes process information in parallel."
+  },
+  {
+    "term": "Overfitting",
+    "definition": "When an AI memorises training data too closely, performing perfectly on training examples but failing on new data."
+  },
+  {
+    "term": "Parameter",
+    "definition": "A learnable numerical value inside a neural network that is adjusted during training to minimise errors."
+  },
+  {
+    "term": "Prompt",
+    "definition": "The instruction or question you provide to an AI system to guide its output."
+  },
+  {
+    "term": "Prompt Engineering",
+    "definition": "The skill of crafting effective, specific instructions to get high-quality outputs from AI systems."
+  },
+  {
+    "term": "Reinforcement Learning",
+    "definition": "ML where an AI agent learns by trial and error — rewarded for correct actions, penalised for wrong ones."
+  },
+  {
+    "term": "Speech Recognition",
+    "definition": "AI that converts spoken audio into written text."
+  },
+  {
+    "term": "Supervised Learning",
+    "definition": "ML where the AI is trained on labelled examples — the most common type of machine learning today."
+  },
+  {
+    "term": "System Prompt",
+    "definition": "Hidden instructions given to an AI chatbot that define its persona, rules, and constraints."
+  },
+  {
+    "term": "Temperature",
+    "definition": "A setting that controls how creative/random (high temperature) vs predictable/focused (low temperature) an AI's outputs are."
+  },
+  {
+    "term": "Token",
+    "definition": "The basic unit an LLM processes — roughly a word fragment (e.g. \"unbelievable\" = 3 tokens: \"un\", \"believ\", \"able\")."
+  },
+  {
+    "term": "Training Data",
+    "definition": "The examples used to teach an AI — the quality and diversity of training data largely determines AI quality."
+  },
+  {
+    "term": "Transfer Learning",
+    "definition": "Adapting a pre-trained model for a new task rather than training from scratch — dramatically reduces data and compute requirements."
+  },
+  {
+    "term": "Underfitting",
+    "definition": "When an AI hasn't learned enough from training data and performs poorly even on familiar examples."
+  },
+  {
+    "term": "Unsupervised Learning",
+    "definition": "ML where the AI finds patterns in unlabelled data without being told what to look for."
+  },
+  {
+    "term": "XAI (Explainable AI)",
+    "definition": "A research field focused on making AI decision-making transparent and interpretable by humans."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kidsmart",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/Ivy/RayTasks/Projects/KS-AI-Training"],
+      "port": 3000
+    }
+  ]
+}

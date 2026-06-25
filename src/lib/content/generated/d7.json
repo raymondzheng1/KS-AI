@@ -1,0 +1,205 @@
+{
+  "id": "d7",
+  "day": 7,
+  "title": "Design Thinking Meets AI",
+  "subtitle": "From \"what if?\" to a real solution — your project begins",
+  "icon": "💡",
+  "accent": "green",
+  "diagram": {
+    "src": "/diagrams/07_design_thinking.png",
+    "alt": "The Design Thinking wheel — Empathise, Define, Ideate, Prototype, Test — with AI at the centre",
+    "width": 700,
+    "height": 700
+  },
+  "overview": [
+    "Today we bridge understanding and building. Design thinking is the problem-solving framework used by the world's most innovative companies.",
+    "Today you will combine design thinking with your AI knowledge to identify a real problem, design an AI-powered solution, and plan a mini-project you will build over the next two days."
+  ],
+  "objectives": [
+    "Apply the 5-stage design thinking process to a real problem",
+    "Identify where AI adds genuine value vs where human judgment is essential",
+    "Design a feasible AI solution with a defined scope",
+    "Create a project plan for Days 8–9",
+    "Present a project pitch to the class for peer feedback"
+  ],
+  "concepts": [
+    {
+      "heading": "Design Thinking — The 5 Stages",
+      "body": [
+        "Design thinking is a five-stage loop for solving real problems. You move through each stage and often circle back as you learn more:"
+      ],
+      "bullets": [],
+      "table": {
+        "columns": ["Stage", "What You Do"],
+        "rows": [
+          ["1. Empathise", "Understand the people who have the problem. Do not assume — ask, observe, listen. Who is affected? How does this problem feel to them?"],
+          ["2. Define", "Clearly state the problem. Use this format: \"[Person] needs [need] because [insight].\" Avoid jumping to solutions."],
+          ["3. Ideate", "Generate as many ideas as possible without judging any of them. Quantity over quality at this stage. Wild ideas welcome."],
+          ["4. Prototype", "Build the simplest possible version of your solution — fast and cheap. A sketch, a flowchart, a simple demo is fine."],
+          ["5. Test", "Get real feedback. Show your prototype to someone who has the problem. What works? What doesn't? Iterate."]
+        ]
+      }
+    },
+    {
+      "heading": "Where Does AI Actually Help?",
+      "body": [
+        "Not every problem needs AI. Here is a framework for deciding when AI adds value."
+      ],
+      "bullets": [
+        "AI is a good fit when the task involves pattern recognition in large amounts of data (e.g., identifying disease in thousands of images).",
+        "AI is a good fit when personalisation at scale is needed (e.g., recommending different content to millions of users).",
+        "AI is a good fit when speed matters more than occasional errors (e.g., spam filtering — some false positives are acceptable).",
+        "AI is a good fit when the task is repetitive and rule-based at its core, but with too many variations for manual rules.",
+        "AI is a good fit when natural language understanding or generation is central to the problem."
+      ],
+      "callout": {
+        "kind": "warning",
+        "text": [
+          "AI is NOT a good fit when the decision has life-or-death consequences and errors are unacceptable without human review.",
+          "AI is NOT a good fit when you have very little training data (AI needs lots of examples to work well).",
+          "AI is NOT a good fit when the problem requires genuine common sense, novel reasoning, or emotional nuance.",
+          "AI is NOT a good fit when transparency and explainability are legally or ethically required (e.g., credit decisions, medical diagnosis).",
+          "AI is NOT a good fit when a simple rule-based system or spreadsheet would do the job just as well."
+        ]
+      }
+    },
+    {
+      "heading": "Project Options for Days 8–9",
+      "body": [
+        "Choose one of the following project tracks. Each is achievable in approximately 2 × 3 hours with the provided tools:"
+      ],
+      "bullets": [],
+      "table": {
+        "columns": ["Project Track", "Description"],
+        "rows": [
+          ["Track A: Smart Chatbot", "Build a custom AI assistant for a specific topic using a system prompt. Example: a \"homework helper\" that only assists with science questions, always shows working, and never just gives the answer."],
+          ["Track B: Image Classifier App", "Build an image classifier using Teachable Machine and embed it in a simple webpage. Example: a \"plant health checker\" that identifies healthy vs diseased leaves."],
+          ["Track C: AI Story Generator", "Build an interactive choose-your-own-adventure story powered by AI. The reader's choices update the AI prompt, generating new story branches."],
+          ["Track D: AI Research Assistant", "Design a prompt system that helps students research a topic responsibly — breaking down a topic, suggesting sources, summarising findings, and flagging potential misinformation."]
+        ]
+      }
+    }
+  ],
+  "videos": [],
+  "activities": [
+    {
+      "name": "Problem Sprint",
+      "kind": "build",
+      "intro": [
+        "Brainstorm real problems fast, cluster them with your team, and pick ONE worth solving. Then sharpen it into a clear problem statement."
+      ],
+      "steps": [
+        "On your own, write one problem per sticky note — from school, home, your community, your interests. No filtering. (5-minute timer.)",
+        "Form a team of 3 and cluster all your problems by theme on a large sheet of paper.",
+        "As a team, pick ONE problem to pursue. It should be specific, genuinely felt, and potentially solvable with a digital tool.",
+        "Define it using the template — WHO has this problem? (Be specific — \"Year 7 students who study at home alone\" not just \"students\".)",
+        "WHAT is the problem? (Describe the situation, not the solution.)",
+        "WHEN/WHERE does this problem occur?",
+        "WHY does it matter? What is the impact if it remains unsolved?",
+        "HOW do people currently solve it? What is wrong with the current solution?",
+        "Write your Problem Statement: \"[Person] needs [need] because [insight].\" Example: \"Year 7 students studying alone at home need a way to check their own understanding of maths concepts because they have no one to ask and get stuck for hours, losing motivation.\""
+      ],
+      "facilitator": [
+        "Give each student 10 sticky notes. Set a 5-minute timer.",
+        "Task: Write one problem per sticky note — problems from school, home, your community, your interests. No filtering.",
+        "Group students into teams of 3. Each team clusters their problems by theme on a large sheet of paper.",
+        "Teams pick ONE problem to pursue. It should be: specific, genuinely felt, and potentially solvable with a digital tool."
+      ]
+    },
+    {
+      "name": "AI Fit Canvas",
+      "kind": "worksheet",
+      "intro": [
+        "As a team, complete the Project Canvas. It walks you from the problem, to the AI solution, to a build plan, and finally to the risks and ethics you'll need to manage."
+      ],
+      "steps": [
+        "Section 1 — The Problem: Write your Problem Statement (from Activity 1). Who is our primary user? What emotion does this problem cause (frustration, confusion, fear, loneliness)?",
+        "Section 2 — The AI Solution: What will our AI do? (1 sentence). What type of AI is it (chatbot / image classifier / generator / other)? What training data or prompts does it need? What does the AI decide, and what does the human decide?",
+        "Section 3 — Build Plan: Which Project Track (A / B / C / D)? Tools we will use? Day 8 goal? Day 9 goal? How will we know if our solution works (success measure)?",
+        "Section 4 — Risks & Ethics: What could go wrong? Which ethical principle (fairness / privacy / transparency / safety) is most relevant, and how will we address it?"
+      ],
+      "facilitator": [
+        "Hand out the Project Canvas worksheet — teams complete it together.",
+        "Circulate and push teams to be specific about what the AI decides versus what the human decides.",
+        "Close with 60-second project pitches per team, then confirm team formation and lock in project plans."
+      ]
+    }
+  ],
+  "reflection": [
+    "What problem did your team choose? Why does it matter to you personally?",
+    "Where in your solution does AI add value that a human or simple app could not? Be specific.",
+    "What is the one thing that could most easily go wrong with your project? How will you handle it?",
+    "Describe your ideal user testing session: Who would you show your prototype to? What question would you most want them to answer?"
+  ],
+  "vocab": [],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "What is the correct order of the 5 stages of design thinking?",
+      "options": [
+        "Define → Empathise → Prototype → Ideate → Test",
+        "Empathise → Define → Ideate → Prototype → Test",
+        "Ideate → Empathise → Test → Define → Prototype",
+        "Prototype → Test → Empathise → Define → Ideate"
+      ],
+      "answer": 1,
+      "explain": "The five stages run Empathise, Define, Ideate, Prototype, Test — understand the people first, state the problem clearly, brainstorm widely, build a simple version, then test it with real feedback."
+    },
+    {
+      "type": "mcq",
+      "q": "During the Ideate stage, what is the main rule?",
+      "options": [
+        "Pick the single best idea immediately",
+        "Only suggest ideas that are guaranteed to work",
+        "Generate as many ideas as possible without judging any of them",
+        "Build a working prototype before sharing any idea"
+      ],
+      "answer": 2,
+      "explain": "Ideate is about quantity over quality: generate as many ideas as possible, welcome wild ones, and hold off on judging. The filtering happens later."
+    },
+    {
+      "type": "tf",
+      "q": "A good problem definition should already include the solution you plan to build.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. The Define stage describes the situation, not the solution — \"[Person] needs [need] because [insight].\" Jumping to a solution too early locks you out of better ideas."
+    },
+    {
+      "type": "mcq",
+      "q": "Which of these is the BEST fit for an AI solution?",
+      "options": [
+        "Spotting patterns across thousands of medical images",
+        "A life-or-death decision where any error is unacceptable and there is no human review",
+        "A task where you only have five examples to learn from",
+        "A job a simple spreadsheet could already do perfectly"
+      ],
+      "answer": 0,
+      "explain": "AI shines at pattern recognition in large amounts of data. The other options are exactly the cases where AI is a poor fit — high-stakes errors, too little data, or a simpler tool would do."
+    },
+    {
+      "type": "tf",
+      "q": "If transparency and explainability are legally required (like credit or medical decisions), a \"black box\" AI is often a poor fit.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. When the law or ethics demand that you explain a decision, an AI you can't explain is a poor fit. That is one of the key situations where AI is NOT a good choice."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Facilitator Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:15", "Day 6 gallery walk review — favourite creative pieces", "Displayed works from yesterday"],
+          ["0:15–0:40", "Key Concepts: Design Thinking + AI use case mapping", "Whiteboard, sticky notes"],
+          ["0:40–1:20", "Activity 1: Problem Sprint — identify and define a problem", "Large paper, markers, sticky notes"],
+          ["1:20–1:35", "Break", ""],
+          ["1:35–2:00", "Activity 2: Solution Design + AI Fit Canvas", "Project Canvas worksheets"],
+          ["2:00–2:20", "Project Pitches — 60-second pitch per team", "Timer"],
+          ["2:20–2:30", "Team formation confirmed, project plans locked in", "Project plan template"]
+        ]
+      }
+    }
+  ]
+}

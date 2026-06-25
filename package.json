@@ -1,0 +1,43 @@
+{
+  "name": "kidsmart-ai-training",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "icons": "tsx scripts/gen-icons.ts",
+    "links:check": "node scripts/links-check.mjs",
+    "content:check": "node scripts/content-check.mjs",
+    "launch:check": "node scripts/launch-check.mjs",
+    "verify": "npm run content:check && npm run links:check && npm run launch:check && npm run typecheck && npm run lint && npm run test"
+  },
+  "dependencies": {
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.0",
+    "@vercel/analytics": "^2.0.1",
+    "next": "16.2.6",
+    "qrcode": "^1.5.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "server-only": "^0.0.1",
+    "sharp": "^0.34.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.3",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}

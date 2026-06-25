@@ -1,0 +1,4117 @@
+[
+ {
+  "i": 0,
+  "k": "tbl",
+  "rows": [
+   [
+    "KIDSMART AI TRAINING PROGRAM"
+   ]
+  ]
+ },
+ {
+  "i": 1,
+  "k": "p",
+  "s": "",
+  "t": "AI FUTURES"
+ },
+ {
+  "i": 2,
+  "k": "p",
+  "s": "",
+  "t": "TRAINING PROGRAM"
+ },
+ {
+  "i": 3,
+  "k": "p",
+  "s": "",
+  "t": "A 2-Week Intensive for Young Innovators (Age 12)"
+ },
+ {
+  "i": 4,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  FACILITATOR EDITION  📋\nWeeks 1–2  |  10 Days  |  2.5 Hours Per Day"
+   ]
+  ]
+ },
+ {
+  "i": 5,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  10 Core Days",
+    "🛠  Hands-On Projects",
+    "🤖  Real AI Tools"
+   ]
+  ]
+ },
+ {
+  "i": 6,
+  "k": "p",
+  "s": "Heading 1",
+  "t": "Programme Overview"
+ },
+ {
+  "i": 7,
+  "k": "p",
+  "s": "",
+  "t": "The AI Futures Training Program is a 10-day intensive designed to give 12-year-olds the core knowledge, practical skills, and ethical frameworks they need to thrive in a world shaped by artificial intelligence."
+ },
+ {
+  "i": 8,
+  "k": "p",
+  "s": "",
+  "t": "This is not a course about learning to code (though we do build things). It is not a course about ChatGPT hacks. It is a course about thinking — about understanding AI at a level deep enough that you can evaluate it critically, use it creatively, and shape it responsibly."
+ },
+ {
+  "i": 9,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Program Structure"
+ },
+ {
+  "i": 10,
+  "k": "tbl",
+  "rows": [
+   [
+    "Week",
+    "Focus"
+   ],
+   [
+    "Week 1: Understand",
+    "Days 1–5. Core knowledge: what AI is, how it learns, how to direct it, how it perceives the world, and where it fails. Heavy on concepts, experiments, and critical thinking."
+   ],
+   [
+    "Week 2: Create",
+    "Days 6–10. Applied learning: AI as a creative partner, design thinking with AI, and a 3-day build sprint culminating in Demo Day — a live showcase for parents and guests."
+   ]
+  ]
+ },
+ {
+  "i": 11,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "What Students Will Walk Away With"
+ },
+ {
+  "i": 12,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "A clear, accurate mental model of what AI is and how it works"
+ },
+ {
+  "i": 13,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Practical prompt engineering skills they can use immediately"
+ },
+ {
+  "i": 14,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "A completed AI project they designed and built themselves"
+ },
+ {
+  "i": 15,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "A personal ethical framework for evaluating AI systems"
+ },
+ {
+  "i": 16,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "The vocabulary to participate in AI conversations at school, home, and eventually work"
+ },
+ {
+  "i": 17,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "A \"Letter to Future Self\" — a personal commitment to their AI learning journey"
+ },
+ {
+  "i": 18,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "How to Use This Book"
+ },
+ {
+  "i": 19,
+  "k": "tbl",
+  "rows": [
+   [
+    "For Facilitators"
+   ],
+   [
+    "Each day's chapter opens with an overview, then a facilitator schedule table, followed by key concepts and activities.\nThe schedule table includes suggested timings — adjust based on your group's pace and energy.\nAll activities include a jadeBox like this one with setup instructions and facilitation notes.\nBold reflection questions at the end of each day are designed for the student journal — you do not need to collect these, but checking in on them informally builds accountability.\nAppendix A contains the full vocabulary reference. Appendix B is the program-at-a-glance quick reference sheet."
+   ]
+  ]
+ },
+ {
+  "i": 20,
+  "k": "tbl",
+  "rows": [
+   [
+    "For Students"
+   ],
+   [
+    "This is your textbook and your journal. Bring it to every session.\nRead the \"Key Concepts\" sections at your own pace — they are written for you, not for a university lecture.\nComplete every reflection exercise. The thinking you do in your journal is more valuable than any activity.\nThere are no wrong answers in discussions. The point is to develop your thinking, not to arrive at a correct position.\nYour project is your own. The AI is a collaborator, not the creator. What you decide, what you judge, what you value — that is yours."
+   ]
+  ]
+ },
+ {
+  "i": 21,
+  "k": "p",
+  "s": "",
+  "t": "COURSE MIND MAP"
+ },
+ {
+  "i": 22,
+  "k": "p",
+  "s": "",
+  "t": "A visual overview of the complete 2-week KidSmart AI Training Program"
+ },
+ {
+  "i": 23,
+  "k": "p",
+  "s": "",
+  "t": "Figure 0.1 — KidSmart AI Training: Complete Course Mind Map"
+ },
+ {
+  "i": 24,
+  "k": "tbl",
+  "rows": [
+   [
+    "🔍  UNDERSTAND",
+    "🛠  BUILD",
+    "⚖  THINK",
+    "🚀  CREATE"
+   ]
+  ]
+ },
+ {
+  "i": 25,
+  "k": "p",
+  "s": "Heading 1",
+  "t": "Your AI Toolkit"
+ },
+ {
+  "i": 26,
+  "k": "p",
+  "s": "",
+  "t": "Before the program begins, every student and facilitator should be familiar with the tools we use throughout the two weeks. This chapter covers each tool: what it is, how to access it, and exactly how we use it in the program."
+ },
+ {
+  "i": 27,
+  "k": "p",
+  "s": "",
+  "t": "None of these tools require advanced technical skills. All are free (or have generous free tiers). Set up your accounts before Day 1 using the checklist at the end of this chapter."
+ },
+ {
+  "i": 28,
+  "k": "p",
+  "s": "",
+  "t": "Figure T.1 — The Human + AI Collaboration Loop"
+ },
+ {
+  "i": 29,
+  "k": "p",
+  "s": "",
+  "t": "Figure T.1 — The Human + AI Collaboration Loop"
+ },
+ {
+  "i": 30,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 1 — Claude (Anthropic)"
+ },
+ {
+  "i": 31,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Claude is an AI assistant made by Anthropic. It understands and generates human language — you talk to it in plain English (or Chinese), and it responds intelligently. Claude powers this very training program.\nAccess: claude.ai (web browser, no install needed)\nFree tier: Available — suitable for all program activities\nUsed in: Days 3, 6, 7, 8, 9 (prompt engineering, creative work, project building)"
+   ]
+  ]
+ },
+ {
+  "i": 32,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "How to Use Claude in This Program"
+ },
+ {
+  "i": 33,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Go to claude.ai and create a free account using your email"
+ },
+ {
+  "i": 34,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Start a new conversation. Type your message in the input box at the bottom."
+ },
+ {
+  "i": 35,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Press Enter or click the send button. Claude will respond immediately."
+ },
+ {
+  "i": 36,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "You can continue the conversation — Claude remembers what was said earlier in the same chat."
+ },
+ {
+  "i": 37,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "To start fresh (e.g. for a new activity), click \"New Conversation\" in the sidebar."
+ },
+ {
+  "i": 38,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  Best Practices for Students"
+   ],
+   [
+    "Always start with context: tell Claude who you are and what you're working on\nBe specific: vague questions get vague answers\nIterate: if the first response isn't right, ask Claude to refine it\nVerify: never accept factual claims without checking from another source\nCopy useful responses into your own document — Claude conversations are temporary"
+   ]
+  ]
+ },
+ {
+  "i": 39,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 2 — Claude Code"
+ },
+ {
+  "i": 40,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Claude Code is Anthropic's AI coding assistant. Unlike the web chat, Claude Code works alongside your code editor — it can read your files, write code, fix bugs, and explain concepts in the context of your actual project.\nAccess: Via terminal (claude command) or VS Code extension\nFree tier: Available with Anthropic account\nUsed in: Days 8, 9 (project build days — optional for advanced students)"
+   ]
+  ]
+ },
+ {
+  "i": 41,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "Getting Started with Claude Code"
+ },
+ {
+  "i": 42,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Setup Steps (do this before Day 8)"
+   ],
+   [
+    "Option A — Web-based (easiest for beginners):\nNo install needed. Use claude.ai and paste your code into the chat.\nAsk: \"Here is my HTML file [paste code]. Can you add a button that shows the result?\"\nOption B — VS Code Extension (recommended for Track B projects):\nDownload VS Code from code.visualstudio.com (free)\nOpen VS Code → Click Extensions icon (left sidebar) → Search \"Claude\"\nInstall the official Anthropic Claude extension\nSign in with your Anthropic account\nHighlight any code and press Cmd+Shift+P → type \"Ask Claude\""
+   ]
+  ]
+ },
+ {
+  "i": 43,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  What Claude Code Can Do For Your Project"
+   ],
+   [
+    "Write new code from a plain-English description: \"Write a JavaScript function that takes a list of numbers and returns the average\"\nExplain code you don't understand: \"Explain what this function does, line by line\"\nFind and fix bugs: \"This code should sort alphabetically but it's not working. What's wrong?\"\nSuggest improvements: \"How could I make this more efficient?\"\nGenerate HTML/CSS layouts: \"Create a simple webpage with a title, an image, and two buttons\"\nHelp with your Teachable Machine export code (Track B)"
+   ]
+  ]
+ },
+ {
+  "i": 44,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚠️  Important: Claude Code is a Collaborator, Not a Shortcut"
+   ],
+   [
+    "The goal is NOT to have Claude Code write your entire project. The goal is to use it as a skilled collaborator — you make the creative and design decisions, Claude Code helps you implement them.\nAlways read and understand any code Claude Code produces before using it. If you don't understand it, ask Claude Code to explain it. Understanding > speed."
+   ]
+  ]
+ },
+ {
+  "i": 45,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 3 — GitHub Copilot & Codex"
+ },
+ {
+  "i": 46,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "GitHub Copilot is an AI pair programmer trained on billions of lines of public code from GitHub. It suggests code completions as you type — like autocomplete but for entire functions and files.\nAccess: github.com/features/copilot — FREE for students via GitHub Education\nRequires: GitHub account (free) + VS Code\nUsed in: Optional extension for Days 8–9 build projects"
+   ]
+  ]
+ },
+ {
+  "i": 47,
+  "k": "tbl",
+  "rows": [
+   [
+    "Claude Code",
+    "GitHub Copilot"
+   ],
+   [
+    "Claude Code",
+    "GitHub Copilot"
+   ],
+   [
+    "Conversational — you explain what you want in plain English",
+    "Inline suggestions — completes code as you type"
+   ],
+   [
+    "Good for planning, explaining, and iterating on ideas",
+    "Good for speeding up code writing when you know what you want"
+   ],
+   [
+    "Understands your full project context when given files",
+    "Understands the current file + nearby code"
+   ],
+   [
+    "Ideal for beginners learning to code",
+    "Better once you already understand coding basics"
+   ],
+   [
+    "Free at claude.ai",
+    "Free via GitHub Student Developer Pack"
+   ]
+  ]
+ },
+ {
+  "i": 48,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "Getting GitHub Copilot Free as a Student"
+ },
+ {
+  "i": 49,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Create a free GitHub account at github.com"
+ },
+ {
+  "i": 50,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Apply for the GitHub Student Developer Pack at education.github.com/pack"
+ },
+ {
+  "i": 51,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Verify with your school email or student ID — approval usually takes 1–3 days"
+ },
+ {
+  "i": 52,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Once approved, install the GitHub Copilot extension in VS Code"
+ },
+ {
+  "i": 53,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Sign in with your GitHub account — Copilot activates automatically"
+ },
+ {
+  "i": 54,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 4 — Google Teachable Machine"
+ },
+ {
+  "i": 55,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Teachable Machine lets you train real AI models directly in your browser using your webcam — no code, no install. It is the primary hands-on AI tool for Days 2 and 8–9.\nAccess: teachablemachine.withgoogle.com\nFree: Yes, completely free, no account required\nUsed in: Day 2 (core activity), Days 8–9 (Track B project)"
+   ]
+  ]
+ },
+ {
+  "i": 56,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "Three Types of Teachable Machine Models"
+ },
+ {
+  "i": 57,
+  "k": "tbl",
+  "rows": [
+   [
+    "Type",
+    "What It Does"
+   ],
+   [
+    "Image Model",
+    "Train AI to recognise objects, gestures, or expressions from your webcam. Used in Day 2 and the Track B project."
+   ],
+   [
+    "Audio Model",
+    "Train AI to recognise sounds or spoken words from your microphone. Great for creative projects."
+   ],
+   [
+    "Pose Model",
+    "Train AI to recognise body poses and positions using your webcam. Fun for physical games and sports analysis."
+   ]
+  ]
+ },
+ {
+  "i": 58,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 5 — Adobe Firefly"
+ },
+ {
+  "i": 59,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Adobe Firefly is an AI image generator that creates images from text descriptions. Unlike some generators, it is trained only on licensed and public-domain content — making it safer for educational and commercial use.\nAccess: firefly.adobe.com (free tier, no age restriction)\nFree: Yes — 25 generative credits per month on free tier, replenishes monthly\nUsed in: Day 4 (Spot the AI activity), Day 6 (AI creativity workshop)"
+   ]
+  ]
+ },
+ {
+  "i": 60,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "How to Use Adobe Firefly"
+ },
+ {
+  "i": 61,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Go to firefly.adobe.com"
+ },
+ {
+  "i": 62,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Click \"Generate Image\" — you can use it without signing in for basic use"
+ },
+ {
+  "i": 63,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Type a detailed description of the image you want (the more specific, the better)"
+ },
+ {
+  "i": 64,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Select a style, aspect ratio, and content type (photo, graphic, art, etc.)"
+ },
+ {
+  "i": 65,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Click Generate — 4 options appear. Click any to explore further."
+ },
+ {
+  "i": 66,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "To refine: click an image → use the editing tools on the right panel"
+ },
+ {
+  "i": 67,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 6 — Suno AI (Music Generation)"
+ },
+ {
+  "i": 68,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Suno generates complete songs — vocals, instruments, melody — from a text description. You describe the song you want (genre, mood, theme, style) and Suno creates it in about 30 seconds.\nAccess: suno.com (free tier)\nFree: 50 song credits per day on free tier — more than enough for all activities\nUsed in: Day 6 (AI creativity workshop)"
+   ]
+  ]
+ },
+ {
+  "i": 69,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 7 — Scratch + ML4Kids"
+ },
+ {
+  "i": 70,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Scratch is the world's most popular visual programming platform for beginners. ML4Kids extends it with machine learning capabilities — train a model on Teachable Machine, then use it inside a Scratch project.\nScratch: scratch.mit.edu (free, no age restriction)\nML4Kids: machinelearningforkids.co.uk (free)\nUsed in: Optional advanced activity — combine AI + creative coding"
+   ]
+  ]
+ },
+ {
+  "i": 71,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Tool 8 — Quick, Draw! (Google)"
+ },
+ {
+  "i": 72,
+  "k": "tbl",
+  "rows": [
+   [
+    "What It Is"
+   ],
+   [
+    "Quick, Draw! is a game where you draw objects and a neural network guesses what you're drawing in real time. It is a fun, intuitive demonstration of computer vision and how AI learns from crowd-sourced data.\nAccess: quickdraw.withgoogle.com (free, no account needed)\nUsed in: Day 4 (computer vision activity)"
+   ]
+  ]
+ },
+ {
+  "i": 73,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Pre-Program Setup Checklist"
+ },
+ {
+  "i": 74,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  Complete Before Day 1 of the Program"
+   ],
+   [
+    "Required (all students):\nCreate a free Anthropic account at claude.ai and send one test message\nVisit teachablemachine.withgoogle.com and click through the interface\nVisit firefly.adobe.com and generate one test image\nVisit quickdraw.withgoogle.com and play one round\nOptional (for Days 8–9 build projects):\nDownload VS Code from code.visualstudio.com\nCreate a free GitHub account at github.com\nApply for GitHub Student Developer Pack at education.github.com/pack\nCreate a free Suno account at suno.com\nCheck your device:\nDoes your laptop/tablet have a working webcam? (Required for Teachable Machine)\nIs your browser up to date? (Chrome or Edge recommended for best compatibility)\nDo you have reliable internet? (All tools are web-based)"
+   ]
+  ]
+ },
+ {
+  "i": 75,
+  "k": "tbl",
+  "rows": [
+   [
+    "Tool",
+    "How to Access"
+   ],
+   [
+    "Claude.ai",
+    "claude.ai — AI assistant for prompts, research, creative writing"
+   ],
+   [
+    "Teachable Machine",
+    "teachablemachine.withgoogle.com — train your own image/sound AI"
+   ],
+   [
+    "Adobe Firefly",
+    "firefly.adobe.com — AI image generation"
+   ],
+   [
+    "Suno AI",
+    "suno.com — AI music generation"
+   ],
+   [
+    "Quick, Draw!",
+    "quickdraw.withgoogle.com — computer vision demo"
+   ],
+   [
+    "Scratch",
+    "scratch.mit.edu — visual programming + AI"
+   ],
+   [
+    "GitHub (optional)",
+    "github.com — code storage + Copilot access"
+   ],
+   [
+    "VS Code (optional)",
+    "code.visualstudio.com — code editor for build projects"
+   ]
+  ]
+ },
+ {
+  "i": 76,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 1\nAI Is Already Around You\nDemystifying the most talked-about technology of our time"
+   ]
+  ]
+ },
+ {
+  "i": 77,
+  "k": "p",
+  "s": "",
+  "t": "Figure 1.1 — The AI Family Tree: from AI to Generative AI"
+ },
+ {
+  "i": 78,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 79,
+  "k": "p",
+  "s": "",
+  "t": "Before we learn to build with Artificial Intelligence, we need to understand what it actually is — not the sci-fi robot version, but the real thing that is already shaping everything from what videos appear on your screen to how your phone unlocks with your face."
+ },
+ {
+  "i": 80,
+  "k": "p",
+  "s": "",
+  "t": "Today we pull back the curtain. By the end of this session, you will be able to confidently explain what AI is, where it already appears in your daily life, and what makes it different from regular computer programs."
+ },
+ {
+  "i": 81,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 1"
+   ],
+   [
+    "Define Artificial Intelligence in plain language\nDistinguish between AI, Machine Learning, and Deep Learning\nIdentify at least 10 examples of AI in everyday life\nUnderstand the difference between Narrow AI and General AI\nBust common myths about what AI can and cannot do"
+   ]
+  ]
+ },
+ {
+  "i": 82,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 83,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Welcome, introductions, program overview",
+    "Name tags, printed program overview"
+   ],
+   [
+    "0:15–0:30",
+    "Opening discussion: \"What do you think AI is?\"",
+    "Whiteboard or sticky notes"
+   ],
+   [
+    "0:30–1:00",
+    "Key Concepts presentation + myth-busting quiz",
+    "Slides (optional), quiz sheets"
+   ],
+   [
+    "1:00–1:15",
+    "Break",
+    ""
+   ],
+   [
+    "1:15–1:45",
+    "Activity 1: Map Your AI Day",
+    "Worksheet (see below)"
+   ],
+   [
+    "1:45–2:15",
+    "Activity 2: AI Myth Busters game",
+    "Myth Buster cards"
+   ],
+   [
+    "2:15–2:30",
+    "Reflection + wrap-up",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 84,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 85,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. What Is Artificial Intelligence?"
+ },
+ {
+  "i": 86,
+  "k": "p",
+  "s": "",
+  "t": "Artificial Intelligence (AI) is the field of computer science that creates systems capable of performing tasks that normally require human intelligence — things like recognising images, understanding language, making decisions, and solving problems."
+ },
+ {
+  "i": 87,
+  "k": "p",
+  "s": "",
+  "t": "A simple way to think about it: a regular computer program does exactly what you tell it, step by step, every time. An AI system learns from examples and figures out its own rules."
+ },
+ {
+  "i": 88,
+  "k": "tbl",
+  "rows": [
+   [
+    "Regular Program vs AI",
+    ""
+   ],
+   [
+    "Regular Computer Program",
+    "AI System"
+   ],
+   [
+    "You write every rule",
+    "It learns rules from data"
+   ],
+   [
+    "Rigid — breaks if input changes",
+    "Flexible — adapts to new inputs"
+   ],
+   [
+    "Example: calculator",
+    "Example: voice assistant"
+   ],
+   [
+    "Follows instructions",
+    "Recognises patterns"
+   ]
+  ]
+ },
+ {
+  "i": 89,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. The AI Family Tree"
+ },
+ {
+  "i": 90,
+  "k": "p",
+  "s": "",
+  "t": "AI is a broad term. Here are the key levels within it:"
+ },
+ {
+  "i": 91,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Artificial Intelligence (AI): The big umbrella — any machine that mimics human thinking"
+ },
+ {
+  "i": 92,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Machine Learning (ML): A type of AI where the system learns from data without being explicitly programmed for each task"
+ },
+ {
+  "i": 93,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Deep Learning: A powerful type of ML that uses networks inspired by the human brain (called neural networks) — this is what powers image recognition and ChatGPT"
+ },
+ {
+  "i": 94,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Generative AI: AI that can create new content — text, images, music, code — based on what it has learned"
+ },
+ {
+  "i": 95,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Narrow AI vs. General AI"
+ },
+ {
+  "i": 96,
+  "k": "p",
+  "s": "",
+  "t": "This is one of the most important distinctions to understand:"
+ },
+ {
+  "i": 97,
+  "k": "tbl",
+  "rows": [
+   [
+    "Narrow AI",
+    "General AI"
+   ],
+   [
+    "Narrow AI (what exists today)",
+    "General AI (science fiction, not real yet)"
+   ],
+   [
+    "Excellent at ONE specific task",
+    "Can do any intellectual task a human can"
+   ],
+   [
+    "Cannot transfer skills between tasks",
+    "Would learn, reason, and adapt like a person"
+   ],
+   [
+    "Examples: Siri, Netflix recommendations, spam filters",
+    "Examples: HAL 9000, Terminator (movies only!)"
+   ],
+   [
+    "Safe, controllable, widely deployed",
+    "Does not exist yet — still research only"
+   ]
+  ]
+ },
+ {
+  "i": 98,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "4. How Does AI Actually Learn?"
+ },
+ {
+  "i": 99,
+  "k": "p",
+  "s": "",
+  "t": "The most common type of AI today learns through a process called Supervised Learning:"
+ },
+ {
+  "i": 100,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "You give the AI thousands of examples with correct answers (e.g., 50,000 photos labelled \"cat\" or \"not cat\")"
+ },
+ {
+  "i": 101,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "The AI finds patterns in those examples"
+ },
+ {
+  "i": 102,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "It builds a mathematical model of those patterns"
+ },
+ {
+  "i": 103,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "When it sees a new photo, it uses that model to guess: cat or not cat?"
+ },
+ {
+  "i": 104,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Over time, with more data and corrections, it gets better and better"
+ },
+ {
+  "i": 105,
+  "k": "p",
+  "s": "",
+  "t": "Think of it like studying for an exam: the more practice questions you do, the better you get. AI does the same thing — but it can do millions of practice questions in seconds."
+ },
+ {
+  "i": 106,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  Key Insight for Students"
+   ],
+   [
+    "AI is not magic. It is maths + data + computing power.\nEvery AI system was built by humans and reflects human choices about what data to use.\nAI is a tool — like a hammer or a calculator. What matters is how you use it."
+   ]
+  ]
+ },
+ {
+  "i": 107,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 108,
+  "k": "p",
+  "s": "",
+  "t": "Watch these before or during the session for maximum impact:"
+ },
+ {
+  "i": 109,
+  "k": "p",
+  "s": "",
+  "t": "▶  How Does AI Actually Work? (TED-Ed, 5 min)  —  https://www.youtube.com/watch?v=aircAruvnKk\n     Brilliant animated explainer of neural networks — perfect for beginners. Watch together as a class."
+ },
+ {
+  "i": 110,
+  "k": "p",
+  "s": "",
+  "t": "▶  AI, Machine Learning, Deep Learning (Google, 3 min)  —  https://www.youtube.com/watch?v=l3Ly51bqFIA\n     Clear visual breakdown of the AI family tree. Pause and discuss after each section."
+ },
+ {
+  "i": 111,
+  "k": "p",
+  "s": "",
+  "t": "▶  Your AI-Powered Day (MIT Technology Review)  —  https://youtu.be/HMQkV5cTuoY\n     Short documentary showing all the AI embedded in a typical day. Great for the \"Map Your AI Day\" activity."
+ },
+ {
+  "i": 112,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — Map Your AI Day"
+ },
+ {
+  "i": 113,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Instructions for Facilitator"
+   ],
+   [
+    "Give each student the worksheet below (or have them draw it in their notebook).\nAsk them to map their day from when they wake up to when they go to bed.\nFor each activity, they circle whether AI is involved and write the name of the AI system.\nShare and discuss as a class. Tally the most-mentioned AI systems on the whiteboard."
+   ]
+  ]
+ },
+ {
+  "i": 114,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Student Worksheet — My AI Day"
+   ],
+   [
+    "Instructions: Fill in the table below. For each moment in your day, think about whether AI might be involved.\nWake up → Alarm app, smart home device? AI involved?\nMorning → Face unlock on phone? Autocorrect when texting? AI involved?\nBreakfast → Recipe app? Smart fridge? AI involved?\nGetting around → Google Maps traffic? Ride-share app? AI involved?\nEntertainment → YouTube recommendations? Spotify? Netflix? AI involved?\nSocial media → TikTok For You Page? Instagram filters? AI involved?\nSchool/study → Spell check? Grammarly? Khan Academy? AI involved?\nShopping → Product recommendations? Chatbot support? AI involved?\nReflection: Which AI surprised you the most? Which AI do you use most often without thinking about it?"
+   ]
+  ]
+ },
+ {
+  "i": 115,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — AI Myth Busters"
+ },
+ {
+  "i": 116,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Instructions for Facilitator"
+   ],
+   [
+    "Read each myth aloud. Students vote TRUE or FALSE by raising their hands or holding up a card.\nReveal the answer and give the brief explanation. Award points for correct answers.\nThis works best as a lively, fast-paced quiz — keep energy high!"
+   ]
+  ]
+ },
+ {
+  "i": 117,
+  "k": "p",
+  "s": "",
+  "t": "MYTH 1: \"AI is conscious and has feelings.\""
+ },
+ {
+  "i": 118,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  BUSTED — FALSE"
+   ],
+   [
+    "AI systems process information mathematically. They do not experience emotions, consciousness, or awareness. When ChatGPT says \"I feel excited about this,\" it is generating text that sounds human — not actually feeling anything. This is called the Chinese Room problem (a famous thought experiment by philosopher John Searle)."
+   ]
+  ]
+ },
+ {
+  "i": 119,
+  "k": "p",
+  "s": "",
+  "t": "MYTH 2: \"AI knows everything.\""
+ },
+ {
+  "i": 120,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  BUSTED — FALSE"
+   ],
+   [
+    "AI only knows what it was trained on. If the training data stops at a certain date, the AI knows nothing after that. It can also be completely wrong (this is called a \"hallucination\") — it can confidently state false facts. Always verify AI answers from trusted sources."
+   ]
+  ]
+ },
+ {
+  "i": 121,
+  "k": "p",
+  "s": "",
+  "t": "MYTH 3: \"AI will take all human jobs.\""
+ },
+ {
+  "i": 122,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚠️  PARTIALLY TRUE — IT'S COMPLICATED"
+   ],
+   [
+    "AI will automate some tasks (repetitive, rule-based ones), but it also creates new jobs. The key insight: AI cannot replace human creativity, emotional intelligence, ethical judgment, or physical dexterity in complex situations. The future belongs to people who know how to work with AI — which is exactly what this course teaches you."
+   ]
+  ]
+ },
+ {
+  "i": 123,
+  "k": "p",
+  "s": "",
+  "t": "MYTH 4: \"AI is always smarter than humans.\""
+ },
+ {
+  "i": 124,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  BUSTED — FALSE"
+   ],
+   [
+    "AI is superhuman at narrow tasks with clear patterns (chess, protein folding, image recognition). It fails badly at common sense reasoning, novel situations it hasn't seen before, and anything requiring genuine understanding. A 5-year-old can understand \"the cup is on the table and the table is in the kitchen, so the cup is in the kitchen\" — most AI still struggles with this kind of reasoning."
+   ]
+  ]
+ },
+ {
+  "i": 125,
+  "k": "p",
+  "s": "",
+  "t": "MYTH 5: \"AI makes unbiased decisions.\""
+ },
+ {
+  "i": 126,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  BUSTED — FALSE"
+   ],
+   [
+    "AI learns from human-generated data, which contains human biases. Amazon's hiring AI was found to discriminate against women. Facial recognition AI is less accurate on dark-skinned faces. AI inherits our biases and can even amplify them. This is why human oversight is always essential."
+   ]
+  ]
+ },
+ {
+  "i": 127,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 1"
+ },
+ {
+  "i": 128,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "Before today, what did you think AI was? How has your understanding changed?\nName three AI systems you use every week. What data do you think each one was trained on?\nWhich myth surprised you the most? Why?\nIf you could create an AI to solve one problem in your life, what would it do?\nComplete this sentence: \"AI is powerful because ______, but it has limits because ______.\""
+   ]
+  ]
+ },
+ {
+  "i": 129,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 1"
+   ],
+   [
+    "Artificial Intelligence (AI): Computer systems that perform tasks requiring human-like intelligence\nMachine Learning (ML): AI that learns patterns from data rather than following hand-coded rules\nDeep Learning: ML using layered neural networks, excels at images and language\nNeural Network: A computing system inspired by the human brain's structure\nTraining Data: The examples an AI learns from\nNarrow AI: AI that excels at one specific task\nHallucination: When AI confidently states something incorrect\nBias: Unfair patterns in AI behaviour caused by skewed training data"
+   ]
+  ]
+ },
+ {
+  "i": 130,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 2\nHow AI Learns\nTraining data, patterns, and your first machine learning experiment"
+   ]
+  ]
+ },
+ {
+  "i": 131,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 132,
+  "k": "p",
+  "s": "",
+  "t": "Yesterday we discovered that AI is already everywhere. Today we go inside the machine. We will explore how AI actually learns — through data, patterns, and repetition — and then you will train your very own AI model using Google's Teachable Machine. No coding required."
+ },
+ {
+  "i": 133,
+  "k": "p",
+  "s": "",
+  "t": "By the end of today, you will understand the full loop of machine learning: collect data → train the model → test it → improve it. This loop is the foundation of almost every AI system on the planet."
+ },
+ {
+  "i": 134,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 2"
+   ],
+   [
+    "Explain the machine learning training loop in plain language\nUnderstand what training data, features, labels, and models are\nExperience the \"sorting exercise\" to feel what training data means\nTrain a real image classifier using Google Teachable Machine\nTest the model's accuracy and understand why it makes mistakes"
+   ]
+  ]
+ },
+ {
+  "i": 135,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 136,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:10",
+    "Recap of Day 1 — quick quiz on key vocabulary",
+    "Vocab cards from Day 1"
+   ],
+   [
+    "0:10–0:40",
+    "Key Concepts: The ML Training Loop",
+    "Whiteboard, printed diagrams"
+   ],
+   [
+    "0:40–1:10",
+    "Activity 1: Human Sorting Game (simulate ML training)",
+    "Animal picture cards (printed)"
+   ],
+   [
+    "1:10–1:25",
+    "Break",
+    ""
+   ],
+   [
+    "1:25–2:00",
+    "Activity 2: Teachable Machine — train your own AI",
+    "Laptops/tablets with webcam, teachablemachine.withgoogle.com"
+   ],
+   [
+    "2:00–2:20",
+    "Share results, discuss where the model failed and why",
+    "Whiteboard"
+   ],
+   [
+    "2:20–2:30",
+    "Reflection + vocabulary update",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 137,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 138,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. The Machine Learning Training Loop"
+ },
+ {
+  "i": 139,
+  "k": "p",
+  "s": "",
+  "t": "Every machine learning system follows the same basic cycle. Understanding this loop unlocks your ability to think about any AI system:"
+ },
+ {
+  "i": 140,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Collect Data: Gather thousands (or millions) of examples"
+ },
+ {
+  "i": 141,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Label the Data: Tell the AI what each example is (e.g., \"cat\" or \"dog\")"
+ },
+ {
+  "i": 142,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Train the Model: The AI finds mathematical patterns that link examples to labels"
+ },
+ {
+  "i": 143,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Evaluate: Test the model on new examples it has never seen"
+ },
+ {
+  "i": 144,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Improve: Add more data, fix mistakes, retrain — repeat until good enough"
+ },
+ {
+  "i": 145,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Deploy: Release the model to be used in the real world"
+ },
+ {
+  "i": 146,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. What Is a Feature?"
+ },
+ {
+  "i": 147,
+  "k": "p",
+  "s": "",
+  "t": "A feature is any measurable characteristic the AI uses to make decisions. For example, when recognising a cat:"
+ },
+ {
+  "i": 148,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Pointy ears → a feature"
+ },
+ {
+  "i": 149,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Fur pattern → a feature"
+ },
+ {
+  "i": 150,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Eye shape → a feature"
+ },
+ {
+  "i": 151,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Body size → a feature"
+ },
+ {
+  "i": 152,
+  "k": "p",
+  "s": "",
+  "t": "The AI doesn't know these are \"cat features\" until it sees thousands of labelled cat photos and learns which combinations reliably predict \"cat.\""
+ },
+ {
+  "i": 153,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Types of Machine Learning"
+ },
+ {
+  "i": 154,
+  "k": "tbl",
+  "rows": [
+   [
+    "Type",
+    "How It Works"
+   ],
+   [
+    "Supervised Learning",
+    "You provide labelled examples. Most common type. Used for: image recognition, spam filters, voice assistants."
+   ],
+   [
+    "Unsupervised Learning",
+    "No labels — AI finds patterns on its own. Used for: customer grouping, anomaly detection."
+   ],
+   [
+    "Reinforcement Learning",
+    "AI learns by trial and error, rewarded for good actions. Used for: games, robotics, self-driving cars."
+   ],
+   [
+    "Transfer Learning",
+    "Take a pre-trained model and fine-tune it for a new task. Powers most modern AI apps — much faster than training from scratch."
+   ]
+  ]
+ },
+ {
+  "i": 155,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "4. Overfitting and Underfitting — Why AI Fails"
+ },
+ {
+  "i": 156,
+  "k": "p",
+  "s": "",
+  "t": "Two of the most common problems in machine learning:"
+ },
+ {
+  "i": 157,
+  "k": "tbl",
+  "rows": [
+   [
+    "Problem",
+    "Explanation"
+   ],
+   [
+    "Overfitting",
+    "The AI memorises the training examples too perfectly, and fails on any new data. Like a student who memorises textbook answers but can't answer a slightly different question on the exam."
+   ],
+   [
+    "Underfitting",
+    "The AI hasn't learned enough. It performs badly even on training data. Like a student who barely studied and gets everything wrong."
+   ]
+  ]
+ },
+ {
+  "i": 158,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  The Golden Rule of ML"
+   ],
+   [
+    "Good AI generalises. It learns patterns that work on new, unseen data — not just data it has memorised. This is why testing on separate \"held-out\" data is critical before deploying any AI system."
+   ]
+  ]
+ },
+ {
+  "i": 159,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 160,
+  "k": "p",
+  "s": "",
+  "t": "▶  How Machines Learn (CGP Grey, 10 min)  —  https://www.youtube.com/watch?v=R9OHn5ZF4Uo\n     Superb visual explainer of the full ML training process. Watch this before Activity 1."
+ },
+ {
+  "i": 161,
+  "k": "p",
+  "s": "",
+  "t": "▶  A Beginner's Guide to Machine Learning (Google, 8 min)  —  https://www.youtube.com/watch?v=nKW8Ndu7Mjw\n     Google engineers explain ML with real examples. Excellent follow-up."
+ },
+ {
+  "i": 162,
+  "k": "p",
+  "s": "",
+  "t": "▶  Teachable Machine Demo (Google, 3 min)  —  https://www.youtube.com/watch?v=T2qQGqZxkD0\n     Official demo video — show this immediately before Activity 2 so students know what to expect."
+ },
+ {
+  "i": 163,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — The Human Sorting Game"
+ },
+ {
+  "i": 164,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Print 40–60 animal images (mix of cats, dogs, birds, fish) on cards. Shuffle them.\nDivide students into groups of 4. Each group receives a shuffled set of cards.\nRound 1: Without talking, each student sorts the cards into piles — any way they like.\nRound 2: Reveal the \"correct labels.\" Students re-sort using the labels.\nDiscussion: What features did you use to sort? How did having labels change your approach?\nConnect to ML: \"What you just did manually is exactly what machine learning does automatically — but with millions of examples and millions of features simultaneously.\""
+   ]
+  ]
+ },
+ {
+  "i": 165,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎮  Debrief Questions for the Class"
+   ],
+   [
+    "What features did you use to tell cats from dogs? What made it hard?\nIf someone gave you 10,000 of these cards to sort by yourself, would you use the same method? What would you change?\nWhat if some of the labels on the cards were wrong? How would that affect your learning?\nImagine the AI only saw white cats and orange cats. What would happen when it met a black cat for the first time?"
+   ]
+  ]
+ },
+ {
+  "i": 166,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — Teachable Machine: Train Your First AI"
+ },
+ {
+  "i": 167,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Setup (prepare before class)"
+   ],
+   [
+    "Visit teachablemachine.withgoogle.com — no account needed, works in any browser with a webcam.\nChoose \"Image Project\" → \"Standard Image Model.\"\nWalk students through the interface briefly before they start.\nSuggested project: Train the AI to recognise 3 hand gestures (thumbs up, peace sign, fist)."
+   ]
+  ]
+ },
+ {
+  "i": 168,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Step-by-Step Student Guide"
+   ],
+   [
+    "Getting Started\nOpen teachablemachine.withgoogle.com in your browser\nClick \"Get Started\" → \"Image Project\" → \"Standard Image Model\"\nStep 1: Collect Your Data (Classes)\nRename \"Class 1\" to \"Thumbs Up\"\nClick \"Webcam\" and hold your thumb up — record at least 100 images\nRename \"Class 2\" to \"Peace Sign\" — record another 100 images\nClick \"Add a class\" → rename to \"Fist\" — record another 100 images\nStep 2: Train\nClick the big \"Train Model\" button — watch it learn!\nAfter training, the \"Preview\" panel activates automatically\nStep 3: Test and Experiment\nTry each gesture in front of the webcam — does it get them right?\nMove your hand to a different position, change the lighting, use your other hand — does it still work?\nTry tricking it — show a gesture that is halfway between two classes. What does it predict?\nChallenge: Improve Your Model\nIf your model is making mistakes, add more training images from different angles and lighting conditions, then retrain.\nDid adding more data improve accuracy? Record your findings."
+   ]
+  ]
+ },
+ {
+  "i": 169,
+  "k": "tbl",
+  "rows": [
+   [
+    "📊  Student Data Collection Table"
+   ],
+   [
+    "Record your results here:\nNumber of images per class (first attempt): ___\nAccuracy on \"thumbs up\": ___% | \"Peace sign\": ___% | \"Fist\": ___%\nWhere did your model fail? (describe the situation): ___\nWhat did you change to improve it?: ___\nAccuracy after improvement: ___% (average across classes)\nWhat do you think would happen if you added a 4th class? Try it!"
+   ]
+  ]
+ },
+ {
+  "i": 170,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 2"
+ },
+ {
+  "i": 171,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "Describe the machine learning loop in your own words, as if explaining it to a 10-year-old.\nWhat did you discover when you tried to trick your Teachable Machine model? What does this tell you about AI?\nWhen your model made mistakes, what was usually the cause? Too little data? Bad angle? Wrong lighting?\nThink of a real-world AI system (e.g. Spotify recommendations, Google Photos face recognition). What training data do you think it was trained on?\nThe AI you trained today only took a few minutes. Real AI systems can take weeks of training on thousands of computers. Why do you think that is?"
+   ]
+  ]
+ },
+ {
+  "i": 172,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 2"
+   ],
+   [
+    "Supervised Learning: Training with labelled examples\nTraining Data: The examples used to teach an AI\nLabel: The correct answer attached to a training example\nFeature: A measurable characteristic the AI uses to make decisions\nModel: The mathematical structure the AI builds from training data\nOverfitting: Memorising training data too closely, failing on new data\nAccuracy: Percentage of correct predictions on test data\nNeural Network: A layered mathematical structure loosely inspired by the brain"
+   ]
+  ]
+ },
+ {
+  "i": 173,
+  "k": "p",
+  "s": "",
+  "t": "Figure 2.1 — The ML Training Loop: all 6 stages"
+ },
+ {
+  "i": 174,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 3\nThe Art of Talking to AI\nPrompt engineering — your most valuable skill in the AI age"
+   ]
+  ]
+ },
+ {
+  "i": 175,
+  "k": "p",
+  "s": "",
+  "t": "Figure 3.1 — Anatomy of a powerful prompt: R-C-T-F-C framework"
+ },
+ {
+  "i": 176,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 177,
+  "k": "p",
+  "s": "",
+  "t": "You now understand what AI is and how it learns. But knowing about AI is not enough — you need to know how to use it effectively. Today we focus on the most important skill for working with modern AI: prompt engineering."
+ },
+ {
+  "i": 178,
+  "k": "p",
+  "s": "",
+  "t": "A prompt is the instruction you give to an AI. The same AI system can give you brilliant, useful answers or confusing, wrong answers — entirely depending on how you ask. This session teaches you to ask like a professional."
+ },
+ {
+  "i": 179,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 3"
+   ],
+   [
+    "Understand what a prompt is and why it matters\nApply the R-C-T-F-C framework for writing powerful prompts\nTransform weak prompts into strong prompts through iteration\nCompete in the Prompt Battle and discover the power of specificity\nUnderstand chain-of-thought prompting and zero/few-shot techniques"
+   ]
+  ]
+ },
+ {
+  "i": 180,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 181,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:10",
+    "Day 2 recap — 3 students share their Teachable Machine findings",
+    ""
+   ],
+   [
+    "0:10–0:50",
+    "Key Concepts: Prompt Engineering Framework",
+    "Whiteboard, example prompt sheets"
+   ],
+   [
+    "0:50–1:10",
+    "Break",
+    ""
+   ],
+   [
+    "1:10–1:45",
+    "Activity 1: Prompt Makeover Workshop",
+    "Prompt Makeover worksheets, laptops"
+   ],
+   [
+    "1:45–2:20",
+    "Activity 2: The Prompt Battle Championship",
+    "Laptops, scoring sheet, projector"
+   ],
+   [
+    "2:20–2:30",
+    "Reflection + preview of Day 4",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 182,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 183,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. Why Prompts Matter So Much"
+ },
+ {
+  "i": 184,
+  "k": "p",
+  "s": "",
+  "t": "Think of an AI language model like a brilliant expert who knows about almost everything. But this expert is locked in a room and can only communicate through written notes. How you write your note determines everything about the quality of the response."
+ },
+ {
+  "i": 185,
+  "k": "p",
+  "s": "",
+  "t": "Research shows that rephrasing the same question can change AI output quality by 50–80%. Prompt engineering is not a trick — it is a core professional skill."
+ },
+ {
+  "i": 186,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. The R-C-T-F-C Prompt Framework"
+ },
+ {
+  "i": 187,
+  "k": "p",
+  "s": "",
+  "t": "Use this five-part structure to build powerful prompts:"
+ },
+ {
+  "i": 188,
+  "k": "tbl",
+  "rows": [
+   [
+    "Element",
+    "What It Means"
+   ],
+   [
+    "R — Role",
+    "Tell the AI who to be. \"You are an expert marine biologist with 20 years of experience teaching teenagers...\""
+   ],
+   [
+    "C — Context",
+    "Give background. \"I am a 12-year-old in Australia doing a school project on coral reefs...\""
+   ],
+   [
+    "T — Task",
+    "State exactly what you want. \"Explain how rising ocean temperatures affect coral bleaching...\""
+   ],
+   [
+    "F — Format",
+    "Specify the output structure. \"...in 3 short paragraphs with a summary bullet list at the end.\""
+   ],
+   [
+    "C — Constraints",
+    "Add limits. \"...Avoid scientific jargon. Do not include information I cannot verify online.\""
+   ]
+  ]
+ },
+ {
+  "i": 189,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Prompt Levels — From Weak to Expert"
+ },
+ {
+  "i": 190,
+  "k": "p",
+  "s": "",
+  "t": "Level 1 — Weak Prompt: \"Tell me about space.\""
+ },
+ {
+  "i": 191,
+  "k": "p",
+  "s": "",
+  "t": "Result: A vague, generic response that could fill a textbook — completely unhelpful."
+ },
+ {
+  "i": 192,
+  "k": "p",
+  "s": "",
+  "t": "Level 2 — Better Prompt: \"Explain black holes to a 12-year-old.\""
+ },
+ {
+  "i": 193,
+  "k": "p",
+  "s": "",
+  "t": "Result: More targeted, but still quite broad."
+ },
+ {
+  "i": 194,
+  "k": "p",
+  "s": "",
+  "t": "Level 3 — Expert Prompt: \"You are a science teacher for Year 7 students in Australia. Explain what a black hole is using one everyday analogy, three key facts, and a 'mind-blowing' closing statement. Keep the total under 200 words.\""
+ },
+ {
+  "i": 195,
+  "k": "p",
+  "s": "",
+  "t": "Result: Precise, useful, perfectly formatted response."
+ },
+ {
+  "i": 196,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "4. Advanced Techniques"
+ },
+ {
+  "i": 197,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Chain-of-Thought: Add \"Think step by step\" to get the AI to show its reasoning. Great for maths and logic problems."
+ },
+ {
+  "i": 198,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Few-Shot Prompting: Give examples of what you want before asking. \"Here are two examples of good haiku: [example 1], [example 2]. Now write one about summer.\""
+ },
+ {
+  "i": 199,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Role Reversal: Ask the AI to ask YOU questions to clarify what it needs before answering."
+ },
+ {
+  "i": 200,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Negative Constraints: Tell the AI what NOT to do. \"Do not use bullet points. Do not include dates.\""
+ },
+ {
+  "i": 201,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Iteration: Treat your first prompt as a draft. Read the response, then refine: \"That's good but too long. Shorten it to 3 sentences and add one real-world example.\""
+ },
+ {
+  "i": 202,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  The Professional Mindset"
+   ],
+   [
+    "Expert AI users never accept the first response. They iterate. They refine. They experiment. Think of prompting like a conversation, not a single question. Each follow-up narrows the AI closer to exactly what you need."
+   ]
+  ]
+ },
+ {
+  "i": 203,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 204,
+  "k": "p",
+  "s": "",
+  "t": "▶  How to Use ChatGPT — Prompt Engineering Guide (Fireship, 8 min)  —  https://www.youtube.com/watch?v=sTeoEFzVNSc\n     Fast, practical intro to prompt engineering with real examples. Show after Key Concepts."
+ },
+ {
+  "i": 205,
+  "k": "p",
+  "s": "",
+  "t": "▶  ChatGPT Prompt Engineering for Developers (DeepLearning.ai)  —  https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/\n     Free short course — excellent for advanced students who want to go deeper after class."
+ },
+ {
+  "i": 206,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — Prompt Makeover Workshop"
+ },
+ {
+  "i": 207,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Distribute the Prompt Makeover worksheet (or project on screen).\nStudents work in pairs — one writes a better prompt, the other tests it in ChatGPT/Claude.\nThen compare: does the better prompt produce a better answer? Why or why not?\nEach pair shares their best prompt makeover with the class."
+   ]
+  ]
+ },
+ {
+  "i": 208,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Prompt Makeover Worksheet"
+   ],
+   [
+    "Instructions: Rewrite each weak prompt using the R-C-T-F-C framework. Then test both versions and compare the results.\nWEAK: \"Write a poem.\" → YOUR EXPERT PROMPT: ___\nWEAK: \"Help me with my homework.\" → YOUR EXPERT PROMPT: ___\nWEAK: \"What is climate change?\" → YOUR EXPERT PROMPT: ___\nWEAK: \"Give me a recipe.\" → YOUR EXPERT PROMPT: ___\nWEAK: \"Explain gravity.\" → YOUR EXPERT PROMPT: ___\nBonus Challenge: Write a prompt so specific that the AI produces an answer that surprises you with its quality."
+   ]
+  ]
+ },
+ {
+  "i": 209,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — The Prompt Battle Championship"
+ },
+ {
+  "i": 210,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Divide into 4 teams. Each round, all teams get the SAME task (displayed on projector).\nTeams have 5 minutes to craft the best prompt they can, then submit it to the AI.\nRead all responses aloud (without revealing which team wrote which prompt).\nClass votes on the best response. Facilitator awards points.\nPlay 5–6 rounds with different challenge categories."
+   ]
+  ]
+ },
+ {
+  "i": 211,
+  "k": "tbl",
+  "rows": [
+   [
+    "🏆  Prompt Battle Challenge Cards"
+   ],
+   [
+    "Round 1 — EXPLAIN: \"Get the AI to explain how the internet works to a 5-year-old, using only a pizza analogy.\"\nRound 2 — CREATE: \"Get the AI to write the most suspenseful opening paragraph for a novel — no more than 80 words.\"\nRound 3 — SOLVE: \"Get the AI to help you plan a birthday party for 15 people with a budget of $100 AUD.\"\nRound 4 — PERSUADE: \"Get the AI to write the most convincing argument for a 4-day school week.\"\nRound 5 — IMAGINE: \"Get the AI to describe what daily life will look like in Australia in 2050 — be specific and surprising.\"\nRound 6 — DEBATE: \"Get the AI to argue both sides of this question: Should AI be allowed to create art for sale?\""
+   ]
+  ]
+ },
+ {
+  "i": 212,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 3"
+ },
+ {
+  "i": 213,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "What was the biggest difference between your weak prompt and your expert prompt? What changed in the AI's response?\nWhich Prompt Battle round did your team win (or do best in)? What made that prompt effective?\nWrite a prompt you could use right now for something you actually need help with. Apply the R-C-T-F-C framework.\nWhat are the risks of relying on AI for answers without knowing how to evaluate them? How do good prompts help manage this risk?\nIf prompt engineering is a skill, how do you get better at it? Make a plan for practicing this week."
+   ]
+  ]
+ },
+ {
+  "i": 214,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 3"
+   ],
+   [
+    "Prompt: The instruction or question you give to an AI\nPrompt Engineering: The skill of crafting effective prompts to get high-quality AI outputs\nContext Window: The maximum amount of text an AI can \"see\" at once\nChain-of-Thought: Prompting technique that asks AI to show its reasoning step by step\nFew-Shot Prompting: Providing examples in your prompt to guide the AI's response style\nIteration: Refining a prompt based on the AI's response to get a better result\nConstraint: A rule you give the AI about what NOT to do or include\nTemperature: An AI setting that controls how creative/random vs predictable its outputs are"
+   ]
+  ]
+ },
+ {
+  "i": 215,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 4\nAI Eyes, Ears & More\nComputer vision, speech AI, and the art of spotting what's real"
+   ]
+  ]
+ },
+ {
+  "i": 216,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 217,
+  "k": "p",
+  "s": "",
+  "t": "Today we explore how AI perceives the world through cameras and microphones. Computer vision and speech recognition are two of the most widely deployed AI technologies on Earth — from the camera on your phone to Siri to medical imaging. We will also investigate one of the most important challenges of our time: telling AI-generated content from real content."
+ },
+ {
+  "i": 218,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 4"
+   ],
+   [
+    "Understand how computer vision works (feature detection, CNNs)\nUnderstand how speech recognition converts audio to text\nExplore real-world applications: medical imaging, self-driving cars, translation\nDevelop critical skills for detecting AI-generated images, text, and audio\nDiscuss the ethical implications of deepfakes and synthetic media"
+   ]
+  ]
+ },
+ {
+  "i": 219,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 220,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:10",
+    "Day 3 recap — prompt battle winners share winning prompts",
+    ""
+   ],
+   [
+    "0:10–0:45",
+    "Key Concepts: Computer Vision & Speech AI",
+    "Projector, demo links ready"
+   ],
+   [
+    "0:45–1:15",
+    "Activity 1: Spot the AI — real vs generated media quiz",
+    "Printed image sheets or projector"
+   ],
+   [
+    "1:15–1:30",
+    "Break",
+    ""
+   ],
+   [
+    "1:30–2:00",
+    "Activity 2: Live object detection demo + AI art creation",
+    "Laptops, teachablemachine.withgoogle.com or QuickDraw"
+   ],
+   [
+    "2:00–2:20",
+    "Discussion: Deepfakes and truth in the AI age",
+    "Discussion cards"
+   ],
+   [
+    "2:20–2:30",
+    "Reflection",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 221,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 222,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. How Computer Vision Works"
+ },
+ {
+  "i": 223,
+  "k": "p",
+  "s": "",
+  "t": "Computer vision teaches machines to \"see\" and interpret images and video. Here is the process:"
+ },
+ {
+  "i": 224,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Input: An image enters the system as a grid of pixels — each pixel is just a number representing colour"
+ },
+ {
+  "i": 225,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Convolution: Filters scan across the image looking for low-level features: edges, corners, curves, colours"
+ },
+ {
+  "i": 226,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Pooling: The AI compresses information, keeping the most important features while reducing complexity"
+ },
+ {
+  "i": 227,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Deep layers: Higher layers combine simple features into complex ones: edge + curve = eye, multiple eyes + nose = face"
+ },
+ {
+  "i": 228,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Classification: The final layer outputs a prediction: \"This is a cat with 94% confidence\""
+ },
+ {
+  "i": 229,
+  "k": "p",
+  "s": "",
+  "t": "This architecture is called a Convolutional Neural Network (CNN). It is the backbone of nearly all modern image AI."
+ },
+ {
+  "i": 230,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. Computer Vision in the Real World"
+ },
+ {
+  "i": 231,
+  "k": "tbl",
+  "rows": [
+   [
+    "Application",
+    "How It Works"
+   ],
+   [
+    "Medical Imaging",
+    "AI reads X-rays, MRI scans, and retinal images to detect cancer, diabetic blindness, and bone fractures — often matching or exceeding radiologist accuracy"
+   ],
+   [
+    "Self-Driving Cars",
+    "Multiple cameras + radar detect roads, signs, pedestrians, and obstacles in real time at 30+ frames per second"
+   ],
+   [
+    "Face Unlock",
+    "Your phone maps 30,000 infrared dots onto your face to create a mathematical model — impossible to fake with a photo"
+   ],
+   [
+    "Instagram/Snapchat Filters",
+    "Real-time face landmark detection (68+ points) that tracks your face movement and applies effects precisely"
+   ],
+   [
+    "Quality Control",
+    "Factories use AI cameras to detect defects in products at speeds impossible for human inspectors"
+   ],
+   [
+    "Google Lens",
+    "Point your camera at text, objects, plants, or food and AI identifies them instantly"
+   ]
+  ]
+ },
+ {
+  "i": 232,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. How Speech Recognition Works"
+ },
+ {
+  "i": 233,
+  "k": "p",
+  "s": "",
+  "t": "When you speak to Siri or Google Assistant, here is what happens in milliseconds:"
+ },
+ {
+  "i": 234,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Audio capture: Your voice is captured as a waveform — a series of numbers representing sound pressure over time"
+ },
+ {
+  "i": 235,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Feature extraction: The AI analyses frequency patterns, called Mel-frequency cepstral coefficients (MFCCs) — essentially a mathematical fingerprint of each sound"
+ },
+ {
+  "i": 236,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Phoneme recognition: The AI maps audio patterns to phonemes (the basic units of sound in language, e.g. \"sh\", \"ee\", \"p\")"
+ },
+ {
+  "i": 237,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Language model: A language model converts phonemes into words, using context to choose between similar-sounding options (\"bare\" vs \"bear\")"
+ },
+ {
+  "i": 238,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Intent recognition: A final layer understands what you actually want and triggers the correct action"
+ },
+ {
+  "i": 239,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "4. Generative AI & Synthetic Media"
+ },
+ {
+  "i": 240,
+  "k": "p",
+  "s": "",
+  "t": "The same techniques that help AI recognise faces can be reversed to generate new faces. This is done with Generative Adversarial Networks (GANs):"
+ },
+ {
+  "i": 241,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Generator: Creates fake images, trying to fool the discriminator"
+ },
+ {
+  "i": 242,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Discriminator: Tries to tell real from fake"
+ },
+ {
+  "i": 243,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "They compete against each other — as the discriminator gets better, the generator improves, until the fakes are indistinguishable from real."
+ },
+ {
+  "i": 244,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  Why This Matters"
+   ],
+   [
+    "Deepfake technology can now create realistic videos of real people saying things they never said. AI can clone a voice from 3 seconds of audio. AI can generate photorealistic images of people who do not exist. This makes media literacy — the ability to critically evaluate what you see and hear — one of the most important skills of your generation."
+   ]
+  ]
+ },
+ {
+  "i": 245,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 246,
+  "k": "p",
+  "s": "",
+  "t": "▶  How Computer Vision Works (3Blue1Brown, 19 min)  —  https://www.youtube.com/watch?v=aircAruvnKk\n     The definitive visual explanation of neural networks and image recognition. Worth every minute."
+ },
+ {
+  "i": 247,
+  "k": "p",
+  "s": "",
+  "t": "▶  Deepfakes Explained (Vox, 7 min)  —  https://www.youtube.com/watch?v=cQ54GDm1eL0\n     Accessible, age-appropriate explainer on synthetic video — excellent for the discussion section."
+ },
+ {
+  "i": 248,
+  "k": "p",
+  "s": "",
+  "t": "▶  This Person Does Not Exist (website demo)  —  https://thispersondoesnotexist.com\n     Every refresh shows a new photorealistic face — none of them are real. Show on projector for immediate impact."
+ },
+ {
+  "i": 249,
+  "k": "p",
+  "s": "",
+  "t": "▶  Google Quick, Draw! (interactive)  —  https://quickdraw.withgoogle.com\n     AI guesses your doodles in real time — playful demo of computer vision. Great for the activity section."
+ },
+ {
+  "i": 250,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — Spot the AI"
+ },
+ {
+  "i": 251,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Before class: collect 20 items — a mix of real photos (from news sites), AI-generated images (from Midjourney/DALL-E), real audio clips, and AI-generated voices.\nPresent each item one at a time. Students write REAL or AI on a response card.\nAfter all 20, reveal answers and discuss the clues that gave each one away.\nKey debrief: What patterns did you notice in AI-generated images? (hands, teeth, backgrounds, lighting inconsistencies)"
+   ]
+  ]
+ },
+ {
+  "i": 252,
+  "k": "tbl",
+  "rows": [
+   [
+    "🔍  Student Detective Guide — How to Spot AI-Generated Images"
+   ],
+   [
+    "Check These Areas First:\nHANDS: AI consistently struggles with fingers — look for extra fingers, merged fingers, or hands that look \"melted\"\nTEETH: AI-generated smiles often have too many teeth, oddly sized teeth, or teeth that blend together\nBACKGROUNDS: Background objects often repeat, blur unnaturally, or contain garbled text and impossible architecture\nTEXT: Any text in an AI image (signs, labels, newspapers) is almost always garbled nonsense\nEARS & HAIR: Ears are often asymmetrical; hair may flow through objects or disappear\nLIGHTING: Light sources may be inconsistent — shadows pointing in impossible directions\nTools for Verification:\nGoogle Reverse Image Search — right click any image → \"Search image with Google\"\nAI or Not (aiornot.com) — paste any image URL for instant AI detection\nHive Moderation (hivemoderation.com/deepfake-detection) — free deepfake and AI image detector"
+   ]
+  ]
+ },
+ {
+  "i": 253,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — Live AI Vision Demos"
+ },
+ {
+  "i": 254,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Demo Circuit (rotate groups every 10 minutes)"
+   ],
+   [
+    "Station 1: Google Quick, Draw!\nVisit quickdraw.withgoogle.com\nDraw the prompted object. Watch the AI guess in real time.\nQuestion: How does the AI know what you're drawing before you finish? What features is it detecting?\nStation 2: Real-Time Object Detection\nVisit teachablemachine.withgoogle.com → Image Project → Standard model\nTrain it to recognise 3 objects on your desk. Test it on objects from another table.\nQuestion: Did it recognise objects it never trained on? Why or why not?\nStation 3: AI Art Generation\nVisit Adobe Firefly (firefly.adobe.com) — free, age-appropriate AI image generator\nGenerate an image using a specific prompt. Then try to recreate the same scene as a drawing.\nQuestion: What details did the AI add that you wouldn't have thought of? What did it get wrong?"
+   ]
+  ]
+ },
+ {
+  "i": 255,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Discussion — Deepfakes and Truth in the AI Age"
+ },
+ {
+  "i": 256,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator: Run as a structured class discussion (20 minutes)"
+   ],
+   [
+    "Split into 3 groups. Each group gets one of the questions below. They discuss for 5 minutes, then present to the class.\nNo right or wrong answers — the goal is to develop nuanced thinking."
+   ]
+  ]
+ },
+ {
+  "i": 257,
+  "k": "tbl",
+  "rows": [
+   [
+    "💬  Discussion Questions"
+   ],
+   [
+    "Group 1: If deepfakes can make anyone appear to say anything, how do we decide what is true? What are the implications for news, politics, and court cases?\nGroup 2: Should AI-generated images and videos be required to carry a visible label? Who should be responsible for enforcing this — governments, tech companies, or individuals?\nGroup 3: Deepfake technology has been used to protect human rights (e.g. disguising activists in dangerous countries) and to harm (e.g. non-consensual fake videos). How should we decide when synthetic media is acceptable?"
+   ]
+  ]
+ },
+ {
+  "i": 258,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 4"
+ },
+ {
+  "i": 259,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "In Activity 1, which AI-generated items fooled you the most? What made them convincing?\nDescribe how a Convolutional Neural Network sees an image differently from how you see it. What can it detect that you might miss? What can you detect that it might miss?\nIf you received a WhatsApp voice message from a family member asking for money urgently, how would you verify it was really them? Design a 3-step verification process.\nFind one real-world example of computer vision being used for good (e.g. in healthcare, conservation, accessibility). Write 2–3 sentences explaining it."
+   ]
+  ]
+ },
+ {
+  "i": 260,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 4"
+   ],
+   [
+    "Computer Vision: AI that can interpret and understand digital images and video\nCNN (Convolutional Neural Network): The standard AI architecture for image recognition\nObject Detection: Identifying and locating specific objects within an image\nSpeech Recognition: AI that converts spoken audio into text\nNatural Language Processing (NLP): AI that understands and generates human language\nGAN (Generative Adversarial Network): AI architecture where two networks compete to generate realistic synthetic content\nDeepfake: AI-generated synthetic media that replaces a real person's likeness or voice\nMedia Literacy: The ability to critically evaluate and contextualise media content"
+   ]
+  ]
+ },
+ {
+  "i": 261,
+  "k": "p",
+  "s": "",
+  "t": "Figure 4.1 — CNN architecture: how AI reads an image layer by layer"
+ },
+ {
+  "i": 262,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 5\nWhen AI Gets It Wrong\nBias, hallucinations, and the ethics of intelligent machines"
+   ]
+  ]
+ },
+ {
+  "i": 263,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 264,
+  "k": "p",
+  "s": "",
+  "t": "Today is possibly the most important day of Week 1. Understanding AI's capabilities is only half the picture — understanding its failures, biases, and ethical challenges is what makes you a truly responsible and powerful AI user. We will run a mock AI Ethics Court, examine real-world cases of AI failure, and develop your personal framework for thinking about \"should we?\" not just \"can we?\""
+ },
+ {
+  "i": 265,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 5"
+   ],
+   [
+    "Understand what AI hallucination is and why it happens\nIdentify the main sources and types of AI bias\nAnalyse real-world cases where AI caused harm\nApply an ethical reasoning framework to AI decision-making scenarios\nArticulate your own position on 2–3 AI ethics debates"
+   ]
+  ]
+ },
+ {
+  "i": 266,
+  "k": "p",
+  "s": "",
+  "t": "Figure 5.1 — Five sources of AI bias"
+ },
+ {
+  "i": 267,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 268,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Week 1 knowledge check quiz (Days 1–4 vocabulary and concepts)",
+    "Quiz sheets"
+   ],
+   [
+    "0:15–0:50",
+    "Key Concepts: Hallucination, bias, and the ethics landscape",
+    "Slides/whiteboard"
+   ],
+   [
+    "0:50–1:10",
+    "Break",
+    ""
+   ],
+   [
+    "1:10–2:10",
+    "Activity: AI Ethics Court — mock trial",
+    "Roles cards, case briefs, \"verdict\" voting paddles"
+   ],
+   [
+    "2:10–2:25",
+    "Class debrief and personal framework building",
+    ""
+   ],
+   [
+    "2:25–2:30",
+    "Reflection + preview of Week 2",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 269,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 270,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. AI Hallucination — When AI Makes Things Up"
+ },
+ {
+  "i": 271,
+  "k": "p",
+  "s": "",
+  "t": "AI language models can confidently state things that are completely false. This is called hallucination — a technical term, not a metaphor. It happens because:"
+ },
+ {
+  "i": 272,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "AI language models predict the most statistically likely next word, not the most true next word"
+ },
+ {
+  "i": 273,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "They have no internal sense of \"I don't know\" — they fill gaps with plausible-sounding text"
+ },
+ {
+  "i": 274,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Their training data contained errors and biases which are reproduced in outputs"
+ },
+ {
+  "i": 275,
+  "k": "p",
+  "s": "",
+  "t": "Real examples of damaging hallucinations:"
+ },
+ {
+  "i": 276,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Legal: Lawyers submitted court briefs citing cases that ChatGPT invented — the cases did not exist. The lawyers faced disciplinary action."
+ },
+ {
+  "i": 277,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Medical: AI chatbots have given incorrect drug dosage information to patients."
+ },
+ {
+  "i": 278,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Academic: Students cited AI-generated references that were entirely fabricated, including fake DOI numbers."
+ },
+ {
+  "i": 279,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚠️  The Golden Rule on AI Outputs"
+   ],
+   [
+    "Never present AI-generated facts without verification from a trusted primary source. AI is a starting point for research, not the ending point. If you cannot find the fact independently confirmed, do not use it."
+   ]
+  ]
+ },
+ {
+  "i": 280,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. Bias in AI Systems"
+ },
+ {
+  "i": 281,
+  "k": "p",
+  "s": "",
+  "t": "AI bias occurs when a system produces systematically unfair or inaccurate results for certain groups. There are several ways bias enters AI:"
+ },
+ {
+  "i": 282,
+  "k": "tbl",
+  "rows": [
+   [
+    "Type of Bias",
+    "How It Works"
+   ],
+   [
+    "Historical Bias",
+    "Training data reflects historical human discrimination. E.g., hiring AI trained on past employees (mostly male engineers) learned to prefer male candidates."
+   ],
+   [
+    "Representation Bias",
+    "Certain groups are underrepresented in training data. E.g., facial recognition trained mostly on light-skinned faces performs worse on dark-skinned faces."
+   ],
+   [
+    "Measurement Bias",
+    "The data collected doesn't accurately represent reality. E.g., using arrests as a proxy for crime — biased policing skews the data."
+   ],
+   [
+    "Aggregation Bias",
+    "One model applied across different groups where differences matter. E.g., a medical AI trained on average data may perform poorly for women if symptoms present differently."
+   ]
+  ]
+ },
+ {
+  "i": 283,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Real-World AI Failures — Case Studies"
+ },
+ {
+  "i": 284,
+  "k": "p",
+  "s": "",
+  "t": "Case 1: COMPAS Recidivism Algorithm (USA, 2016)"
+ },
+ {
+  "i": 285,
+  "k": "p",
+  "s": "",
+  "t": "An AI system used by US courts to predict whether criminals would reoffend was found to be twice as likely to incorrectly flag Black defendants as high-risk compared to white defendants, even when other factors were identical. The algorithm was used to influence sentencing decisions."
+ },
+ {
+  "i": 286,
+  "k": "p",
+  "s": "",
+  "t": "Case 2: Amazon Hiring AI (2018)"
+ },
+ {
+  "i": 287,
+  "k": "p",
+  "s": "",
+  "t": "Amazon built an AI to screen job applications. It was trained on 10 years of resumes — which mostly came from men, as tech is male-dominated. The AI learned to penalise resumes containing the word \"women's\" (e.g., \"women's chess club president\"). Amazon scrapped the system."
+ },
+ {
+  "i": 288,
+  "k": "p",
+  "s": "",
+  "t": "Case 3: Uber/Lyft Surge Pricing in Disasters"
+ },
+ {
+  "i": 289,
+  "k": "p",
+  "s": "",
+  "t": "During natural disasters, algorithmic pricing systems have charged vulnerable people thousands of dollars for emergency transport — the algorithm optimising for revenue with no ethical override for crisis situations."
+ },
+ {
+  "i": 290,
+  "k": "p",
+  "s": "",
+  "t": "Case 4: AI Health Chatbots Giving Dangerous Advice"
+ },
+ {
+  "i": 291,
+  "k": "p",
+  "s": "",
+  "t": "Multiple cases have emerged of AI wellness chatbots encouraging self-harm when users expressed distress, or providing incorrect medication information. These systems lacked appropriate safety guardrails."
+ },
+ {
+  "i": 292,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "4. An Ethical Framework for AI Decisions"
+ },
+ {
+  "i": 293,
+  "k": "p",
+  "s": "",
+  "t": "When evaluating whether an AI system should be built or deployed, ask these questions:"
+ },
+ {
+  "i": 294,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Fairness: Does this AI treat all groups equitably? Who might be disadvantaged?"
+ },
+ {
+  "i": 295,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Transparency: Can we explain why the AI made a specific decision? Is it a \"black box\"?"
+ },
+ {
+  "i": 296,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Accountability: Who is responsible when the AI makes a harmful error — the developer, the deployer, or the user?"
+ },
+ {
+  "i": 297,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Privacy: What data does this AI collect? Who has access to it? Can it be misused?"
+ },
+ {
+  "i": 298,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Safety: What happens if this AI fails? Have edge cases been tested? Is there a human override?"
+ },
+ {
+  "i": 299,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Consent: Do the people affected by this AI know about it? Did they agree to be affected by it?"
+ },
+ {
+  "i": 300,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 301,
+  "k": "p",
+  "s": "",
+  "t": "▶  Coded Bias (Netflix documentary trailer, 3 min)  —  https://www.youtube.com/watch?v=jZl55PsfZJQ\n     Powerful documentary about facial recognition bias. The trailer alone is compelling — highly recommended."
+ },
+ {
+  "i": 302,
+  "k": "p",
+  "s": "",
+  "t": "▶  The Problem with AI Bias (BBC, 8 min)  —  https://www.youtube.com/watch?v=59bMh59JQDo\n     Accessible overview of bias types with real-world examples. Watch before the Key Concepts section."
+ },
+ {
+  "i": 303,
+  "k": "p",
+  "s": "",
+  "t": "▶  How AI Can Reinforce Human Biases (TED-Ed, 5 min)  —  https://www.youtube.com/watch?v=Ok5sKLXqynQ\n     Excellent animated explainer — ideal for visual learners."
+ },
+ {
+  "i": 304,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity — AI Ethics Court"
+ },
+ {
+  "i": 305,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Setup"
+   ],
+   [
+    "Divide the class into 3 groups. Each group is assigned one Case below.\nEach group has 20 minutes to prepare their case — they must argue BOTH sides (prosecution and defence).\nThen the class votes: Should this AI system be allowed? Yes / No / Only with conditions?\nThe facilitator plays \"Chief Justice\" — asking probing questions of each side."
+   ]
+  ]
+ },
+ {
+  "i": 306,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚖️  Case 1: AI Bail Decisions"
+   ],
+   [
+    "The Scenario:\nA government wants to use an AI system to assist judges in deciding whether to grant bail to accused criminals. The AI analyses 200 data points and predicts re-offending risk. Supporters say it removes human prejudice. Critics say it encodes historical bias and removes human judgment from life-changing decisions.\nArguments to prepare:\nFOR: Consistency, speed, removes individual judge bias, evidence-based\nAGAINST: Bias in historical data, no transparency, people deserve human judgment, no appeal process\nYour verdict: Should this AI be used? If yes — what conditions must apply?"
+   ]
+  ]
+ },
+ {
+  "i": 307,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚖️  Case 2: AI Mental Health Companion"
+   ],
+   [
+    "The Scenario:\nA company releases an AI chatbot designed to provide mental health support to teenagers who cannot access professional therapy. The AI has conversations, provides coping strategies, and tracks mood. 2 million teens use it. One case emerges where the AI failed to detect serious warning signs and a teen was harmed.\nArguments to prepare:\nFOR: Fills a massive gap in mental health services, available 24/7, no stigma, many helped\nAGAINST: Not a licensed therapist, cannot handle crisis, single failure = life consequences, privacy of intimate disclosures\nYour verdict: Should this AI remain available? Under what rules?"
+   ]
+  ]
+ },
+ {
+  "i": 308,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚖️  Case 3: AI School Exam Cheating Detection"
+   ],
+   [
+    "The Scenario:\nA school adopts an AI proctoring system that monitors students during online exams via their webcam — tracking eye movement, keystrokes, facial expressions, and background audio to detect cheating. Studies show the system flags students of colour and those with learning disabilities at higher rates.\nArguments to prepare:\nFOR: Academic integrity, equal standards, scales to online learning, deters cheating\nAGAINST: Discriminatory outcomes, privacy invasion of home, anxiety impact, home environment advantage\nYour verdict: Should this AI be used in schools? What regulations should govern it?"
+   ]
+  ]
+ },
+ {
+  "i": 309,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 5"
+ },
+ {
+  "i": 310,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "Of the three court cases, which one concerned you most? Why? What principle (fairness, privacy, safety, transparency) was most violated?\nDescribe a situation from your own life where an AI might be making decisions about you right now. How transparent is that process? Do you consent to it?\nIf you were building an AI system, what one ethical principle would you refuse to compromise on? Why?\nWeek 1 reflection: Write 3 things you know about AI now that you didn't know on Day 1. Write 2 questions you still have. Write 1 thing that has changed how you think about technology."
+   ]
+  ]
+ },
+ {
+  "i": 311,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 5"
+   ],
+   [
+    "Hallucination: AI outputting confident but factually incorrect information\nBias: Systematic unfairness in AI outputs, usually from skewed training data\nBlack Box: An AI system whose internal decision-making process cannot be explained\nExplainability / XAI: The ability to interpret and explain how an AI reached a conclusion\nFairness: Equitable treatment of all individuals and groups by an AI system\nAccountability: Clear responsibility when AI causes harm\nAI Safety: The field focused on ensuring AI systems behave as intended and do not cause harm\nGuardrails: Constraints built into AI systems to prevent harmful outputs"
+   ]
+  ]
+ },
+ {
+  "i": 312,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 6\nAI + Creativity\nWhen machines make art — and how humans make it better"
+   ]
+  ]
+ },
+ {
+  "i": 313,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 314,
+  "k": "p",
+  "s": "",
+  "t": "Welcome to Week 2. You now have the foundation to start creating. Today we explore AI as a creative partner — not a replacement for human creativity, but an amplifier of it. We will make music, write poetry, generate visual art, and ask the big question: is AI-generated art still \"art\"?"
+ },
+ {
+  "i": 315,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 6"
+   ],
+   [
+    "Understand how generative AI creates text, images, and music\nUse AI tools to create original creative works\nArticulate the difference between AI-generated and human creative expression\nDevelop your own position on authorship and creativity in the AI age\nBuild a mini creative portfolio using AI collaboration"
+   ]
+  ]
+ },
+ {
+  "i": 316,
+  "k": "p",
+  "s": "",
+  "t": "Figure 6.1 — Diffusion model: from text prompt to image"
+ },
+ {
+  "i": 317,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 318,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Week 1 celebration — share top 3 insights from last week",
+    "Sticky notes wall"
+   ],
+   [
+    "0:15–0:40",
+    "Key Concepts: Generative AI and creative tools",
+    "Projector demos"
+   ],
+   [
+    "0:40–1:20",
+    "Activity 1: AI Songwriting + Visual Art Workshop",
+    "Laptops, Suno AI, Adobe Firefly"
+   ],
+   [
+    "1:20–1:35",
+    "Break",
+    ""
+   ],
+   [
+    "1:35–2:00",
+    "Activity 2: Human vs AI Creative Showdown",
+    ""
+   ],
+   [
+    "2:00–2:20",
+    "Gallery walk — display student AI + human creative works",
+    "Printed or displayed on screens"
+   ],
+   [
+    "2:20–2:30",
+    "Reflection",
+    "Reflection journal"
+   ]
+  ]
+ },
+ {
+  "i": 319,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 320,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. How Generative AI Creates"
+ },
+ {
+  "i": 321,
+  "k": "p",
+  "s": "",
+  "t": "Generative AI is trained to create new content rather than just classify or predict. The key technique is called a Diffusion Model (for images) or a Large Language Model / Transformer (for text and music):"
+ },
+ {
+  "i": 322,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "For images (Stable Diffusion, DALL-E, Midjourney): Start with pure noise → the AI gradually de-noises the image, guided by your text prompt, until it produces a coherent picture that matches your description"
+ },
+ {
+  "i": 323,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "For text (GPT-4, Claude): Predict the most likely next token (word fragment) given all previous tokens + training — do this thousands of times to produce a paragraph"
+ },
+ {
+  "i": 324,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "For music (Suno, Udio, MusicGen): Similar to image generation — the AI has learned the patterns of pitch, rhythm, timbre, and structure from millions of songs, and generates new audio that follows these patterns"
+ },
+ {
+  "i": 325,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. The Creativity Debate"
+ },
+ {
+  "i": 326,
+  "k": "tbl",
+  "rows": [
+   [
+    "Perspective",
+    "Argument"
+   ],
+   [
+    "\"AI is not creative — it remixes.\"",
+    "AI has never had an original thought. It recombines patterns from human-created works. True creativity requires consciousness, lived experience, and emotional intent."
+   ],
+   [
+    "\"AI creativity is real — the output is new.\"",
+    "If the result is genuinely novel and valuable, does the process matter? Humans also build on existing knowledge and culture. The output is what counts."
+   ],
+   [
+    "\"Human + AI is the real breakthrough.\"",
+    "The most creative work happens when humans use AI to explore possibilities they couldn't reach alone, then apply judgment, emotion, and intention to shape the result."
+   ]
+  ]
+ },
+ {
+  "i": 327,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Copyright and Ownership"
+ },
+ {
+  "i": 328,
+  "k": "p",
+  "s": "",
+  "t": "AI-generated content raises complex legal questions that are actively being debated in courts worldwide:"
+ },
+ {
+  "i": 329,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "In Australia, copyright currently requires a human author — AI-only works may not be protected"
+ },
+ {
+  "i": 330,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "If you use AI as a tool and make substantial creative decisions, you may hold copyright over the final work"
+ },
+ {
+  "i": 331,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Training AI on copyrighted artworks without permission is being challenged in multiple lawsuits globally"
+ },
+ {
+  "i": 332,
+  "k": "p",
+  "s": "List Paragraph",
+  "t": "Platform terms vary widely — always check whether you own what you create on any AI platform"
+ },
+ {
+  "i": 333,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Recommended Videos"
+ },
+ {
+  "i": 334,
+  "k": "p",
+  "s": "",
+  "t": "▶  How AI Image Generation Works (Vox, 9 min)  —  https://www.youtube.com/watch?v=SVcsDDABEkM\n     Clear, visual explanation of diffusion models. Perfect intro before the creative activities."
+ },
+ {
+  "i": 335,
+  "k": "p",
+  "s": "",
+  "t": "▶  Suno AI — Create Music with AI (official demo)  —  https://www.youtube.com/watch?v=PL1HXkjxTFY\n     Shows how to generate full songs from text prompts. Students should watch this before Activity 1."
+ },
+ {
+  "i": 336,
+  "k": "p",
+  "s": "",
+  "t": "▶  Will AI Replace Artists? (Corridor Crew, 18 min)  —  https://www.youtube.com/watch?v=vAlHEIJGCQI\n     Professional animators debate AI art. Balanced, nuanced — great for discussion."
+ },
+ {
+  "i": 337,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — AI Creative Workshop"
+ },
+ {
+  "i": 338,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Station A: AI Songwriting with Suno"
+   ],
+   [
+    "Visit: suno.com (free tier available)\nWrite a prompt for a song: specify genre, mood, theme, and style. Example: \"Upbeat pop song about discovering you can code, energetic, teenage perspective, with a catchy chorus\"\nGenerate the song. Listen carefully. What do you like? What feels off?\nNow humanise it: write new lyrics for the chorus yourself. What emotion do YOUR lyrics add that the AI version lacked?\nOptional: Generate 3 versions with different genres (pop, hip-hop, classical) of the same theme. How does genre change meaning?\nReflection: What did AI do well? What did you add that made it yours?"
+   ]
+  ]
+ },
+ {
+  "i": 339,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Station B: AI Visual Art with Adobe Firefly"
+   ],
+   [
+    "Visit: firefly.adobe.com (free, no age restriction)\nGenerate an image that represents \"the future of education.\" Use a detailed prompt with style, lighting, and mood.\nGenerate 4 variations. Select the one that resonates most. Write a sentence explaining why.\nNow draw your own version of the same concept — freehand, 5 minutes. Don't try to copy the AI version.\nPlace both side by side. What did you choose to include that the AI didn't? What did the AI imagine that surprised you?\nReflection: Which version feels more \"yours\"? Why?"
+   ]
+  ]
+ },
+ {
+  "i": 340,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — Human vs AI Creative Showdown"
+ },
+ {
+  "i": 341,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Choose ONE creative challenge from below. Everyone — students AND facilitator — has 5 minutes to complete it.\nHalf the class uses AI. Half does it purely by hand/mind. Then display all works anonymously.\nClass tries to guess which are AI and which are human. Vote, reveal, discuss."
+   ]
+  ]
+ },
+ {
+  "i": 342,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎨  Challenge Options (pick one)"
+   ],
+   [
+    "Option A: Write a haiku about loneliness. 5-7-5 syllables. 5 minutes.\nOption B: Design a logo for a company called \"Future Minds\" — sketch it on paper or generate with AI.\nOption C: Write the opening sentence of a thriller novel set in Sydney in 2040.\nOption D: Create a short 4-line rhyming verse about why learning matters."
+   ]
+  ]
+ },
+ {
+  "i": 343,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 6"
+ },
+ {
+  "i": 344,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "When you collaborated with AI on a creative project today, at what point did the work start to feel like \"yours\"? What creative decisions did you make?\nDo you think AI-generated art should be eligible for art prizes? What criteria would you use to judge?\nIf AI can write songs, draw illustrations, and compose poetry — what remains uniquely human about creativity?\nBuild your Creative + AI project plan: What creative project would you like to work on for your final showcase? How will AI assist, and what will you contribute that AI cannot?"
+   ]
+  ]
+ },
+ {
+  "i": 345,
+  "k": "tbl",
+  "rows": [
+   [
+    "📚  Key Vocabulary — Day 6"
+   ],
+   [
+    "Generative AI: AI that creates new content (images, text, audio, video)\nDiffusion Model: AI architecture that generates images by reversing a noise process\nLarge Language Model (LLM): AI trained on vast text corpora to generate and understand language\nToken: The basic unit an LLM processes — roughly a word fragment\nPrompt (creative): A detailed description of the creative output you want the AI to generate\nCopyright: Legal right protecting original creative works from unauthorised copying\nGenerative Adversarial Network (GAN): AI architecture using competing generator and discriminator networks\nLatent Space: The mathematical space inside an AI where concepts are stored as relationships between numbers"
+   ]
+  ]
+ },
+ {
+  "i": 346,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 7\nDesign Thinking Meets AI\nFrom \"what if?\" to a real solution — your project begins"
+   ]
+  ]
+ },
+ {
+  "i": 347,
+  "k": "p",
+  "s": "",
+  "t": "Figure 7.1 — Design Thinking wheel with AI at the centre"
+ },
+ {
+  "i": 348,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 349,
+  "k": "p",
+  "s": "",
+  "t": "Today we bridge understanding and building. Design thinking is the problem-solving framework used by the world's most innovative companies. Today you will combine design thinking with your AI knowledge to identify a real problem, design an AI-powered solution, and plan a mini-project you will build over the next two days."
+ },
+ {
+  "i": 350,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Learning Objectives — Day 7"
+   ],
+   [
+    "Apply the 5-stage design thinking process to a real problem\nIdentify where AI adds genuine value vs where human judgment is essential\nDesign a feasible AI solution with a defined scope\nCreate a project plan for Days 8–9\nPresent a project pitch to the class for peer feedback"
+   ]
+  ]
+ },
+ {
+  "i": 351,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 352,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Day 6 gallery walk review — favourite creative pieces",
+    "Displayed works from yesterday"
+   ],
+   [
+    "0:15–0:40",
+    "Key Concepts: Design Thinking + AI use case mapping",
+    "Whiteboard, sticky notes"
+   ],
+   [
+    "0:40–1:20",
+    "Activity 1: Problem Sprint — identify and define a problem",
+    "Large paper, markers, sticky notes"
+   ],
+   [
+    "1:20–1:35",
+    "Break",
+    ""
+   ],
+   [
+    "1:35–2:00",
+    "Activity 2: Solution Design + AI Fit Canvas",
+    "Project Canvas worksheets"
+   ],
+   [
+    "2:00–2:20",
+    "Project Pitches — 60-second pitch per team",
+    "Timer"
+   ],
+   [
+    "2:20–2:30",
+    "Team formation confirmed, project plans locked in",
+    "Project plan template"
+   ]
+  ]
+ },
+ {
+  "i": 353,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Key Concepts"
+ },
+ {
+  "i": 354,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "1. Design Thinking — The 5 Stages"
+ },
+ {
+  "i": 355,
+  "k": "tbl",
+  "rows": [
+   [
+    "Stage",
+    "What You Do"
+   ],
+   [
+    "1. Empathise",
+    "Understand the people who have the problem. Do not assume — ask, observe, listen. Who is affected? How does this problem feel to them?"
+   ],
+   [
+    "2. Define",
+    "Clearly state the problem. Use this format: \"[Person] needs [need] because [insight].\" Avoid jumping to solutions."
+   ],
+   [
+    "3. Ideate",
+    "Generate as many ideas as possible without judging any of them. Quantity over quality at this stage. Wild ideas welcome."
+   ],
+   [
+    "4. Prototype",
+    "Build the simplest possible version of your solution — fast and cheap. A sketch, a flowchart, a simple demo is fine."
+   ],
+   [
+    "5. Test",
+    "Get real feedback. Show your prototype to someone who has the problem. What works? What doesn't? Iterate."
+   ]
+  ]
+ },
+ {
+  "i": 356,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "2. Where Does AI Actually Help?"
+ },
+ {
+  "i": 357,
+  "k": "p",
+  "s": "",
+  "t": "Not every problem needs AI. Here is a framework for deciding when AI adds value:"
+ },
+ {
+  "i": 358,
+  "k": "tbl",
+  "rows": [
+   [
+    "✅  AI is a good fit when..."
+   ],
+   [
+    "The task involves pattern recognition in large amounts of data (e.g., identifying disease in thousands of images)\nPersonalisation at scale is needed (e.g., recommending different content to millions of users)\nSpeed matters more than occasional errors (e.g., spam filtering — some false positives are acceptable)\nThe task is repetitive and rule-based at its core, but with too many variations for manual rules\nNatural language understanding or generation is central to the problem"
+   ]
+  ]
+ },
+ {
+  "i": 359,
+  "k": "tbl",
+  "rows": [
+   [
+    "⚠️  AI is NOT a good fit when..."
+   ],
+   [
+    "The decision has life-or-death consequences and errors are unacceptable without human review\nYou have very little training data (AI needs lots of examples to work well)\nThe problem requires genuine common sense, novel reasoning, or emotional nuance\nTransparency and explainability are legally or ethically required (e.g., credit decisions, medical diagnosis)\nA simple rule-based system or spreadsheet would do the job just as well"
+   ]
+  ]
+ },
+ {
+  "i": 360,
+  "k": "p",
+  "s": "Heading 3",
+  "t": "3. Project Options for Days 8–9"
+ },
+ {
+  "i": 361,
+  "k": "p",
+  "s": "",
+  "t": "Choose one of the following project tracks. Each is achievable in approximately 2 × 3 hours with the provided tools:"
+ },
+ {
+  "i": 362,
+  "k": "tbl",
+  "rows": [
+   [
+    "Project Track",
+    "Description"
+   ],
+   [
+    "Track A: Smart Chatbot",
+    "Build a custom AI assistant for a specific topic using a system prompt. Example: a \"homework helper\" that only assists with science questions, always shows working, and never just gives the answer."
+   ],
+   [
+    "Track B: Image Classifier App",
+    "Build an image classifier using Teachable Machine and embed it in a simple webpage. Example: a \"plant health checker\" that identifies healthy vs diseased leaves."
+   ],
+   [
+    "Track C: AI Story Generator",
+    "Build an interactive choose-your-own-adventure story powered by AI. The reader's choices update the AI prompt, generating new story branches."
+   ],
+   [
+    "Track D: AI Research Assistant",
+    "Design a prompt system that helps students research a topic responsibly — breaking down a topic, suggesting sources, summarising findings, and flagging potential misinformation."
+   ]
+  ]
+ },
+ {
+  "i": 363,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 1 — Problem Sprint"
+ },
+ {
+  "i": 364,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Give each student 10 sticky notes. Set a 5-minute timer.\nTask: Write one problem per sticky note — problems from school, home, your community, your interests. No filtering.\nGroup students into teams of 3. Each team clusters their problems by theme on a large sheet of paper.\nTeams pick ONE problem to pursue. It should be: specific, genuinely felt, and potentially solvable with a digital tool."
+   ]
+  ]
+ },
+ {
+  "i": 365,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Problem Definition Template"
+   ],
+   [
+    "Complete this statement to define your problem:\nWHO has this problem? (Be specific — \"Year 7 students who study at home alone\" not just \"students\")\nWHAT is the problem? (Describe the situation, not the solution)\nWHEN/WHERE does this problem occur?\nWHY does it matter? What is the impact if it remains unsolved?\nHOW do people currently solve it? What is wrong with the current solution?\nYour Problem Statement: \"[Person] needs [need] because [insight].\"\nExample: \"Year 7 students studying alone at home need a way to check their own understanding of maths concepts because they have no one to ask and get stuck for hours, losing motivation.\""
+   ]
+  ]
+ },
+ {
+  "i": 366,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Activity 2 — AI Fit Canvas"
+ },
+ {
+  "i": 367,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Project Canvas — Complete as a Team"
+   ],
+   [
+    "Section 1: The Problem\nProblem Statement (from Activity 1):\nWho is our primary user?\nWhat emotion does this problem cause? (frustration, confusion, fear, loneliness?)\nSection 2: The AI Solution\nWhat will our AI do? (1 sentence)\nWhat type of AI is it? (chatbot / image classifier / generator / other)\nWhat training data or prompts does it need?\nWhat does the AI decide? What does the human decide?\nSection 3: Build Plan\nProject Track (A / B / C / D):\nTools we will use:\nDay 8 goal:\nDay 9 goal:\nHow will we know if our solution works? (success measure)\nSection 4: Risks & Ethics\nWhat could go wrong?\nWhich ethical principle (fairness/privacy/transparency/safety) is most relevant? How will we address it?"
+   ]
+  ]
+ },
+ {
+  "i": 368,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Student Reflection — Day 7"
+ },
+ {
+  "i": 369,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Write Your Answers in Your Reflection Journal"
+   ],
+   [
+    "What problem did your team choose? Why does it matter to you personally?\nWhere in your solution does AI add value that a human or simple app could not? Be specific.\nWhat is the one thing that could most easily go wrong with your project? How will you handle it?\nDescribe your ideal user testing session: Who would you show your prototype to? What question would you most want them to answer?"
+   ]
+  ]
+ },
+ {
+  "i": 370,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 8\nBuild Day 1\nFrom canvas to code — bringing your AI project to life"
+   ]
+  ]
+ },
+ {
+  "i": 371,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 372,
+  "k": "p",
+  "s": "",
+  "t": "Today is pure building. Teams work on their chosen project track, supported by facilitators and peer collaboration. The goal by end of day: a working prototype — even a rough one — that demonstrates your core idea."
+ },
+ {
+  "i": 373,
+  "k": "p",
+  "s": "",
+  "t": "Remember the Design Thinking principle: a bad prototype you can test beats a perfect plan you can only imagine. Done is better than perfect on Day 8."
+ },
+ {
+  "i": 374,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Day 8 Goals"
+   ],
+   [
+    "Have a working proof-of-concept by end of day\nIdentify the biggest technical or design challenge in your project\nTest your prototype with at least one person outside your team\nDocument what works, what doesn't, and what you'll fix tomorrow"
+   ]
+  ]
+ },
+ {
+  "i": 375,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Build Schedule"
+ },
+ {
+  "i": 376,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Stand-up: each team shares their Day 8 goal in 60 seconds",
+    "Project plans from Day 7"
+   ],
+   [
+    "0:15–1:15",
+    "Build Sprint 1 — core functionality",
+    "Laptops, all tools available"
+   ],
+   [
+    "1:15–1:30",
+    "Break + peer check-in (show your progress to another team)",
+    ""
+   ],
+   [
+    "1:30–2:15",
+    "Build Sprint 2 — refine + test with someone outside your team",
+    ""
+   ],
+   [
+    "2:15–2:25",
+    "End-of-day demo: show what exists, no matter how rough",
+    "Projector or shared screen"
+   ],
+   [
+    "2:25–2:30",
+    "Reflection — what works, what's broken, tomorrow's plan",
+    ""
+   ]
+  ]
+ },
+ {
+  "i": 377,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Track A — Smart Chatbot Build Guide"
+ },
+ {
+  "i": 378,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Tools: Claude.ai or ChatGPT (free tier) + Google Docs to record outputs"
+   ],
+   [
+    "A \"smart chatbot\" for a specific purpose is built through a carefully crafted system prompt — the instruction that defines who the AI is, what it knows, and how it should behave."
+   ]
+  ]
+ },
+ {
+  "i": 379,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  System Prompt Template for Your Chatbot"
+   ],
+   [
+    "Copy this template and fill in the [brackets]:\nYou are [name], an AI assistant specialising in [topic]. You help [target user] with [specific task].\nYour personality is [3 adjectives — e.g. warm, patient, encouraging].\nRules you always follow:\nOnly answer questions related to [topic]. For other topics, politely redirect.\nAlways [key behaviour — e.g. show your working step by step].\nNever [prohibited behaviour — e.g. give the answer directly without explanation].\nIf you are unsure, say so clearly and suggest where the user could find a reliable answer.\nAlways end your response with a follow-up question to check understanding.\nTest your system prompt: paste it into Claude or ChatGPT as the first message, then have a classmate try to use your chatbot. Does it behave as intended?"
+   ]
+  ]
+ },
+ {
+  "i": 380,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Track B — Image Classifier App Build Guide"
+ },
+ {
+  "i": 381,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Step-by-Step: Teachable Machine → Embedded Web App"
+   ],
+   [
+    "Phase 1: Train Your Model (30 min)\nPlan your classes: what 3–4 categories will your classifier recognise?\nCollect training images: minimum 100 per class, from multiple angles, lighting, backgrounds\nTrain on Teachable Machine (teachablemachine.withgoogle.com)\nEvaluate accuracy — aim for 85%+ before proceeding\nPhase 2: Export and Embed (30 min)\nClick \"Export Model\" → \"Tensorflow.js\" → \"Upload my model\" → copy the model URL\nOpen a new file called index.html on your computer\nPaste in the Teachable Machine sample code from the \"Code snippets\" section\nReplace the placeholder model URL with yours\nOpen index.html in your browser — it should work immediately\nPhase 3: Customise (30 min)\nChange the page title, add a description of what your classifier does\nAdd a friendly message when each class is detected\nShare your index.html file with another team and let them test it"
+   ]
+  ]
+ },
+ {
+  "i": 382,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Track C — AI Story Generator Build Guide"
+ },
+ {
+  "i": 383,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Build: Interactive AI Branching Story"
+   ],
+   [
+    "Concept: The player makes choices. Each choice is fed back into the AI prompt to generate the next scene.\nPhase 1: Story Architecture (20 min)\nChoose a setting and premise: e.g. \"You are a young scientist in 2080 who discovers an AI that has gained emotions\"\nMap your story tree: 3 chapters, each with 2 choices. That's 8 possible story paths.\nWrite the world-building context (2–3 paragraphs) that the AI will use as background\nPhase 2: System Prompt Design (20 min)\nWrite a system prompt that sets the tone: \"You are a narrative AI for an interactive science fiction story. The tone is [adjective]. Always end each scene with exactly 2 choices formatted as: CHOICE A: [option] | CHOICE B: [option]\"\nTest it: does the AI maintain consistency? Does it remember previous choices?\nPhase 3: User Interface (40 min)\nCreate a simple Google Slides or PowerPoint presentation\nSlide 1: Opening scene (paste AI-generated text). Add 2 buttons linking to Slide 2A or 2B.\nEach branch slide: generate that scene from the AI using the choice as context\nContinue for 3 chapters — you will have approximately 14 slides total"
+   ]
+  ]
+ },
+ {
+  "i": 384,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Track D — AI Research Assistant Build Guide"
+ },
+ {
+  "i": 385,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Build: A Research Prompt System"
+   ],
+   [
+    "Concept: Design a series of prompts that help a student research any topic responsibly.\nThe 5-Prompt Research System — design each prompt:\nSCOPE PROMPT: \"Given the research question [X], break it into 5 specific sub-questions that together would fully answer it.\"\nSOURCES PROMPT: \"For the sub-question [Y], suggest 5 types of sources I should look for. Include at least 2 primary source types.\"\nSUMMARISE PROMPT: \"Here is text I found [paste source text]. Summarise the key points relevant to [sub-question]. Flag any claims that need verification.\"\nBIAS CHECK PROMPT: \"Analyse this summary for potential bias, missing perspectives, or unsupported claims: [paste summary].\"\nSYNTHESIS PROMPT: \"Using these verified points [list], write a 3-paragraph evidence-based response to [original research question]. Cite each point.\"\nTest your system: use it to research a topic you actually need for school. Does it produce better research than googling alone?"
+   ]
+  ]
+ },
+ {
+  "i": 386,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Daily Build Log — Student Worksheet"
+ },
+ {
+  "i": 387,
+  "k": "tbl",
+  "rows": [
+   [
+    "📓  Complete This at the End of Day 8"
+   ],
+   [
+    "Team: ___ | Track: ___\nWhat did we complete today? (be specific)\nWhat is working well?\nWhat is NOT working yet? (list all known issues)\nWhat feedback did we get from our test user?\nWhat are our top 3 priorities for Day 9?\nWhat help do we need from the facilitator tomorrow?"
+   ]
+  ]
+ },
+ {
+  "i": 388,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 9\nBuild Day 2\nPolish, test, and prepare your story for the world"
+   ]
+  ]
+ },
+ {
+  "i": 389,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 390,
+  "k": "p",
+  "s": "",
+  "t": "Day 9 is about taking your rough prototype from yesterday and making it something you are proud to show. Focus on three things: fixing your biggest known problem, improving the user experience, and preparing a compelling 3-minute presentation for tomorrow's Demo Day."
+ },
+ {
+  "i": 391,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Day 9 Goals"
+   ],
+   [
+    "Fix the top issue identified in yesterday's build log\nImprove the user experience — is it easy for someone new to use?\nConduct a second round of user testing and gather feedback\nPrepare your 3-minute Demo Day presentation\nCreate a project one-pager summary"
+   ]
+  ]
+ },
+ {
+  "i": 392,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Build Schedule"
+ },
+ {
+  "i": 393,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:15",
+    "Stand-up: share Day 8 build log — biggest issue to fix today",
+    "Build logs from yesterday"
+   ],
+   [
+    "0:15–1:00",
+    "Fix Sprint — address your top issue from yesterday",
+    ""
+   ],
+   [
+    "1:00–1:30",
+    "User Testing Round 2 — test with 2 people outside your team",
+    "Feedback forms"
+   ],
+   [
+    "1:30–1:45",
+    "Break",
+    ""
+   ],
+   [
+    "1:45–2:15",
+    "Polish + Demo Prep — rehearse your 3-minute pitch",
+    "Presentation template"
+   ],
+   [
+    "2:15–2:30",
+    "Teams present dry-run to facilitator for feedback",
+    "Timer"
+   ]
+  ]
+ },
+ {
+  "i": 394,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "User Testing Protocol"
+ },
+ {
+  "i": 395,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  How to Run a Proper User Test"
+   ],
+   [
+    "User testing is not asking \"do you like it?\" — that gets you polite answers, not useful ones.\nFollow this protocol for each tester:"
+   ]
+  ]
+ },
+ {
+  "i": 396,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  User Testing Script"
+   ],
+   [
+    "BEFORE: Set up\nTell the tester: \"We are testing the tool, not you. There are no wrong answers. Please think out loud as you use it.\"\nGive them a specific task: \"Imagine you need to [specific use case]. Try using this tool to accomplish that.\"\nDURING: Observe, don't help\nDo NOT help them when they get stuck — their confusion is your most valuable data\nNote exactly where they pause, hesitate, or make mistakes\nWrite down their exact words when they react to anything\nAFTER: Ask these 5 questions\nWhat would you use this for if you had it right now?\nWhat confused you most?\nWhat was the most useful part?\nWhat one thing would you change?\nWould you recommend this to a friend? Why or why not?"
+   ]
+  ]
+ },
+ {
+  "i": 397,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Demo Day Presentation Template"
+ },
+ {
+  "i": 398,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎤  Your 3-Minute Presentation Structure"
+   ],
+   [
+    "Section 1: The Problem — 45 seconds\nOpen with a real scenario: \"Imagine you are [user] and you face [problem]...\"\nMake the audience feel the problem before you show the solution\nSection 2: Our Solution — 60 seconds\nShow (not just tell) — live demo or screenshot walkthrough\nExplain what AI does vs what the human does\nHighlight the most impressive/surprising thing it can do\nSection 3: What We Learned — 45 seconds\nWhat was the hardest thing to build?\nWhat did the AI do that surprised you?\nWhat would you improve with more time?\nSection 4: The Bigger Picture — 30 seconds\nIf this tool existed fully developed, what impact could it have?\nClose with your team's key insight from this project"
+   ]
+  ]
+ },
+ {
+  "i": 399,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Project One-Pager Template"
+ },
+ {
+  "i": 400,
+  "k": "tbl",
+  "rows": [
+   [
+    "📄  Complete This — It Will Be Displayed at Demo Day"
+   ],
+   [
+    "Project Name:\nTeam Members:\nThe Problem We Solved:\nOur AI Solution (1 sentence):\nTools We Used:\nWhat AI Does:\nWhat Humans Do:\nBiggest Challenge We Overcame:\nWhat We Would Build Next (if we had more time):\nOur Ethical Consideration:\nQR code or link to try our project: [add here]"
+   ]
+  ]
+ },
+ {
+  "i": 401,
+  "k": "tbl",
+  "rows": [
+   [
+    "DAY 10\nDemo Day & Graduation\nTwo weeks. Ten days. One showcase. Your AI future begins now."
+   ]
+  ]
+ },
+ {
+  "i": 402,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Overview"
+ },
+ {
+  "i": 403,
+  "k": "p",
+  "s": "",
+  "t": "This is the day everything comes together. You will present your projects to a real audience — parents, teachers, or guests — and demonstrate not just what you built, but how you think. This session is also a celebration of how far you have come in two weeks."
+ },
+ {
+  "i": 404,
+  "k": "tbl",
+  "rows": [
+   [
+    "🎯  Day 10 Goals"
+   ],
+   [
+    "Deliver your 3-minute project presentation with confidence\nDemonstrate your project to the audience live\nComplete your \"Letter to Future Self\" — a personal commitment\nReceive your AI Futures Program certificate\nLeave with a clear next step for continuing your AI learning"
+   ]
+  ]
+ },
+ {
+  "i": 405,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Facilitator Schedule"
+ },
+ {
+  "i": 406,
+  "k": "tbl",
+  "rows": [
+   [
+    "Time",
+    "Activity",
+    "Materials"
+   ],
+   [
+    "0:00–0:20",
+    "Final setup — test all projects, arrange exhibition space",
+    "All tech confirmed working"
+   ],
+   [
+    "0:20–0:30",
+    "Opening ceremony — facilitator reflects on the two-week journey",
+    ""
+   ],
+   [
+    "0:30–1:30",
+    "Project Showcase — each team presents 3 min + 2 min Q&A",
+    "Timer, projector/screen"
+   ],
+   [
+    "1:30–1:50",
+    "Audience choice awards — guests vote on categories",
+    "Voting cards"
+   ],
+   [
+    "1:50–2:10",
+    "Letter to Future Self — quiet writing time",
+    "Special paper envelopes"
+   ],
+   [
+    "2:10–2:25",
+    "Certificate ceremony + group photo",
+    "Printed certificates"
+   ],
+   [
+    "2:25–2:30",
+    "Closing words from facilitator: what comes next?",
+    "Resource sheet"
+   ]
+  ]
+ },
+ {
+  "i": 407,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "The Demo Day Mindset"
+ },
+ {
+  "i": 408,
+  "k": "tbl",
+  "rows": [
+   [
+    "💡  Advice for Presenters"
+   ],
+   [
+    "Start with the problem, not the technology. The audience needs to care before they can be impressed.\nShow the tool working live — even if it's imperfect. A live demo with one bug is more compelling than a flawless recording.\nSpeak to what you learned, not just what you built. Judges value insight over polish.\nIf something goes wrong during the demo, say so calmly and explain what it should do. Handling failure gracefully is itself impressive.\nThank your team, your facilitator, and anyone who gave you feedback during user testing."
+   ]
+  ]
+ },
+ {
+  "i": 409,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Audience Questions — Facilitator Guide"
+ },
+ {
+  "i": 410,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Suggested Questions for Audience Members and Guests"
+   ],
+   [
+    "What made you choose this particular problem to solve?\nHow did you decide which parts of the solution to give to AI and which to keep for humans?\nWhat would happen if someone tried to misuse your tool?\nIf you had 3 more weeks, what would you build next?\nWhat did AI do that surprised you during this project?\nWhat did you discover that you wish you'd known before you started building?"
+   ]
+  ]
+ },
+ {
+  "i": 411,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Award Categories"
+ },
+ {
+  "i": 412,
+  "k": "tbl",
+  "rows": [
+   [
+    "🏆  Audience Choice Awards (all teams eligible for all categories)"
+   ],
+   [
+    "Most Innovative Solution — tackled a problem in an unexpected way\nBest User Experience — easiest and most enjoyable to use\nGreatest Real-World Impact — could help the most people if fully built\nBest Use of AI — most thoughtful and effective use of AI capabilities\nMost Ethical Design — best handling of fairness, privacy, and safety concerns\nBest Presentation — clearest storytelling and most engaging delivery"
+   ]
+  ]
+ },
+ {
+  "i": 413,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "Letter to My Future Self"
+ },
+ {
+  "i": 414,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Facilitator Instructions"
+   ],
+   [
+    "Provide each student with a piece of quality paper and an envelope.\nAllow 15 minutes of quiet, reflective writing. Play soft instrumental music.\nStudents seal and address the envelope to themselves. Facilitators mail them in 6 months.\nTell students: \"This letter will arrive when you are in the middle of a new school year. It is a message from the version of you who just finished this program.\""
+   ]
+  ]
+ },
+ {
+  "i": 415,
+  "k": "tbl",
+  "rows": [
+   [
+    "📝  Letter to My Future Self — Prompts"
+   ],
+   [
+    "Date: ___\nDear Future Me,\nRight now, here is what I understand about AI that I didn't two weeks ago:\nThe project I built was called [name]. Here is what I'm most proud of about it:\nThe moment that surprised me most during this program was:\nThe ethical question about AI that I still think about is:\nBy the time you read this letter, I want to have done these things with AI:\nThe one thing I want you to remember about AI is:\nSigned, [your name], age 12"
+   ]
+  ]
+ },
+ {
+  "i": 416,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "What Comes Next — Your AI Learning Path"
+ },
+ {
+  "i": 417,
+  "k": "tbl",
+  "rows": [
+   [
+    "🚀  Free Resources to Continue Learning"
+   ],
+   [
+    "For Coding with AI:\nCS50's Introduction to AI (Harvard, free): cs50.harvard.edu/ai\nElements of AI (University of Helsinki, free): elementsofai.com\nScratch + ML4Kids: machinelearningforkids.co.uk\nFor Building with AI:\nGoogle ML Crash Course (free): developers.google.com/machine-learning/crash-course\nFast.ai Practical Deep Learning (free): fast.ai\nAnthropic Claude API (free tier): anthropic.com/api\nFor Understanding AI Ethics:\nAI4K12 Initiative: ai4k12.org\nMIT Media Lab Ethics of AI: media.mit.edu\nYour Digital Future (Australian eSafety Commissioner): esafety.gov.au\nCompetitions and Communities:\nAI for Good (ITU): aiforgood.itu.int/youth\nGoogle Science Fair: sciencefair.withgoogle.com\niD Tech AI programs (holidays): idtech.com"
+   ]
+  ]
+ },
+ {
+  "i": 418,
+  "k": "p",
+  "s": "Heading 1",
+  "t": "Appendix — Master Vocabulary Reference"
+ },
+ {
+  "i": 419,
+  "k": "p",
+  "s": "",
+  "t": "This glossary covers every key term introduced across the 10-day program. Use it as a study reference and quick-look guide."
+ },
+ {
+  "i": 420,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "A – D"
+ },
+ {
+  "i": 421,
+  "k": "tbl",
+  "rows": [
+   [
+    "Term",
+    "Definition"
+   ],
+   [
+    "Algorithm",
+    "A set of step-by-step instructions for solving a problem. The foundation of all software, including AI."
+   ],
+   [
+    "Artificial Intelligence (AI)",
+    "Computer systems that perform tasks normally requiring human intelligence — recognising patterns, understanding language, making decisions."
+   ],
+   [
+    "Bias (AI)",
+    "Systematic unfairness in AI outputs, typically caused by skewed training data that over- or under-represents certain groups."
+   ],
+   [
+    "Black Box",
+    "An AI system whose internal decision-making process cannot be inspected or explained."
+   ],
+   [
+    "Chatbot",
+    "A program that simulates conversation with humans, increasingly powered by large language models."
+   ],
+   [
+    "CNN (Convolutional Neural Network)",
+    "The standard neural network architecture for processing images — uses layers of filters to detect features at increasing levels of complexity."
+   ],
+   [
+    "Computer Vision",
+    "AI that interprets and understands digital images and video."
+   ],
+   [
+    "Context Window",
+    "The maximum amount of text an AI language model can \"see\" at once when generating a response."
+   ],
+   [
+    "Deepfake",
+    "AI-generated synthetic media that realistically replaces a real person's likeness, voice, or words."
+   ],
+   [
+    "Deep Learning",
+    "A subset of machine learning using multi-layered neural networks — excels at images, language, and audio."
+   ],
+   [
+    "Diffusion Model",
+    "AI architecture for generating images — starts with noise and gradually refines it into a coherent image guided by a text prompt."
+   ]
+  ]
+ },
+ {
+  "i": 422,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "E – L"
+ },
+ {
+  "i": 423,
+  "k": "tbl",
+  "rows": [
+   [
+    "Term",
+    "Definition"
+   ],
+   [
+    "Epoch",
+    "One complete pass through all training data during model training. More epochs = more learning (up to a point)."
+   ],
+   [
+    "Explainability (XAI)",
+    "The ability to interpret and explain how an AI system reached a specific conclusion — critical for high-stakes decisions."
+   ],
+   [
+    "Fairness (AI)",
+    "The principle that an AI system should treat all groups equitably and not cause disproportionate harm to any group."
+   ],
+   [
+    "Feature",
+    "A measurable characteristic that an AI uses to make decisions — e.g. \"edge angle\" in image recognition."
+   ],
+   [
+    "GAN (Generative Adversarial Network)",
+    "AI architecture with two competing networks — a generator that creates fake content and a discriminator that tries to detect fakes."
+   ],
+   [
+    "Generative AI",
+    "AI that creates new content (text, images, audio, video) rather than just classifying or predicting."
+   ],
+   [
+    "Guardrails",
+    "Constraints built into AI systems to prevent harmful, biased, or off-topic outputs."
+   ],
+   [
+    "Hallucination",
+    "When an AI language model outputs confident but factually incorrect information — a core limitation of current LLMs."
+   ],
+   [
+    "Label",
+    "The correct answer attached to a training example — e.g. \"cat\" or \"not cat\" — used in supervised learning."
+   ],
+   [
+    "Large Language Model (LLM)",
+    "AI trained on vast amounts of text to understand and generate human language — the technology behind ChatGPT, Claude, and Gemini."
+   ],
+   [
+    "Latent Space",
+    "The multi-dimensional mathematical space inside an AI model where concepts are encoded as numerical relationships."
+   ]
+  ]
+ },
+ {
+  "i": 424,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "M – R"
+ },
+ {
+  "i": 425,
+  "k": "tbl",
+  "rows": [
+   [
+    "Term",
+    "Definition"
+   ],
+   [
+    "Machine Learning (ML)",
+    "A subset of AI where systems learn from data rather than being explicitly programmed with rules."
+   ],
+   [
+    "Model",
+    "The mathematical structure an AI builds from training data — encodes learned patterns and is used to make predictions."
+   ],
+   [
+    "Natural Language Processing (NLP)",
+    "AI that understands, interprets, and generates human language in text or speech form."
+   ],
+   [
+    "Neural Network",
+    "A computing architecture loosely inspired by the brain — layers of interconnected nodes process information in parallel."
+   ],
+   [
+    "Narrow AI",
+    "AI that excels at one specific task but cannot transfer skills to other domains. All current AI is narrow AI."
+   ],
+   [
+    "Overfitting",
+    "When an AI memorises training data too closely, performing perfectly on training examples but failing on new data."
+   ],
+   [
+    "Parameter",
+    "A learnable numerical value inside a neural network that is adjusted during training to minimise errors."
+   ],
+   [
+    "Prompt",
+    "The instruction or question you provide to an AI system to guide its output."
+   ],
+   [
+    "Prompt Engineering",
+    "The skill of crafting effective, specific instructions to get high-quality outputs from AI systems."
+   ],
+   [
+    "Reinforcement Learning",
+    "ML where an AI agent learns by trial and error — rewarded for correct actions, penalised for wrong ones."
+   ]
+  ]
+ },
+ {
+  "i": 426,
+  "k": "p",
+  "s": "Heading 2",
+  "t": "S – Z"
+ },
+ {
+  "i": 427,
+  "k": "tbl",
+  "rows": [
+   [
+    "Term",
+    "Definition"
+   ],
+   [
+    "Speech Recognition",
+    "AI that converts spoken audio into written text."
+   ],
+   [
+    "Supervised Learning",
+    "ML where the AI is trained on labelled examples — the most common type of machine learning today."
+   ],
+   [
+    "System Prompt",
+    "Hidden instructions given to an AI chatbot that define its persona, rules, and constraints."
+   ],
+   [
+    "Temperature",
+    "A setting that controls how creative/random (high temperature) vs predictable/focused (low temperature) an AI's outputs are."
+   ],
+   [
+    "Token",
+    "The basic unit an LLM processes — roughly a word fragment (e.g. \"unbelievable\" = 3 tokens: \"un\", \"believ\", \"able\")."
+   ],
+   [
+    "Training Data",
+    "The examples used to teach an AI — the quality and diversity of training data largely determines AI quality."
+   ],
+   [
+    "Transfer Learning",
+    "Adapting a pre-trained model for a new task rather than training from scratch — dramatically reduces data and compute requirements."
+   ],
+   [
+    "Underfitting",
+    "When an AI hasn't learned enough from training data and performs poorly even on familiar examples."
+   ],
+   [
+    "Unsupervised Learning",
+    "ML where the AI finds patterns in unlabelled data without being told what to look for."
+   ],
+   [
+    "XAI (Explainable AI)",
+    "A research field focused on making AI decision-making transparent and interpretable by humans."
+   ]
+  ]
+ },
+ {
+  "i": 428,
+  "k": "p",
+  "s": "Heading 1",
+  "t": "Facilitator Reference — Program at a Glance"
+ },
+ {
+  "i": 429,
+  "k": "tbl",
+  "rows": [
+   [
+    "Day",
+    "Theme & Focus"
+   ],
+   [
+    "Day 1",
+    "AI Is Already Around You — demystify, myth-bust, map AI in daily life"
+   ],
+   [
+    "Day 2",
+    "How AI Learns — ML training loop, Teachable Machine experiment"
+   ],
+   [
+    "Day 3",
+    "The Art of Talking to AI — prompt engineering framework, Prompt Battle"
+   ],
+   [
+    "Day 4",
+    "AI Eyes, Ears & More — computer vision, deepfakes, Spot the AI"
+   ],
+   [
+    "Day 5",
+    "When AI Gets It Wrong — hallucination, bias, Ethics Court simulation"
+   ],
+   [
+    "Day 6",
+    "AI + Creativity — generative AI, songwriting, art, creativity debate"
+   ],
+   [
+    "Day 7",
+    "Design Thinking Meets AI — problem framing, project selection, pitching"
+   ],
+   [
+    "Day 8",
+    "Build Day 1 — prototype sprint, user testing round 1"
+   ],
+   [
+    "Day 9",
+    "Build Day 2 — fix, polish, demo prep, presentation rehearsal"
+   ],
+   [
+    "Day 10",
+    "Demo Day & Graduation — showcase, awards, letter to self, next steps"
+   ]
+  ]
+ },
+ {
+  "i": 430,
+  "k": "tbl",
+  "rows": [
+   [
+    "📋  Essential Equipment Checklist"
+   ],
+   [
+    "Laptops or tablets with webcams (1 per student minimum, 1 per 2 preferred)\nReliable internet connection (test speed before program)\nProjector or large screen for class demos\nPrinted worksheets for each day (listed in each day's activity section)\nWhiteboard or large paper sheets + markers\nSticky notes (at least 20 per student for Day 7 problem sprint)\nAnimal image cards for Day 2 sorting exercise (printed)\nTimer (physical or on screen)\nReflection journals (1 per student — can be an exercise book)\nCertificate paper for Day 10 graduation\nQuality envelopes for Day 10 letters to self\nScoring sheets for Prompt Battle (Day 3) and Demo Day awards (Day 10)"
+   ]
+  ]
+ }
+]

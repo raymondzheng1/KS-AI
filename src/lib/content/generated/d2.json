@@ -1,0 +1,262 @@
+{
+  "id": "d2",
+  "day": 2,
+  "title": "How AI Learns",
+  "subtitle": "Training data, patterns, and your first machine learning experiment",
+  "icon": "🧠",
+  "accent": "green",
+  "diagram": {
+    "src": "/diagrams/02_ml_training_loop.png",
+    "alt": "The machine learning training loop: collect data, label it, train the model, evaluate, improve, and deploy",
+    "width": 800,
+    "height": 800
+  },
+  "overview": [
+    "Yesterday we discovered that AI is already everywhere. Today we go inside the machine. We will explore how AI actually learns — through data, patterns, and repetition — and then you will train your very own AI model using Google's Teachable Machine. No coding required.",
+    "By the end of today, you will understand the full loop of machine learning: collect data → train the model → test it → improve it. This loop is the foundation of almost every AI system on the planet."
+  ],
+  "objectives": [
+    "Explain the machine learning training loop in plain language",
+    "Understand what training data, features, labels, and models are",
+    "Experience the \"sorting exercise\" to feel what training data means",
+    "Train a real image classifier using Google Teachable Machine",
+    "Test the model's accuracy and understand why it makes mistakes"
+  ],
+  "concepts": [
+    {
+      "heading": "The Machine Learning Training Loop",
+      "body": [
+        "Every machine learning system follows the same basic cycle. Understanding this loop unlocks your ability to think about any AI system:"
+      ],
+      "bullets": [
+        "Collect Data: Gather thousands (or millions) of examples.",
+        "Label the Data: Tell the AI what each example is (e.g., \"cat\" or \"dog\").",
+        "Train the Model: The AI finds mathematical patterns that link examples to labels.",
+        "Evaluate: Test the model on new examples it has never seen.",
+        "Improve: Add more data, fix mistakes, retrain — repeat until good enough.",
+        "Deploy: Release the model to be used in the real world."
+      ]
+    },
+    {
+      "heading": "What Is a Feature?",
+      "body": [
+        "A feature is any measurable characteristic the AI uses to make decisions. For example, when recognising a cat:"
+      ],
+      "bullets": [
+        "Pointy ears → a feature",
+        "Fur pattern → a feature",
+        "Eye shape → a feature",
+        "Body size → a feature"
+      ]
+    },
+    {
+      "heading": "Types of Machine Learning",
+      "body": [
+        "There is more than one way for an AI to learn. Here are the four big families:"
+      ],
+      "bullets": [],
+      "table": {
+        "columns": ["Type", "How It Works"],
+        "rows": [
+          ["Supervised Learning", "You provide labelled examples. Most common type. Used for: image recognition, spam filters, voice assistants."],
+          ["Unsupervised Learning", "No labels — AI finds patterns on its own. Used for: customer grouping, anomaly detection."],
+          ["Reinforcement Learning", "AI learns by trial and error, rewarded for good actions. Used for: games, robotics, self-driving cars."],
+          ["Transfer Learning", "Take a pre-trained model and fine-tune it for a new task. Powers most modern AI apps — much faster than training from scratch."]
+        ]
+      }
+    },
+    {
+      "heading": "Overfitting and Underfitting — Why AI Fails",
+      "body": ["Two of the most common problems in machine learning:"],
+      "bullets": [],
+      "table": {
+        "columns": ["Problem", "Explanation"],
+        "rows": [
+          ["Overfitting", "The AI memorises the training examples too perfectly, and fails on any new data. Like a student who memorises textbook answers but can't answer a slightly different question on the exam."],
+          ["Underfitting", "The AI hasn't learned enough. It performs badly even on training data. Like a student who barely studied and gets everything wrong."]
+        ]
+      },
+      "callout": {
+        "kind": "rule",
+        "text": [
+          "The Golden Rule of ML: Good AI generalises. It learns patterns that work on new, unseen data — not just data it has memorised.",
+          "This is why testing on separate \"held-out\" data is critical before deploying any AI system."
+        ]
+      }
+    }
+  ],
+  "videos": [
+    {
+      "title": "How Machines Learn",
+      "source": "CGP Grey",
+      "youtubeId": "R9OHn5ZF4Uo",
+      "minutes": 10,
+      "note": "Superb visual explainer of the full ML training process. Watch this before Activity 1."
+    },
+    {
+      "title": "A Beginner's Guide to Machine Learning",
+      "source": "Google",
+      "youtubeId": "nKW8Ndu7Mjw",
+      "minutes": 8,
+      "note": "Google engineers explain ML with real examples. Excellent follow-up."
+    },
+    {
+      "title": "Teachable Machine Demo",
+      "source": "Google",
+      "youtubeId": "T2qQGqZxkD0",
+      "minutes": 3,
+      "note": "Official demo video — show this immediately before Activity 2 so students know what to expect."
+    }
+  ],
+  "activities": [
+    {
+      "name": "The Human Sorting Game",
+      "kind": "game",
+      "intro": [
+        "In your group you will get a shuffled stack of animal picture cards. You are about to become a machine learning model — by hand!"
+      ],
+      "steps": [
+        "Round 1: Without talking, each person sorts the cards into piles — any way you like.",
+        "Round 2: Reveal the \"correct labels.\" Re-sort the cards using those labels.",
+        "Discuss: What features did you use to sort? How did having labels change your approach?",
+        "Debrief: What features did you use to tell cats from dogs? What made it hard?",
+        "Debrief: If someone gave you 10,000 of these cards to sort by yourself, would you use the same method? What would you change?",
+        "Debrief: What if some of the labels on the cards were wrong? How would that affect your learning?",
+        "Debrief: Imagine the AI only saw white cats and orange cats. What would happen when it met a black cat for the first time?"
+      ],
+      "facilitator": [
+        "Print 40–60 animal images (mix of cats, dogs, birds, fish) on cards. Shuffle them.",
+        "Divide students into groups of 4. Each group receives a shuffled set of cards.",
+        "Round 1: Without talking, each student sorts the cards into piles — any way they like.",
+        "Round 2: Reveal the \"correct labels.\" Students re-sort using the labels.",
+        "Discussion: What features did you use to sort? How did having labels change your approach?",
+        "Connect to ML: \"What you just did manually is exactly what machine learning does automatically — but with millions of examples and millions of features simultaneously.\""
+      ]
+    },
+    {
+      "name": "Teachable Machine: Train Your First AI",
+      "kind": "build",
+      "intro": [
+        "Now you will train a real image classifier — no coding required. You will teach an AI to recognise three hand gestures: thumbs up, peace sign, and fist."
+      ],
+      "steps": [
+        "Open teachablemachine.withgoogle.com in your browser.",
+        "Click \"Get Started\" → \"Image Project\" → \"Standard Image Model.\"",
+        "Step 1 — Collect Your Data: Rename \"Class 1\" to \"Thumbs Up.\" Click \"Webcam\" and hold your thumb up — record at least 100 images.",
+        "Rename \"Class 2\" to \"Peace Sign\" — record another 100 images.",
+        "Click \"Add a class\" → rename to \"Fist\" — record another 100 images.",
+        "Step 2 — Train: Click the big \"Train Model\" button — watch it learn! After training, the \"Preview\" panel activates automatically.",
+        "Step 3 — Test: Try each gesture in front of the webcam — does it get them right? Move your hand, change the lighting, use your other hand — does it still work?",
+        "Try tricking it — show a gesture halfway between two classes. What does it predict?",
+        "Challenge: If your model makes mistakes, add more training images from different angles and lighting, then retrain. Did adding more data improve accuracy? Record your findings."
+      ],
+      "table": {
+        "caption": "Student Data Collection Table — record your results here",
+        "columns": ["Measurement", "Your Result"],
+        "rows": [
+          ["Number of images per class (first attempt)", ""],
+          ["Accuracy on \"thumbs up\"", "___%"],
+          ["Accuracy on \"peace sign\"", "___%"],
+          ["Accuracy on \"fist\"", "___%"],
+          ["Where did your model fail? (describe the situation)", ""],
+          ["What did you change to improve it?", ""],
+          ["Accuracy after improvement (average across classes)", "___%"],
+          ["What would happen if you added a 4th class? Try it!", ""]
+        ]
+      },
+      "facilitator": [
+        "Visit teachablemachine.withgoogle.com — no account needed, works in any browser with a webcam.",
+        "Choose \"Image Project\" → \"Standard Image Model.\"",
+        "Walk students through the interface briefly before they start.",
+        "Suggested project: Train the AI to recognise 3 hand gestures (thumbs up, peace sign, fist)."
+      ]
+    }
+  ],
+  "reflection": [
+    "Describe the machine learning loop in your own words, as if explaining it to a 10-year-old.",
+    "What did you discover when you tried to trick your Teachable Machine model? What does this tell you about AI?",
+    "When your model made mistakes, what was usually the cause? Too little data? Bad angle? Wrong lighting?",
+    "Think of a real-world AI system (e.g. Spotify recommendations, Google Photos face recognition). What training data do you think it was trained on?",
+    "The AI you trained today only took a few minutes. Real AI systems can take weeks of training on thousands of computers. Why do you think that is?"
+  ],
+  "vocab": [
+    { "term": "Supervised Learning", "definition": "Training with labelled examples." },
+    { "term": "Training Data", "definition": "The examples used to teach an AI." },
+    { "term": "Label", "definition": "The correct answer attached to a training example." },
+    { "term": "Feature", "definition": "A measurable characteristic the AI uses to make decisions." },
+    { "term": "Model", "definition": "The mathematical structure the AI builds from training data." },
+    { "term": "Overfitting", "definition": "Memorising training data too closely, failing on new data." },
+    { "term": "Accuracy", "definition": "Percentage of correct predictions on test data." },
+    { "term": "Neural Network", "definition": "A layered mathematical structure loosely inspired by the brain." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "What is the correct order of the machine learning training loop?",
+      "options": [
+        "Collect data → Label → Train → Evaluate → Improve → Deploy",
+        "Train → Collect data → Deploy → Label → Evaluate → Improve",
+        "Label → Deploy → Train → Collect data → Evaluate → Improve",
+        "Deploy → Improve → Evaluate → Train → Label → Collect data"
+      ],
+      "answer": 0,
+      "explain": "First you collect examples, then label them, then train a model on the patterns, evaluate it on new data, improve it, and finally deploy it to the real world."
+    },
+    {
+      "type": "mcq",
+      "q": "Which of these is a \"feature\" an AI might use to recognise a cat?",
+      "options": [
+        "Pointy ears",
+        "The word \"cat\" printed on the photo",
+        "How many people have seen the photo",
+        "The file size of the image"
+      ],
+      "answer": 0,
+      "explain": "A feature is a measurable characteristic the AI uses to decide, like pointy ears, fur pattern, or eye shape. It learns which features reliably predict \"cat.\""
+    },
+    {
+      "type": "tf",
+      "q": "Unsupervised learning uses labelled examples to learn.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. Unsupervised learning has NO labels — the AI finds patterns on its own. It's supervised learning that uses labelled examples."
+    },
+    {
+      "type": "mcq",
+      "q": "A model gets every training example perfect but fails badly on brand-new photos. What is the problem called?",
+      "options": [
+        "Overfitting",
+        "Underfitting",
+        "Deploying",
+        "Reinforcement"
+      ],
+      "answer": 0,
+      "explain": "This is overfitting — the AI memorised the training data too perfectly, like a student who memorises textbook answers but can't handle a slightly different exam question."
+    },
+    {
+      "type": "tf",
+      "q": "The Golden Rule of ML says a good AI should memorise its training data as exactly as possible.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. The Golden Rule is that good AI generalises — it learns patterns that work on new, unseen data, not just data it has memorised. That's why we test on separate held-out data."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Facilitator Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:10", "Recap of Day 1 — quick quiz on key vocabulary", "Vocab cards from Day 1"],
+          ["0:10–0:40", "Key Concepts: The ML Training Loop", "Whiteboard, printed diagrams"],
+          ["0:40–1:10", "Activity 1: Human Sorting Game (simulate ML training)", "Animal picture cards (printed)"],
+          ["1:10–1:25", "Break", ""],
+          ["1:25–2:00", "Activity 2: Teachable Machine — train your own AI", "Laptops/tablets with webcam, teachablemachine.withgoogle.com"],
+          ["2:00–2:20", "Share results, discuss where the model failed and why", "Whiteboard"],
+          ["2:20–2:30", "Reflection + vocabulary update", "Reflection journal"]
+        ]
+      }
+    }
+  ]
+}

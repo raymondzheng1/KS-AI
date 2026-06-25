@@ -1,0 +1,90 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { rememberRoomCode } from "@/lib/rooms/client-identity";
+import { roomErrorMessage } from "@/lib/rooms/messages";
+import { AVATARS, AvatarPicker } from "./AvatarPicker";
+
+/**
+ * Join an existing room. `fixedRoomId` is passed from the invite page
+ * (/join/<id>); on /start the player types it in.
+ */
+export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
+  const router = useRouter();
+  const [roomId, setRoomId] = useState(fixedRoomId ?? "");
+  const [nick, setNick] = useState("");
+  const [avatar, setAvatar] = useState<string>(AVATARS[3]);
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState("");
+
+  async function submit(e: React.FormEvent) {
+    e.preventDefault();
+    setBusy(true);
+    setErr("");
+    try {
+      const res = await fetch("/api/room/join", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ roomId, nick, avatar }),
+      });
+      const j = await res.json();
+      if (!res.ok) {
+        setErr(roomErrorMessage(j));
+        setBusy(false);
+        return;
+      }
+      rememberRoomCode(j.roomId, j.code);
+      router.push(`/p/${j.code}`);
+    } catch {
+      setErr("Something went wrong. Try again.");
+      setBusy(false);
+    }
+  }
+
+  return (
+    <form onSubmit={submit} className="ks-card flex flex-col gap-3 p-5">
+      <div className="text-3xl">👋</div>
+      <h2 className="text-lg font-extrabold text-ks-blue">Join a room</h2>
+      {!fixedRoomId && (
+        <label className="text-sm font-semibold text-ks-dark">
+          Room code
+          <input
+            value={roomId}
+            onChange={(e) => setRoomId(e.target.value)}
+            required
+            placeholder="e.g. BKJ-7PQ"
+            className="mt-1 min-h-11 w-full rounded-xl border-2 border-ks-dark/25 bg-white px-3 py-2 font-mono uppercase text-ks-ink"
+          />
+        </label>
+      )}
+      <label className="text-sm font-semibold text-ks-dark">
+        Your nickname
+        <input
+          value={nick}
+          onChange={(e) => setNick(e.target.value)}
+          required
+          maxLength={16}
+          placeholder="e.g. PixelSam"
+          className="mt-1 min-h-11 w-full rounded-xl border-2 border-ks-dark/25 bg-white px-3 py-2 text-ks-ink"
+        />
+        <span className="mt-1 block text-xs text-ks-ink-soft">Don&apos;t use your real full name — pick a fun handle!</span>
+      </label>
+      <div>
+        <span className="text-sm font-semibold text-ks-dark">Pick an avatar</span>
+        <div className="mt-1">
+          <AvatarPicker value={avatar} onChange={setAvatar} />
+        </div>
+      </div>
+      {err && <p className="text-sm font-semibold text-ks-coral">{err}</p>}
+      <button
+        type="submit"
+        disabled={busy}
+        className="min-h-11 rounded-pill bg-ks-blue px-6 py-2 font-extrabold text-white shadow-card disabled:opacity-60"
+        style={{ borderRadius: "var(--radius-pill)" }}
+      >
+        {busy ? "Joining…" : "Join & start playing →"}
+      </button>
+    </form>
+  );
+}

@@ -1,0 +1,219 @@
+{
+  "id": "d6",
+  "day": 6,
+  "title": "AI + Creativity",
+  "subtitle": "When machines make art — and how humans make it better",
+  "icon": "🎨",
+  "accent": "orange",
+  "diagram": {
+    "src": "/diagrams/06_generative_ai_diffusion.png",
+    "alt": "A diffusion model turning a text prompt into an image by gradually removing noise",
+    "width": 900,
+    "height": 380
+  },
+  "overview": [
+    "Welcome to Week 2. You now have the foundation to start creating. Today we explore AI as a creative partner — not a replacement for human creativity, but an amplifier of it.",
+    "We will make music, write poetry, generate visual art, and ask the big question: is AI-generated art still \"art\"?"
+  ],
+  "objectives": [
+    "Understand how generative AI creates text, images, and music",
+    "Use AI tools to create original creative works",
+    "Articulate the difference between AI-generated and human creative expression",
+    "Develop your own position on authorship and creativity in the AI age",
+    "Build a mini creative portfolio using AI collaboration"
+  ],
+  "concepts": [
+    {
+      "heading": "How Generative AI Creates",
+      "body": [
+        "Generative AI is trained to create new content rather than just classify or predict. The key technique is called a Diffusion Model (for images) or a Large Language Model / Transformer (for text and music):"
+      ],
+      "bullets": [
+        "For images (Stable Diffusion, DALL-E, Midjourney): Start with pure noise → the AI gradually de-noises the image, guided by your text prompt, until it produces a coherent picture that matches your description.",
+        "For text (GPT-4, Claude): Predict the most likely next token (word fragment) given all previous tokens + training — do this thousands of times to produce a paragraph.",
+        "For music (Suno, Udio, MusicGen): Similar to image generation — the AI has learned the patterns of pitch, rhythm, timbre, and structure from millions of songs, and generates new audio that follows these patterns."
+      ]
+    },
+    {
+      "heading": "The Creativity Debate",
+      "body": [
+        "Is AI truly creative, or is it just remixing? People take very different positions:"
+      ],
+      "bullets": [],
+      "table": {
+        "columns": ["Perspective", "Argument"],
+        "rows": [
+          ["\"AI is not creative — it remixes.\"", "AI has never had an original thought. It recombines patterns from human-created works. True creativity requires consciousness, lived experience, and emotional intent."],
+          ["\"AI creativity is real — the output is new.\"", "If the result is genuinely novel and valuable, does the process matter? Humans also build on existing knowledge and culture. The output is what counts."],
+          ["\"Human + AI is the real breakthrough.\"", "The most creative work happens when humans use AI to explore possibilities they couldn't reach alone, then apply judgment, emotion, and intention to shape the result."]
+        ]
+      }
+    },
+    {
+      "heading": "Copyright and Ownership",
+      "body": [
+        "AI-generated content raises complex legal questions that are actively being debated in courts worldwide:"
+      ],
+      "bullets": [
+        "In Australia, copyright currently requires a human author — AI-only works may not be protected.",
+        "If you use AI as a tool and make substantial creative decisions, you may hold copyright over the final work.",
+        "Training AI on copyrighted artworks without permission is being challenged in multiple lawsuits globally.",
+        "Platform terms vary widely — always check whether you own what you create on any AI platform."
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "How AI Image Generation Works",
+      "source": "Vox",
+      "youtubeId": "SVcsDDABEkM",
+      "minutes": 9,
+      "note": "Clear, visual explanation of diffusion models. Perfect intro before the creative activities."
+    },
+    {
+      "title": "Suno AI — Create Music with AI (official demo)",
+      "source": "Suno",
+      "youtubeId": "PL1HXkjxTFY",
+      "note": "Shows how to generate full songs from text prompts. Students should watch this before Activity 1."
+    },
+    {
+      "title": "Will AI Replace Artists?",
+      "source": "Corridor Crew",
+      "youtubeId": "vAlHEIJGCQI",
+      "minutes": 18,
+      "note": "Professional animators debate AI art. Balanced, nuanced — great for discussion."
+    }
+  ],
+  "activities": [
+    {
+      "name": "AI Creative Workshop",
+      "kind": "build",
+      "intro": [
+        "Two creative stations. At Station A you write a song with Suno; at Station B you make visual art with Adobe Firefly. At both, you start with AI and then add your own human touch."
+      ],
+      "steps": [
+        "Station A — Visit suno.com (free tier available).",
+        "Write a prompt for a song: specify genre, mood, theme, and style. Example: \"Upbeat pop song about discovering you can code, energetic, teenage perspective, with a catchy chorus\".",
+        "Generate the song. Listen carefully. What do you like? What feels off?",
+        "Now humanise it: write new lyrics for the chorus yourself. What emotion do YOUR lyrics add that the AI version lacked?",
+        "Optional: Generate 3 versions with different genres (pop, hip-hop, classical) of the same theme. How does genre change meaning?",
+        "Station B — Visit firefly.adobe.com (free, no age restriction).",
+        "Generate an image that represents \"the future of education.\" Use a detailed prompt with style, lighting, and mood.",
+        "Generate 4 variations. Select the one that resonates most. Write a sentence explaining why.",
+        "Now draw your own version of the same concept — freehand, 5 minutes. Don't try to copy the AI version.",
+        "Place both side by side. What did you choose to include that the AI didn't? What did the AI imagine that surprised you?",
+        "Reflection: At each station, what did AI do well, and what did you add that made it yours?"
+      ],
+      "facilitator": [
+        "Set up two stations: Station A (Suno AI for songwriting) and Station B (Adobe Firefly for visual art).",
+        "Rotate students through both stations during the 40-minute workshop block.",
+        "Emphasise the \"humanise it\" step — the learning is in what students add, not just what the AI generates."
+      ]
+    },
+    {
+      "name": "Human vs AI Creative Showdown",
+      "kind": "game",
+      "intro": [
+        "Half the class uses AI, half works purely by hand and mind. Then all works are displayed anonymously, and the class tries to guess which are AI and which are human."
+      ],
+      "steps": [
+        "Pick ONE challenge as a class: Option A — Write a haiku about loneliness (5-7-5 syllables). Option B — Design a logo for a company called \"Future Minds.\" Option C — Write the opening sentence of a thriller novel set in Sydney in 2040. Option D — Create a short 4-line rhyming verse about why learning matters.",
+        "You have 5 minutes to complete the challenge.",
+        "Display every work anonymously — no names attached.",
+        "Vote on which pieces you think are AI and which are human.",
+        "Reveal the answers and discuss: what gave the AI ones away? What surprised you?"
+      ],
+      "facilitator": [
+        "Choose ONE creative challenge from the options. Everyone — students AND facilitator — has 5 minutes to complete it.",
+        "Half the class uses AI. Half does it purely by hand/mind. Then display all works anonymously.",
+        "Class tries to guess which are AI and which are human. Vote, reveal, discuss."
+      ]
+    }
+  ],
+  "reflection": [
+    "When you collaborated with AI on a creative project today, at what point did the work start to feel like \"yours\"? What creative decisions did you make?",
+    "Do you think AI-generated art should be eligible for art prizes? What criteria would you use to judge?",
+    "If AI can write songs, draw illustrations, and compose poetry — what remains uniquely human about creativity?",
+    "Build your Creative + AI project plan: What creative project would you like to work on for your final showcase? How will AI assist, and what will you contribute that AI cannot?"
+  ],
+  "vocab": [
+    { "term": "Generative AI", "definition": "AI that creates new content (images, text, audio, video)." },
+    { "term": "Diffusion Model", "definition": "AI architecture that generates images by reversing a noise process." },
+    { "term": "Large Language Model (LLM)", "definition": "AI trained on vast text corpora to generate and understand language." },
+    { "term": "Token", "definition": "The basic unit an LLM processes — roughly a word fragment." },
+    { "term": "Prompt (creative)", "definition": "A detailed description of the creative output you want the AI to generate." },
+    { "term": "Copyright", "definition": "Legal right protecting original creative works from unauthorised copying." },
+    { "term": "Generative Adversarial Network (GAN)", "definition": "AI architecture using competing generator and discriminator networks." },
+    { "term": "Latent Space", "definition": "The mathematical space inside an AI where concepts are stored as relationships between numbers." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "How does a diffusion model create an image from your text prompt?",
+      "options": [
+        "It copies the closest matching image from its training set",
+        "It starts with pure noise and gradually removes it, guided by your prompt, until a clear picture appears",
+        "It photographs a real scene and edits it",
+        "It draws the image pixel by pixel from the top-left corner"
+      ],
+      "answer": 1,
+      "explain": "A diffusion model begins with random noise and de-noises it step by step, using your text prompt as a guide, until a coherent image that matches your description emerges."
+    },
+    {
+      "type": "mcq",
+      "q": "When an LLM like GPT-4 or Claude writes a paragraph, what is it actually doing?",
+      "options": [
+        "Looking up the answer in a database",
+        "Predicting the most likely next token thousands of times in a row",
+        "Translating your prompt into another language and back",
+        "Asking a human to write each sentence"
+      ],
+      "answer": 1,
+      "explain": "Text generators work token by token (roughly word-fragment by word-fragment), predicting the most likely next token given everything before it — repeated thousands of times to build a paragraph."
+    },
+    {
+      "type": "tf",
+      "q": "In Australia today, an artwork generated entirely by AI with no human author is automatically protected by copyright.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. Australian copyright currently requires a human author, so AI-only works may not be protected. If you make substantial creative decisions, though, you may hold copyright over the final work."
+    },
+    {
+      "type": "mcq",
+      "q": "Which statement best matches the \"Human + AI is the real breakthrough\" view in the creativity debate?",
+      "options": [
+        "AI should never be used in art at all",
+        "Only the final output matters, so the process is irrelevant",
+        "The best work comes when humans use AI to explore further, then add judgment, emotion, and intention",
+        "AI is always more creative than any human"
+      ],
+      "answer": 2,
+      "explain": "This perspective says the magic is in collaboration: AI helps humans reach ideas they couldn't alone, and then the human shapes the result with judgment, emotion, and intention."
+    },
+    {
+      "type": "tf",
+      "q": "Music generators like Suno create songs by learning patterns of pitch, rhythm, timbre, and structure from huge numbers of existing songs.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. Like image generation, music AI learns the patterns of pitch, rhythm, timbre, and structure from millions of songs, then generates new audio that follows those patterns."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Facilitator Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:15", "Week 1 celebration — share top 3 insights from last week", "Sticky notes wall"],
+          ["0:15–0:40", "Key Concepts: Generative AI and creative tools", "Projector demos"],
+          ["0:40–1:20", "Activity 1: AI Songwriting + Visual Art Workshop", "Laptops, Suno AI, Adobe Firefly"],
+          ["1:20–1:35", "Break", ""],
+          ["1:35–2:00", "Activity 2: Human vs AI Creative Showdown", ""],
+          ["2:00–2:20", "Gallery walk — display student AI + human creative works", "Printed or displayed on screens"],
+          ["2:20–2:30", "Reflection", "Reflection journal"]
+        ]
+      }
+    }
+  ]
+}

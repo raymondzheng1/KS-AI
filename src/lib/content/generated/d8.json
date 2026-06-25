@@ -1,0 +1,219 @@
+{
+  "id": "d8",
+  "day": 8,
+  "title": "Build Day 1",
+  "subtitle": "From canvas to code — bringing your AI project to life",
+  "icon": "🛠️",
+  "accent": "dark",
+  "diagram": {
+    "src": "/diagrams/09_claude_code_loop.png",
+    "alt": "The build loop: plan, prototype, test with a real user, and improve",
+    "width": 900,
+    "height": 480
+  },
+  "overview": [
+    "Today is pure building. Teams work on their chosen project track, supported by facilitators and peer collaboration. The goal by end of day is a working prototype — even a rough one — that demonstrates your core idea.",
+    "Remember the Design Thinking principle: a bad prototype you can test beats a perfect plan you can only imagine. Done is better than perfect on Day 8. AI is your collaborator on this build, not a shortcut — you still make the decisions about what to build and why."
+  ],
+  "objectives": [
+    "Have a working proof-of-concept by end of day",
+    "Identify the biggest technical or design challenge in your project",
+    "Test your prototype with at least one person outside your team",
+    "Document what works, what doesn't, and what you'll fix tomorrow"
+  ],
+  "concepts": [
+    {
+      "heading": "Done Is Better Than Perfect",
+      "body": [
+        "On a build day, your job is not to finish a polished product — it's to get something real that works enough to test. A rough prototype you can put in front of a person teaches you more than a beautiful plan that only lives in your head.",
+        "Pick the smallest version of your idea that still shows the core concept, build that first, then improve it. You can always add more once the heart of it works."
+      ],
+      "bullets": [],
+      "callout": {
+        "kind": "rule",
+        "text": [
+          "A bad prototype you can test beats a perfect plan you can only imagine.",
+          "AI is a collaborator, not a shortcut — you still own the ideas, the choices, and the testing.",
+          "Build the core idea first. Polish comes later."
+        ]
+      }
+    }
+  ],
+  "videos": [],
+  "activities": [
+    {
+      "name": "Track A — Smart Chatbot",
+      "kind": "build",
+      "intro": [
+        "Tools: Claude.ai or ChatGPT (free tier) + Google Docs to record outputs.",
+        "A smart chatbot for a specific purpose is built through a carefully crafted system prompt — the instruction that defines who the AI is, what it knows, and how it should behave."
+      ],
+      "steps": [
+        "Copy this system-prompt template and fill in the [brackets]: \"You are [name], an AI assistant specialising in [topic]. You help [target user] with [specific task].\"",
+        "Set the personality: \"Your personality is [3 adjectives — e.g. warm, patient, encouraging].\"",
+        "Write the rules it always follows: only answer questions related to [topic], and politely redirect off-topic ones.",
+        "Add a positive rule (\"Always [key behaviour — e.g. show your working step by step]\") and a prohibited rule (\"Never [behaviour — e.g. give the answer without explanation]\").",
+        "Add a safety rule: \"If you are unsure, say so clearly and suggest where the user could find a reliable answer.\"",
+        "End every response with a follow-up question to check understanding.",
+        "Test it: paste your system prompt into Claude or ChatGPT as the first message, then have a classmate try to use your chatbot. Does it behave as intended?"
+      ],
+      "facilitator": [
+        "Help teams keep the system prompt focused — the most common mistake is trying to make one chatbot do everything.",
+        "Encourage teams to save each version of their prompt in Google Docs so they can compare what changed."
+      ]
+    },
+    {
+      "name": "Track B — Image Classifier App",
+      "kind": "build",
+      "intro": [
+        "Tools: Teachable Machine (teachablemachine.withgoogle.com) + a simple index.html file.",
+        "Build path: train a model in Teachable Machine, export it, and embed it in a tiny web app."
+      ],
+      "steps": [
+        "Phase 1 — Train your model (30 min): plan your 3–4 categories the classifier will recognise.",
+        "Collect training images: at least 100 per class, from multiple angles, lighting, and backgrounds.",
+        "Train on Teachable Machine and evaluate accuracy — aim for 85%+ before moving on.",
+        "Phase 2 — Export and embed (30 min): click \"Export Model\" → \"Tensorflow.js\" → \"Upload my model\" and copy the model URL.",
+        "Open a new file called index.html, paste in the Teachable Machine sample code from the \"Code snippets\" section, and replace the placeholder model URL with yours.",
+        "Open index.html in your browser — it should work immediately.",
+        "Phase 3 — Customise (30 min): change the page title, add a description, and show a friendly message when each class is detected.",
+        "Share your index.html file with another team and let them test it."
+      ],
+      "facilitator": [
+        "Watch for low accuracy caused by too few or too-similar training images — more variety per class fixes most problems.",
+        "Keep a known-good copy of the Teachable Machine sample code handy for teams who break their index.html."
+      ]
+    },
+    {
+      "name": "Track C — AI Story Generator",
+      "kind": "build",
+      "intro": [
+        "Tools: Claude.ai or ChatGPT + Google Slides or PowerPoint.",
+        "Concept: the player makes choices, and each choice is fed back into the AI prompt to generate the next scene — an interactive branching story."
+      ],
+      "steps": [
+        "Phase 1 — Story architecture (20 min): choose a setting and premise, e.g. \"You are a young scientist in 2080 who discovers an AI that has gained emotions.\"",
+        "Map your story tree: 3 chapters, each with 2 choices — that's 8 possible story paths.",
+        "Write the world-building context (2–3 paragraphs) the AI will use as background.",
+        "Phase 2 — System prompt design (20 min): set the tone, e.g. \"You are a narrative AI for an interactive science fiction story. The tone is [adjective]. Always end each scene with exactly 2 choices formatted as: CHOICE A: [option] | CHOICE B: [option].\"",
+        "Test the prompt: does the AI keep the story consistent? Does it remember previous choices?",
+        "Phase 3 — User interface (40 min): build a simple Google Slides or PowerPoint deck. Slide 1 is the opening scene with 2 buttons linking to Slide 2A or 2B.",
+        "For each branch slide, generate that scene from the AI using the chosen option as context.",
+        "Continue for 3 chapters — you'll end up with roughly 14 slides total."
+      ],
+      "facilitator": [
+        "Remind teams that the AI doesn't remember between slides on its own — they must paste the prior choice back in as context.",
+        "Help teams scope down if 8 paths feels too big; even a 2-chapter, 4-path story demonstrates the concept."
+      ]
+    },
+    {
+      "name": "Track D — AI Research Assistant",
+      "kind": "build",
+      "intro": [
+        "Tools: Claude.ai or ChatGPT + Google Docs.",
+        "Concept: design a series of prompts that help a student research any topic responsibly — a 5-prompt research system."
+      ],
+      "steps": [
+        "SCOPE PROMPT: \"Given the research question [X], break it into 5 specific sub-questions that together would fully answer it.\"",
+        "SOURCES PROMPT: \"For the sub-question [Y], suggest 5 types of sources I should look for. Include at least 2 primary source types.\"",
+        "SUMMARISE PROMPT: \"Here is text I found [paste source text]. Summarise the key points relevant to [sub-question]. Flag any claims that need verification.\"",
+        "BIAS CHECK PROMPT: \"Analyse this summary for potential bias, missing perspectives, or unsupported claims: [paste summary].\"",
+        "SYNTHESIS PROMPT: \"Using these verified points [list], write a 3-paragraph evidence-based response to [original research question]. Cite each point.\"",
+        "Test your system: use it to research a topic you actually need for school. Does it produce better research than googling alone?"
+      ],
+      "facilitator": [
+        "Push teams to actually run the full chain on a real topic — the value only shows up when all 5 prompts work together.",
+        "Use the BIAS CHECK step as a teaching moment about verifying AI output rather than trusting it."
+      ]
+    },
+    {
+      "name": "Daily Build Log",
+      "kind": "worksheet",
+      "intro": [
+        "Complete this with your team at the end of Day 8. It becomes your starting point for tomorrow."
+      ],
+      "steps": [
+        "Team: ___   Track: ___",
+        "What did we complete today? (be specific)",
+        "What is working well?",
+        "What is NOT working yet? (list all known issues)",
+        "What feedback did we get from our test user?",
+        "What are our top 3 priorities for Day 9?",
+        "What help do we need from the facilitator tomorrow?"
+      ],
+      "facilitator": [
+        "Collect or photograph each team's build log — you'll use it to open the Day 9 stand-up.",
+        "Make sure every team has tested with at least one person outside their team before they fill this in."
+      ]
+    }
+  ],
+  "reflection": [
+    "What is the core idea your prototype needs to prove — and does it prove it yet?",
+    "Where did AI genuinely help you, and where did you have to make the real decisions yourself?",
+    "What surprised you when someone outside your team tried your prototype?",
+    "If you could only fix one thing tomorrow, what would it be and why?"
+  ],
+  "vocab": [
+    { "term": "Prototype", "definition": "An early, rough version of a project built to test the core idea." },
+    { "term": "Proof-of-concept", "definition": "A working demo that shows your main idea actually works." },
+    { "term": "System Prompt", "definition": "The instruction that tells an AI who it is, what it knows, and how to behave." },
+    { "term": "Iteration", "definition": "Improving something through repeated rounds of building and testing." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "What is the main goal by the end of Build Day 1?",
+      "options": [
+        "A working proof-of-concept — even a rough one — that demonstrates your core idea",
+        "A completely finished, bug-free product ready to sell",
+        "A written plan describing what you will build later",
+        "A slideshow with no working parts"
+      ],
+      "answer": 0,
+      "explain": "Day 8 is about getting a working prototype you can test. Done is better than perfect — a rough proof-of-concept beats a polished plan."
+    },
+    {
+      "type": "tf",
+      "q": "On a build day, AI is a shortcut that does the project for you so you don't have to make decisions.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. AI is a collaborator, not a shortcut. You still own the ideas, the choices, and the testing — the AI helps you build them."
+    },
+    {
+      "type": "mcq",
+      "q": "How is a purpose-built chatbot (Track A) mainly created?",
+      "options": [
+        "By writing a carefully crafted system prompt that defines who the AI is and how it behaves",
+        "By training a brand-new AI from scratch with millions of images",
+        "By buying a finished chatbot from a store",
+        "By drawing the chatbot's face in a slideshow"
+      ],
+      "answer": 0,
+      "explain": "A smart chatbot for a specific purpose is built through a system prompt — the instruction that sets its identity, rules, and behaviour."
+    },
+    {
+      "type": "tf",
+      "q": "You should test your prototype with at least one person outside your own team before the day ends.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. Testing with an outside person is one of the day's goals — their confusion and reactions are your most valuable data for tomorrow."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Build Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:15", "Stand-up: each team shares their Day 8 goal in 60 seconds", "Project plans from Day 7"],
+          ["0:15–1:15", "Build Sprint 1 — core functionality", "Laptops, all tools available"],
+          ["1:15–1:30", "Break + peer check-in (show your progress to another team)", ""],
+          ["1:30–2:15", "Build Sprint 2 — refine + test with someone outside your team", ""],
+          ["2:15–2:25", "End-of-day demo: show what exists, no matter how rough", "Projector or shared screen"],
+          ["2:25–2:30", "Reflection — what works, what's broken, tomorrow's plan", ""]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "d5",
+  "day": 5,
+  "title": "When AI Gets It Wrong",
+  "subtitle": "Bias, hallucinations, and the ethics of intelligent machines",
+  "icon": "⚖️",
+  "accent": "coral",
+  "diagram": {
+    "src": "/diagrams/05_bias_types.png",
+    "alt": "The five sources of AI bias: historical, representation, measurement, aggregation, and more",
+    "width": 900,
+    "height": 500
+  },
+  "overview": [
+    "Today is possibly the most important day of Week 1. Understanding AI's capabilities is only half the picture — understanding its failures, biases, and ethical challenges is what makes you a truly responsible and powerful AI user.",
+    "We will run a mock AI Ethics Court, examine real-world cases of AI failure, and develop your personal framework for thinking about \"should we?\" not just \"can we?\""
+  ],
+  "objectives": [
+    "Understand what AI hallucination is and why it happens",
+    "Identify the main sources and types of AI bias",
+    "Analyse real-world cases where AI caused harm",
+    "Apply an ethical reasoning framework to AI decision-making scenarios",
+    "Articulate your own position on 2–3 AI ethics debates"
+  ],
+  "concepts": [
+    {
+      "heading": "AI Hallucination — When AI Makes Things Up",
+      "body": [
+        "AI language models can confidently state things that are completely false. This is called hallucination — a technical term, not a metaphor. It happens because:"
+      ],
+      "bullets": [
+        "AI language models predict the most statistically likely next word, not the most true next word.",
+        "They have no internal sense of \"I don't know\" — they fill gaps with plausible-sounding text.",
+        "Their training data contained errors and biases which are reproduced in outputs.",
+        "Real example (Legal): Lawyers submitted court briefs citing cases that ChatGPT invented — the cases did not exist. The lawyers faced disciplinary action.",
+        "Real example (Medical): AI chatbots have given incorrect drug dosage information to patients.",
+        "Real example (Academic): Students cited AI-generated references that were entirely fabricated, including fake DOI numbers."
+      ],
+      "callout": {
+        "kind": "rule",
+        "text": [
+          "The Golden Rule on AI Outputs: Never present AI-generated facts without verification from a trusted primary source.",
+          "AI is a starting point for research, not the ending point. If you cannot find the fact independently confirmed, do not use it."
+        ]
+      }
+    },
+    {
+      "heading": "Bias in AI Systems",
+      "body": [
+        "AI bias occurs when a system produces systematically unfair or inaccurate results for certain groups. There are several ways bias enters AI:"
+      ],
+      "bullets": [],
+      "table": {
+        "columns": ["Type of Bias", "How It Works"],
+        "rows": [
+          ["Historical Bias", "Training data reflects historical human discrimination. E.g., hiring AI trained on past employees (mostly male engineers) learned to prefer male candidates."],
+          ["Representation Bias", "Certain groups are underrepresented in training data. E.g., facial recognition trained mostly on light-skinned faces performs worse on dark-skinned faces."],
+          ["Measurement Bias", "The data collected doesn't accurately represent reality. E.g., using arrests as a proxy for crime — biased policing skews the data."],
+          ["Aggregation Bias", "One model applied across different groups where differences matter. E.g., a medical AI trained on average data may perform poorly for women if symptoms present differently."]
+        ]
+      }
+    },
+    {
+      "heading": "Real-World AI Failures — Case Studies",
+      "body": [
+        "Case 1: COMPAS Recidivism Algorithm (USA, 2016). An AI system used by US courts to predict whether criminals would reoffend was found to be twice as likely to incorrectly flag Black defendants as high-risk compared to white defendants, even when other factors were identical. The algorithm was used to influence sentencing decisions.",
+        "Case 2: Amazon Hiring AI (2018). Amazon built an AI to screen job applications. It was trained on 10 years of resumes — which mostly came from men, as tech is male-dominated. The AI learned to penalise resumes containing the word \"women's\" (e.g., \"women's chess club president\"). Amazon scrapped the system.",
+        "Case 3: Uber/Lyft Surge Pricing in Disasters. During natural disasters, algorithmic pricing systems have charged vulnerable people thousands of dollars for emergency transport — the algorithm optimising for revenue with no ethical override for crisis situations.",
+        "Case 4: AI Health Chatbots Giving Dangerous Advice. Multiple cases have emerged of AI wellness chatbots encouraging self-harm when users expressed distress, or providing incorrect medication information. These systems lacked appropriate safety guardrails."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "An Ethical Framework for AI Decisions",
+      "body": [
+        "When evaluating whether an AI system should be built or deployed, ask these questions:"
+      ],
+      "bullets": [
+        "Fairness: Does this AI treat all groups equitably? Who might be disadvantaged?",
+        "Transparency: Can we explain why the AI made a specific decision? Is it a \"black box\"?",
+        "Accountability: Who is responsible when the AI makes a harmful error — the developer, the deployer, or the user?",
+        "Privacy: What data does this AI collect? Who has access to it? Can it be misused?",
+        "Safety: What happens if this AI fails? Have edge cases been tested? Is there a human override?",
+        "Consent: Do the people affected by this AI know about it? Did they agree to be affected by it?"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Coded Bias (documentary trailer)",
+      "source": "Netflix",
+      "youtubeId": "jZl55PsfZJQ",
+      "minutes": 3,
+      "note": "Powerful documentary about facial recognition bias. The trailer alone is compelling — highly recommended."
+    },
+    {
+      "title": "The Problem with AI Bias",
+      "source": "BBC",
+      "youtubeId": "59bMh59JQDo",
+      "minutes": 8,
+      "note": "Accessible overview of bias types with real-world examples. Watch before the Key Concepts section."
+    },
+    {
+      "title": "How AI Can Reinforce Human Biases",
+      "source": "TED-Ed",
+      "youtubeId": "Ok5sKLXqynQ",
+      "minutes": 5,
+      "note": "Excellent animated explainer — ideal for visual learners."
+    }
+  ],
+  "activities": [
+    {
+      "name": "AI Ethics Court",
+      "kind": "discussion",
+      "intro": [
+        "Your class becomes a courtroom. Each group is assigned one case below and must argue BOTH sides — prosecution and defence. Then the whole class votes: should this AI system be allowed?"
+      ],
+      "steps": [
+        "Get into your assigned group and read your case brief carefully.",
+        "You have 20 minutes to prepare arguments FOR and AGAINST the AI system.",
+        "Present both sides to the class. The facilitator (Chief Justice) will ask you probing questions.",
+        "The class votes on each case: Yes, allow it / No, ban it / Only with conditions.",
+        "Reach a verdict — and if you allow the AI, name the conditions that must apply."
+      ],
+      "facilitator": [
+        "Divide the class into 3 groups. Each group is assigned one Case below.",
+        "Each group has 20 minutes to prepare their case — they must argue BOTH sides (prosecution and defence).",
+        "Then the class votes: Should this AI system be allowed? Yes / No / Only with conditions?",
+        "The facilitator plays \"Chief Justice\" — asking probing questions of each side."
+      ]
+    }
+  ],
+  "reflection": [
+    "Of the three court cases, which one concerned you most? Why? What principle (fairness, privacy, safety, transparency) was most violated?",
+    "Describe a situation from your own life where an AI might be making decisions about you right now. How transparent is that process? Do you consent to it?",
+    "If you were building an AI system, what one ethical principle would you refuse to compromise on? Why?",
+    "Week 1 reflection: Write 3 things you know about AI now that you didn't know on Day 1. Write 2 questions you still have. Write 1 thing that has changed how you think about technology."
+  ],
+  "vocab": [
+    { "term": "Hallucination", "definition": "AI outputting confident but factually incorrect information." },
+    { "term": "Bias", "definition": "Systematic unfairness in AI outputs, usually from skewed training data." },
+    { "term": "Black Box", "definition": "An AI system whose internal decision-making process cannot be explained." },
+    { "term": "Explainability / XAI", "definition": "The ability to interpret and explain how an AI reached a conclusion." },
+    { "term": "Fairness", "definition": "Equitable treatment of all individuals and groups by an AI system." },
+    { "term": "Accountability", "definition": "Clear responsibility when AI causes harm." },
+    { "term": "AI Safety", "definition": "The field focused on ensuring AI systems behave as intended and do not cause harm." },
+    { "term": "Guardrails", "definition": "Constraints built into AI systems to prevent harmful outputs." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "What is an AI \"hallucination\"?",
+      "options": [
+        "When an AI confidently states something that is completely false",
+        "When an AI sees images that aren't really there",
+        "When an AI refuses to answer a question",
+        "When an AI runs out of memory and crashes"
+      ],
+      "answer": 0,
+      "explain": "Hallucination is a technical term for when a language model produces confident but false information. It happens because the AI predicts the most likely next word, not the most true one."
+    },
+    {
+      "type": "mcq",
+      "q": "A hiring AI was trained on 10 years of resumes that mostly came from men, and it learned to prefer male candidates. What type of bias is this?",
+      "options": [
+        "Measurement bias",
+        "Historical bias",
+        "Aggregation bias",
+        "No bias — the AI was just being accurate"
+      ],
+      "answer": 1,
+      "explain": "This is historical bias: the training data reflected past human discrimination (a male-dominated field), so the AI repeated that pattern. This is exactly what happened with Amazon's hiring AI in 2018."
+    },
+    {
+      "type": "tf",
+      "q": "If an AI gives you a fact and a source, you can safely use it without checking, because the AI cited a reference.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. AI can invent fake references — real lawyers got in trouble for citing court cases ChatGPT made up, and students have cited papers with fake DOI numbers. Always verify with a trusted primary source."
+    },
+    {
+      "type": "mcq",
+      "q": "In the COMPAS case, a US court algorithm predicting who would reoffend was found to be twice as likely to wrongly flag Black defendants as high-risk. Which ethical principle is MOST clearly violated?",
+      "options": [
+        "Speed",
+        "Fairness",
+        "Profitability",
+        "Convenience"
+      ],
+      "answer": 1,
+      "explain": "Fairness asks whether the AI treats all groups equitably. Flagging one group as high-risk far more often, even with identical other factors, is a clear failure of fairness."
+    },
+    {
+      "type": "tf",
+      "q": "Asking \"Who is responsible when this AI makes a harmful error?\" is part of the Accountability question in the ethical framework.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. Accountability asks who is responsible when the AI causes harm — the developer, the deployer, or the user — so that there is a clear answer when something goes wrong."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Facilitator Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:15", "Week 1 knowledge check quiz (Days 1–4 vocabulary and concepts)", "Quiz sheets"],
+          ["0:15–0:50", "Key Concepts: Hallucination, bias, and the ethics landscape", "Slides/whiteboard"],
+          ["0:50–1:10", "Break", ""],
+          ["1:10–2:10", "Activity: AI Ethics Court — mock trial", "Roles cards, case briefs, \"verdict\" voting paddles"],
+          ["2:10–2:25", "Class debrief and personal framework building", ""],
+          ["2:25–2:30", "Reflection + preview of Week 2", "Reflection journal"]
+        ]
+      }
+    },
+    {
+      "heading": "AI Ethics Court — Case Briefs",
+      "kind": "cases",
+      "body": [
+        "Case 1: AI Bail Decisions. A government wants to use an AI system to assist judges in deciding whether to grant bail to accused criminals. The AI analyses 200 data points and predicts re-offending risk. Supporters say it removes human prejudice. Critics say it encodes historical bias and removes human judgment from life-changing decisions. FOR: Consistency, speed, removes individual judge bias, evidence-based. AGAINST: Bias in historical data, no transparency, people deserve human judgment, no appeal process. Verdict: Should this AI be used? If yes — what conditions must apply?",
+        "Case 2: AI Mental Health Companion. A company releases an AI chatbot designed to provide mental health support to teenagers who cannot access professional therapy. The AI has conversations, provides coping strategies, and tracks mood. 2 million teens use it. One case emerges where the AI failed to detect serious warning signs and a teen was harmed. FOR: Fills a massive gap in mental health services, available 24/7, no stigma, many helped. AGAINST: Not a licensed therapist, cannot handle crisis, single failure = life consequences, privacy of intimate disclosures. Verdict: Should this AI remain available? Under what rules?",
+        "Case 3: AI School Exam Cheating Detection. A school adopts an AI proctoring system that monitors students during online exams via their webcam — tracking eye movement, keystrokes, facial expressions, and background audio to detect cheating. Studies show the system flags students of colour and those with learning disabilities at higher rates. FOR: Academic integrity, equal standards, scales to online learning, deters cheating. AGAINST: Discriminatory outcomes, privacy invasion of home, anxiety impact, home environment advantage. Verdict: Should this AI be used in schools? What regulations should govern it?"
+      ]
+    }
+  ]
+}

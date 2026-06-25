@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/*
+ * KidSmart design tokens (Tailwind v4 @theme — each token generates utilities,
+ * e.g. --color-ks-blue → bg-ks-blue / text-ks-blue / border-ks-blue).
+ * Palette derived from the KidSmart logo (yellow star + graduation cap).
+ */
+@theme {
+  --color-ks-yellow: #ffd135; /* star / hero backgrounds */
+  --color-ks-blue: #4b9fd4; /* headings, nav, accents */
+  --color-ks-dark: #2e6fa3; /* borders, emphasis */
+  --color-ks-green: #6dbe47; /* facilitator / success */
+  --color-ks-orange: #f5a623; /* highlights */
+  --color-ks-coral: #e85c3a; /* alerts / key points */
+  --color-ks-bg: #f4f9ff; /* page background */
+  --color-ks-cream: #fff8e8; /* card / box backgrounds */
+  --color-ks-ink: #444444; /* body text */
+  --color-ks-ink-soft: #6b7280;
+
+  --font-display: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 6px 0 0 rgba(46, 111, 163, 0.12), 0 12px 28px -10px rgba(46, 111, 163, 0.35);
+}
+
+html {
+  background: var(--color-ks-bg);
+  /* Honour iOS safe areas when installed (Harness §19.3). */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ks-bg);
+  color: var(--color-ks-ink);
+  font-family: var(--font-body);
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Reusable primitives (Harness §3.2 / §14.4) ----------------------------- */
+.ks-card {
+  background: var(--color-ks-cream);
+  border: 2px solid color-mix(in srgb, var(--color-ks-dark) 18%, transparent);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.ks-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--color-ks-dark);
+  background: #fff;
+  color: var(--color-ks-dark);
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+  min-height: 44px; /* touch-target floor (Harness §14.8) */
+}
+
+/* Calm everything for reduced-motion users (Harness §14.7). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

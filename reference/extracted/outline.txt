@@ -1,0 +1,277 @@
+  0 [TBL 1x1] KIDSMART AI TRAINING PROGRAM
+  4 [TBL 1x1] 📋  FACILITATOR EDITION  📋
+Weeks 1–2  |  10 Days  |  2.5 Hours Per Day
+  5 [TBL 1x3] 🎯  10 Core Days
+  6 [Heading 1] Programme Overview
+  9 [Heading 2] Program Structure
+ 10 [TBL 3x2] Week
+ 11 [Heading 2] What Students Will Walk Away With
+ 18 [Heading 2] How to Use This Book
+ 19 [TBL 2x1] For Facilitators
+ 20 [TBL 2x1] For Students
+ 24 [TBL 1x4] 🔍  UNDERSTAND
+ 25 [Heading 1] Your AI Toolkit
+ 30 [Heading 2] Tool 1 — Claude (Anthropic)
+ 31 [TBL 2x1] What It Is
+ 32 [Heading 3] How to Use Claude in This Program
+ 38 [TBL 2x1] 💡  Best Practices for Students
+ 39 [Heading 2] Tool 2 — Claude Code
+ 40 [TBL 2x1] What It Is
+ 41 [Heading 3] Getting Started with Claude Code
+ 42 [TBL 2x1] 📋  Setup Steps (do this before Day 8)
+ 43 [TBL 2x1] 📝  What Claude Code Can Do For Your Project
+ 44 [TBL 2x1] ⚠️  Important: Claude Code is a Collaborator, Not a Shortcut
+ 45 [Heading 2] Tool 3 — GitHub Copilot & Codex
+ 46 [TBL 2x1] What It Is
+ 47 [TBL 7x2] Claude Code
+ 48 [Heading 3] Getting GitHub Copilot Free as a Student
+ 54 [Heading 2] Tool 4 — Google Teachable Machine
+ 55 [TBL 2x1] What It Is
+ 56 [Heading 3] Three Types of Teachable Machine Models
+ 57 [TBL 4x2] Type
+ 58 [Heading 2] Tool 5 — Adobe Firefly
+ 59 [TBL 2x1] What It Is
+ 60 [Heading 3] How to Use Adobe Firefly
+ 67 [Heading 2] Tool 6 — Suno AI (Music Generation)
+ 68 [TBL 2x1] What It Is
+ 69 [Heading 2] Tool 7 — Scratch + ML4Kids
+ 70 [TBL 2x1] What It Is
+ 71 [Heading 2] Tool 8 — Quick, Draw! (Google)
+ 72 [TBL 2x1] What It Is
+ 73 [Heading 2] Pre-Program Setup Checklist
+ 74 [TBL 2x1] ✅  Complete Before Day 1 of the Program
+ 75 [TBL 9x2] Tool
+ 76 [TBL 1x1] DAY 1
+AI Is Already Around You
+Demystifying the most talked-about tech
+ 78 [Heading 2] Overview
+ 81 [TBL 2x1] 🎯  Learning Objectives — Day 1
+ 82 [Heading 2] Facilitator Schedule
+ 83 [TBL 8x3] Time
+ 84 [Heading 2] Key Concepts
+ 85 [Heading 3] 1. What Is Artificial Intelligence?
+ 88 [TBL 6x2] Regular Program vs AI
+ 89 [Heading 3] 2. The AI Family Tree
+ 95 [Heading 3] 3. Narrow AI vs. General AI
+ 97 [TBL 6x2] Narrow AI
+ 98 [Heading 3] 4. How Does AI Actually Learn?
+106 [TBL 2x1] 💡  Key Insight for Students
+107 [Heading 2] Recommended Videos
+112 [Heading 2] Activity 1 — Map Your AI Day
+113 [TBL 2x1] 📋  Instructions for Facilitator
+114 [TBL 2x1] 📝  Student Worksheet — My AI Day
+115 [Heading 2] Activity 2 — AI Myth Busters
+116 [TBL 2x1] 📋  Instructions for Facilitator
+118 [TBL 2x1] ✅  BUSTED — FALSE
+120 [TBL 2x1] ✅  BUSTED — FALSE
+122 [TBL 2x1] ⚠️  PARTIALLY TRUE — IT'S COMPLICATED
+124 [TBL 2x1] ✅  BUSTED — FALSE
+126 [TBL 2x1] ✅  BUSTED — FALSE
+127 [Heading 2] Student Reflection — Day 1
+128 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+129 [TBL 2x1] 📚  Key Vocabulary — Day 1
+130 [TBL 1x1] DAY 2
+How AI Learns
+Training data, patterns, and your first machine le
+131 [Heading 2] Overview
+134 [TBL 2x1] 🎯  Learning Objectives — Day 2
+135 [Heading 2] Facilitator Schedule
+136 [TBL 8x3] Time
+137 [Heading 2] Key Concepts
+138 [Heading 3] 1. The Machine Learning Training Loop
+146 [Heading 3] 2. What Is a Feature?
+153 [Heading 3] 3. Types of Machine Learning
+154 [TBL 5x2] Type
+155 [Heading 3] 4. Overfitting and Underfitting — Why AI Fails
+157 [TBL 3x2] Problem
+158 [TBL 2x1] 💡  The Golden Rule of ML
+159 [Heading 2] Recommended Videos
+163 [Heading 2] Activity 1 — The Human Sorting Game
+164 [TBL 2x1] 📋  Facilitator Instructions
+165 [TBL 2x1] 🎮  Debrief Questions for the Class
+166 [Heading 2] Activity 2 — Teachable Machine: Train Your First AI
+167 [TBL 2x1] 📋  Facilitator Setup (prepare before class)
+168 [TBL 2x1] 📝  Step-by-Step Student Guide
+169 [TBL 2x1] 📊  Student Data Collection Table
+170 [Heading 2] Student Reflection — Day 2
+171 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+172 [TBL 2x1] 📚  Key Vocabulary — Day 2
+174 [TBL 1x1] DAY 3
+The Art of Talking to AI
+Prompt engineering — your most valuable
+176 [Heading 2] Overview
+179 [TBL 2x1] 🎯  Learning Objectives — Day 3
+180 [Heading 2] Facilitator Schedule
+181 [TBL 7x3] Time
+182 [Heading 2] Key Concepts
+183 [Heading 3] 1. Why Prompts Matter So Much
+186 [Heading 3] 2. The R-C-T-F-C Prompt Framework
+188 [TBL 6x2] Element
+189 [Heading 3] 3. Prompt Levels — From Weak to Expert
+196 [Heading 3] 4. Advanced Techniques
+202 [TBL 2x1] 💡  The Professional Mindset
+203 [Heading 2] Recommended Videos
+206 [Heading 2] Activity 1 — Prompt Makeover Workshop
+207 [TBL 2x1] 📋  Facilitator Instructions
+208 [TBL 2x1] 📝  Prompt Makeover Worksheet
+209 [Heading 2] Activity 2 — The Prompt Battle Championship
+210 [TBL 2x1] 📋  Facilitator Instructions
+211 [TBL 2x1] 🏆  Prompt Battle Challenge Cards
+212 [Heading 2] Student Reflection — Day 3
+213 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+214 [TBL 2x1] 📚  Key Vocabulary — Day 3
+215 [TBL 1x1] DAY 4
+AI Eyes, Ears & More
+Computer vision, speech AI, and the art of 
+216 [Heading 2] Overview
+218 [TBL 2x1] 🎯  Learning Objectives — Day 4
+219 [Heading 2] Facilitator Schedule
+220 [TBL 8x3] Time
+221 [Heading 2] Key Concepts
+222 [Heading 3] 1. How Computer Vision Works
+230 [Heading 3] 2. Computer Vision in the Real World
+231 [TBL 7x2] Application
+232 [Heading 3] 3. How Speech Recognition Works
+239 [Heading 3] 4. Generative AI & Synthetic Media
+244 [TBL 2x1] 💡  Why This Matters
+245 [Heading 2] Recommended Videos
+250 [Heading 2] Activity 1 — Spot the AI
+251 [TBL 2x1] 📋  Facilitator Instructions
+252 [TBL 2x1] 🔍  Student Detective Guide — How to Spot AI-Generated Images
+253 [Heading 2] Activity 2 — Live AI Vision Demos
+254 [TBL 2x1] 📝  Demo Circuit (rotate groups every 10 minutes)
+255 [Heading 2] Discussion — Deepfakes and Truth in the AI Age
+256 [TBL 2x1] 📋  Facilitator: Run as a structured class discussion (20 minutes)
+257 [TBL 2x1] 💬  Discussion Questions
+258 [Heading 2] Student Reflection — Day 4
+259 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+260 [TBL 2x1] 📚  Key Vocabulary — Day 4
+262 [TBL 1x1] DAY 5
+When AI Gets It Wrong
+Bias, hallucinations, and the ethics of in
+263 [Heading 2] Overview
+265 [TBL 2x1] 🎯  Learning Objectives — Day 5
+267 [Heading 2] Facilitator Schedule
+268 [TBL 7x3] Time
+269 [Heading 2] Key Concepts
+270 [Heading 3] 1. AI Hallucination — When AI Makes Things Up
+279 [TBL 2x1] ⚠️  The Golden Rule on AI Outputs
+280 [Heading 3] 2. Bias in AI Systems
+282 [TBL 5x2] Type of Bias
+283 [Heading 3] 3. Real-World AI Failures — Case Studies
+292 [Heading 3] 4. An Ethical Framework for AI Decisions
+300 [Heading 2] Recommended Videos
+304 [Heading 2] Activity — AI Ethics Court
+305 [TBL 2x1] 📋  Facilitator Setup
+306 [TBL 2x1] ⚖️  Case 1: AI Bail Decisions
+307 [TBL 2x1] ⚖️  Case 2: AI Mental Health Companion
+308 [TBL 2x1] ⚖️  Case 3: AI School Exam Cheating Detection
+309 [Heading 2] Student Reflection — Day 5
+310 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+311 [TBL 2x1] 📚  Key Vocabulary — Day 5
+312 [TBL 1x1] DAY 6
+AI + Creativity
+When machines make art — and how humans make it 
+313 [Heading 2] Overview
+315 [TBL 2x1] 🎯  Learning Objectives — Day 6
+317 [Heading 2] Facilitator Schedule
+318 [TBL 8x3] Time
+319 [Heading 2] Key Concepts
+320 [Heading 3] 1. How Generative AI Creates
+325 [Heading 3] 2. The Creativity Debate
+326 [TBL 4x2] Perspective
+327 [Heading 3] 3. Copyright and Ownership
+333 [Heading 2] Recommended Videos
+337 [Heading 2] Activity 1 — AI Creative Workshop
+338 [TBL 2x1] 📝  Station A: AI Songwriting with Suno
+339 [TBL 2x1] 📝  Station B: AI Visual Art with Adobe Firefly
+340 [Heading 2] Activity 2 — Human vs AI Creative Showdown
+341 [TBL 2x1] 📋  Facilitator Instructions
+342 [TBL 2x1] 🎨  Challenge Options (pick one)
+343 [Heading 2] Student Reflection — Day 6
+344 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+345 [TBL 2x1] 📚  Key Vocabulary — Day 6
+346 [TBL 1x1] DAY 7
+Design Thinking Meets AI
+From "what if?" to a real solution — yo
+348 [Heading 2] Overview
+350 [TBL 2x1] 🎯  Learning Objectives — Day 7
+351 [Heading 2] Facilitator Schedule
+352 [TBL 8x3] Time
+353 [Heading 2] Key Concepts
+354 [Heading 3] 1. Design Thinking — The 5 Stages
+355 [TBL 6x2] Stage
+356 [Heading 3] 2. Where Does AI Actually Help?
+358 [TBL 2x1] ✅  AI is a good fit when...
+359 [TBL 2x1] ⚠️  AI is NOT a good fit when...
+360 [Heading 3] 3. Project Options for Days 8–9
+362 [TBL 5x2] Project Track
+363 [Heading 2] Activity 1 — Problem Sprint
+364 [TBL 2x1] 📋  Facilitator Instructions
+365 [TBL 2x1] 📝  Problem Definition Template
+366 [Heading 2] Activity 2 — AI Fit Canvas
+367 [TBL 2x1] 📝  Project Canvas — Complete as a Team
+368 [Heading 2] Student Reflection — Day 7
+369 [TBL 2x1] 📓  Write Your Answers in Your Reflection Journal
+370 [TBL 1x1] DAY 8
+Build Day 1
+From canvas to code — bringing your AI project to li
+371 [Heading 2] Overview
+374 [TBL 2x1] 🎯  Day 8 Goals
+375 [Heading 2] Build Schedule
+376 [TBL 7x3] Time
+377 [Heading 2] Track A — Smart Chatbot Build Guide
+378 [TBL 2x1] 📋  Tools: Claude.ai or ChatGPT (free tier) + Google Docs to record out
+379 [TBL 2x1] 📝  System Prompt Template for Your Chatbot
+380 [Heading 2] Track B — Image Classifier App Build Guide
+381 [TBL 2x1] 📝  Step-by-Step: Teachable Machine → Embedded Web App
+382 [Heading 2] Track C — AI Story Generator Build Guide
+383 [TBL 2x1] 📝  Build: Interactive AI Branching Story
+384 [Heading 2] Track D — AI Research Assistant Build Guide
+385 [TBL 2x1] 📝  Build: A Research Prompt System
+386 [Heading 2] Daily Build Log — Student Worksheet
+387 [TBL 2x1] 📓  Complete This at the End of Day 8
+388 [TBL 1x1] DAY 9
+Build Day 2
+Polish, test, and prepare your story for the world
+389 [Heading 2] Overview
+391 [TBL 2x1] 🎯  Day 9 Goals
+392 [Heading 2] Build Schedule
+393 [TBL 7x3] Time
+394 [Heading 2] User Testing Protocol
+395 [TBL 2x1] 📋  How to Run a Proper User Test
+396 [TBL 2x1] 📋  User Testing Script
+397 [Heading 2] Demo Day Presentation Template
+398 [TBL 2x1] 🎤  Your 3-Minute Presentation Structure
+399 [Heading 2] Project One-Pager Template
+400 [TBL 2x1] 📄  Complete This — It Will Be Displayed at Demo Day
+401 [TBL 1x1] DAY 10
+Demo Day & Graduation
+Two weeks. Ten days. One showcase. Your A
+402 [Heading 2] Overview
+404 [TBL 2x1] 🎯  Day 10 Goals
+405 [Heading 2] Facilitator Schedule
+406 [TBL 8x3] Time
+407 [Heading 2] The Demo Day Mindset
+408 [TBL 2x1] 💡  Advice for Presenters
+409 [Heading 2] Audience Questions — Facilitator Guide
+410 [TBL 2x1] 📋  Suggested Questions for Audience Members and Guests
+411 [Heading 2] Award Categories
+412 [TBL 2x1] 🏆  Audience Choice Awards (all teams eligible for all categories)
+413 [Heading 2] Letter to My Future Self
+414 [TBL 2x1] 📋  Facilitator Instructions
+415 [TBL 2x1] 📝  Letter to My Future Self — Prompts
+416 [Heading 2] What Comes Next — Your AI Learning Path
+417 [TBL 2x1] 🚀  Free Resources to Continue Learning
+418 [Heading 1] Appendix — Master Vocabulary Reference
+420 [Heading 2] A – D
+421 [TBL 12x2] Term
+422 [Heading 2] E – L
+423 [TBL 12x2] Term
+424 [Heading 2] M – R
+425 [TBL 11x2] Term
+426 [Heading 2] S – Z
+427 [TBL 11x2] Term
+428 [Heading 1] Facilitator Reference — Program at a Glance
+429 [TBL 11x2] Day
+430 [TBL 2x1] 📋  Essential Equipment Checklist

@@ -1,0 +1,209 @@
+{
+  "id": "d10",
+  "day": 10,
+  "title": "Demo Day & Graduation",
+  "subtitle": "Two weeks. Ten days. One showcase. Your AI future begins now.",
+  "icon": "🏆",
+  "accent": "coral",
+  "overview": [
+    "This is the day everything comes together. You will present your project to a real audience — parents, teachers, or guests — and demonstrate not just what you built, but how you think.",
+    "This session is also a celebration of how far you have come in two weeks. By the end of today you will have presented with confidence, demonstrated your project live, written a letter to your future self, received your certificate, and left with a clear next step for continuing your AI learning."
+  ],
+  "objectives": [
+    "Deliver your 3-minute project presentation with confidence",
+    "Demonstrate your project to the audience live",
+    "Complete your \"Letter to Future Self\" — a personal commitment",
+    "Receive your AI Futures Program certificate",
+    "Leave with a clear next step for continuing your AI learning"
+  ],
+  "concepts": [
+    {
+      "heading": "The Demo Day Mindset",
+      "body": [
+        "A great demo is more about how you tell the story than how perfect the project is. Judges and guests remember presenters who make them care about the problem and who speak honestly about what they learned."
+      ],
+      "bullets": [
+        "Start with the problem, not the technology. The audience needs to care before they can be impressed.",
+        "Show the tool working live — even if it's imperfect. A live demo with one bug is more compelling than a flawless recording.",
+        "Speak to what you learned, not just what you built. Judges value insight over polish.",
+        "If something goes wrong during the demo, say so calmly and explain what it should do. Handling failure gracefully is itself impressive.",
+        "Thank your team, your facilitator, and anyone who gave you feedback during user testing."
+      ],
+      "callout": {
+        "kind": "insight",
+        "text": [
+          "A live demo with one bug beats a flawless recording — it shows the real thing works.",
+          "If something breaks, stay calm and explain what it should do. Handling failure well is impressive on its own."
+        ]
+      }
+    },
+    {
+      "heading": "What Comes Next — Your AI Learning Path",
+      "body": [
+        "Your AI journey doesn't end today. Here are free, trustworthy resources to keep learning, building, and thinking about AI responsibly."
+      ],
+      "bullets": [
+        "Coding with AI — CS50's Introduction to AI (Harvard, free): cs50.harvard.edu/ai",
+        "Coding with AI — Elements of AI (University of Helsinki, free): elementsofai.com",
+        "Coding with AI — Scratch + ML for Kids: machinelearningforkids.co.uk",
+        "Building with AI — Google ML Crash Course (free): developers.google.com/machine-learning/crash-course",
+        "Building with AI — Fast.ai Practical Deep Learning (free): fast.ai",
+        "Building with AI — Anthropic Claude API (free tier): anthropic.com/api",
+        "Understanding AI Ethics — AI4K12 Initiative: ai4k12.org",
+        "Understanding AI Ethics — MIT Media Lab Ethics of AI: media.mit.edu",
+        "Understanding AI Ethics — Your Digital Future (Australian eSafety Commissioner): esafety.gov.au",
+        "Competitions and Communities — AI for Good (ITU): aiforgood.itu.int/youth",
+        "Competitions and Communities — Google Science Fair: sciencefair.withgoogle.com",
+        "Competitions and Communities — iD Tech AI programs (holidays): idtech.com"
+      ]
+    }
+  ],
+  "videos": [],
+  "activities": [
+    {
+      "name": "Project Showcase",
+      "kind": "demo",
+      "intro": [
+        "Each team presents their 3-minute project to the audience, followed by 2 minutes of questions. This is your moment — tell your story and show your project working live."
+      ],
+      "steps": [
+        "Set up and confirm your project is working before the showcase begins.",
+        "Deliver your 3-minute presentation: the Problem, your Solution (with a live demo), what you Learned, and the Bigger Picture.",
+        "Show the tool working live, even if it's imperfect — a real demo with one bug beats a flawless recording.",
+        "Answer 2 minutes of audience questions calmly and honestly.",
+        "Thank your team, your facilitator, and everyone who tested your project."
+      ],
+      "facilitator": [
+        "Keep a strict timer: 3 minutes to present, 2 minutes for Q&A per team.",
+        "Confirm every team's tech is working during final setup, before any audience arrives."
+      ]
+    },
+    {
+      "name": "Letter to My Future Self",
+      "kind": "worksheet",
+      "intro": [
+        "Take 15 minutes of quiet time to write a letter to yourself. Your facilitator will mail it to you in about 6 months — it will arrive in the middle of a new school year, a message from the version of you who just finished this program.",
+        "Use these prompts to guide your letter, then seal and address the envelope to yourself."
+      ],
+      "steps": [
+        "Date: ___",
+        "Dear Future Me,",
+        "Right now, here is what I understand about AI that I didn't two weeks ago:",
+        "The project I built was called [name]. Here is what I'm most proud of about it:",
+        "The moment that surprised me most during this program was:",
+        "The ethical question about AI that I still think about is:",
+        "By the time you read this letter, I want to have done these things with AI:",
+        "The one thing I want you to remember about AI is:",
+        "Signed, [your name], age 12"
+      ],
+      "facilitator": [
+        "Provide each student with a piece of quality paper and an envelope.",
+        "Allow 15 minutes of quiet, reflective writing. Play soft instrumental music.",
+        "Students seal and address the envelope to themselves; facilitators mail them in 6 months.",
+        "Tell students: \"This letter will arrive when you are in the middle of a new school year. It is a message from the version of you who just finished this program.\""
+      ]
+    }
+  ],
+  "reflection": [
+    "Right now, what do you understand about AI that you didn't two weeks ago?",
+    "What are you most proud of about the project you built?",
+    "What moment surprised you most during this program?",
+    "What ethical question about AI do you still think about?",
+    "What is the one thing you want to remember about AI — and what's your next step to keep learning?"
+  ],
+  "vocab": [
+    { "term": "Live Demo", "definition": "Showing your project actually working in front of an audience, in real time." },
+    { "term": "Q&A", "definition": "Question-and-answer time where the audience asks about your project." },
+    { "term": "Pitch", "definition": "A short, persuasive presentation of your project and why it matters." }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "According to the Demo Day mindset, how should you open your presentation?",
+      "options": [
+        "With the problem, so the audience cares before they can be impressed",
+        "With a long technical description of how the AI works",
+        "With a list of every tool you used",
+        "With an apology for anything that might break"
+      ],
+      "answer": 0,
+      "explain": "Start with the problem, not the technology. The audience needs to care about the problem before your solution can impress them."
+    },
+    {
+      "type": "tf",
+      "q": "A live demo with one small bug is more compelling than a perfect pre-recorded video.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explain": "True. Showing the real tool working live — even imperfectly — is more convincing and impressive than a flawless recording."
+    },
+    {
+      "type": "mcq",
+      "q": "If something goes wrong during your live demo, what's the best thing to do?",
+      "options": [
+        "Stay calm, say what happened, and explain what it should do",
+        "Stop the presentation and sit down",
+        "Pretend nothing happened and rush past it",
+        "Blame the computer and give up"
+      ],
+      "answer": 0,
+      "explain": "Handling failure gracefully is itself impressive. Calmly explain what went wrong and what the tool should do — judges respect that."
+    },
+    {
+      "type": "tf",
+      "q": "Judges value polish more than the insights you share about what you learned.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explain": "False. Speak to what you learned, not just what you built — judges value insight over polish."
+    }
+  ],
+  "facilitator": [
+    {
+      "heading": "Audience Questions — Facilitator Guide",
+      "kind": "guide",
+      "body": [
+        "Suggested questions to offer audience members and guests during each team's Q&A:",
+        "What made you choose this particular problem to solve?",
+        "How did you decide which parts of the solution to give to AI and which to keep for humans?",
+        "What would happen if someone tried to misuse your tool?",
+        "If you had 3 more weeks, what would you build next?",
+        "What did AI do that surprised you during this project?",
+        "What did you discover that you wish you'd known before you started building?"
+      ]
+    },
+    {
+      "heading": "Award Categories",
+      "kind": "rubric",
+      "body": [
+        "Audience Choice Awards — all teams are eligible for all categories. Guests vote on each."
+      ],
+      "table": {
+        "caption": "Audience Choice Awards",
+        "columns": ["Award", "What it recognises"],
+        "rows": [
+          ["Most Innovative Solution", "Tackled a problem in an unexpected way"],
+          ["Best User Experience", "Easiest and most enjoyable to use"],
+          ["Greatest Real-World Impact", "Could help the most people if fully built"],
+          ["Best Use of AI", "Most thoughtful and effective use of AI capabilities"],
+          ["Most Ethical Design", "Best handling of fairness, privacy, and safety concerns"],
+          ["Best Presentation", "Clearest storytelling and most engaging delivery"]
+        ]
+      }
+    },
+    {
+      "heading": "Facilitator Schedule",
+      "kind": "schedule",
+      "table": {
+        "columns": ["Time", "Activity", "Materials"],
+        "rows": [
+          ["0:00–0:20", "Final setup — test all projects, arrange exhibition space", "All tech confirmed working"],
+          ["0:20–0:30", "Opening ceremony — facilitator reflects on the two-week journey", ""],
+          ["0:30–1:30", "Project Showcase — each team presents 3 min + 2 min Q&A", "Timer, projector/screen"],
+          ["1:30–1:50", "Audience choice awards — guests vote on categories", "Voting cards"],
+          ["1:50–2:10", "Letter to Future Self — quiet writing time", "Special paper envelopes"],
+          ["2:10–2:25", "Certificate ceremony + group photo", "Printed certificates"],
+          ["2:25–2:30", "Closing words from facilitator: what comes next?", "Resource sheet"]
+        ]
+      }
+    }
+  ]
+}
