@@ -100,7 +100,26 @@
       ]
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "3 Types of Bias in AI",
+      "source": "Google",
+      "youtubeId": "59bMh59JQDo",
+      "note": "Where AI bias comes from, with simple examples."
+    },
+    {
+      "title": "Algorithmic Bias and Fairness (Crash Course AI #18)",
+      "source": "CrashCourse",
+      "youtubeId": "gV0_raKR2UQ",
+      "note": "Five common kinds of AI bias, and why fairness is hard."
+    },
+    {
+      "title": "Coded Bias — Trailer",
+      "source": "MIFF",
+      "youtubeId": "jZl55PsfZJQ",
+      "note": "Trailer for the documentary about bias in face-recognition AI."
+    }
+  ],
   "activities": [
     {
       "name": "AI Ethics Court",

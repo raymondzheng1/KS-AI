@@ -113,7 +113,27 @@
       }
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "What Is Computer Vision?",
+      "source": "Ozobot",
+      "youtubeId": "YEJBEQJuOiY",
+      "minutes": 2,
+      "note": "A 2-minute look at how AI “sees” images."
+    },
+    {
+      "title": "Deepfakes: How to Spot Them",
+      "source": "CBC Kids News",
+      "youtubeId": "IOyrbsNcXt8",
+      "note": "What deepfakes are and how to tell what's real."
+    },
+    {
+      "title": "Deepfakes Explained",
+      "source": "Behind the News",
+      "youtubeId": "NxSOG1aNeBo",
+      "note": "How deepfakes are made, how to spot them, and why they matter."
+    }
+  ],
   "activities": [
     {
       "name": "Spot the AI",

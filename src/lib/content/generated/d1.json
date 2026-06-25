@@ -121,7 +121,20 @@
       }
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "How AI Works",
+      "source": "CodeAI",
+      "youtubeId": "Ok-xpKjKp2g",
+      "note": "A clear, friendly intro to what AI is and how it works."
+    },
+    {
+      "title": "Learn about Artificial Intelligence (AI)",
+      "source": "Code.org",
+      "youtubeId": "EsztapWz6c4",
+      "note": "Code.org's short explainer on artificial intelligence."
+    }
+  ],
   "activities": [
     {
       "name": "Map Your AI Day",

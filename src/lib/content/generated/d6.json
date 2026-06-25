@@ -74,7 +74,14 @@
       ]
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "AI Art, Explained",
+      "source": "Vox",
+      "youtubeId": "SVcsDDABEkM",
+      "note": "How text-to-image AI turns words into pictures."
+    }
+  ],
   "activities": [
     {
       "name": "AI Creative Workshop",

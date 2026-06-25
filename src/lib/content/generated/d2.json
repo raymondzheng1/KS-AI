@@ -111,7 +111,20 @@
       }
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "Teachable Machine 2.0: Making AI easier for everyone",
+      "source": "Google",
+      "youtubeId": "T2qQGqZxkD0",
+      "note": "See how you can train your own AI in the browser — no code."
+    },
+    {
+      "title": "The 7 Steps of Machine Learning",
+      "source": "Google Cloud Tech",
+      "youtubeId": "nKW8Ndu7Mjw",
+      "note": "The steps every machine-learning project follows."
+    }
+  ],
   "activities": [
     {
       "name": "The Human Sorting Game",

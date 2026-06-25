@@ -94,7 +94,14 @@
       }
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "What Is Prompt Engineering?",
+      "source": "GeeksforGeeks",
+      "youtubeId": "_O6osatxa5c",
+      "note": "Why the way you ask an AI changes what you get back."
+    }
+  ],
   "activities": [
     {
       "name": "Prompt Makeover Workshop",
