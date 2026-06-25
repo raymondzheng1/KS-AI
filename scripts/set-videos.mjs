@@ -14,14 +14,13 @@ const GEN = "src/lib/content/generated";
 const VIDEOS = {
   d1: [
     { title: "How AI Works", source: "CodeAI", youtubeId: "Ok-xpKjKp2g", note: "A clear, friendly intro to what AI is and how it works." },
-    { title: "Learn about Artificial Intelligence (AI)", source: "Code.org", youtubeId: "EsztapWz6c4", note: "Code.org's short explainer on artificial intelligence." },
   ],
   d2: [
     { title: "Teachable Machine 2.0: Making AI easier for everyone", source: "Google", youtubeId: "T2qQGqZxkD0", note: "See how you can train your own AI in the browser — no code." },
     { title: "The 7 Steps of Machine Learning", source: "Google Cloud Tech", youtubeId: "nKW8Ndu7Mjw", note: "The steps every machine-learning project follows." },
   ],
   d3: [
-    { title: "What Is Prompt Engineering?", source: "GeeksforGeeks", youtubeId: "_O6osatxa5c", note: "Why the way you ask an AI changes what you get back." },
+    { title: "AI in a Minute: Prompt Engineering", source: "Microsoft Cloud", youtubeId: "vGdyePbGNaE", minutes: 1, note: "A one-minute intro to writing better prompts." },
   ],
   d4: [
     { title: "What Is Computer Vision?", source: "Ozobot", youtubeId: "YEJBEQJuOiY", minutes: 2, note: "A 2-minute look at how AI “sees” images." },

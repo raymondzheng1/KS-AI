@@ -96,10 +96,11 @@
   ],
   "videos": [
     {
-      "title": "What Is Prompt Engineering?",
-      "source": "GeeksforGeeks",
-      "youtubeId": "_O6osatxa5c",
-      "note": "Why the way you ask an AI changes what you get back."
+      "title": "AI in a Minute: Prompt Engineering",
+      "source": "Microsoft Cloud",
+      "youtubeId": "vGdyePbGNaE",
+      "minutes": 1,
+      "note": "A one-minute intro to writing better prompts."
     }
   ],
   "activities": [
