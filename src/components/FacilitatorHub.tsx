@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { BrandLockup } from "@/components/BrandLockup";
 import { FacilitatorForm } from "@/components/FacilitatorForm";
+import { SiteHeader } from "@/components/SiteHeader";
 import { DataTable } from "@/components/game/ContentBlocks";
 import { HURDLES } from "@/lib/content";
 
@@ -14,14 +14,9 @@ import { HURDLES } from "@/lib/content";
 export function FacilitatorHub() {
   return (
     <main className="mx-auto max-w-4xl px-5 pb-20 pt-[max(1rem,env(safe-area-inset-top))]">
-      <header className="flex items-center justify-between py-4">
-        <BrandLockup />
-        <Link href="/" className="ks-iconbtn" aria-label="Home">
-          ‹
-        </Link>
-      </header>
+      <SiteHeader />
 
-      <h1 className="font-display text-3xl font-bold text-ks-dark">👩‍🏫 Facilitator Hub</h1>
+      <h1 className="mt-4 font-display text-3xl font-bold text-ks-dark">👩‍🏫 Facilitator Hub</h1>
       <p className="mt-2 max-w-2xl text-ks-ink">
         Everything you need to run the 2-week program with a class or club — the daily schedule,
         run guides, and answer keys, all in one place.

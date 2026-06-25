@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { BrandLockup } from "@/components/BrandLockup";
 import { CrayonUnderline } from "@/components/CrayonUnderline";
+import { SiteHeader } from "@/components/SiteHeader";
 import { Sunny } from "@/components/Sunny";
 import { HURDLES, TOOLS } from "@/lib/content";
 import { accentColor, accentTint } from "@/lib/game/accent";
@@ -58,13 +58,7 @@ export default function Home() {
     <main className="mx-auto max-w-md px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-5xl md:px-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Header */}
-      <header className="flex items-center justify-between py-3">
-        <BrandLockup href={null} />
-        <span className="ks-iconbtn" aria-hidden>
-          🦊
-        </span>
-      </header>
+      <SiteHeader home />
 
       {/* Eyebrow */}
       <p className="mb-3 flex justify-center">
@@ -240,24 +234,6 @@ export default function Home() {
           <p className="mt-3 text-xs text-ks-slate">Free · No login · Play with friends · Safe for kids</p>
         </div>
       </section>
-
-      <footer className="mt-10 flex flex-wrap items-center justify-center gap-2 border-t border-ks-kraft/40 pt-5 text-sm text-ks-slate md:mt-14">
-        {[
-          { href: "/overview", label: "Programme" },
-          { href: "/tools", label: "AI Toolkit" },
-          { href: "/appendix", label: "Glossary" },
-          { href: "/facilitator", label: "Facilitators" },
-          { href: "/contact", label: "Contact" },
-        ].map((l) => (
-          <Link
-            key={l.href}
-            href={l.href}
-            className="inline-flex min-h-11 items-center px-3 font-semibold hover:text-ks-dark"
-          >
-            {l.label}
-          </Link>
-        ))}
-      </footer>
     </main>
   );
 }

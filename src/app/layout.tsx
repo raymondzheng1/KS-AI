@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SunnyDefs } from "@/components/Sunny";
 import { SITE } from "@/lib/seo/site";
 import "./globals.css";
@@ -52,7 +53,10 @@ export default function RootLayout({
     <html lang="en" className={`${fredoka.variable} ${nunito.variable}`}>
       <body>
         <SunnyDefs />
-        {children}
+        <div className="flex min-h-dvh flex-col">
+          <div className="flex-1">{children}</div>
+          <SiteFooter />
+        </div>
         <GoogleAnalytics />
         <Analytics />
       </body>

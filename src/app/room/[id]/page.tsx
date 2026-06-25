@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { BrandLockup } from "@/components/BrandLockup";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ContinueButton } from "@/components/room/ContinueButton";
 import { InviteCard } from "@/components/room/InviteCard";
 import { LeaderboardView } from "@/components/room/LeaderboardView";
@@ -22,12 +22,9 @@ export default async function RoomPage({
 
   return (
     <main className="mx-auto max-w-2xl px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-3xl">
-      <header className="flex items-center justify-between gap-3 py-4">
-        <BrandLockup />
-        <ContinueButton roomId={roomId} />
-      </header>
+      <SiteHeader action={<ContinueButton roomId={roomId} />} />
 
-      <section className="mb-6">
+      <section className="mb-6 mt-2">
         <LeaderboardView roomId={roomId} />
       </section>
 

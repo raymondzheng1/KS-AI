@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BrandLockup } from "@/components/BrandLockup";
+import { SiteHeader } from "@/components/SiteHeader";
 import { Sunny } from "@/components/Sunny";
 import { JoinRoomForm } from "@/components/room/JoinRoomForm";
 import { normalizeCode } from "@/lib/progress/code";
@@ -22,9 +22,7 @@ export default async function JoinPage({
 
   return (
     <main className="mx-auto max-w-md px-5 pb-16 pt-[max(1.5rem,env(safe-area-inset-top))]">
-      <header className="flex items-center justify-center py-4">
-        <BrandLockup />
-      </header>
+      <SiteHeader />
 
       {!room ? (
         <div className="ks-card mt-6 p-6 text-center">
