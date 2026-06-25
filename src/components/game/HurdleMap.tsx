@@ -46,9 +46,13 @@ export function HurdleMap({
 }) {
   const cleared = clearedCount(done);
   const currentId = firstAvailable(done);
+  const current = HURDLES.find((h) => h.id === currentId);
 
   return (
-    <div className="mx-auto max-w-md px-5 py-5">
+    <div className="mx-auto max-w-md px-5 py-5 lg:max-w-5xl">
+      <div className="lg:flex lg:items-start lg:gap-12">
+        {/* Info column (a side panel on desktop) */}
+        <div className="lg:sticky lg:top-24 lg:w-72 lg:shrink-0">
       {/* Progress row */}
       <div className="mb-1 flex items-center justify-between">
         <h1 className="font-display text-xl font-semibold text-ks-dark" style={{ transform: "rotate(-1deg)" }}>
@@ -66,6 +70,36 @@ export function HurdleMap({
       </div>
       <p className="mb-3 text-xs text-ks-slate">Clear each hurdle to unlock the next. Reach Demo Day! 🏆</p>
 
+          {/* Desktop-only: up-next + legend */}
+          <div className="mt-5 hidden lg:block">
+            {current && (
+              <div className="ks-card p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-ks-coral">Up next</p>
+                <p className="mt-0.5 font-display text-base font-semibold text-ks-dark">
+                  {current.icon} {current.title}
+                </p>
+                <p className="mt-0.5 text-sm text-ks-slate">{current.subtitle}</p>
+              </div>
+            )}
+            <div className="mt-4 flex flex-col gap-2 text-sm text-ks-ink">
+              <span className="flex items-center gap-2">
+                <span className="ks-node ks-node-done" style={{ width: 22, height: 22, fontSize: 11, boxShadow: "none" }}>✓</span>
+                Cleared
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="ks-node ks-node-current" style={{ width: 22, height: 22, boxShadow: "none" }} />
+                Current
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="ks-node ks-node-locked" style={{ width: 22, height: 22 }} />
+                Locked
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Trail column */}
+        <div className="lg:flex lg:flex-1 lg:justify-center">
       {/* Trail */}
       <div className="relative mx-auto" style={{ width: W, maxWidth: "100%", height: H }}>
         {/* compass rose top-right */}
@@ -167,6 +201,8 @@ export function HurdleMap({
             </div>
           );
         })}
+      </div>
+        </div>
       </div>
     </div>
   );

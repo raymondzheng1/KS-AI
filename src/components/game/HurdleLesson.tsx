@@ -61,7 +61,7 @@ export function HurdleLesson({
     <div className="flex min-h-dvh flex-col">
       {/* Progress + close */}
       <div className="sticky top-0 z-10 bg-ks-cream/95 px-5 pt-3 backdrop-blur">
-        <div className="mx-auto flex max-w-2xl items-center gap-3">
+        <div className="mx-auto flex max-w-3xl items-center gap-3">
           <button onClick={onBack} className="ks-iconbtn shrink-0" aria-label="Back to map">
             ‹
           </button>
@@ -80,7 +80,7 @@ export function HurdleLesson({
       {/* Slide */}
       <div id="lesson-scroll" className="flex-1 overflow-y-auto px-5 py-6">
         <div key={i} className={dir > 0 ? "ks-slide-right" : "ks-slide-left"}>
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto max-w-3xl">
             {cur.kind === "intro" && (
               <section className="text-center">
                 <div className="text-6xl">{hurdle.icon}</div>
@@ -209,7 +209,7 @@ export function HurdleLesson({
 
       {/* Bottom nav */}
       <div className="sticky bottom-0 z-10 border-t border-ks-kraft/40 bg-ks-cream/95 px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur">
-        <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
+        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3">
           <button onClick={() => go(-1)} disabled={i === 0} className="ks-btn ks-btn-ghost">
             ← Back
           </button>

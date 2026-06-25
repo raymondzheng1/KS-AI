@@ -14,7 +14,7 @@ export default function ToolsPage() {
       title="Your AI toolkit"
       subtitle="The friendly, kid-safe tools you'll explore as you clear the hurdles."
     >
-      <div className="flex flex-col gap-4">
+      <div className="grid gap-4 md:grid-cols-2">
         {TOOLS.map((t) => (
           <article key={t.id} className="ks-card p-5">
             <header className="flex items-center gap-3">

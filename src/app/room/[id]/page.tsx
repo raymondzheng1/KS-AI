@@ -21,7 +21,7 @@ export default async function RoomPage({
   if (!roomId) notFound();
 
   return (
-    <main className="mx-auto max-w-2xl px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))]">
+    <main className="mx-auto max-w-2xl px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-3xl">
       <header className="flex items-center justify-between gap-3 py-4">
         <BrandLockup />
         <ContinueButton roomId={roomId} />

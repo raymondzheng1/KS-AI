@@ -27,7 +27,7 @@ export default function OverviewPage() {
       subtitle="Two weeks, ten hurdles, one AI explorer in the making. Each day is a hurdle — clear its gate quiz to unlock the next."
     >
       {/* Pillars */}
-      <section className="mb-8 grid gap-3 sm:grid-cols-2">
+      <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {PILLARS.map((p) => (
           <div key={p.title} className="ks-card flex items-start gap-3 p-4">
             <span className="text-2xl">{p.icon}</span>
@@ -44,8 +44,8 @@ export default function OverviewPage() {
         { label: "Week 2 — Create, Design & Build", days: week2 },
       ].map((wk) => (
         <section key={wk.label} className="mb-8">
-          <h2 className="mb-3 text-xl font-extrabold text-ks-dark">{wk.label}</h2>
-          <div className="flex flex-col gap-2">
+          <h2 className="mb-3 font-display text-xl font-bold text-ks-dark">{wk.label}</h2>
+          <div className="grid gap-2 md:grid-cols-2">
             {wk.days.map((h) => (
               <div
                 key={h.id}

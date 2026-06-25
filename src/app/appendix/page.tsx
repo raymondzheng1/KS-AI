@@ -32,7 +32,7 @@ export default function AppendixPage() {
         {Array.from(groups.entries()).map(([letter, terms]) => (
           <section key={letter}>
             <h2 className="mb-2 text-xl font-extrabold text-ks-blue">{letter}</h2>
-            <dl className="grid gap-2 sm:grid-cols-2">
+            <dl className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {terms.map((t) => (
                 <div key={t.term} className="ks-card p-3">
                   <dt className="font-bold text-ks-dark">{t.term}</dt>
