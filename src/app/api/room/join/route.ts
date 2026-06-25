@@ -26,6 +26,13 @@ export async function POST(req: Request): Promise<NextResponse> {
   if (!nick.ok) {
     return NextResponse.json({ error: "bad_nick", reason: nick.reason }, { status: 400 });
   }
+  // Optional custom code — must normalise if present.
+  let code: string | undefined;
+  if (parsed.data.code !== undefined) {
+    const norm = normalizeCode(parsed.data.code);
+    if (!norm) return NextResponse.json({ error: "bad_code" }, { status: 400 });
+    code = norm;
+  }
 
   const { ok } = await getLimiter("room").limit(clientIp(req));
   if (!ok) return NextResponse.json({ error: "rate_limited" }, { status: 429 });
@@ -36,8 +43,12 @@ export async function POST(req: Request): Promise<NextResponse> {
       nick: nick.nick,
       avatar: parsed.data.avatar,
       now: new Date().toISOString(),
+      code,
     });
     if ("error" in result) {
+      if (result.error === "code_taken") {
+        return NextResponse.json({ error: "code_taken" }, { status: 409 });
+      }
       return NextResponse.json({ error: "no_room" }, { status: 404 });
     }
     return NextResponse.json({ ...result, roomId });

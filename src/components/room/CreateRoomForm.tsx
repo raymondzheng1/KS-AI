@@ -5,12 +5,14 @@ import { useState } from "react";
 import { rememberRoomCode } from "@/lib/rooms/client-identity";
 import { roomErrorMessage } from "@/lib/rooms/messages";
 import { AVATARS, AvatarPicker } from "./AvatarPicker";
+import { CustomCodeField } from "./CustomCodeField";
 
 export function CreateRoomForm() {
   const router = useRouter();
   const [name, setName] = useState("");
   const [nick, setNick] = useState("");
   const [avatar, setAvatar] = useState<string>(AVATARS[0]);
+  const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
 
@@ -22,10 +24,11 @@ export function CreateRoomForm() {
       const res = await fetch("/api/room/create", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ name, nick, avatar }),
+        body: JSON.stringify({ name, nick, avatar, ...(code ? { code } : {}) }),
       });
       const j = await res.json();
       if (!res.ok) {
+        if (j?.error === "code_taken") setCode("");
         setErr(roomErrorMessage(j));
         setBusy(false);
         return;
@@ -72,6 +75,7 @@ export function CreateRoomForm() {
           <AvatarPicker value={avatar} onChange={setAvatar} />
         </div>
       </div>
+      <CustomCodeField value={code} onChange={setCode} />
       {err && <p className="text-sm font-semibold text-ks-coral">{err}</p>}
       <button type="submit" disabled={busy} className="ks-btn ks-btn-green">
         {busy ? "Creating…" : "Create room & get invite →"}

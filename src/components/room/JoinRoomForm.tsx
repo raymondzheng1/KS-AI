@@ -5,6 +5,7 @@ import { useState } from "react";
 import { rememberRoomCode } from "@/lib/rooms/client-identity";
 import { roomErrorMessage } from "@/lib/rooms/messages";
 import { AVATARS, AvatarPicker } from "./AvatarPicker";
+import { CustomCodeField } from "./CustomCodeField";
 
 /**
  * Join an existing room. `fixedRoomId` is passed from the invite page
@@ -15,6 +16,7 @@ export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
   const [roomId, setRoomId] = useState(fixedRoomId ?? "");
   const [nick, setNick] = useState("");
   const [avatar, setAvatar] = useState<string>(AVATARS[3]);
+  const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
 
@@ -26,10 +28,11 @@ export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
       const res = await fetch("/api/room/join", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ roomId, nick, avatar }),
+        body: JSON.stringify({ roomId, nick, avatar, ...(code ? { code } : {}) }),
       });
       const j = await res.json();
       if (!res.ok) {
+        if (j?.error === "code_taken") setCode("");
         setErr(roomErrorMessage(j));
         setBusy(false);
         return;
@@ -76,6 +79,7 @@ export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
           <AvatarPicker value={avatar} onChange={setAvatar} />
         </div>
       </div>
+      <CustomCodeField value={code} onChange={setCode} />
       {err && <p className="text-sm font-semibold text-ks-coral">{err}</p>}
       <button type="submit" disabled={busy} className="ks-btn ks-btn-coral">
         {busy ? "Joining…" : "Join & start playing →"}

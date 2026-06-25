@@ -81,3 +81,36 @@ describe("room create + join + leaderboard", () => {
     expect(noRoom.status).toBe(404);
   });
 });
+
+describe("room custom codes", () => {
+  it("creates a room under a host-chosen code (normalised)", async () => {
+    const j = await (await createRoom(post("http://t/api/room/create", { name: "Class", nick: "Ray", code: "roboray" }))).json();
+    expect(j.code).toBe("ROBORAY");
+  });
+
+  it("joins a room under a joiner-chosen code", async () => {
+    const host = await (await createRoom(post("http://t/api/room/create", { name: "Class", nick: "Host" }))).json();
+    const joined = await (await joinRoom(post("http://t/api/room/join", { roomId: host.roomId, nick: "Nova", code: "NOVA42" }))).json();
+    expect(joined.code).toBe("NOVA42");
+    // The chosen code is a real member: it shows on the leaderboard.
+    const board = await lb(host.roomId, "NOVA42");
+    expect(board.body.rows.find((r: { nick: string }) => r.nick === "Nova")).toBeTruthy();
+    expect(board.body.rows.find((r: { isMe?: boolean }) => r.isMe)).toBeTruthy();
+  });
+
+  it("rejects an already-taken code with 409", async () => {
+    await (await createRoom(post("http://t/api/room/create", { name: "A", nick: "Ray", code: "TIGER" }))).json();
+    const dupCreate = await createRoom(post("http://t/api/room/create", { name: "B", nick: "Sam", code: "tiger" }));
+    expect(dupCreate.status).toBe(409);
+    expect((await dupCreate.json()).error).toBe("code_taken");
+
+    const host = await (await createRoom(post("http://t/api/room/create", { name: "C", nick: "Host" }))).json();
+    const dupJoin = await joinRoom(post("http://t/api/room/join", { roomId: host.roomId, nick: "Pixel", code: "TIGER" }));
+    expect(dupJoin.status).toBe(409);
+  });
+
+  it("rejects an un-normalisable custom code with 400", async () => {
+    const bad = await createRoom(post("http://t/api/room/create", { name: "X", nick: "Ray", code: "!!" }));
+    expect(bad.status).toBe(400);
+  });
+});

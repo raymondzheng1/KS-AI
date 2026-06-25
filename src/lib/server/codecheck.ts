@@ -23,6 +23,13 @@ async function takenFlags(codes: string[]): Promise<boolean[]> {
   return codes.map((_, i) => vals[i * 2] != null || vals[i * 2 + 1] != null);
 }
 
+/** True iff `code` (already normalised) backs no progress or profile row yet.
+ *  Used as the final guard when a player claims a custom code at mint time. */
+export async function isCodeAvailable(code: string): Promise<boolean> {
+  const [taken] = await takenFlags([code]);
+  return !taken;
+}
+
 /**
  * Resolve an already-normalised requested code to the first free code in its
  * suggestion chain. One batched KV read regardless of how many variants we try.

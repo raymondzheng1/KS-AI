@@ -11,6 +11,10 @@ export function roomErrorMessage(j: { error?: string; reason?: string } | null):
       return "We couldn't find that room. Check the invite link.";
     case "bad_room":
       return "That room code doesn't look right.";
+    case "code_taken":
+      return "Someone just grabbed that code — please pick another one.";
+    case "bad_code":
+      return "That code doesn't look right. Use 3–20 letters or numbers.";
     case "kv_unavailable":
       return "The server is napping. Please try again in a moment.";
     default:

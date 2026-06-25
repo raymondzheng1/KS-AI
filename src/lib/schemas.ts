@@ -24,6 +24,8 @@ export const CreateRoomInputSchema = z.object({
   name: z.string().trim().min(1).max(60),
   nick: z.string().min(1).max(40),
   avatar: z.string().max(8).optional().default("🙂"),
+  /** Optional player-chosen code; normalised + collision-checked server-side. */
+  code: z.string().max(40).optional(),
 });
 export type CreateRoomInput = z.infer<typeof CreateRoomInputSchema>;
 
@@ -31,6 +33,8 @@ export const JoinRoomInputSchema = z.object({
   roomId: z.string().min(1).max(40),
   nick: z.string().min(1).max(40),
   avatar: z.string().max(8).optional().default("🙂"),
+  /** Optional player-chosen code; normalised + collision-checked server-side. */
+  code: z.string().max(40).optional(),
 });
 export type JoinRoomInput = z.infer<typeof JoinRoomInputSchema>;
 

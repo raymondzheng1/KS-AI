@@ -10,6 +10,7 @@ import { emptySynced, SyncedStateSchema, type SyncedState } from "@/lib/progress
 import { ProfileSchema, RoomSchema, type Profile, type Room } from "@/lib/rooms/schema";
 import { rankLeaderboard, type LeaderboardRow } from "@/lib/rooms/rank";
 import { scorePlayer } from "@/lib/scoring/xp";
+import { isCodeAvailable } from "./codecheck";
 import { getKv } from "./kv";
 
 const ROOM_KEY = (id: string) => `room:${id}`;
@@ -43,6 +44,24 @@ async function freshRoomId(): Promise<string> {
   return `${generateCode()}-${generateCode()}`;
 }
 
+/**
+ * Resolve the player's code: an already-normalised custom code if `requested`
+ * (collision-checked as a final guard), otherwise a fresh random canonical one.
+ */
+async function claimPlayerCode(
+  requested?: string,
+): Promise<{ code: string } | { error: "code_taken" }> {
+  if (requested) {
+    if (!(await isCodeAvailable(requested))) return { error: "code_taken" };
+    return { code: requested };
+  }
+  for (let i = 0; i < 8; i++) {
+    const code = generateCode();
+    if (await isCodeAvailable(code)) return { code };
+  }
+  return { code: `${generateCode()}-${generateCode()}` };
+}
+
 /** Ensure a nickname is unique within the room (case-insensitive), suffixing
  *  2,3,… if needed (e.g. "Nova" → "Nova2"). */
 async function uniqueNick(roomId: string, nick: string): Promise<string> {
@@ -71,10 +90,14 @@ export async function createRoom(args: {
   nick: string;
   avatar: string;
   now: string;
-}): Promise<CreateRoomResult> {
+  /** Optional pre-normalised custom code for the host. */
+  code?: string;
+}): Promise<CreateRoomResult | { error: "code_taken" }> {
+  const claimed = await claimPlayerCode(args.code);
+  if ("error" in claimed) return claimed;
+  const code = claimed.code;
   const kv = getKv();
   const roomId = await freshRoomId();
-  const code = generateCode();
   const room: Room = { id: roomId, name: args.name, hostCode: code, createdAt: args.now };
   const profile: Profile = {
     code,
@@ -99,12 +122,16 @@ export async function joinRoom(args: {
   nick: string;
   avatar: string;
   now: string;
-}): Promise<JoinRoomResult | { error: "no_room" }> {
+  /** Optional pre-normalised custom code for the joiner. */
+  code?: string;
+}): Promise<JoinRoomResult | { error: "no_room" } | { error: "code_taken" }> {
   const room = await getRoom(args.roomId);
   if (!room) return { error: "no_room" };
+  const claimed = await claimPlayerCode(args.code);
+  if ("error" in claimed) return claimed;
+  const code = claimed.code;
   const kv = getKv();
   const nick = await uniqueNick(args.roomId, args.nick);
-  const code = generateCode();
   const profile: Profile = {
     code,
     nick,
