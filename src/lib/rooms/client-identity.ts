@@ -34,3 +34,14 @@ export function setLastCode(code: string): void {
     /* non-fatal */
   }
 }
+
+/** The most recently played code on this device, so we can offer "Continue"
+ *  without the player having to remember/retype their code. */
+export function getLastCode(): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return window.localStorage.getItem(LAST_CODE);
+  } catch {
+    return null;
+  }
+}

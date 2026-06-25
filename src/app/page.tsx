@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CrayonUnderline } from "@/components/CrayonUnderline";
+import { ResumeBanner } from "@/components/ResumeBanner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Sunny } from "@/components/Sunny";
 import { HURDLES, TOOLS } from "@/lib/content";
@@ -59,6 +60,8 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <SiteHeader home start />
+
+      <ResumeBanner />
 
       {/* Eyebrow */}
       <p className="mb-3 flex justify-center">

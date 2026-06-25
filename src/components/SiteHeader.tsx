@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandLockup } from "./BrandLockup";
+import { HeaderStartButton } from "./HeaderStartButton";
 
 /** Top nav shown on every standalone page (desktop only; mobile uses the footer). */
 const NAV = [
@@ -41,11 +42,7 @@ export function SiteHeader({
           ))}
         </nav>
         {action}
-        {start && (
-          <Link href="/start" className="ks-btn ks-btn-coral ks-btn-sm whitespace-nowrap">
-            Start ✏️
-          </Link>
-        )}
+        {start && <HeaderStartButton />}
       </div>
     </header>
   );

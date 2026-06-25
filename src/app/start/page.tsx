@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ResumeBanner } from "@/components/ResumeBanner";
 import { StartChooser } from "@/components/StartChooser";
 import { SectionShell } from "@/components/SectionShell";
 
@@ -14,6 +15,7 @@ export default function StartPage() {
       subtitle="Create a room for your class or friends, join one you were invited to, or jump in solo."
       startCta={false}
     >
+      <ResumeBanner />
       <StartChooser />
     </SectionShell>
   );
