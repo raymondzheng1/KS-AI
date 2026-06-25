@@ -17,10 +17,12 @@ describe("buildSlides — paced lesson sequence", () => {
     expect(d1.concepts.length).toBeGreaterThan(1);
   });
 
-  it("includes objectives + videos slides when present", () => {
+  it("includes an objectives slide, and a videos slide only when videos exist", () => {
     const kinds = buildSlides(d1, false).map((s) => s.kind);
     expect(kinds).toContain("objectives");
-    expect(kinds).toContain("videos");
+    // Data-driven: a videos slide appears iff the hurdle actually has videos
+    // (videos were cleared pending child-safety QA — see scripts/qa-videos.mjs).
+    expect(kinds.includes("videos")).toBe(d1.videos.length > 0);
   });
 
   it("includes NO facilitator slides for students", () => {

@@ -44,17 +44,40 @@
     },
     {
       "heading": "Computer Vision in the Real World",
-      "body": ["Computer vision is already everywhere. Here is where you will find it:"],
+      "body": [
+        "Computer vision is already everywhere. Here is where you will find it:"
+      ],
       "bullets": [],
       "table": {
-        "columns": ["Application", "How It Works"],
+        "columns": [
+          "Application",
+          "How It Works"
+        ],
         "rows": [
-          ["Medical Imaging", "AI reads X-rays, MRI scans, and retinal images to detect cancer, diabetic blindness, and bone fractures — often matching or exceeding radiologist accuracy."],
-          ["Self-Driving Cars", "Multiple cameras + radar detect roads, signs, pedestrians, and obstacles in real time at 30+ frames per second."],
-          ["Face Unlock", "Your phone maps 30,000 infrared dots onto your face to create a mathematical model — impossible to fake with a photo."],
-          ["Instagram/Snapchat Filters", "Real-time face landmark detection (68+ points) that tracks your face movement and applies effects precisely."],
-          ["Quality Control", "Factories use AI cameras to detect defects in products at speeds impossible for human inspectors."],
-          ["Google Lens", "Point your camera at text, objects, plants, or food and AI identifies them instantly."]
+          [
+            "Medical Imaging",
+            "AI reads X-rays, MRI scans, and retinal images to detect cancer, diabetic blindness, and bone fractures — often matching or exceeding radiologist accuracy."
+          ],
+          [
+            "Self-Driving Cars",
+            "Multiple cameras + radar detect roads, signs, pedestrians, and obstacles in real time at 30+ frames per second."
+          ],
+          [
+            "Face Unlock",
+            "Your phone maps 30,000 infrared dots onto your face to create a mathematical model — impossible to fake with a photo."
+          ],
+          [
+            "Instagram/Snapchat Filters",
+            "Real-time face landmark detection (68+ points) that tracks your face movement and applies effects precisely."
+          ],
+          [
+            "Quality Control",
+            "Factories use AI cameras to detect defects in products at speeds impossible for human inspectors."
+          ],
+          [
+            "Google Lens",
+            "Point your camera at text, objects, plants, or food and AI identifies them instantly."
+          ]
         ]
       }
     },
@@ -90,22 +113,7 @@
       }
     }
   ],
-  "videos": [
-    {
-      "title": "How Computer Vision Works",
-      "source": "3Blue1Brown",
-      "youtubeId": "aircAruvnKk",
-      "minutes": 19,
-      "note": "The definitive visual explanation of neural networks and image recognition. Worth every minute."
-    },
-    {
-      "title": "Deepfakes Explained",
-      "source": "Vox",
-      "youtubeId": "cQ54GDm1eL0",
-      "minutes": 7,
-      "note": "Accessible, age-appropriate explainer on synthetic video — excellent for the discussion section."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "Spot the AI",
@@ -154,14 +162,38 @@
     "Find one real-world example of computer vision being used for good (e.g. in healthcare, conservation, accessibility). Write 2–3 sentences explaining it."
   ],
   "vocab": [
-    { "term": "Computer Vision", "definition": "AI that can interpret and understand digital images and video." },
-    { "term": "CNN (Convolutional Neural Network)", "definition": "The standard AI architecture for image recognition." },
-    { "term": "Object Detection", "definition": "Identifying and locating specific objects within an image." },
-    { "term": "Speech Recognition", "definition": "AI that converts spoken audio into text." },
-    { "term": "Natural Language Processing (NLP)", "definition": "AI that understands and generates human language." },
-    { "term": "GAN (Generative Adversarial Network)", "definition": "AI architecture where two networks compete to generate realistic synthetic content." },
-    { "term": "Deepfake", "definition": "AI-generated synthetic media that replaces a real person's likeness or voice." },
-    { "term": "Media Literacy", "definition": "The ability to critically evaluate and contextualise media content." }
+    {
+      "term": "Computer Vision",
+      "definition": "AI that can interpret and understand digital images and video."
+    },
+    {
+      "term": "CNN (Convolutional Neural Network)",
+      "definition": "The standard AI architecture for image recognition."
+    },
+    {
+      "term": "Object Detection",
+      "definition": "Identifying and locating specific objects within an image."
+    },
+    {
+      "term": "Speech Recognition",
+      "definition": "AI that converts spoken audio into text."
+    },
+    {
+      "term": "Natural Language Processing (NLP)",
+      "definition": "AI that understands and generates human language."
+    },
+    {
+      "term": "GAN (Generative Adversarial Network)",
+      "definition": "AI architecture where two networks compete to generate realistic synthetic content."
+    },
+    {
+      "term": "Deepfake",
+      "definition": "AI-generated synthetic media that replaces a real person's likeness or voice."
+    },
+    {
+      "term": "Media Literacy",
+      "definition": "The ability to critically evaluate and contextualise media content."
+    }
   ],
   "quiz": [
     {
@@ -203,14 +235,20 @@
     {
       "type": "tf",
       "q": "A clear, well-lit photo of someone's face is enough to unlock a phone that uses infrared face mapping.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Face unlock maps about 30,000 infrared dots to build a 3D mathematical model of your face, which a flat photo cannot fake."
     },
     {
       "type": "tf",
       "q": "Garbled text on signs, extra fingers, and too many teeth are common clues that an image was AI-generated.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. AI image generators often struggle with hands, teeth, and any text, so melted fingers, odd teeth, and nonsense words on signs are classic give-aways."
     }
@@ -220,15 +258,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:10", "Day 3 recap — prompt battle winners share winning prompts", ""],
-          ["0:10–0:45", "Key Concepts: Computer Vision & Speech AI", "Projector, demo links ready"],
-          ["0:45–1:15", "Activity 1: Spot the AI — real vs generated media quiz", "Printed image sheets or projector"],
-          ["1:15–1:30", "Break", ""],
-          ["1:30–2:00", "Activity 2: Live object detection demo + AI art creation", "Laptops, teachablemachine.withgoogle.com or QuickDraw"],
-          ["2:00–2:20", "Discussion: Deepfakes and truth in the AI age", "Discussion cards"],
-          ["2:20–2:30", "Reflection", "Reflection journal"]
+          [
+            "0:00–0:10",
+            "Day 3 recap — prompt battle winners share winning prompts",
+            ""
+          ],
+          [
+            "0:10–0:45",
+            "Key Concepts: Computer Vision & Speech AI",
+            "Projector, demo links ready"
+          ],
+          [
+            "0:45–1:15",
+            "Activity 1: Spot the AI — real vs generated media quiz",
+            "Printed image sheets or projector"
+          ],
+          [
+            "1:15–1:30",
+            "Break",
+            ""
+          ],
+          [
+            "1:30–2:00",
+            "Activity 2: Live object detection demo + AI art creation",
+            "Laptops, teachablemachine.withgoogle.com or QuickDraw"
+          ],
+          [
+            "2:00–2:20",
+            "Discussion: Deepfakes and truth in the AI age",
+            "Discussion cards"
+          ],
+          [
+            "2:20–2:30",
+            "Reflection",
+            "Reflection journal"
+          ]
         ]
       }
     },

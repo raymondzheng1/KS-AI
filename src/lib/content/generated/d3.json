@@ -32,16 +32,36 @@
     },
     {
       "heading": "The R-C-T-F-C Prompt Framework",
-      "body": ["Use this five-part structure to build powerful prompts:"],
+      "body": [
+        "Use this five-part structure to build powerful prompts:"
+      ],
       "bullets": [],
       "table": {
-        "columns": ["Element", "What It Means"],
+        "columns": [
+          "Element",
+          "What It Means"
+        ],
         "rows": [
-          ["R — Role", "Tell the AI who to be. \"You are an expert marine biologist with 20 years of experience teaching teenagers...\""],
-          ["C — Context", "Give background. \"I am a 12-year-old in Australia doing a school project on coral reefs...\""],
-          ["T — Task", "State exactly what you want. \"Explain how rising ocean temperatures affect coral bleaching...\""],
-          ["F — Format", "Specify the output structure. \"...in 3 short paragraphs with a summary bullet list at the end.\""],
-          ["C — Constraints", "Add limits. \"...Avoid scientific jargon. Do not include information I cannot verify online.\""]
+          [
+            "R — Role",
+            "Tell the AI who to be. \"You are an expert marine biologist with 20 years of experience teaching teenagers...\""
+          ],
+          [
+            "C — Context",
+            "Give background. \"I am a 12-year-old in Australia doing a school project on coral reefs...\""
+          ],
+          [
+            "T — Task",
+            "State exactly what you want. \"Explain how rising ocean temperatures affect coral bleaching...\""
+          ],
+          [
+            "F — Format",
+            "Specify the output structure. \"...in 3 short paragraphs with a summary bullet list at the end.\""
+          ],
+          [
+            "C — Constraints",
+            "Add limits. \"...Avoid scientific jargon. Do not include information I cannot verify online.\""
+          ]
         ]
       }
     },
@@ -55,7 +75,9 @@
     },
     {
       "heading": "Advanced Techniques",
-      "body": ["Once you have the basics, these techniques take your prompts to the next level:"],
+      "body": [
+        "Once you have the basics, these techniques take your prompts to the next level:"
+      ],
       "bullets": [
         "Chain-of-Thought: Add \"Think step by step\" to get the AI to show its reasoning. Great for maths and logic problems.",
         "Few-Shot Prompting: Give examples of what you want before asking. \"Here are two examples of good haiku: [example 1], [example 2]. Now write one about summer.\"",
@@ -72,15 +94,7 @@
       }
     }
   ],
-  "videos": [
-    {
-      "title": "How to Use ChatGPT — Prompt Engineering Guide",
-      "source": "Fireship",
-      "youtubeId": "sTeoEFzVNSc",
-      "minutes": 8,
-      "note": "Fast, practical intro to prompt engineering with real examples. Show after Key Concepts."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "Prompt Makeover Workshop",
@@ -135,14 +149,38 @@
     "If prompt engineering is a skill, how do you get better at it? Make a plan for practicing this week."
   ],
   "vocab": [
-    { "term": "Prompt", "definition": "The instruction or question you give to an AI." },
-    { "term": "Prompt Engineering", "definition": "The skill of crafting effective prompts to get high-quality AI outputs." },
-    { "term": "Context Window", "definition": "The maximum amount of text an AI can \"see\" at once." },
-    { "term": "Chain-of-Thought", "definition": "Prompting technique that asks AI to show its reasoning step by step." },
-    { "term": "Few-Shot Prompting", "definition": "Providing examples in your prompt to guide the AI's response style." },
-    { "term": "Iteration", "definition": "Refining a prompt based on the AI's response to get a better result." },
-    { "term": "Constraint", "definition": "A rule you give the AI about what NOT to do or include." },
-    { "term": "Temperature", "definition": "An AI setting that controls how creative/random vs predictable its outputs are." }
+    {
+      "term": "Prompt",
+      "definition": "The instruction or question you give to an AI."
+    },
+    {
+      "term": "Prompt Engineering",
+      "definition": "The skill of crafting effective prompts to get high-quality AI outputs."
+    },
+    {
+      "term": "Context Window",
+      "definition": "The maximum amount of text an AI can \"see\" at once."
+    },
+    {
+      "term": "Chain-of-Thought",
+      "definition": "Prompting technique that asks AI to show its reasoning step by step."
+    },
+    {
+      "term": "Few-Shot Prompting",
+      "definition": "Providing examples in your prompt to guide the AI's response style."
+    },
+    {
+      "term": "Iteration",
+      "definition": "Refining a prompt based on the AI's response to get a better result."
+    },
+    {
+      "term": "Constraint",
+      "definition": "A rule you give the AI about what NOT to do or include."
+    },
+    {
+      "term": "Temperature",
+      "definition": "An AI setting that controls how creative/random vs predictable its outputs are."
+    }
   ],
   "quiz": [
     {
@@ -172,14 +210,20 @@
     {
       "type": "tf",
       "q": "Adding \"Think step by step\" to a prompt is a chain-of-thought technique that helps with maths and logic.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. Chain-of-thought prompting asks the AI to show its reasoning step by step, which is especially helpful for maths and logic problems."
     },
     {
       "type": "tf",
       "q": "Expert AI users always accept the AI's very first response without changing their prompt.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Expert users iterate — they treat the first response as a draft and refine their prompt until they get exactly what they need."
     },
@@ -201,14 +245,42 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:10", "Day 2 recap — 3 students share their Teachable Machine findings", ""],
-          ["0:10–0:50", "Key Concepts: Prompt Engineering Framework", "Whiteboard, example prompt sheets"],
-          ["0:50–1:10", "Break", ""],
-          ["1:10–1:45", "Activity 1: Prompt Makeover Workshop", "Prompt Makeover worksheets, laptops"],
-          ["1:45–2:20", "Activity 2: The Prompt Battle Championship", "Laptops, scoring sheet, projector"],
-          ["2:20–2:30", "Reflection + preview of Day 4", "Reflection journal"]
+          [
+            "0:00–0:10",
+            "Day 2 recap — 3 students share their Teachable Machine findings",
+            ""
+          ],
+          [
+            "0:10–0:50",
+            "Key Concepts: Prompt Engineering Framework",
+            "Whiteboard, example prompt sheets"
+          ],
+          [
+            "0:50–1:10",
+            "Break",
+            ""
+          ],
+          [
+            "1:10–1:45",
+            "Activity 1: Prompt Makeover Workshop",
+            "Prompt Makeover worksheets, laptops"
+          ],
+          [
+            "1:45–2:20",
+            "Activity 2: The Prompt Battle Championship",
+            "Laptops, scoring sheet, projector"
+          ],
+          [
+            "2:20–2:30",
+            "Reflection + preview of Day 4",
+            "Reflection journal"
+          ]
         ]
       }
     }

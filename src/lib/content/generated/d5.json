@@ -51,12 +51,27 @@
       ],
       "bullets": [],
       "table": {
-        "columns": ["Type of Bias", "How It Works"],
+        "columns": [
+          "Type of Bias",
+          "How It Works"
+        ],
         "rows": [
-          ["Historical Bias", "Training data reflects historical human discrimination. E.g., hiring AI trained on past employees (mostly male engineers) learned to prefer male candidates."],
-          ["Representation Bias", "Certain groups are underrepresented in training data. E.g., facial recognition trained mostly on light-skinned faces performs worse on dark-skinned faces."],
-          ["Measurement Bias", "The data collected doesn't accurately represent reality. E.g., using arrests as a proxy for crime — biased policing skews the data."],
-          ["Aggregation Bias", "One model applied across different groups where differences matter. E.g., a medical AI trained on average data may perform poorly for women if symptoms present differently."]
+          [
+            "Historical Bias",
+            "Training data reflects historical human discrimination. E.g., hiring AI trained on past employees (mostly male engineers) learned to prefer male candidates."
+          ],
+          [
+            "Representation Bias",
+            "Certain groups are underrepresented in training data. E.g., facial recognition trained mostly on light-skinned faces performs worse on dark-skinned faces."
+          ],
+          [
+            "Measurement Bias",
+            "The data collected doesn't accurately represent reality. E.g., using arrests as a proxy for crime — biased policing skews the data."
+          ],
+          [
+            "Aggregation Bias",
+            "One model applied across different groups where differences matter. E.g., a medical AI trained on average data may perform poorly for women if symptoms present differently."
+          ]
         ]
       }
     },
@@ -85,29 +100,7 @@
       ]
     }
   ],
-  "videos": [
-    {
-      "title": "Coded Bias (documentary trailer)",
-      "source": "Netflix",
-      "youtubeId": "jZl55PsfZJQ",
-      "minutes": 3,
-      "note": "Powerful documentary about facial recognition bias. The trailer alone is compelling — highly recommended."
-    },
-    {
-      "title": "The Problem with AI Bias",
-      "source": "BBC",
-      "youtubeId": "59bMh59JQDo",
-      "minutes": 8,
-      "note": "Accessible overview of bias types with real-world examples. Watch before the Key Concepts section."
-    },
-    {
-      "title": "How AI Can Reinforce Human Biases",
-      "source": "TED-Ed",
-      "youtubeId": "Ok5sKLXqynQ",
-      "minutes": 5,
-      "note": "Excellent animated explainer — ideal for visual learners."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "AI Ethics Court",
@@ -137,14 +130,38 @@
     "Week 1 reflection: Write 3 things you know about AI now that you didn't know on Day 1. Write 2 questions you still have. Write 1 thing that has changed how you think about technology."
   ],
   "vocab": [
-    { "term": "Hallucination", "definition": "AI outputting confident but factually incorrect information." },
-    { "term": "Bias", "definition": "Systematic unfairness in AI outputs, usually from skewed training data." },
-    { "term": "Black Box", "definition": "An AI system whose internal decision-making process cannot be explained." },
-    { "term": "Explainability / XAI", "definition": "The ability to interpret and explain how an AI reached a conclusion." },
-    { "term": "Fairness", "definition": "Equitable treatment of all individuals and groups by an AI system." },
-    { "term": "Accountability", "definition": "Clear responsibility when AI causes harm." },
-    { "term": "AI Safety", "definition": "The field focused on ensuring AI systems behave as intended and do not cause harm." },
-    { "term": "Guardrails", "definition": "Constraints built into AI systems to prevent harmful outputs." }
+    {
+      "term": "Hallucination",
+      "definition": "AI outputting confident but factually incorrect information."
+    },
+    {
+      "term": "Bias",
+      "definition": "Systematic unfairness in AI outputs, usually from skewed training data."
+    },
+    {
+      "term": "Black Box",
+      "definition": "An AI system whose internal decision-making process cannot be explained."
+    },
+    {
+      "term": "Explainability / XAI",
+      "definition": "The ability to interpret and explain how an AI reached a conclusion."
+    },
+    {
+      "term": "Fairness",
+      "definition": "Equitable treatment of all individuals and groups by an AI system."
+    },
+    {
+      "term": "Accountability",
+      "definition": "Clear responsibility when AI causes harm."
+    },
+    {
+      "term": "AI Safety",
+      "definition": "The field focused on ensuring AI systems behave as intended and do not cause harm."
+    },
+    {
+      "term": "Guardrails",
+      "definition": "Constraints built into AI systems to prevent harmful outputs."
+    }
   ],
   "quiz": [
     {
@@ -174,7 +191,10 @@
     {
       "type": "tf",
       "q": "If an AI gives you a fact and a source, you can safely use it without checking, because the AI cited a reference.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. AI can invent fake references — real lawyers got in trouble for citing court cases ChatGPT made up, and students have cited papers with fake DOI numbers. Always verify with a trusted primary source."
     },
@@ -193,7 +213,10 @@
     {
       "type": "tf",
       "q": "Asking \"Who is responsible when this AI makes a harmful error?\" is part of the Accountability question in the ethical framework.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. Accountability asks who is responsible when the AI causes harm — the developer, the deployer, or the user — so that there is a clear answer when something goes wrong."
     }
@@ -203,14 +226,42 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:15", "Week 1 knowledge check quiz (Days 1–4 vocabulary and concepts)", "Quiz sheets"],
-          ["0:15–0:50", "Key Concepts: Hallucination, bias, and the ethics landscape", "Slides/whiteboard"],
-          ["0:50–1:10", "Break", ""],
-          ["1:10–2:10", "Activity: AI Ethics Court — mock trial", "Roles cards, case briefs, \"verdict\" voting paddles"],
-          ["2:10–2:25", "Class debrief and personal framework building", ""],
-          ["2:25–2:30", "Reflection + preview of Week 2", "Reflection journal"]
+          [
+            "0:00–0:15",
+            "Week 1 knowledge check quiz (Days 1–4 vocabulary and concepts)",
+            "Quiz sheets"
+          ],
+          [
+            "0:15–0:50",
+            "Key Concepts: Hallucination, bias, and the ethics landscape",
+            "Slides/whiteboard"
+          ],
+          [
+            "0:50–1:10",
+            "Break",
+            ""
+          ],
+          [
+            "1:10–2:10",
+            "Activity: AI Ethics Court — mock trial",
+            "Roles cards, case briefs, \"verdict\" voting paddles"
+          ],
+          [
+            "2:10–2:25",
+            "Class debrief and personal framework building",
+            ""
+          ],
+          [
+            "2:25–2:30",
+            "Reflection + preview of Week 2",
+            "Reflection journal"
+          ]
         ]
       }
     },

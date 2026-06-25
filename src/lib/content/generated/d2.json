@@ -56,24 +56,50 @@
       ],
       "bullets": [],
       "table": {
-        "columns": ["Type", "How It Works"],
+        "columns": [
+          "Type",
+          "How It Works"
+        ],
         "rows": [
-          ["Supervised Learning", "You provide labelled examples. Most common type. Used for: image recognition, spam filters, voice assistants."],
-          ["Unsupervised Learning", "No labels — AI finds patterns on its own. Used for: customer grouping, anomaly detection."],
-          ["Reinforcement Learning", "AI learns by trial and error, rewarded for good actions. Used for: games, robotics, self-driving cars."],
-          ["Transfer Learning", "Take a pre-trained model and fine-tune it for a new task. Powers most modern AI apps — much faster than training from scratch."]
+          [
+            "Supervised Learning",
+            "You provide labelled examples. Most common type. Used for: image recognition, spam filters, voice assistants."
+          ],
+          [
+            "Unsupervised Learning",
+            "No labels — AI finds patterns on its own. Used for: customer grouping, anomaly detection."
+          ],
+          [
+            "Reinforcement Learning",
+            "AI learns by trial and error, rewarded for good actions. Used for: games, robotics, self-driving cars."
+          ],
+          [
+            "Transfer Learning",
+            "Take a pre-trained model and fine-tune it for a new task. Powers most modern AI apps — much faster than training from scratch."
+          ]
         ]
       }
     },
     {
       "heading": "Overfitting and Underfitting — Why AI Fails",
-      "body": ["Two of the most common problems in machine learning:"],
+      "body": [
+        "Two of the most common problems in machine learning:"
+      ],
       "bullets": [],
       "table": {
-        "columns": ["Problem", "Explanation"],
+        "columns": [
+          "Problem",
+          "Explanation"
+        ],
         "rows": [
-          ["Overfitting", "The AI memorises the training examples too perfectly, and fails on any new data. Like a student who memorises textbook answers but can't answer a slightly different question on the exam."],
-          ["Underfitting", "The AI hasn't learned enough. It performs badly even on training data. Like a student who barely studied and gets everything wrong."]
+          [
+            "Overfitting",
+            "The AI memorises the training examples too perfectly, and fails on any new data. Like a student who memorises textbook answers but can't answer a slightly different question on the exam."
+          ],
+          [
+            "Underfitting",
+            "The AI hasn't learned enough. It performs badly even on training data. Like a student who barely studied and gets everything wrong."
+          ]
         ]
       },
       "callout": {
@@ -85,29 +111,7 @@
       }
     }
   ],
-  "videos": [
-    {
-      "title": "How Machines Learn",
-      "source": "CGP Grey",
-      "youtubeId": "R9OHn5ZF4Uo",
-      "minutes": 10,
-      "note": "Superb visual explainer of the full ML training process. Watch this before Activity 1."
-    },
-    {
-      "title": "A Beginner's Guide to Machine Learning",
-      "source": "Google",
-      "youtubeId": "nKW8Ndu7Mjw",
-      "minutes": 8,
-      "note": "Google engineers explain ML with real examples. Excellent follow-up."
-    },
-    {
-      "title": "Teachable Machine Demo",
-      "source": "Google",
-      "youtubeId": "T2qQGqZxkD0",
-      "minutes": 3,
-      "note": "Official demo video — show this immediately before Activity 2 so students know what to expect."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "The Human Sorting Game",
@@ -152,16 +156,43 @@
       ],
       "table": {
         "caption": "Student Data Collection Table — record your results here",
-        "columns": ["Measurement", "Your Result"],
+        "columns": [
+          "Measurement",
+          "Your Result"
+        ],
         "rows": [
-          ["Number of images per class (first attempt)", ""],
-          ["Accuracy on \"thumbs up\"", "___%"],
-          ["Accuracy on \"peace sign\"", "___%"],
-          ["Accuracy on \"fist\"", "___%"],
-          ["Where did your model fail? (describe the situation)", ""],
-          ["What did you change to improve it?", ""],
-          ["Accuracy after improvement (average across classes)", "___%"],
-          ["What would happen if you added a 4th class? Try it!", ""]
+          [
+            "Number of images per class (first attempt)",
+            ""
+          ],
+          [
+            "Accuracy on \"thumbs up\"",
+            "___%"
+          ],
+          [
+            "Accuracy on \"peace sign\"",
+            "___%"
+          ],
+          [
+            "Accuracy on \"fist\"",
+            "___%"
+          ],
+          [
+            "Where did your model fail? (describe the situation)",
+            ""
+          ],
+          [
+            "What did you change to improve it?",
+            ""
+          ],
+          [
+            "Accuracy after improvement (average across classes)",
+            "___%"
+          ],
+          [
+            "What would happen if you added a 4th class? Try it!",
+            ""
+          ]
         ]
       },
       "facilitator": [
@@ -180,14 +211,38 @@
     "The AI you trained today only took a few minutes. Real AI systems can take weeks of training on thousands of computers. Why do you think that is?"
   ],
   "vocab": [
-    { "term": "Supervised Learning", "definition": "Training with labelled examples." },
-    { "term": "Training Data", "definition": "The examples used to teach an AI." },
-    { "term": "Label", "definition": "The correct answer attached to a training example." },
-    { "term": "Feature", "definition": "A measurable characteristic the AI uses to make decisions." },
-    { "term": "Model", "definition": "The mathematical structure the AI builds from training data." },
-    { "term": "Overfitting", "definition": "Memorising training data too closely, failing on new data." },
-    { "term": "Accuracy", "definition": "Percentage of correct predictions on test data." },
-    { "term": "Neural Network", "definition": "A layered mathematical structure loosely inspired by the brain." }
+    {
+      "term": "Supervised Learning",
+      "definition": "Training with labelled examples."
+    },
+    {
+      "term": "Training Data",
+      "definition": "The examples used to teach an AI."
+    },
+    {
+      "term": "Label",
+      "definition": "The correct answer attached to a training example."
+    },
+    {
+      "term": "Feature",
+      "definition": "A measurable characteristic the AI uses to make decisions."
+    },
+    {
+      "term": "Model",
+      "definition": "The mathematical structure the AI builds from training data."
+    },
+    {
+      "term": "Overfitting",
+      "definition": "Memorising training data too closely, failing on new data."
+    },
+    {
+      "term": "Accuracy",
+      "definition": "Percentage of correct predictions on test data."
+    },
+    {
+      "term": "Neural Network",
+      "definition": "A layered mathematical structure loosely inspired by the brain."
+    }
   ],
   "quiz": [
     {
@@ -217,7 +272,10 @@
     {
       "type": "tf",
       "q": "Unsupervised learning uses labelled examples to learn.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Unsupervised learning has NO labels — the AI finds patterns on its own. It's supervised learning that uses labelled examples."
     },
@@ -236,7 +294,10 @@
     {
       "type": "tf",
       "q": "The Golden Rule of ML says a good AI should memorise its training data as exactly as possible.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. The Golden Rule is that good AI generalises — it learns patterns that work on new, unseen data, not just data it has memorised. That's why we test on separate held-out data."
     }
@@ -246,15 +307,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:10", "Recap of Day 1 — quick quiz on key vocabulary", "Vocab cards from Day 1"],
-          ["0:10–0:40", "Key Concepts: The ML Training Loop", "Whiteboard, printed diagrams"],
-          ["0:40–1:10", "Activity 1: Human Sorting Game (simulate ML training)", "Animal picture cards (printed)"],
-          ["1:10–1:25", "Break", ""],
-          ["1:25–2:00", "Activity 2: Teachable Machine — train your own AI", "Laptops/tablets with webcam, teachablemachine.withgoogle.com"],
-          ["2:00–2:20", "Share results, discuss where the model failed and why", "Whiteboard"],
-          ["2:20–2:30", "Reflection + vocabulary update", "Reflection journal"]
+          [
+            "0:00–0:10",
+            "Recap of Day 1 — quick quiz on key vocabulary",
+            "Vocab cards from Day 1"
+          ],
+          [
+            "0:10–0:40",
+            "Key Concepts: The ML Training Loop",
+            "Whiteboard, printed diagrams"
+          ],
+          [
+            "0:40–1:10",
+            "Activity 1: Human Sorting Game (simulate ML training)",
+            "Animal picture cards (printed)"
+          ],
+          [
+            "1:10–1:25",
+            "Break",
+            ""
+          ],
+          [
+            "1:25–2:00",
+            "Activity 2: Teachable Machine — train your own AI",
+            "Laptops/tablets with webcam, teachablemachine.withgoogle.com"
+          ],
+          [
+            "2:00–2:20",
+            "Share results, discuss where the model failed and why",
+            "Whiteboard"
+          ],
+          [
+            "2:20–2:30",
+            "Reflection + vocabulary update",
+            "Reflection journal"
+          ]
         ]
       }
     }

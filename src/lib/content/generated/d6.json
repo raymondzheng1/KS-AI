@@ -74,15 +74,7 @@
       ]
     }
   ],
-  "videos": [
-    {
-      "title": "How AI Image Generation Works",
-      "source": "Vox",
-      "youtubeId": "SVcsDDABEkM",
-      "minutes": 9,
-      "note": "Clear, visual explanation of diffusion models. Perfect intro before the creative activities."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "AI Creative Workshop",

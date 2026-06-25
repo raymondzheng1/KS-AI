@@ -121,21 +121,7 @@
       }
     }
   ],
-  "videos": [
-    {
-      "title": "How Does AI Actually Work?",
-      "source": "TED-Ed",
-      "youtubeId": "aircAruvnKk",
-      "minutes": 5,
-      "note": "Brilliant animated explainer of neural networks — perfect for beginners."
-    },
-    {
-      "title": "Your AI-Powered Day",
-      "source": "MIT Technology Review",
-      "youtubeId": "HMQkV5cTuoY",
-      "note": "Short documentary showing all the AI embedded in a typical day."
-    }
-  ],
+  "videos": [],
   "activities": [
     {
       "name": "Map Your AI Day",
