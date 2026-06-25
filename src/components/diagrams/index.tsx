@@ -1,4 +1,7 @@
-import type { FC } from "react";
+"use client";
+
+import { useState, type FC } from "react";
+import { MediaLightbox } from "@/components/MediaLightbox";
 import { AiFamilyTree, MlLoop, PromptAnatomy } from "./figures-a";
 import { BiasTypes, CnnArchitecture, Diffusion } from "./figures-b";
 import { ClaudeCodeLoop, CourseMindMap, DesignThinking } from "./figures-c";
@@ -20,8 +23,9 @@ function stemFromSrc(src: string): string {
   return src.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");
 }
 
-/** Render the themed SVG diagram for a content `diagram.src`. Falls back to the
- *  committed raster (public/diagrams) if no SVG is registered for that stem. */
+/** Render the themed SVG diagram for a content `diagram.src`. Tappable to view
+ *  full-screen (the diagrams are wide/landscape and small on a phone). Falls
+ *  back to the committed raster if no SVG is registered for that stem. */
 export function DiagramFigure({
   src,
   alt,
@@ -32,15 +36,36 @@ export function DiagramFigure({
   className?: string;
 }) {
   const Cmp = REGISTRY[stemFromSrc(src)];
+  const [open, setOpen] = useState(false);
+
   if (!Cmp) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img src={src} alt={alt} className={className} />
     );
   }
+
   return (
-    <div className={className}>
-      <Cmp />
-    </div>
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-label={`Enlarge diagram: ${alt}`}
+        className={`block w-full transition hover:opacity-90 ${className ?? ""}`}
+      >
+        <Cmp />
+        <span className="mt-1 block text-center text-xs font-semibold text-ks-slate">
+          🔍 Tap to enlarge
+        </span>
+      </button>
+      <MediaLightbox open={open} onClose={() => setOpen(false)} label={alt}>
+        <div className="max-h-[82vh] overflow-auto rounded-2xl bg-white p-3">
+          {/* min-width so dense diagrams stay readable on a phone (swipe to pan) */}
+          <div style={{ width: "max(100%, 720px)" }}>
+            <Cmp />
+          </div>
+        </div>
+      </MediaLightbox>
+    </>
   );
 }
