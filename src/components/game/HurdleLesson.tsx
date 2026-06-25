@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useMemo, useState } from "react";
 import type { Hurdle } from "@/lib/content/schema";
 import { CrayonUnderline } from "@/components/CrayonUnderline";
+import { DiagramFigure } from "@/components/diagrams";
 import { Sunny } from "@/components/Sunny";
 import { accentColor, accentTint } from "@/lib/game/accent";
 import { buildSlides } from "@/lib/game/lesson";
@@ -96,14 +96,8 @@ export function HurdleLesson({
                   ))}
                 </div>
                 {hurdle.diagram && (
-                  <div className="ks-card mt-5 overflow-hidden p-2">
-                    <Image
-                      src={hurdle.diagram.src}
-                      alt={hurdle.diagram.alt}
-                      width={hurdle.diagram.width}
-                      height={hurdle.diagram.height}
-                      className="h-auto w-full rounded-xl"
-                    />
+                  <div className="ks-card mt-5 p-4">
+                    <DiagramFigure src={hurdle.diagram.src} alt={hurdle.diagram.alt} />
                   </div>
                 )}
               </section>

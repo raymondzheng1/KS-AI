@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { SectionShell } from "@/components/SectionShell";
+import { DiagramFigure } from "@/components/diagrams";
 
 export const metadata: Metadata = {
   title: "Course Mind Map",
@@ -13,14 +13,8 @@ export default function MindMapPage() {
       title="Course mind map"
       subtitle="See how every hurdle, tool, and idea connects."
     >
-      <div className="ks-card overflow-hidden p-3">
-        <Image
-          src="/diagrams/08_course_mind_map.png"
-          alt="KidSmart AI Training course mind map"
-          width={1100}
-          height={780}
-          className="h-auto w-full rounded-xl"
-        />
+      <div className="ks-card mx-auto max-w-2xl p-5">
+        <DiagramFigure src="/diagrams/08_course_mind_map.png" alt="KidSmart AI Training course mind map" />
       </div>
     </SectionShell>
   );
