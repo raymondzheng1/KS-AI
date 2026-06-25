@@ -87,20 +87,20 @@
       "name": "AI Creative Workshop",
       "kind": "build",
       "intro": [
-        "Two creative stations. At Station A you write a song with Suno; at Station B you make visual art with Adobe Firefly. At both, you start with AI and then add your own human touch."
+        "Two creative challenges to try yourself: make a song with Suno, and make art with Adobe Firefly. Start with AI, then add your own human touch."
       ],
       "steps": [
-        "Station A — Visit suno.com (free tier available).",
-        "Write a prompt for a song: specify genre, mood, theme, and style. Example: \"Upbeat pop song about discovering you can code, energetic, teenage perspective, with a catchy chorus\".",
-        "Generate the song. Listen carefully. What do you like? What feels off?",
-        "Now humanise it: write new lyrics for the chorus yourself. What emotion do YOUR lyrics add that the AI version lacked?",
-        "Optional: Generate 3 versions with different genres (pop, hip-hop, classical) of the same theme. How does genre change meaning?",
-        "Station B — Visit firefly.adobe.com (free, no age restriction).",
-        "Generate an image that represents \"the future of education.\" Use a detailed prompt with style, lighting, and mood.",
-        "Generate 4 variations. Select the one that resonates most. Write a sentence explaining why.",
-        "Now draw your own version of the same concept — freehand, 5 minutes. Don't try to copy the AI version.",
-        "Place both side by side. What did you choose to include that the AI didn't? What did the AI imagine that surprised you?",
-        "Reflection: At each station, what did AI do well, and what did you add that made it yours?"
+        "🎵 Make a song — go to suno.com (free tier available).",
+        "Write a prompt for a song: pick a genre, mood, theme, and style. Example: \"Upbeat pop song about discovering you can code, energetic, teenage perspective, with a catchy chorus.\"",
+        "Generate the song and listen carefully. What do you like? What feels off?",
+        "Now make it yours: write new lyrics for the chorus yourself. What feeling do YOUR lyrics add that the AI's didn't?",
+        "Optional: generate the same theme in 3 different genres (pop, hip-hop, classical). How does the genre change the meaning?",
+        "🎨 Make art — go to firefly.adobe.com (free to try).",
+        "Generate an image of \"the future of education.\" Use a detailed prompt with style, lighting, and mood.",
+        "Generate 4 variations and pick the one you like best. Write a sentence on why.",
+        "Now draw your own version of the same idea — freehand, 5 minutes. Don't copy the AI's.",
+        "Put both side by side. What did you include that the AI didn't? What did the AI imagine that surprised you?",
+        "Reflect: for each one, what did the AI do well, and what did you add that made it yours?"
       ],
       "facilitator": [
         "Set up two stations: Station A (Suno AI for songwriting) and Station B (Adobe Firefly for visual art).",
@@ -112,14 +112,14 @@
       "name": "Human vs AI Creative Showdown",
       "kind": "game",
       "intro": [
-        "Half the class uses AI, half works purely by hand and mind. Then all works are displayed anonymously, and the class tries to guess which are AI and which are human."
+        "You vs the AI! 🎭 Pick a creative challenge, then do it twice — once with an AI's help, once all by yourself — and compare them."
       ],
       "steps": [
-        "Pick ONE challenge as a class: Option A — Write a haiku about loneliness (5-7-5 syllables). Option B — Design a logo for a company called \"Future Minds.\" Option C — Write the opening sentence of a thriller novel set in Sydney in 2040. Option D — Create a short 4-line rhyming verse about why learning matters.",
-        "You have 5 minutes to complete the challenge.",
-        "Display every work anonymously — no names attached.",
-        "Vote on which pieces you think are AI and which are human.",
-        "Reveal the answers and discuss: what gave the AI ones away? What surprised you?"
+        "Pick ONE challenge: A) a haiku about loneliness (5-7-5 syllables) · B) a logo idea for a company called \"Future Minds\" · C) the opening sentence of a thriller set in Sydney in 2040 · D) a 4-line rhyming verse about why learning matters.",
+        "Give yourself 5 minutes to make the AI version, and 5 minutes to make your own version.",
+        "Put them side by side — without marking which is which.",
+        "Could a friend guess which one is AI and which is yours? What gives it away?",
+        "Decide: which did you like better — and what made the human one feel human?"
       ],
       "facilitator": [
         "Choose ONE creative challenge from the options. Everyone — students AND facilitator — has 5 minutes to complete it.",

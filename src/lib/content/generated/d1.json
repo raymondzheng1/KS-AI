@@ -156,7 +156,7 @@
       "name": "AI Myth Busters",
       "kind": "game",
       "intro": [
-        "Vote TRUE or FALSE for each myth, then reveal the answer. Keep the energy high!"
+        "For each myth below, guess TRUE or FALSE, then read what's really going on. How many can you bust? 🕵️"
       ],
       "steps": [
         "MYTH 1: \"AI is conscious and has feelings.\" → BUSTED — FALSE. AI processes information mathematically; it does not experience emotions or awareness. When ChatGPT says \"I feel excited,\" it is generating human-sounding text — not actually feeling anything (the Chinese Room problem, by philosopher John Searle).",

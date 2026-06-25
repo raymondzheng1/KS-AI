@@ -1,0 +1,2 @@
+Today is pure building. Teams work on their chosen project track, supported by facilitators and peer collaboration. The goal by end of day is a working prototype — even a rough one — that demonstrates your core idea.
+Remember the Design Thinking principle: a bad prototype you can test beats a perfect plan you can only imagine. Done is better than perfect on Day 8. AI is your collaborator on this build, not a shortcut — you still make the decisions about what to build and why.

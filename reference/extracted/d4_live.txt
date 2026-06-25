@@ -1,0 +1,5 @@
+Try three real AI vision tools yourself — one at a time. Each one runs free in your browser, so go ahead and play!
+---
+Try it 1 — Quick, Draw! 🎨  Go to quickdraw.withgoogle.com, draw the object it names, and watch the AI guess as you draw. Notice: how does it know what you're drawing before you finish?
+Try it 2 — Train your own classifier 🤖  At teachablemachine.withgoogle.com → Image Project, train it to recognise 3 objects near you, then test it on something new. Did it recognise objects it never saw? Why or why not?
+Try it 3 — Make AI art ✨  At firefly.adobe.com (free), generate an image from a prompt, then try drawing the same scene yourself. What did the AI add that you wouldn't have? What did it get wrong?

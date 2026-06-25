@@ -130,7 +130,7 @@
       "name": "The Prompt Battle Championship",
       "kind": "game",
       "intro": [
-        "Teams compete! Every round, all teams get the SAME task. You have 5 minutes to craft the best prompt you can, then submit it to the AI. The class votes on the best response — points go to the winning team."
+        "Prompt Battle! 🏆 Each round below is a challenge. Take a few minutes to craft the best prompt you can, send it to a free AI like Claude or ChatGPT, and see how good the answer is. Can you beat your last round?"
       ],
       "steps": [
         "Round 1 — EXPLAIN: \"Get the AI to explain how the internet works to a 5-year-old, using only a pizza analogy.\"",

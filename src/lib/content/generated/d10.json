@@ -27,7 +27,7 @@
         "Show the tool working live — even if it's imperfect. A live demo with one bug is more compelling than a flawless recording.",
         "Speak to what you learned, not just what you built. Judges value insight over polish.",
         "If something goes wrong during the demo, say so calmly and explain what it should do. Handling failure gracefully is itself impressive.",
-        "Thank your team, your facilitator, and anyone who gave you feedback during user testing."
+        "Thank everyone who helped you and gave you feedback while you built and tested it."
       ],
       "callout": {
         "kind": "insight",
@@ -67,11 +67,11 @@
         "Each team presents their 3-minute project to the audience, followed by 2 minutes of questions. This is your moment — tell your story and show your project working live."
       ],
       "steps": [
-        "Set up and confirm your project is working before the showcase begins.",
-        "Deliver your 3-minute presentation: the Problem, your Solution (with a live demo), what you Learned, and the Bigger Picture.",
-        "Show the tool working live, even if it's imperfect — a real demo with one bug beats a flawless recording.",
-        "Answer 2 minutes of audience questions calmly and honestly.",
-        "Thank your team, your facilitator, and everyone who tested your project."
+        "Set up your project so it's ready to show.",
+        "Give your 3-minute demo: the problem, your solution, how you used AI, and what you learned.",
+        "Try the audience questions on your own first — could you answer them?",
+        "Watch other projects and leave one kind, specific piece of feedback.",
+        "Thank everyone who helped you and tried out your project."
       ],
       "facilitator": [
         "Keep a strict timer: 3 minutes to present, 2 minutes for Q&A per team.",
@@ -82,8 +82,7 @@
       "name": "Letter to My Future Self",
       "kind": "worksheet",
       "intro": [
-        "Take 15 minutes of quiet time to write a letter to yourself. Your facilitator will mail it to you in about 6 months — it will arrive in the middle of a new school year, a message from the version of you who just finished this program.",
-        "Use these prompts to guide your letter, then seal and address the envelope to yourself."
+        "Take 15 quiet minutes to write a letter to your future self. Seal it and set a reminder to open it in about 6 months — right in the middle of a new school year, a message from the you who just finished this adventure."
       ],
       "steps": [
         "Date: ___",
@@ -112,9 +111,18 @@
     "What is the one thing you want to remember about AI — and what's your next step to keep learning?"
   ],
   "vocab": [
-    { "term": "Live Demo", "definition": "Showing your project actually working in front of an audience, in real time." },
-    { "term": "Q&A", "definition": "Question-and-answer time where the audience asks about your project." },
-    { "term": "Pitch", "definition": "A short, persuasive presentation of your project and why it matters." }
+    {
+      "term": "Live Demo",
+      "definition": "Showing your project actually working in front of an audience, in real time."
+    },
+    {
+      "term": "Q&A",
+      "definition": "Question-and-answer time where the audience asks about your project."
+    },
+    {
+      "term": "Pitch",
+      "definition": "A short, persuasive presentation of your project and why it matters."
+    }
   ],
   "quiz": [
     {
@@ -132,7 +140,10 @@
     {
       "type": "tf",
       "q": "A live demo with one small bug is more compelling than a perfect pre-recorded video.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. Showing the real tool working live — even imperfectly — is more convincing and impressive than a flawless recording."
     },
@@ -151,7 +162,10 @@
     {
       "type": "tf",
       "q": "Judges value polish more than the insights you share about what you learned.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. Speak to what you learned, not just what you built — judges value insight over polish."
     }
@@ -178,14 +192,35 @@
       ],
       "table": {
         "caption": "Audience Choice Awards",
-        "columns": ["Award", "What it recognises"],
+        "columns": [
+          "Award",
+          "What it recognises"
+        ],
         "rows": [
-          ["Most Innovative Solution", "Tackled a problem in an unexpected way"],
-          ["Best User Experience", "Easiest and most enjoyable to use"],
-          ["Greatest Real-World Impact", "Could help the most people if fully built"],
-          ["Best Use of AI", "Most thoughtful and effective use of AI capabilities"],
-          ["Most Ethical Design", "Best handling of fairness, privacy, and safety concerns"],
-          ["Best Presentation", "Clearest storytelling and most engaging delivery"]
+          [
+            "Most Innovative Solution",
+            "Tackled a problem in an unexpected way"
+          ],
+          [
+            "Best User Experience",
+            "Easiest and most enjoyable to use"
+          ],
+          [
+            "Greatest Real-World Impact",
+            "Could help the most people if fully built"
+          ],
+          [
+            "Best Use of AI",
+            "Most thoughtful and effective use of AI capabilities"
+          ],
+          [
+            "Most Ethical Design",
+            "Best handling of fairness, privacy, and safety concerns"
+          ],
+          [
+            "Best Presentation",
+            "Clearest storytelling and most engaging delivery"
+          ]
         ]
       }
     },
@@ -193,15 +228,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:20", "Final setup — test all projects, arrange exhibition space", "All tech confirmed working"],
-          ["0:20–0:30", "Opening ceremony — facilitator reflects on the two-week journey", ""],
-          ["0:30–1:30", "Project Showcase — each team presents 3 min + 2 min Q&A", "Timer, projector/screen"],
-          ["1:30–1:50", "Audience choice awards — guests vote on categories", "Voting cards"],
-          ["1:50–2:10", "Letter to Future Self — quiet writing time", "Special paper envelopes"],
-          ["2:10–2:25", "Certificate ceremony + group photo", "Printed certificates"],
-          ["2:25–2:30", "Closing words from facilitator: what comes next?", "Resource sheet"]
+          [
+            "0:00–0:20",
+            "Final setup — test all projects, arrange exhibition space",
+            "All tech confirmed working"
+          ],
+          [
+            "0:20–0:30",
+            "Opening ceremony — facilitator reflects on the two-week journey",
+            ""
+          ],
+          [
+            "0:30–1:30",
+            "Project Showcase — each team presents 3 min + 2 min Q&A",
+            "Timer, projector/screen"
+          ],
+          [
+            "1:30–1:50",
+            "Audience choice awards — guests vote on categories",
+            "Voting cards"
+          ],
+          [
+            "1:50–2:10",
+            "Letter to Future Self — quiet writing time",
+            "Special paper envelopes"
+          ],
+          [
+            "2:10–2:25",
+            "Certificate ceremony + group photo",
+            "Printed certificates"
+          ],
+          [
+            "2:25–2:30",
+            "Closing words from facilitator: what comes next?",
+            "Resource sheet"
+          ]
         ]
       }
     }

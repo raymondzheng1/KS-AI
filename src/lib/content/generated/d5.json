@@ -125,14 +125,14 @@
       "name": "AI Ethics Court",
       "kind": "discussion",
       "intro": [
-        "Your class becomes a courtroom. Each group is assigned one case below and must argue BOTH sides — prosecution and defence. Then the whole class votes: should this AI system be allowed?"
+        "You be the judge! ⚖️ For each AI case below, think through BOTH sides — why someone might allow it, and why someone might ban it — then give your own verdict."
       ],
       "steps": [
-        "Get into your assigned group and read your case brief carefully.",
-        "You have 20 minutes to prepare arguments FOR and AGAINST the AI system.",
-        "Present both sides to the class. The facilitator (Chief Justice) will ask you probing questions.",
-        "The class votes on each case: Yes, allow it / No, ban it / Only with conditions.",
-        "Reach a verdict — and if you allow the AI, name the conditions that must apply."
+        "Read each case brief carefully (they're below).",
+        "For each case, write the strongest argument FOR the AI, and the strongest argument AGAINST it.",
+        "Imagine a tricky question someone might ask about your decision — how would you answer it?",
+        "Give your verdict: Allow it / Ban it / Allow only with conditions.",
+        "If you allow it, name the exact conditions that must apply."
       ],
       "facilitator": [
         "Divide the class into 3 groups. Each group is assigned one Case below.",

@@ -130,16 +130,13 @@
       "name": "The Human Sorting Game",
       "kind": "game",
       "intro": [
-        "In your group you will get a shuffled stack of animal picture cards. You are about to become a machine learning model — by hand!"
+        "You're about to become a machine learning model — by hand! Tap through the animation below, step by step, to sort a stack of animal cards the way an AI would."
       ],
       "steps": [
-        "Round 1: Without talking, each person sorts the cards into piles — any way you like.",
-        "Round 2: Reveal the \"correct labels.\" Re-sort the cards using those labels.",
-        "Discuss: What features did you use to sort? How did having labels change your approach?",
-        "Debrief: What features did you use to tell cats from dogs? What made it hard?",
-        "Debrief: If someone gave you 10,000 of these cards to sort by yourself, would you use the same method? What would you change?",
-        "Debrief: What if some of the labels on the cards were wrong? How would that affect your learning?",
-        "Debrief: Imagine the AI only saw white cats and orange cats. What would happen when it met a black cat for the first time?"
+        "After the animation, think it through: what features would YOU use to tell cats from dogs? What would make it tricky?",
+        "If you had to sort 10,000 cards by yourself, would you use the same method? What would you change?",
+        "What if some of the labels were wrong? How would that change what you learn?",
+        "If the AI only ever saw white and orange cats, what would happen the first time it met a black cat?"
       ],
       "facilitator": [
         "Print 40–60 animal images (mix of cats, dogs, birds, fish) on cards. Shuffle them.",

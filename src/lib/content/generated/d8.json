@@ -12,7 +12,7 @@
     "height": 480
   },
   "overview": [
-    "Today is pure building. Teams work on their chosen project track, supported by facilitators and peer collaboration. The goal by end of day is a working prototype — even a rough one — that demonstrates your core idea.",
+    "Today is pure building. You'll work on your chosen project track, with AI as your helper. The goal by end of day is a working prototype — even a rough one — that demonstrates your core idea.",
     "Remember the Design Thinking principle: a bad prototype you can test beats a perfect plan you can only imagine. Done is better than perfect on Day 8. AI is your collaborator on this build, not a shortcut — you still make the decisions about what to build and why."
   ],
   "objectives": [
@@ -133,13 +133,13 @@
         "Complete this with your team at the end of Day 8. It becomes your starting point for tomorrow."
       ],
       "steps": [
-        "Team: ___   Track: ___",
-        "What did we complete today? (be specific)",
-        "What is working well?",
-        "What is NOT working yet? (list all known issues)",
-        "What feedback did we get from our test user?",
-        "What are our top 3 priorities for Day 9?",
-        "What help do we need from the facilitator tomorrow?"
+        "What did you get working today?",
+        "What's the trickiest part right now?",
+        "What's your #1 goal for tomorrow?",
+        "One thing you're proud of:",
+        "One thing you'd do differently:",
+        "How's your teamwork going (if you're building with others)?",
+        "What do you want to figure out or get help with next time?"
       ],
       "facilitator": [
         "Collect or photograph each team's build log — you'll use it to open the Day 9 stand-up.",
@@ -154,10 +154,22 @@
     "If you could only fix one thing tomorrow, what would it be and why?"
   ],
   "vocab": [
-    { "term": "Prototype", "definition": "An early, rough version of a project built to test the core idea." },
-    { "term": "Proof-of-concept", "definition": "A working demo that shows your main idea actually works." },
-    { "term": "System Prompt", "definition": "The instruction that tells an AI who it is, what it knows, and how to behave." },
-    { "term": "Iteration", "definition": "Improving something through repeated rounds of building and testing." }
+    {
+      "term": "Prototype",
+      "definition": "An early, rough version of a project built to test the core idea."
+    },
+    {
+      "term": "Proof-of-concept",
+      "definition": "A working demo that shows your main idea actually works."
+    },
+    {
+      "term": "System Prompt",
+      "definition": "The instruction that tells an AI who it is, what it knows, and how to behave."
+    },
+    {
+      "term": "Iteration",
+      "definition": "Improving something through repeated rounds of building and testing."
+    }
   ],
   "quiz": [
     {
@@ -175,7 +187,10 @@
     {
       "type": "tf",
       "q": "On a build day, AI is a shortcut that does the project for you so you don't have to make decisions.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. AI is a collaborator, not a shortcut. You still own the ideas, the choices, and the testing — the AI helps you build them."
     },
@@ -194,7 +209,10 @@
     {
       "type": "tf",
       "q": "You should test your prototype with at least one person outside your own team before the day ends.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. Testing with an outside person is one of the day's goals — their confusion and reactions are your most valuable data for tomorrow."
     }
@@ -204,14 +222,42 @@
       "heading": "Build Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:15", "Stand-up: each team shares their Day 8 goal in 60 seconds", "Project plans from Day 7"],
-          ["0:15–1:15", "Build Sprint 1 — core functionality", "Laptops, all tools available"],
-          ["1:15–1:30", "Break + peer check-in (show your progress to another team)", ""],
-          ["1:30–2:15", "Build Sprint 2 — refine + test with someone outside your team", ""],
-          ["2:15–2:25", "End-of-day demo: show what exists, no matter how rough", "Projector or shared screen"],
-          ["2:25–2:30", "Reflection — what works, what's broken, tomorrow's plan", ""]
+          [
+            "0:00–0:15",
+            "Stand-up: each team shares their Day 8 goal in 60 seconds",
+            "Project plans from Day 7"
+          ],
+          [
+            "0:15–1:15",
+            "Build Sprint 1 — core functionality",
+            "Laptops, all tools available"
+          ],
+          [
+            "1:15–1:30",
+            "Break + peer check-in (show your progress to another team)",
+            ""
+          ],
+          [
+            "1:30–2:15",
+            "Build Sprint 2 — refine + test with someone outside your team",
+            ""
+          ],
+          [
+            "2:15–2:25",
+            "End-of-day demo: show what exists, no matter how rough",
+            "Projector or shared screen"
+          ],
+          [
+            "2:25–2:30",
+            "Reflection — what works, what's broken, tomorrow's plan",
+            ""
+          ]
         ]
       }
     }

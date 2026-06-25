@@ -139,7 +139,7 @@
       "name": "Spot the AI",
       "kind": "game",
       "intro": [
-        "Your facilitator will show you 20 items — a mix of real photos, AI-generated images, real audio clips, and AI voices. For each one, write REAL or AI on your card. Use the detective guide below to look for the tell-tale clues."
+        "Become an AI detective! 🕵️ AI can now make fake photos, voices, and videos. Learn the tell-tale clues below, then test yourself — next time you see an image online, can you tell REAL from AI-made? (Use the verification tools at the end on anything you're unsure about.)"
       ],
       "steps": [
         "Check these areas first when spotting AI-generated images:",
@@ -162,12 +162,12 @@
       "name": "Live AI Vision Demos",
       "kind": "demo",
       "intro": [
-        "Rotate through three stations every 10 minutes and see computer vision and generative AI in action."
+        "Try three real AI vision tools yourself — one at a time. Each one runs free in your browser, so go ahead and play!"
       ],
       "steps": [
-        "Station 1 — Google Quick, Draw!: Visit quickdraw.withgoogle.com. Draw the prompted object and watch the AI guess in real time. Question: How does the AI know what you're drawing before you finish? What features is it detecting?",
-        "Station 2 — Real-Time Object Detection: Visit teachablemachine.withgoogle.com → Image Project → Standard model. Train it to recognise 3 objects on your desk, then test it on objects from another table. Question: Did it recognise objects it never trained on? Why or why not?",
-        "Station 3 — AI Art Generation: Visit Adobe Firefly (firefly.adobe.com) — free and age-appropriate. Generate an image from a specific prompt, then try to recreate the same scene as a drawing. Question: What details did the AI add that you wouldn't have thought of? What did it get wrong?"
+        "Try it 1 — Quick, Draw! 🎨  Go to quickdraw.withgoogle.com, draw the object it names, and watch the AI guess as you draw. Notice: how does it know what you're drawing before you finish?",
+        "Try it 2 — Train your own classifier 🤖  At teachablemachine.withgoogle.com → Image Project, train it to recognise 3 objects near you, then test it on something new. Did it recognise objects it never saw? Why or why not?",
+        "Try it 3 — Make AI art ✨  At firefly.adobe.com (free), generate an image from a prompt, then try drawing the same scene yourself. What did the AI add that you wouldn't have? What did it get wrong?"
       ],
       "facilitator": [
         "Set up a demo circuit and rotate groups every 10 minutes across the three stations.",

@@ -1,0 +1,25 @@
+d1 | AI Myth Busters | intro[0] | Vote TRUE or FALSE for each myth, then reveal the answer. Keep the energy high!
+d2 | The Human Sorting Game | intro[0] | In your group you will get a shuffled stack of animal picture cards. You are about to become a machine learning model — by hand!
+d2 | The Human Sorting Game | steps[0] | Round 1: Without talking, each person sorts the cards into piles — any way you like.
+d3 | The Prompt Battle Championship | intro[0] | Teams compete! Every round, all teams get the SAME task. You have 5 minutes to craft the best prompt you can, then submit it to the AI. The class votes on the best response — points go to the winning team.
+d4 | Spot the AI | intro[0] | Your facilitator will show you 20 items — a mix of real photos, AI-generated images, real audio clips, and AI voices. For each one, write REAL or AI on your card. Use the detective guide below to look for the tell-tale clues.
+d4 | Live AI Vision Demos | intro[0] | Rotate through three stations every 10 minutes and see computer vision and generative AI in action.
+d4 | Live AI Vision Demos | steps[0] | Station 1 — Google Quick, Draw!: Visit quickdraw.withgoogle.com. Draw the prompted object and watch the AI guess in real time. Question: How does the AI know what you're drawing before you finish? What features is it detecting?
+d4 | Live AI Vision Demos | steps[1] | Station 2 — Real-Time Object Detection: Visit teachablemachine.withgoogle.com → Image Project → Standard model. Train it to recognise 3 objects on your desk, then test it on objects from another table. Question: Did it recognise objects it never trained on? Why or why not?
+d4 | Live AI Vision Demos | steps[2] | Station 3 — AI Art Generation: Visit Adobe Firefly (firefly.adobe.com) — free and age-appropriate. Generate an image from a specific prompt, then try to recreate the same scene as a drawing. Question: What details did the AI add that you wouldn't have thought of? What did it get wrong?
+d5 | AI Ethics Court | intro[0] | Your class becomes a courtroom. Each group is assigned one case below and must argue BOTH sides — prosecution and defence. Then the whole class votes: should this AI system be allowed?
+d5 | AI Ethics Court | steps[2] | Present both sides to the class. The facilitator (Chief Justice) will ask you probing questions.
+d5 | AI Ethics Court | steps[3] | The class votes on each case: Yes, allow it / No, ban it / Only with conditions.
+d6 | AI Creative Workshop | intro[0] | Two creative stations. At Station A you write a song with Suno; at Station B you make visual art with Adobe Firefly. At both, you start with AI and then add your own human touch.
+d6 | AI Creative Workshop | steps[0] | Station A — Visit suno.com (free tier available).
+d6 | AI Creative Workshop | steps[5] | Station B — Visit firefly.adobe.com (free, no age restriction).
+d6 | AI Creative Workshop | steps[10] | Reflection: At each station, what did AI do well, and what did you add that made it yours?
+d6 | Human vs AI Creative Showdown | intro[0] | Half the class uses AI, half works purely by hand and mind. Then all works are displayed anonymously, and the class tries to guess which are AI and which are human.
+d6 | Human vs AI Creative Showdown | steps[0] | Pick ONE challenge as a class: Option A — Write a haiku about loneliness (5-7-5 syllables). Option B — Design a logo for a company called "Future Minds." Option C — Write the opening sentence of a thriller novel set in Sydney in 2040. Option D — Create a short 4-line rhyming verse about why learning matters.
+d6 | Human vs AI Creative Showdown | steps[3] | Vote on which pieces you think are AI and which are human.
+d7 | Problem Sprint | steps[0] | On your own, write one problem per sticky note — from school, home, your community, your interests. No filtering. (5-minute timer.)
+d8 | Track B — Image Classifier App | steps[0] | Phase 1 — Train your model (30 min): plan your 3–4 categories the classifier will recognise.
+d8 | Daily Build Log | steps[6] | What help do we need from the facilitator tomorrow?
+d9 | Demo Day Presentation Template | intro[0] | Build your 3-minute presentation around these four sections. Practise out loud and time yourself — 3 minutes goes fast.
+d10 | Project Showcase | steps[4] | Thank your team, your facilitator, and everyone who tested your project.
+d10 | Letter to My Future Self | intro[0] | Take 15 minutes of quiet time to write a letter to yourself. Your facilitator will mail it to you in about 6 months — it will arrive in the middle of a new school year, a message from the version of you who just finished this program.

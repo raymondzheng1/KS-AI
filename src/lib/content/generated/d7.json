@@ -20,7 +20,7 @@
     "Identify where AI adds genuine value vs where human judgment is essential",
     "Design a feasible AI solution with a defined scope",
     "Create a project plan for Days 8–9",
-    "Present a project pitch to the class for peer feedback"
+    "Pitch your project idea and get feedback on it"
   ],
   "concepts": [
     {
@@ -30,13 +30,31 @@
       ],
       "bullets": [],
       "table": {
-        "columns": ["Stage", "What You Do"],
+        "columns": [
+          "Stage",
+          "What You Do"
+        ],
         "rows": [
-          ["1. Empathise", "Understand the people who have the problem. Do not assume — ask, observe, listen. Who is affected? How does this problem feel to them?"],
-          ["2. Define", "Clearly state the problem. Use this format: \"[Person] needs [need] because [insight].\" Avoid jumping to solutions."],
-          ["3. Ideate", "Generate as many ideas as possible without judging any of them. Quantity over quality at this stage. Wild ideas welcome."],
-          ["4. Prototype", "Build the simplest possible version of your solution — fast and cheap. A sketch, a flowchart, a simple demo is fine."],
-          ["5. Test", "Get real feedback. Show your prototype to someone who has the problem. What works? What doesn't? Iterate."]
+          [
+            "1. Empathise",
+            "Understand the people who have the problem. Do not assume — ask, observe, listen. Who is affected? How does this problem feel to them?"
+          ],
+          [
+            "2. Define",
+            "Clearly state the problem. Use this format: \"[Person] needs [need] because [insight].\" Avoid jumping to solutions."
+          ],
+          [
+            "3. Ideate",
+            "Generate as many ideas as possible without judging any of them. Quantity over quality at this stage. Wild ideas welcome."
+          ],
+          [
+            "4. Prototype",
+            "Build the simplest possible version of your solution — fast and cheap. A sketch, a flowchart, a simple demo is fine."
+          ],
+          [
+            "5. Test",
+            "Get real feedback. Show your prototype to someone who has the problem. What works? What doesn't? Iterate."
+          ]
         ]
       }
     },
@@ -70,12 +88,27 @@
       ],
       "bullets": [],
       "table": {
-        "columns": ["Project Track", "Description"],
+        "columns": [
+          "Project Track",
+          "Description"
+        ],
         "rows": [
-          ["Track A: Smart Chatbot", "Build a custom AI assistant for a specific topic using a system prompt. Example: a \"homework helper\" that only assists with science questions, always shows working, and never just gives the answer."],
-          ["Track B: Image Classifier App", "Build an image classifier using Teachable Machine and embed it in a simple webpage. Example: a \"plant health checker\" that identifies healthy vs diseased leaves."],
-          ["Track C: AI Story Generator", "Build an interactive choose-your-own-adventure story powered by AI. The reader's choices update the AI prompt, generating new story branches."],
-          ["Track D: AI Research Assistant", "Design a prompt system that helps students research a topic responsibly — breaking down a topic, suggesting sources, summarising findings, and flagging potential misinformation."]
+          [
+            "Track A: Smart Chatbot",
+            "Build a custom AI assistant for a specific topic using a system prompt. Example: a \"homework helper\" that only assists with science questions, always shows working, and never just gives the answer."
+          ],
+          [
+            "Track B: Image Classifier App",
+            "Build an image classifier using Teachable Machine and embed it in a simple webpage. Example: a \"plant health checker\" that identifies healthy vs diseased leaves."
+          ],
+          [
+            "Track C: AI Story Generator",
+            "Build an interactive choose-your-own-adventure story powered by AI. The reader's choices update the AI prompt, generating new story branches."
+          ],
+          [
+            "Track D: AI Research Assistant",
+            "Design a prompt system that helps students research a topic responsibly — breaking down a topic, suggesting sources, summarising findings, and flagging potential misinformation."
+          ]
         ]
       }
     }
@@ -89,15 +122,9 @@
         "Brainstorm real problems fast, cluster them with your team, and pick ONE worth solving. Then sharpen it into a clear problem statement."
       ],
       "steps": [
-        "On your own, write one problem per sticky note — from school, home, your community, your interests. No filtering. (5-minute timer.)",
-        "Form a team of 3 and cluster all your problems by theme on a large sheet of paper.",
-        "As a team, pick ONE problem to pursue. It should be specific, genuinely felt, and potentially solvable with a digital tool.",
-        "Define it using the template — WHO has this problem? (Be specific — \"Year 7 students who study at home alone\" not just \"students\".)",
-        "WHAT is the problem? (Describe the situation, not the solution.)",
-        "WHEN/WHERE does this problem occur?",
-        "WHY does it matter? What is the impact if it remains unsolved?",
-        "HOW do people currently solve it? What is wrong with the current solution?",
-        "Write your Problem Statement: \"[Person] needs [need] because [insight].\" Example: \"Year 7 students studying alone at home need a way to check their own understanding of maths concepts because they have no one to ask and get stuck for hours, losing motivation.\""
+        "Brainstorm: list as many everyday problems as you can — from school, home, your community, or your hobbies. Don't filter, just list them all (give yourself 5 minutes).",
+        "Star the 3 problems you care about most.",
+        "Pick ONE to carry into your project."
       ],
       "facilitator": [
         "Give each student 10 sticky notes. Set a 5-minute timer.",
@@ -160,7 +187,10 @@
     {
       "type": "tf",
       "q": "A good problem definition should already include the solution you plan to build.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 1,
       "explain": "False. The Define stage describes the situation, not the solution — \"[Person] needs [need] because [insight].\" Jumping to a solution too early locks you out of better ideas."
     },
@@ -179,7 +209,10 @@
     {
       "type": "tf",
       "q": "If transparency and explainability are legally required (like credit or medical decisions), a \"black box\" AI is often a poor fit.",
-      "options": ["True", "False"],
+      "options": [
+        "True",
+        "False"
+      ],
       "answer": 0,
       "explain": "True. When the law or ethics demand that you explain a decision, an AI you can't explain is a poor fit. That is one of the key situations where AI is NOT a good choice."
     }
@@ -189,15 +222,47 @@
       "heading": "Facilitator Schedule",
       "kind": "schedule",
       "table": {
-        "columns": ["Time", "Activity", "Materials"],
+        "columns": [
+          "Time",
+          "Activity",
+          "Materials"
+        ],
         "rows": [
-          ["0:00–0:15", "Day 6 gallery walk review — favourite creative pieces", "Displayed works from yesterday"],
-          ["0:15–0:40", "Key Concepts: Design Thinking + AI use case mapping", "Whiteboard, sticky notes"],
-          ["0:40–1:20", "Activity 1: Problem Sprint — identify and define a problem", "Large paper, markers, sticky notes"],
-          ["1:20–1:35", "Break", ""],
-          ["1:35–2:00", "Activity 2: Solution Design + AI Fit Canvas", "Project Canvas worksheets"],
-          ["2:00–2:20", "Project Pitches — 60-second pitch per team", "Timer"],
-          ["2:20–2:30", "Team formation confirmed, project plans locked in", "Project plan template"]
+          [
+            "0:00–0:15",
+            "Day 6 gallery walk review — favourite creative pieces",
+            "Displayed works from yesterday"
+          ],
+          [
+            "0:15–0:40",
+            "Key Concepts: Design Thinking + AI use case mapping",
+            "Whiteboard, sticky notes"
+          ],
+          [
+            "0:40–1:20",
+            "Activity 1: Problem Sprint — identify and define a problem",
+            "Large paper, markers, sticky notes"
+          ],
+          [
+            "1:20–1:35",
+            "Break",
+            ""
+          ],
+          [
+            "1:35–2:00",
+            "Activity 2: Solution Design + AI Fit Canvas",
+            "Project Canvas worksheets"
+          ],
+          [
+            "2:00–2:20",
+            "Project Pitches — 60-second pitch per team",
+            "Timer"
+          ],
+          [
+            "2:20–2:30",
+            "Team formation confirmed, project plans locked in",
+            "Project plan template"
+          ]
         ]
       }
     }

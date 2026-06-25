@@ -1,0 +1,65 @@
+### d3 :: Prompt Makeover Workshop (kind worksheet)
+INTRO: Work in pairs. One person rewrites a weak prompt using the R-C-T-F-C framework; the other tests it in ChatGPT or Claude. Then compare: does the better prompt produce a better answer? Why or why not?
+  step[0]: Rewrite each weak prompt using the R-C-T-F-C framework, then test both versions and compare the results.
+  step[1]: WEAK: "Write a poem." → YOUR EXPERT PROMPT: ___
+  step[2]: WEAK: "Help me with my homework." → YOUR EXPERT PROMPT: ___
+  step[3]: WEAK: "What is climate change?" → YOUR EXPERT PROMPT: ___
+  step[4]: WEAK: "Give me a recipe." → YOUR EXPERT PROMPT: ___
+  step[5]: WEAK: "Explain gravity." → YOUR EXPERT PROMPT: ___
+  step[6]: Bonus Challenge: Write a prompt so specific that the AI produces an answer that surprises you with its quality.
+
+### d3 :: The Prompt Battle Championship (kind game)
+INTRO: Teams compete! Every round, all teams get the SAME task. You have 5 minutes to craft the best prompt you can, then submit it to the AI. The class votes on the best response — points go to the winning team.
+  step[0]: Round 1 — EXPLAIN: "Get the AI to explain how the internet works to a 5-year-old, using only a pizza analogy."
+  step[1]: Round 2 — CREATE: "Get the AI to write the most suspenseful opening paragraph for a novel — no more than 80 words."
+  step[2]: Round 3 — SOLVE: "Get the AI to help you plan a birthday party for 15 people with a budget of $100 AUD."
+  step[3]: Round 4 — PERSUADE: "Get the AI to write the most convincing argument for a 4-day school week."
+  step[4]: Round 5 — IMAGINE: "Get the AI to describe what daily life will look like in Australia in 2050 — be specific and surprising."
+  step[5]: Round 6 — DEBATE: "Get the AI to argue both sides of this question: Should AI be allowed to create art for sale?"
+
+### d4 :: Spot the AI (kind game)
+INTRO: Your facilitator will show you 20 items — a mix of real photos, AI-generated images, real audio clips, and AI voices. For each one, write REAL or AI on your card. Use the detective guide below to look for the tell-tale clues.
+  step[0]: Check these areas first when spotting AI-generated images:
+  step[1]: HANDS: AI consistently struggles with fingers — look for extra fingers, merged fingers, or hands that look "melted."
+  step[2]: TEETH: AI-generated smiles often have too many teeth, oddly sized teeth, or teeth that blend together.
+  step[3]: BACKGROUNDS: Background objects often repeat, blur unnaturally, or contain garbled text and impossible architecture.
+  step[4]: TEXT: Any text in an AI image (signs, labels, newspapers) is almost always garbled nonsense.
+  step[5]: EARS & HAIR: Ears are often asymmetrical; hair may flow through objects or disappear.
+  step[6]: LIGHTING: Light sources may be inconsistent — shadows pointing in impossible directions.
+  step[7]: Tools for verification: Google Reverse Image Search (right-click any image → "Search image with Google"); AI or Not (aiornot.com) for instant AI detection; Hive Moderation (hivemoderation.com/deepfake-detection), a free deepfake and AI image detector.
+
+### d4 :: Live AI Vision Demos (kind demo)
+INTRO: Rotate through three stations every 10 minutes and see computer vision and generative AI in action.
+  step[0]: Station 1 — Google Quick, Draw!: Visit quickdraw.withgoogle.com. Draw the prompted object and watch the AI guess in real time. Question: How does the AI know what you're drawing before you finish? What features is it detecting?
+  step[1]: Station 2 — Real-Time Object Detection: Visit teachablemachine.withgoogle.com → Image Project → Standard model. Train it to recognise 3 objects on your desk, then test it on objects from another table. Question: Did it recognise objects it never trained on? Why or why not?
+  step[2]: Station 3 — AI Art Generation: Visit Adobe Firefly (firefly.adobe.com) — free and age-appropriate. Generate an image from a specific prompt, then try to recreate the same scene as a drawing. Question: What details did the AI add that you wouldn't have thought of? What did it get wrong?
+
+### d5 :: AI Ethics Court (kind discussion)
+INTRO: Your class becomes a courtroom. Each group is assigned one case below and must argue BOTH sides — prosecution and defence. Then the whole class votes: should this AI system be allowed?
+  step[0]: Get into your assigned group and read your case brief carefully.
+  step[1]: You have 20 minutes to prepare arguments FOR and AGAINST the AI system.
+  step[2]: Present both sides to the class. The facilitator (Chief Justice) will ask you probing questions.
+  step[3]: The class votes on each case: Yes, allow it / No, ban it / Only with conditions.
+  step[4]: Reach a verdict — and if you allow the AI, name the conditions that must apply.
+
+### d6 :: AI Creative Workshop (kind build)
+INTRO: Two creative stations. At Station A you write a song with Suno; at Station B you make visual art with Adobe Firefly. At both, you start with AI and then add your own human touch.
+  step[0]: Station A — Visit suno.com (free tier available).
+  step[1]: Write a prompt for a song: specify genre, mood, theme, and style. Example: "Upbeat pop song about discovering you can code, energetic, teenage perspective, with a catchy chorus".
+  step[2]: Generate the song. Listen carefully. What do you like? What feels off?
+  step[3]: Now humanise it: write new lyrics for the chorus yourself. What emotion do YOUR lyrics add that the AI version lacked?
+  step[4]: Optional: Generate 3 versions with different genres (pop, hip-hop, classical) of the same theme. How does genre change meaning?
+  step[5]: Station B — Visit firefly.adobe.com (free, no age restriction).
+  step[6]: Generate an image that represents "the future of education." Use a detailed prompt with style, lighting, and mood.
+  step[7]: Generate 4 variations. Select the one that resonates most. Write a sentence explaining why.
+  step[8]: Now draw your own version of the same concept — freehand, 5 minutes. Don't try to copy the AI version.
+  step[9]: Place both side by side. What did you choose to include that the AI didn't? What did the AI imagine that surprised you?
+  step[10]: Reflection: At each station, what did AI do well, and what did you add that made it yours?
+
+### d6 :: Human vs AI Creative Showdown (kind game)
+INTRO: Half the class uses AI, half works purely by hand and mind. Then all works are displayed anonymously, and the class tries to guess which are AI and which are human.
+  step[0]: Pick ONE challenge as a class: Option A — Write a haiku about loneliness (5-7-5 syllables). Option B — Design a logo for a company called "Future Minds." Option C — Write the opening sentence of a thriller novel set in Sydney in 2040. Option D — Create a short 4-line rhyming verse about why learning matters.
+  step[1]: You have 5 minutes to complete the challenge.
+  step[2]: Display every work anonymously — no names attached.
+  step[3]: Vote on which pieces you think are AI and which are human.
+  step[4]: Reveal the answers and discuss: what gave the AI ones away? What surprised you?
