@@ -60,6 +60,9 @@ export type Video = z.infer<typeof VideoSchema>;
 export const ActivitySchema = z.object({
   name: z.string(),
   kind: z.enum(["worksheet", "game", "discussion", "build", "demo"]).default("worksheet"),
+  /** Optional id of an in-app interactive widget rendered for this activity
+   *  (e.g. "human-sorting", "teachable-machine-recorder"). */
+  interactive: z.string().optional(),
   /** Student-facing intro/instructions (always shown). */
   intro: z.array(z.string()).default([]),
   /** Student worksheet steps / prompts (always shown). */

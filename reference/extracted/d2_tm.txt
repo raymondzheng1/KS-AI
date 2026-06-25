@@ -1,0 +1,22 @@
+NAME: Teachable Machine: Train Your First AI
+INTRO:
+ - Now you will train a real image classifier — no coding required. You will teach an AI to recognise three hand gestures: thumbs up, peace sign, and fist.
+STEPS:
+ - Open teachablemachine.withgoogle.com in your browser.
+ - Click "Get Started" → "Image Project" → "Standard Image Model."
+ - Step 1 — Collect Your Data: Rename "Class 1" to "Thumbs Up." Click "Webcam" and hold your thumb up — record at least 100 images.
+ - Rename "Class 2" to "Peace Sign" — record another 100 images.
+ - Click "Add a class" → rename to "Fist" — record another 100 images.
+ - Step 2 — Train: Click the big "Train Model" button — watch it learn! After training, the "Preview" panel activates automatically.
+ - Step 3 — Test: Try each gesture in front of the webcam — does it get them right? Move your hand, change the lighting, use your other hand — does it still work?
+ - Try tricking it — show a gesture halfway between two classes. What does it predict?
+ - Challenge: If your model makes mistakes, add more training images from different angles and lighting, then retrain. Did adding more data improve accuracy? Record your findings.
+TABLE cols: Measurement | Your Result
+  row: Number of images per class (first attempt) | 
+  row: Accuracy on "thumbs up" | ___%
+  row: Accuracy on "peace sign" | ___%
+  row: Accuracy on "fist" | ___%
+  row: Where did your model fail? (describe the situation) | 
+  row: What did you change to improve it? | 
+  row: Accuracy after improvement (average across classes) | ___%
+  row: What would happen if you added a 4th class? Try it! | 

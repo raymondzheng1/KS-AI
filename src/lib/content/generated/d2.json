@@ -148,7 +148,8 @@
         "Round 2: Reveal the \"correct labels.\" Students re-sort using the labels.",
         "Discussion: What features did you use to sort? How did having labels change your approach?",
         "Connect to ML: \"What you just did manually is exactly what machine learning does automatically — but with millions of examples and millions of features simultaneously.\""
-      ]
+      ],
+      "interactive": "human-sorting"
     },
     {
       "name": "Teachable Machine: Train Your First AI",
@@ -213,7 +214,8 @@
         "Choose \"Image Project\" → \"Standard Image Model.\"",
         "Walk students through the interface briefly before they start.",
         "Suggested project: Train the AI to recognise 3 hand gestures (thumbs up, peace sign, fist)."
-      ]
+      ],
+      "interactive": "teachable-machine-recorder"
     }
   ],
   "reflection": [

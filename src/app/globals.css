@@ -265,6 +265,18 @@ h4,
 }
 .ks-bob { animation: ks-bob 3s ease-in-out infinite; }
 
+/* Sorting-game card animations (the inner element, so positioning is untouched). */
+@keyframes ks-pop-in {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.ks-pop-in { animation: ks-pop-in 0.4s ease both; }
+@keyframes ks-wobble {
+  0%, 100% { transform: rotate(-7deg); }
+  50% { transform: rotate(7deg); }
+}
+.ks-wobble { animation: ks-wobble 0.5s ease-in-out 3; }
+
 /* Calm everything for reduced-motion users (Harness §14.7). */
 @media (prefers-reduced-motion: reduce) {
   *,

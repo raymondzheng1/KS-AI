@@ -8,6 +8,7 @@ import { Sunny } from "@/components/Sunny";
 import { accentColor, accentTint } from "@/lib/game/accent";
 import { buildSlides } from "@/lib/game/lesson";
 import type { HurdleStatus } from "@/lib/game/unlock";
+import { ActivityInteractive } from "./interactive";
 import { DataTable } from "./ContentBlocks";
 import { ReflectionInput } from "./ReflectionInput";
 import { VideoCard } from "./VideoCard";
@@ -323,7 +324,8 @@ function ActivitySlide({
           ))}
         </ol>
       )}
-      {activity.table && <DataTable table={activity.table} />}
+      {activity.table && !activity.interactive && <DataTable table={activity.table} />}
+      {activity.interactive && <ActivityInteractive id={activity.interactive} />}
       {facilitatorMode && activity.facilitator.length > 0 && (
         <div className="mt-4 rounded-xl border-2 border-dashed border-ks-green/50 bg-ks-green/5 p-3">
           <p className="text-xs font-bold uppercase tracking-wide text-ks-green">Facilitator</p>
