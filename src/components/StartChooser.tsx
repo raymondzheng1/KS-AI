@@ -2,11 +2,12 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { CodePicker } from "@/components/CodePicker";
 import { generateCode, normalizeCode } from "@/lib/progress/code";
 import { CreateRoomForm } from "@/components/room/CreateRoomForm";
 import { JoinRoomForm } from "@/components/room/JoinRoomForm";
 
-type Mode = "menu" | "create" | "join";
+type Mode = "menu" | "create" | "join" | "solo";
 
 export function StartChooser() {
   const router = useRouter();
@@ -14,8 +15,8 @@ export function StartChooser() {
   const [resume, setResume] = useState("");
   const [err, setErr] = useState("");
 
-  function solo() {
-    router.push(`/p/${generateCode()}`);
+  function solo(code?: string) {
+    router.push(`/p/${code ?? generateCode()}`);
   }
 
   function resumeGo(e: React.FormEvent) {
@@ -44,6 +45,32 @@ export function StartChooser() {
       </div>
     );
   }
+  if (mode === "solo") {
+    return (
+      <div className="max-w-md">
+        <button onClick={() => setMode("menu")} className="ks-chip mb-3 text-sm">← Back</button>
+        <div className="ks-card p-5">
+          <div className="text-3xl">🚀</div>
+          <h2 className="mt-2 text-lg font-extrabold text-ks-coral">Jump in solo</h2>
+          <p className="mt-1 text-sm text-ks-ink">
+            Your code is your key to get back in — on this device or any other. Grab a surprise code,
+            or pick one you&apos;ll remember.
+          </p>
+          <button onClick={() => solo()} className="ks-btn ks-btn-coral mt-4 w-full">
+            🎲 Surprise me — start now
+          </button>
+          <div className="mt-4 border-t border-ks-kraft/40 pt-4">
+            <p className="text-sm font-bold text-ks-dark">✏️ Or pick your own code</p>
+            <p className="mt-0.5 text-xs text-ks-ink-soft">
+              3–20 letters or numbers. Choose something only you&apos;d guess — anyone with your code
+              can see your progress.
+            </p>
+            <CodePicker onUse={(code) => solo(code)} cta="Start" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="grid gap-4 sm:grid-cols-2">
@@ -59,10 +86,10 @@ export function StartChooser() {
         <p className="mt-1 text-sm text-ks-ink">Got an invite? Enter the room code, pick a nickname, and climb the leaderboard.</p>
       </button>
 
-      <button onClick={solo} className="ks-card p-5 text-left transition hover:scale-[1.02]">
+      <button onClick={() => setMode("solo")} className="ks-card p-5 text-left transition hover:scale-[1.02]">
         <div className="text-3xl">🚀</div>
         <h2 className="mt-2 text-lg font-extrabold text-ks-coral">Jump in solo</h2>
-        <p className="mt-1 text-sm text-ks-ink">No room needed — get a private code and start clearing hurdles right away.</p>
+        <p className="mt-1 text-sm text-ks-ink">No room needed — pick your own code (or get a surprise one) and start clearing hurdles.</p>
       </button>
 
       <form onSubmit={resumeGo} className="ks-card flex flex-col p-5">
