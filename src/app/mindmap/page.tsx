@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/SectionShell";
+import { StartCta } from "@/components/StartCta";
 import { DiagramFigure } from "@/components/diagrams";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function MindMapPage() {
       <div className="ks-card mx-auto max-w-2xl p-5">
         <DiagramFigure src="/diagrams/08_course_mind_map.png" alt="KidSmart AI Training course mind map" />
       </div>
+      <StartCta />
     </SectionShell>
   );
 }

@@ -122,6 +122,12 @@ h4,
 .ks-btn:active {
   transform: translateY(4px);
 }
+/* Compact variant for the persistent header "Start" button. */
+.ks-btn-sm {
+  padding: 9px 16px;
+  font-size: 14px;
+  min-height: 40px;
+}
 .ks-btn-coral {
   background: var(--color-ks-coral);
   color: #fff;

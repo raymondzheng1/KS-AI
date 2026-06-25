@@ -58,7 +58,7 @@ export default function Home() {
     <main className="mx-auto max-w-md px-5 pb-16 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-5xl md:px-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <SiteHeader home />
+      <SiteHeader home start />
 
       {/* Eyebrow */}
       <p className="mb-3 flex justify-center">

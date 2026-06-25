@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionShell } from "@/components/SectionShell";
+import { StartCta } from "@/components/StartCta";
 import { TOOLS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function ToolsPage() {
           </article>
         ))}
       </div>
+      <StartCta subtitle="You'll get hands-on with these tools as you clear the hurdles. Ready to dive in?" />
     </SectionShell>
   );
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SectionShell } from "@/components/SectionShell";
+import { StartCta } from "@/components/StartCta";
 import { HURDLES } from "@/lib/content";
 import { accentColor, accentTint } from "@/lib/game/accent";
 
@@ -71,12 +71,7 @@ export default function OverviewPage() {
         </section>
       ))}
 
-      <div className="ks-card p-5 text-center">
-        <p className="font-bold text-ks-dark">Ready to start your adventure?</p>
-        <Link href="/start" className="ks-btn ks-btn-coral mt-3 text-lg">
-          Let&apos;s go →
-        </Link>
-      </div>
+      <StartCta />
     </SectionShell>
   );
 }

@@ -12,6 +12,7 @@ export default function StartPage() {
     <SectionShell
       title="Start your adventure"
       subtitle="Create a room for your class or friends, join one you were invited to, or jump in solo."
+      startCta={false}
     >
       <StartChooser />
     </SectionShell>

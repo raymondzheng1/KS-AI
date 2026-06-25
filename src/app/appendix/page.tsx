@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionShell } from "@/components/SectionShell";
+import { StartCta } from "@/components/StartCta";
 import { GLOSSARY } from "@/lib/content";
 import type { GlossaryTerm } from "@/lib/content/schema";
 
@@ -49,6 +50,7 @@ export default function AppendixPage() {
         <Link href="/mindmap" className="ks-chip">Course mind map →</Link>
         <Link href="/overview" className="ks-chip">Programme overview →</Link>
       </div>
+      <StartCta subtitle="Now you know the words — time to see them in action. Ready to start?" />
     </SectionShell>
   );
 }
