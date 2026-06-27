@@ -7,8 +7,9 @@
  * app sets its own CURRENT_SERVICE_ID so it never links to itself). Use
  * `status: "coming-soon"` to tease an app before it launches.
  *
- * Keep this file in sync across the sibling apps (or, once the family grows,
- * lift it into a tiny shared `apps.json` each app fetches — see the footer).
+ * Keep this list identical across the sibling apps — only CURRENT_SERVICE_ID
+ * differs per app. (Accents are literal hex so each sibling's brand colour
+ * renders the same regardless of which app's theme is active.)
  */
 export type KidsmartService = {
   /** Stable id; also used to skip the current app. */
@@ -21,7 +22,7 @@ export type KidsmartService = {
   url: string;
   /** Emoji badge. */
   icon: string;
-  /** Accent colour (any CSS colour or design token) for the card. */
+  /** Accent colour (literal hex) for the card. */
   accent: string;
   /** "live" links out; "coming-soon" renders a muted, non-clickable teaser. */
   status: "live" | "coming-soon";
@@ -37,7 +38,7 @@ export const KIDSMART_SERVICES: KidsmartService[] = [
     tagline: "Become an AI Explorer",
     url: "https://ai.kidsmart.au",
     icon: "🤖",
-    accent: "var(--color-ks-blue)",
+    accent: "#4B9FD4",
     status: "live",
   },
   {
@@ -46,7 +47,7 @@ export const KIDSMART_SERVICES: KidsmartService[] = [
     tagline: "Philosophy for curious kids",
     url: "https://ideas.kidsmart.au",
     icon: "💡",
-    accent: "var(--color-ks-lav)",
+    accent: "#8E9BE0",
     status: "live",
   },
 ];
