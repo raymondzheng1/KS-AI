@@ -9,6 +9,7 @@ import {
   recordQuizResult,
   setProfile,
   syncFromServer,
+  syncToServer,
   touchToday,
   useProgress,
 } from "@/lib/progress-store";
@@ -42,7 +43,13 @@ export function GameShell({
     hydrate(code, roomId ? { roomId } : undefined);
     installRemoteSync(); // subscribe BEFORE the first mutation so it's pushed
     touchToday();
-    void syncFromServer(code);
+    // Reconcile on open: pull the server state, then push this device's full
+    // local progress back up — so the KV (and the room leaderboard) always
+    // reflect what's on this device, even for progress saved before a fix.
+    void (async () => {
+      await syncFromServer(code);
+      await syncToServer();
+    })();
     // Fill nickname/room from the profile row (offline-first: game already shown).
     (async () => {
       try {
