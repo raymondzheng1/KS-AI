@@ -40,8 +40,8 @@ export function GameShell({
   useEffect(() => {
     setLastCode(code);
     hydrate(code, roomId ? { roomId } : undefined);
+    installRemoteSync(); // subscribe BEFORE the first mutation so it's pushed
     touchToday();
-    installRemoteSync();
     void syncFromServer(code);
     // Fill nickname/room from the profile row (offline-first: game already shown).
     (async () => {
