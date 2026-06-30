@@ -6,6 +6,7 @@ import type { QuizStat } from "@/lib/progress/schema";
 import {
   hydrate,
   installRemoteSync,
+  markSeen,
   recordQuizResult,
   setProfile,
   syncFromServer,
@@ -15,6 +16,7 @@ import {
 } from "@/lib/progress-store";
 import { setLastCode } from "@/lib/rooms/client-identity";
 import { allCleared, hurdleStatus } from "@/lib/game/unlock";
+import { CodeModal } from "./CodeModal";
 import { GateQuiz } from "./GateQuiz";
 import { Hud } from "./Hud";
 import { HurdleLesson } from "./HurdleLesson";
@@ -37,6 +39,8 @@ export function GameShell({
   const [view, setView] = useState<View>("map");
   const [selId, setSelId] = useState<string | null>(null);
   const [reward, setReward] = useState<{ id: string; stat: QuizStat } | null>(null);
+  const [manualCode, setManualCode] = useState(false); // 🔑 button reopened the panel
+  const [onboardingDone, setOnboardingDone] = useState(false); // dismissed this session
 
   useEffect(() => {
     setLastCode(code);
@@ -75,6 +79,10 @@ export function GameShell({
 
   const hurdle = selId ? hurdleById(selId) : null;
   const roomHref = state.roomId ? `/room/${state.roomId}` : undefined;
+  // Show the "save your key" panel once on first entry (gated by `seen`),
+  // or whenever the player taps the 🔑 button. Derived — no set-state-in-effect.
+  const onboarding = !state.seen && !onboardingDone;
+  const showCode = manualCode || onboarding;
 
   function open(id: string) {
     setSelId(id);
@@ -95,7 +103,28 @@ export function GameShell({
 
   return (
     <div className="min-h-dvh">
-      <Hud state={state} roomHref={roomHref} facilitatorMode={facilitatorMode} />
+      <Hud
+        state={state}
+        roomHref={roomHref}
+        facilitatorMode={facilitatorMode}
+        onShowCode={() => setManualCode(true)}
+      />
+
+      {showCode && (
+        <CodeModal
+          code={state.code}
+          nick={state.nick || undefined}
+          roomId={state.roomId || undefined}
+          firstTime={onboarding}
+          onClose={() => {
+            if (onboarding) {
+              markSeen();
+              setOnboardingDone(true);
+            }
+            setManualCode(false);
+          }}
+        />
+      )}
 
       {view === "map" && (
         <>

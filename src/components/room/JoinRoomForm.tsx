@@ -62,7 +62,7 @@ export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
         </label>
       )}
       <label className="text-sm font-semibold text-ks-dark">
-        Your nickname
+        Display name
         <input
           value={nick}
           onChange={(e) => setNick(e.target.value)}
@@ -71,7 +71,9 @@ export function JoinRoomForm({ fixedRoomId }: { fixedRoomId?: string }) {
           placeholder="e.g. PixelSam"
           className="mt-1 min-h-11 w-full rounded-xl border-2 border-ks-dark/25 bg-white px-3 py-2 text-ks-ink"
         />
-        <span className="mt-1 block text-xs text-ks-ink-soft">Don&apos;t use your real full name — pick a fun handle!</span>
+        <span className="mt-1 block text-xs text-ks-ink-soft">
+          Just your name on the leaderboard — not how you log in. Pick a fun handle, not your real name.
+        </span>
       </label>
       <div>
         <span className="text-sm font-semibold text-ks-dark">Pick an avatar</span>
