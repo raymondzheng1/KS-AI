@@ -78,11 +78,21 @@ export function CodeModal({
       onClick={onClose}
     >
       <div
-        className="ks-card max-h-[90dvh] w-full max-w-md overflow-y-auto p-6 text-center"
+        className="ks-card relative max-h-[90dvh] w-full max-w-md overflow-hidden p-0"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Always-visible close, so the panel can be dismissed without scrolling
+            to the button on small screens. */}
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="ks-iconbtn absolute right-3 top-3 z-10"
+        >
+          ×
+        </button>
+        <div className="max-h-[90dvh] overflow-y-auto p-6 text-center">
         <div className="flex justify-center">
-          <Sunny pose="poseWave" size={78} />
+          <Sunny pose="poseWave" size={64} />
         </div>
         <h2 className="font-display text-2xl font-bold text-ks-dark">
           {firstTime ? "🔑 This is your key — save it!" : "🔑 Your key"}
@@ -99,8 +109,8 @@ export function CodeModal({
             <img
               src={qr}
               alt="QR code to your private link"
-              width={150}
-              height={150}
+              width={120}
+              height={120}
               className="rounded-xl border-2 border-ks-dark/15 bg-white p-1"
             />
           )}
@@ -151,6 +161,7 @@ export function CodeModal({
         <button onClick={onClose} className="ks-btn ks-btn-green mt-5 w-full">
           {firstTime ? "Let's go →" : "Done"}
         </button>
+        </div>
       </div>
     </div>,
     document.body,
