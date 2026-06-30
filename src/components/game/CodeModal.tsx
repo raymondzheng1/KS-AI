@@ -126,8 +126,9 @@ export function CodeModal({
         <p className="mx-auto mt-3 max-w-sm text-xs text-ks-ink-soft">
           {nick ? (
             <>
-              You show up as <b className="text-ks-dark">{nick}</b> on the leaderboard — that&apos;s
-              just your display name. <b className="text-ks-dark">Your code above is your key.</b>
+              You show up as <b className="text-ks-dark">{nick}</b>{" "}
+              on the leaderboard — that&apos;s just your display name.{" "}
+              <b className="text-ks-dark">Your code above is your key.</b>
             </>
           ) : (
             <>
