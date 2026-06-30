@@ -12,13 +12,15 @@ export function ContinueButton({ roomId }: { roomId: string }) {
 
   const code = getRoomCode(roomId);
 
+  // Compact in the header (full-size text-lg collided with the brand logo on
+  // mobile); the friendlier wording returns on wider screens.
   return code ? (
-    <Link href={`/p/${code}`} className="ks-btn ks-btn-coral text-lg">
-      ▶ Continue your adventure
+    <Link href={`/p/${code}`} className="ks-btn ks-btn-coral ks-btn-sm whitespace-nowrap">
+      ▶ Continue<span className="hidden sm:inline"> your adventure</span>
     </Link>
   ) : (
-    <Link href={`/join/${roomId}`} className="ks-btn ks-btn-coral text-lg">
-      Join this room →
+    <Link href={`/join/${roomId}`} className="ks-btn ks-btn-coral ks-btn-sm whitespace-nowrap">
+      Join<span className="hidden sm:inline"> this room</span> →
     </Link>
   );
 }
