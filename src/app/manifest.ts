@@ -9,7 +9,9 @@ export default function manifest(): MetadataRoute.Manifest {
     name: SITE.name,
     short_name: SITE.shortName,
     description: SITE.description,
-    start_url: "/",
+    // Resume route: an installed icon opens the player's latest code (or /start
+    // if none) instead of a fixed page — see /play and §18.8.
+    start_url: "/play",
     scope: "/",
     display: "standalone",
     orientation: "portrait",

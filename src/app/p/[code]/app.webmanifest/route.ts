@@ -1,23 +1,19 @@
 import { NextResponse } from "next/server";
 import { SITE } from "@/lib/seo/site";
-import { normalizeCode } from "@/lib/progress/code";
 
 /**
- * Per-player PWA manifest (Harness §19.2). start_url + id point at this
- * player's page, so an installed icon opens straight to their saved adventure.
+ * Per-player PWA manifest (Harness §19.2). Installing from a player's page
+ * yields an icon whose start_url is the stable `/play` resume route — so it
+ * opens the player's *latest* code (resolved on the device at open time)
+ * rather than freezing whichever code was active at install. id is stable so
+ * installs from different codes dedupe to one app.
  */
-export async function GET(
-  _req: Request,
-  { params }: { params: Promise<{ code: string }> },
-): Promise<NextResponse> {
-  const { code: raw } = await params;
-  const code = normalizeCode(decodeURIComponent(raw));
-  const startUrl = code ? `/p/${code}` : "/";
+export async function GET(): Promise<NextResponse> {
   return NextResponse.json({
     name: `${SITE.shortName} — My Adventure`,
     short_name: SITE.shortName,
-    id: startUrl,
-    start_url: startUrl,
+    id: "/play",
+    start_url: "/play",
     scope: "/",
     display: "standalone",
     orientation: "portrait",

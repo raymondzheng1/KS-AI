@@ -1,16 +1,16 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
   getLastCode,
-  getResumeCode,
+  getRoomCode,
   rememberRoomCode,
   setLastCode,
 } from "@/lib/rooms/client-identity";
 
 /**
- * Regression: a player who joins solo and then joins a room must resume into
- * the ROOM on reopen — not get silently reverted to the earlier solo account
- * when a restored tab / bookmark / installed icon re-opens the solo page and
- * clobbers `lastCode`.
+ * Resume follows the genuinely last-used code (the latest status), not a
+ * hard-coded preference. The `/play` route and the "Continue" affordances read
+ * this, so a saved bookmark / installed icon follows the player's latest code
+ * instead of an earlier one it was saved against.
  */
 function fakeLocalStorage() {
   const m = new Map<string, string>();
@@ -29,34 +29,29 @@ afterEach(() => {
   delete (globalThis as Partial<typeof globalThis>).window;
 });
 
-describe("resume identity prefers the room", () => {
-  it("solo-only player resumes their last solo code", () => {
-    setLastCode("SOLOAAA");
-    expect(getResumeCode()).toBe("SOLOAAA");
+describe("resume follows the latest code", () => {
+  it("getLastCode returns the most recently set code", () => {
+    setLastCode("AAA-AAA");
+    expect(getLastCode()).toBe("AAA-AAA");
+    setLastCode("BBB-BBB");
+    expect(getLastCode()).toBe("BBB-BBB");
   });
 
-  it("resumes the room code after joining, even if a solo page later clobbers lastCode", () => {
+  it("joining a room makes the room code the latest", () => {
     setLastCode("SOLOAAA"); // played solo first
     rememberRoomCode("ROOM-01", "ROOMBBB"); // then joined a room
-    expect(getResumeCode()).toBe("ROOMBBB");
-
-    setLastCode("SOLOAAA"); // a stale solo tab/bookmark re-opens, clobbering lastCode
+    expect(getLastCode()).toBe("ROOMBBB");
+    // …and opening the solo page again makes solo the latest (user's choice)
+    setLastCode("SOLOAAA");
     expect(getLastCode()).toBe("SOLOAAA");
-    expect(getResumeCode()).toBe("ROOMBBB"); // resume STILL returns the room
   });
 
-  it("uses the most recently joined room", () => {
-    rememberRoomCode("ROOM-01", "AAAAAA1");
-    rememberRoomCode("ROOM-02", "BBBBBB2");
-    expect(getResumeCode()).toBe("BBBBBB2");
+  it("keeps the room→code mapping for the room board", () => {
+    rememberRoomCode("ROOM-09", "CCC-CCC");
+    expect(getRoomCode("ROOM-09")).toBe("CCC-CCC");
   });
 
-  it("falls back to lastCode when the active room's code mapping is missing", () => {
-    (globalThis as unknown as { window: { localStorage: Storage } }).window.localStorage.setItem(
-      "ksai:activeRoom",
-      "ROOM-GONE",
-    );
-    setLastCode("FALLBACK1");
-    expect(getResumeCode()).toBe("FALLBACK1");
+  it("returns null on a fresh device (no code yet)", () => {
+    expect(getLastCode()).toBeNull();
   });
 });

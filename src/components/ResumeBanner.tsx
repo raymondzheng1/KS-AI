@@ -4,7 +4,7 @@ import Link from "next/link";
 import { HURDLE_COUNT } from "@/lib/content";
 import { useIsClient } from "@/lib/browser/useIsClient";
 import { loadLocal } from "@/lib/progress-store/storage";
-import { getResumeCode } from "@/lib/rooms/client-identity";
+import { getLastCode } from "@/lib/rooms/client-identity";
 
 /**
  * "Welcome back" resume strip for returning players on this device. Reads the
@@ -16,7 +16,7 @@ export function ResumeBanner() {
   const isClient = useIsClient();
   if (!isClient) return null;
 
-  const code = getResumeCode();
+  const code = getLastCode();
   if (!code) return null;
 
   const state = loadLocal(code);

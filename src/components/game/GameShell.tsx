@@ -14,7 +14,7 @@ import {
   touchToday,
   useProgress,
 } from "@/lib/progress-store";
-import { rememberRoomCode, setLastCode } from "@/lib/rooms/client-identity";
+import { setLastCode } from "@/lib/rooms/client-identity";
 import { allCleared, hurdleStatus } from "@/lib/game/unlock";
 import { CodeModal } from "./CodeModal";
 import { GateQuiz } from "./GateQuiz";
@@ -63,10 +63,6 @@ export function GameShell({
         if (!r.ok) return;
         const p = (await r.json()) as { nick?: string; roomId?: string } | null;
         if (p && (p.nick || p.roomId)) setProfile(p.nick, p.roomId);
-        // Opening a room game (even via a shared link on a new device) makes
-        // that room the active identity, so resume returns here — not to an
-        // earlier solo account on this device.
-        if (p?.roomId) rememberRoomCode(p.roomId, code);
       } catch {
         /* offline — cached profile (if any) stands */
       }
